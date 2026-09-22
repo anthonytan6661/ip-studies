@@ -17,22 +17,22 @@ This application is designed with mobile-first responsiveness:
 ## 🚀 Key Features
 
 ### 1. Integrated Mathematics (13 Topics in 3 Zones)
-- **Zone 1: Advanced Algebra & Functions (~45% exam weight)**
-  - *Topic 1*: Indices & Surds (Conjugate rationalisation, hidden quadratics $u = 2^x$)
-  - *Topic 2*: Logarithmic & Exponential Functions (Change of base, power drop, illegal argument rejection)
-  - *Topic 3*: Quadratic Functions & Equations (Completing the square, discriminant $b^2 - 4ac$, "lies entirely above x-axis" condition)
-  - *Topic 4*: Quadratic & Non-Linear Inequalities (5-step parabola sketch, sandwich vs wings)
-  - *Topic 5*: Polynomials, Remainder & Factor Theorems ($R = f(c)$, factor testing, full cubic factorisation)
-  - *Topic 6*: Partial Fractions & Binomial Theorem (Linear, repeated, quadratic denominators; improper fraction division check, $T_{r+1} = \binom{n}{r} a^{n-r} b^r$)
-- **Zone 2: Trigonometry & Circular Measure (~30% exam weight)**
-  - *Topic 7*: Circular Measure ($s = r\theta, A = \frac{1}{2}r^2\theta$, segment area, **RAD vs DEG calculator alert**)
-  - *Topic 8*: Trigonometric Functions & Graphs ($y = a\sin(bx)+c$: amplitude, period $2\pi/b$, midline shift)
-  - *Topic 9*: Trigonometric Equations (3-step ASTC protocol, acute reference angle $\alpha$, never divide by $\sin x$)
-  - *Topic 10*: Trigonometric Identities & Proofs (LHS to RHS single-sided proofs, $\sin/\cos$ fallback)
-- **Zone 3: Geometry & Linear Transformations (~25% exam weight)**
-  - *Topic 11*: Coordinate Geometry of Straight Lines (Parallel $m_1=m_2$, perpendicular $m_1 \cdot m_2 = -1$, perpendicular bisector routine)
-  - *Topic 12*: Coordinate Geometry of Circles ($(x-a)^2 + (y-b)^2 = r^2$, center $(a,b)$, radius $r = \sqrt{r^2}$, tangent perpendicular to radius)
-  - *Topic 13*: Linear Law ($Y = mX + c$, Power $y = ax^b \to \lg y = b\lg x + \lg a$, Exponential $y = ab^x \to \lg y = (\lg b)x + \lg a$)
+- **Zone 1: Core Algebra & Functions (~40% exam weight)**
+  - *Topic 1*: Quadratic Equations, Graphs & Completing the Square (Vertex form $y = a(x-h)^2+k$, symmetry axis $x=h$, sign flip trap)
+  - *Topic 2*: Linear & Quadratic Inequalities and Simultaneous Equations (Parabola sandwich vs wings, linear-quadratic substitution)
+  - *Topic 3*: Nature of Roots & The Discriminant ($b^2 - 4ac > 0, = 0, < 0$; tangent condition; "curve lies entirely above x-axis" $\implies a > 0, b^2-4ac < 0$)
+  - *Topic 4*: Exponential & Logarithmic Functions (Change of base, power drop law, strict non-positive argument rejection)
+  - *Topic 5*: Functions, Graphs & Modulus Functions (Domain & range, modulus graph reflection $y = |f(x)|$ across x-axis, extraneous root checks)
+- **Zone 2: Trigonometry, Circular Measure & 3D Bearings (~35% exam weight)**
+  - *Topic 6*: Trigonometric Ratios, Triangle Rules & 3D Bearings (Area $\frac{1}{2}ab\sin C$, Sine Rule with ambiguous case, Cosine Rule, 3-figure bearings from North, 3D heights)
+  - *Topic 7*: Circular Measure / Radian System ($s = r\theta, A = \frac{1}{2}r^2\theta$, segment area, **mandatory RAD vs DEG calculator check**)
+  - *Topic 8*: Trigonometric Functions & Periodic Graphs ($y = a\sin(bx)+c$: amplitude $|a|$, period $2\pi/b$, midline shift $c$)
+  - *Topic 9*: Trigonometric Equations & Simple Identities (3-step ASTC quadrant protocol, acute reference angle $\alpha$, factorisation vs division trap)
+  - *Topic 10*: Further Trigonometric Identities, Double Angles & $R$-Formula (Addition & double angles, $R$-formula, LHS to RHS single-sided proof rule)
+- **Zone 3: Polynomials, Partial Fractions & Coordinate Geometry (~25% exam weight)**
+  - *Topic 11*: Polynomials, Remainder & Factor Theorems ($R = f(b/a)$, factor testing, polynomial long division, complete quadratic factorisation)
+  - *Topic 12*: Partial Fractions (Distinct linear, repeated linear, irreducible quadratic; improper fraction division check)
+  - *Topic 13*: Coordinate Geometry of Straight Lines (Parallel $m_1=m_2$, perpendicular $m_1 \cdot m_2 = -1$, 3-step perpendicular bisector routine)
 
 ### 2. Pure Chemistry (8 Topics in 4 Pillars)
 - **Pillar 1: Bonding & Structure (~30% weight)**

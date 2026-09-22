@@ -1,84 +1,108 @@
 export const flashcardsData = [
-  // MATH FLASHCARDS
+  // MATH FLASHCARDS (13 Topics)
   {
     id: "fc-m1",
     subject: "math",
-    topic: "Indices & Surds",
-    question: "How do you rationalise the denominator of a fraction like 1 / (3 + √5)?",
-    answer: "Multiply numerator and denominator by its conjugate partner (3 - √5). Using (a+b)(a-b) = a² - b², the denominator becomes 3² - (√5)² = 9 - 5 = 4.",
-    tip: "Never leave any surd √ in the denominator of a final answer!"
+    topic: "Topic 1: Quadratics & Completing the Square",
+    question: "When completing the square for y = 3(x - 4)² + 7, what is the vertex, and what is the common sign error?",
+    answer: "Vertex is at (+4, +7). Since (x - 4)² ≥ 0, the minimum value is 7 when x = 4.\nCommon Error: Writing the turning point at x = -4 instead of reversing the sign to +4.",
+    tip: "Remember to reverse the sign inside the bracket: (x - h) means x = +h!"
   },
   {
     id: "fc-m2",
     subject: "math",
-    topic: "Logarithms",
-    question: "What is the critical check when solving logarithmic equations?",
-    answer: "Check for illegal arguments! The inside of any log(u) must be strictly positive (u > 0). Any negative or zero solution must be crossed out with 'reject'.",
-    tip: "Failing to write 'reject' costs 1-2 marks every time."
+    topic: "Topic 2: Inequalities & Simultaneous Equations",
+    question: "How do you express solutions for (x - 2)(x - 5) < 0 vs > 0, and what must you never forget in simultaneous equations?",
+    answer: "< 0: Bounded sandwich between roots: 2 < x < 5.\n> 0: Two outer wings: x < 2 or x > 5.\nSimultaneous equations: After finding both x values, you MUST substitute back to find both matching y values.",
+    tip: "Never split inequalities into linear parts without sketching the parabola sketch or sign chart!"
   },
   {
     id: "fc-m3",
     subject: "math",
-    topic: "Quadratics",
-    question: "What two conditions must be satisfied if 'a curve lies entirely above the x-axis'?",
-    answer: "1. a > 0 (it smiles/opens upwards)\n2. b² - 4ac < 0 (it NEVER touches or cuts the x-axis, so zero real roots).",
-    tip: "Common trap: students mistakenly write b² - 4ac > 0."
+    topic: "Topic 3: Nature of Roots & Discriminant",
+    question: "What two conditions must be satisfied if 'a quadratic curve lies entirely above the x-axis'?",
+    answer: "1. a > 0 (it smiles / opens upwards)\n2. b² - 4ac < 0 (it NEVER touches or intersects the x-axis, meaning zero real roots).",
+    tip: "Common trap: students mistakenly write b² - 4ac > 0 because of the word 'above'!"
   },
   {
     id: "fc-m4",
     subject: "math",
-    topic: "Inequalities",
-    question: "How do you express solutions for (x - 2)(x - 5) < 0 versus (x - 2)(x - 5) > 0?",
-    answer: "< 0: Sandwich range between roots: 2 < x < 5.\n> 0: Two outside wings: x < 2 or x > 5.",
-    tip: "Always sketch a quick parabola to visually verify!"
+    topic: "Topic 4: Logarithmic & Exponential Functions",
+    question: "What is the critical check when solving logarithmic equations?",
+    answer: "Check for illegal arguments! The inside of any log(u) must be strictly positive (u > 0). Any solution producing an argument ≤ 0 must be crossed out with 'reject'.",
+    tip: "Failing to write 'reject' costs 1-2 marks every time."
   },
   {
     id: "fc-m5",
     subject: "math",
-    topic: "Polynomials",
-    question: "State the Remainder Theorem and Factor Theorem for f(x) divided by (x - c).",
-    answer: "Remainder Theorem: Remainder R = f(c).\nFactor Theorem: If f(c) = 0, then (x - c) is an exact factor with zero remainder.",
-    tip: "Once you find a factor, use polynomial long division to get the quotient."
+    topic: "Topic 5: Functions & Modulus Graphs",
+    question: "How do you sketch y = |f(x)| from y = f(x), and what is the golden rule of modulus graphs?",
+    answer: "1. Sketch y = f(x) lightly.\n2. Keep all parts on or above the x-axis.\n3. Reflect all parts below the x-axis vertically upward across the x-axis.\nGolden Rule: A modulus curve can NEVER have any parts below the x-axis!",
+    tip: "Always label vertex coordinates and all axis intercepts clearly."
   },
   {
     id: "fc-m6",
     subject: "math",
-    topic: "Partial Fractions",
-    question: "What MUST you check before splitting an algebraic fraction into partial fractions?",
-    answer: "Check if the fraction is improper! If degree of numerator ≥ degree of denominator, perform polynomial long division first to extract whole terms before splitting.",
-    tip: "e.g., (x² + 1)/(x² - 3) must be divided first!"
+    topic: "Topic 6: Trig Ratios, Triangle Rules & Bearings",
+    question: "State the Sine Rule, Cosine Rule, Area formula, and the rule for recording 3-figure bearings.",
+    answer: "Area = ½ ab sin C (C is included angle).\nSine Rule: a/sin A = b/sin B (watch for ambiguous obtuse angle 180° - θ!).\nCosine Rule: c² = a² + b² - 2ab cos C.\nBearings: Always measured clockwise from North using 3 digits (e.g., 065°).",
+    tip: "Angles of elevation/depression are always measured from the horizontal sightline."
   },
   {
     id: "fc-m7",
     subject: "math",
-    topic: "Circular Measure",
+    topic: "Topic 7: Circular Measure (Radian System)",
     question: "What are the formulas for arc length and sector area, and what calculator setting is mandatory?",
-    answer: "Arc length s = rθ\nSector area A = ½ r² θ\nCalculator MUST be set in RAD (radian) mode, NOT DEG mode!",
+    answer: "Arc length: s = rθ (θ in radians).\nSector area: A = ½ r² θ (θ in radians).\nSegment area: ½ r² (θ - sin θ).\nCalculator MUST be set in RAD (radian) mode, NOT DEG mode!",
     tip: "#1 lost marks source in RVHS: calculator left in DEG mode."
   },
   {
     id: "fc-m8",
     subject: "math",
-    topic: "Trig Equations",
-    question: "What is the ASTC rule for solving trig equations like sin(x) = -0.5?",
-    answer: "1. Find acute basic angle α = sin⁻¹(+0.5) = 30° (ignore minus sign!).\n2. Locate quadrants where sine is negative: Q3 and Q4.\n3. Solutions: Q3: 180° + 30° = 210°; Q4: 360° - 30° = 330°.",
-    tip: "Never divide both sides by sin(x) or cos(x) — factorise instead."
+    topic: "Topic 8: Trig Functions & Periodic Graphs",
+    question: "For y = a sin(bx) + c or y = a cos(bx) + c, how do you find amplitude, period, and maximum/minimum values?",
+    answer: "Amplitude = |a| (distance from midline to peak).\nPeriod = 360°/b or 2π/b (for tan, Period = 180°/b or π/b).\nMax = c + |a|, Min = c - |a|.",
+    tip: "Remember: b is the frequency (cycles per 360° or 2π), NOT the period itself."
   },
   {
     id: "fc-m9",
     subject: "math",
-    topic: "Coordinate Geometry",
-    question: "How are the gradients of two perpendicular lines related, and what are the 3 steps for a perpendicular bisector?",
-    answer: "m₁ · m₂ = -1 (so m₂ = -1/m₁).\nPerpendicular bisector steps:\n1. Find midpoint of AB.\n2. Find gradient m_AB, then perpendicular gradient -1/m_AB.\n3. Use y - y₁ = m_perp(x - x₁) with the midpoint.",
-    tip: "Remember to both FLIP and NEGATE the gradient."
+    topic: "Topic 9: Trig Equations & ASTC",
+    question: "What is the ASTC rule for solving trig equations like sin(x) = -0.5, and what must you never do?",
+    answer: "1. Find acute basic angle α = sin⁻¹(+0.5) = 30° (ignore minus sign!).\n2. Locate quadrants where sine is negative: Q3 and Q4.\n3. Extract angles: Q3: 180° + 30° = 210°; Q4: 360° - 30° = 330°.\nNever divide both sides by sin(x) or cos(x) — factorise instead!",
+    tip: "Dividing by sin(x) eliminates the sin(x) = 0 solutions."
   },
   {
     id: "fc-m10",
     subject: "math",
-    topic: "Linear Law",
-    question: "How do you convert y = ax^b into linear form Y = mX + c, and how do you recover constant 'a'?",
-    answer: "Take lg: lg(y) = b·lg(x) + lg(a).\nY = lg(y), X = lg(x), m = b, and vertical intercept c = lg(a).\nTo recover a: a = 10^c.",
-    tip: "Don't forget: a = 10^c, NOT just c!"
+    topic: "Topic 10: Further Trig Identities & Proofs",
+    question: "What is the strict marking scheme rule when proving 'LHS = RHS' for trig identities?",
+    answer: "You must manipulate ONE side independently (usually the more complicated LHS) until it identically matches the other side. You are STRICTLY FORBIDDEN from moving terms across the '=' sign!",
+    tip: "Cross-multiplying across '=' loses all method marks in Cambridge & RVHS marking schemes."
+  },
+  {
+    id: "fc-m11",
+    subject: "math",
+    topic: "Topic 11: Polynomials, Remainder & Factor Theorems",
+    question: "State the Remainder Theorem and Factor Theorem for f(x) divided by (ax - b).",
+    answer: "Remainder Theorem: Remainder R = f(b/a).\nFactor Theorem: If f(b/a) = 0, then (ax - b) is an exact factor with zero remainder.\nAfter finding one factor, use long division and fully factorise the quadratic quotient.",
+    tip: "Do not leave answers as (x - 1)(x² - 4); break it down completely to (x - 1)(x - 2)(x + 2)!"
+  },
+  {
+    id: "fc-m12",
+    subject: "math",
+    topic: "Topic 12: Partial Fractions",
+    question: "What MUST you check before splitting an algebraic fraction into partial fractions?",
+    answer: "Check if the fraction is improper! If degree of numerator ≥ degree of denominator, perform polynomial long division first to extract whole polynomial terms before decomposing.",
+    tip: "e.g., (x² + 1)/(x² - 3) must be divided first before setting up partial fractions!"
+  },
+  {
+    id: "fc-m13",
+    subject: "math",
+    topic: "Topic 13: Coordinate Geometry of Straight Lines",
+    question: "How are the gradients of two perpendicular lines related, and what are the 3 steps for a perpendicular bisector?",
+    answer: "m₁ · m₂ = -1 (so m₂ = -1/m₁, flip and negate!).\nPerpendicular bisector steps:\n1. Find midpoint M = ((x₁+x₂)/2, (y₁+y₂)/2).\n2. Find gradient m_AB, then perpendicular gradient m_perp = -1/m_AB.\n3. Use point-slope form y - y_M = m_perp(x - x_M).",
+    tip: "Watch out for arithmetic sign errors with negative coordinates: (y₂ - y₁)/(x₂ - x₁)."
   },
 
   // CHEMISTRY FLASHCARDS

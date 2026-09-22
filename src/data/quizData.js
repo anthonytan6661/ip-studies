@@ -44,16 +44,30 @@ export const quizQuestions = [
   {
     id: "q-m4",
     subject: "math",
-    topic: "Linear Law",
-    question: "In a Linear Law problem transforming y = a x^b, lg(y) is plotted against lg(x). The vertical intercept c is calculated to be 3. What is the true value of constant a?",
+    topic: "Modulus Functions",
+    question: "When sketching y = |2x - 6|, what does the graph look like, and what is the coordinate of the sharp bounce vertex on the x-axis?",
     options: [
-      "a = 3",
-      "a = 30",
-      "a = 10³ = 1000",
-      "a = e³ ≈ 20.08"
+      "A straight line continuing below the x-axis with y-intercept at (0, -6).",
+      "A sharp V-shaped bounce with vertex at (3, 0), and all parts strictly on or above the x-axis.",
+      "A smooth U-shaped curve with vertex at (0, 6).",
+      "An inverted V-shape peaking at (3, 6)."
     ],
-    correctAnswer: 2,
-    explanation: "Since lg(y) = b·lg(x) + lg(a), the vertical intercept c equals lg(a). Therefore, a = 10^c = 10³ = 1000. Forgetting to do 10^c is one of the most common exam traps!"
+    correctAnswer: 1,
+    explanation: "Modulus functions convert all negative outputs into positive distances from zero. Any portion of y = 2x - 6 below the x-axis is reflected vertically upward, forming a sharp V-shaped bounce at x = 3 (where 2x - 6 = 0) with vertex (3, 0) and y-intercept (0, 6)."
+  },
+  {
+    id: "q-m5",
+    subject: "math",
+    topic: "Triangle Rules & Bearings",
+    question: "In triangle ABC, side a = 7 cm, side b = 10 cm, and angle A = 35°. When using the Sine Rule to calculate angle B, what trap must be checked?",
+    options: [
+      "Angle B can have two valid solutions: an acute angle B ≈ 55.0° and an obtuse angle B' = 180° - 55.0° = 125.0°, because 35° + 125.0° < 180°.",
+      "The Sine Rule can only be used on triangles with a 90° right angle.",
+      "The obtuse angle solution must always be discarded immediately without checking.",
+      "Sine Rule cannot be used when two sides and one angle are given."
+    ],
+    correctAnswer: 0,
+    explanation: "Ambiguous Case of the Sine Rule! When given two sides and a non-included angle opposite the shorter side, an obtuse angle (180° - θ) may also be valid if the sum of angles does not exceed 180°."
   },
   {
     id: "q-c1",

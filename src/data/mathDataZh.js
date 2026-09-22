@@ -12,281 +12,286 @@ export const mathSyllabusZh = {
   zones: [
     {
       id: "zone-1",
-      name: "第1考区：高阶代数与函数 (Advanced Algebra & Functions)",
-      examWeight: "约占全卷 45% 分值",
-      summary: "考试基石。只要彻底吃透第1考区，及格线就已经牢牢锁定。",
+      name: "第1考区：核心代数与函数 (Core Algebra & Functions)",
+      examWeight: "约占全卷 40% 分值",
+      summary: "考试基石。只要彻底吃透第1考区，及格线就已经牢牢锁定，杜绝低级计算失误。",
       topics: [
         {
           id: "m-1",
           number: 1,
-          title: "指数与二次根式 (Indices & Surds)",
-          plainEnglish: "根式 (Surds) 就是开方开不尽的无限不循环小数（如 √2、√7）。因为小数无穷无尽，数学家要求必须用精确的根号符号保留。黄金死律：最终答案的分母底下绝对不允许留下任何根号！",
+          title: "二次方程、图像与配方法 (Quadratic Equations, Graphs & Completing the Square)",
+          plainEnglish: "二次方程就是一条对称的抛物线（U形山谷或倒U形山丘）。核心技能是不靠盲猜，瞬间求出准确的顶点转向点 (turning point/vertex)、对称轴和与坐标轴的交点。",
           routines: [
             {
-              name: "分母有理化 (Rationalising Denominators)",
-              desc: "分子分母同乘“共轭伴侣 (conjugate partner)”。如果分母是 (3 + √5)，上下同乘 (3 - √5)。利用平方差公式 (a+b)(a-b) = a² - b²，分母的根号瞬间化为纯整数 3² - 5 = 4。"
+              name: "配方法求顶点与对称轴",
+              desc: "将 y = ax² + bx + c 配方为顶点式 y = a(x - h)² + k。因为平方项 (x - h)² ≥ 0，极值必为 k，当且仅当 x = h 时取得，顶点坐标为 (h, k)，对称轴恒为垂直线 x = h。"
             },
             {
-              name: "幂次中的隐藏二次方程 (Hidden Quadratics in Powers)",
-              desc: "遇到形如 2^(2x) - 5(2^x) + 4 = 0 的方程。必须设换元 u = 2^x，化为 u² - 5u + 4 = 0。解得 u = 1 或 4，再转回求 x：2^x = 1 ⇒ x = 0；2^x = 4 ⇒ x = 2。"
+              name: "手绘抛物线4步法",
+              desc: "判别开口方向（a > 0 微笑，a < 0 倒挂），标出顶点 (h, k)，求 y 轴截距 (令 x = 0 ⇒ (0, c))，以及解方程 ax² + bx + c = 0 求 x 轴截距。"
             }
           ],
           traps: [
-            "最终答案分母遗留根号未化简（直接扣除准确分 accuracy mark）。",
-            "误把 √(a + b) 当成 √a + √b 拆开计算（这是严重的代数低级错误！）。"
+            "括号内符号未反转：遇到 y = 3(x - 4)² + 7，顶点是 (+4, 7)，绝不是 -4！"
           ],
-          spotCheckQuestion: "拿你的最终答案给我看：分数的最底下（分母）还有没有开方符号 √？如果有，说明你根本没有做完这道题！"
+          spotCheckQuestion: "当你配方完成后，顶点的坐标是多少？括号里面的符号反转了吗？"
         },
         {
           id: "m-2",
           number: 2,
-          title: "对数与指数函数 (Logarithmic & Exponential Functions)",
-          plainEnglish: "对数其实就是在问一句话：“底数要升到几次方，才能等于这个数字？” 例如 log₁₀(1000) = 3，因为 10³ = 1000。",
+          title: "线性与二次不等式及联立方程 (Linear & Quadratic Inequalities and Simultaneous Equations)",
+          plainEnglish: "不等式是求曲线什么时候严格高于 (> 0) 或低于 (< 0) 水平坐标轴。联立方程则是计算一条直线与一条二次曲线精确相交的 (x, y) 坐标点。",
           routines: [
             {
-              name: "换底公式 (Change of Base Formula)",
-              desc: "普通计算器通常只有常用对数 Base 10 (lg) 和自然对数 Base e (ln)。如果考题出现 log₂ 7，必须立刻写成 (lg 7) / (lg 2) 来计算。"
+              name: "抛物线不等式法则",
+              desc: "所有项移到左侧：(x - α)(x - β) < 0 或 > 0。画微笑抛物线草图标出两根 α 与 β。若求 < 0，选两根中间的夹心层：α < x < β；若求 > 0，选两边外展的双翼：x < α 或 x > β。"
             },
             {
-              name: "降幂法则 (Power Drop Rule)",
-              desc: "log(x^k) = k · log(x)。能把高高在上的未知数指数拉到地面上，变成普通的线性代数进行求解。"
+              name: "联立消元代入法",
+              desc: "1. 从线性方程解出单变量（如 y = mx + c）。2. 代入二次方程消去 y，整理为 Ax² + Bx + C = 0。3. 解出两个 x 值。4. 将每个 x 代回线性方程算回对应的 y 坐标。"
             }
           ],
           traps: [
-            "致命高频陷阱：对数的真数部分绝对不能为零或负数！当你解二次方程算出 x = 3 和 x = -5 时，必须把使括号内 ≤ 0 的解划掉，并在旁边明确写上“reject (舍去)”。如果忘记写，每次丢1至2分！"
+            "不等式陷阱：将 (x - 2)(x - 5) < 0 随手拆成 x < 2 和 x < 5，不画抛物线或符号表（这在数学上完全错误，直接扣光步骤分！）。",
+            "联立方程陷阱：算出两个 x 值后立刻停笔，遗漏计算对应的 y 坐标配对！"
           ],
-          spotCheckQuestion: "你算出两个 x 的答案吗？有没有代回原题检验，看看会不会让 log 里面的任何括号变成负数或者零？"
+          spotCheckQuestion: "你有画抛物线草图来判断不等式是在两根之间还是两根之外吗？联立方程的两组 (x, y) 坐标都算齐了吗？"
         },
         {
           id: "m-3",
           number: 3,
-          title: "二次函数与方程 (Quadratic Functions & Equations)",
-          plainEnglish: "二次函数就是 U形或倒U形抛物线：y = ax² + bx + c。全卷永远只考两个核心点：顶点转向点 (turning points) 和与直线的交点个数 (intersections)。",
+          title: "二次方程根的性质与判别式 (Nature of Roots & The Discriminant)",
+          plainEnglish: "完全不用画图，仅凭纯代数判别式计算一条直线和一条二次曲线是相碰相切、穿过相交两次、还是永远碰不到。",
           routines: [
             {
-              name: "配方法 (Completing the Square)",
-              desc: "将 ax² + bx + c 转化为 a(x - h)² + k。因为平方项 (x - h)² 最小为0，抛物线的最高点或最低点坐标 (h, k) 瞬间一目了然。"
+              name: "判别式分析 (b² - 4ac)",
+              desc: "b² - 4ac > 0 ⇒ 2个不同实根（相交两点）；b² - 4ac = 0 ⇒ 2个相等实根（切线 tangent，只碰触一点）；b² - 4ac < 0 ⇒ 无实根（永不相交）。"
             },
             {
-              name: "判别式分析 (The Discriminant: b² - 4ac)",
-              desc: "b² - 4ac > 0 ⇒ 与直线有两个不同交点（2个实数根）；\nb² - 4ac = 0 ⇒ 刚好相切相碰（1个实数根，切线 tangent）；\nb² - 4ac < 0 ⇒ 永远不相交（0个实数根）。"
+              name: "直线与曲线联立判别",
+              desc: "联立直线与曲线 mx + c = ax² + bx + d，整理成标准二次式 Ax² + Bx + C = 0，计算判别式 B² - 4AC 判定交点个数。"
             }
           ],
           traps: [
-            "立化王牌陷阱题：题目说“曲线完全在 x 轴的上方 (lies entirely above x-axis)”。\n正确翻译：开口向上微笑 (a > 0) 并且 永远不碰到 x 轴 (b² - 4ac < 0！)。绝大多数学生因直觉思维，错误地把判别式也写成了 > 0！"
+            "立化王牌陷阱：题目说‘曲线完全在 x 轴的上方 (lies entirely above x-axis)’。正确翻译：开口向上微笑 (a > 0) 并且 永远不碰 x 轴 (b² - 4ac < 0！)。绝大多数学生因直觉思维，错误地把判别式也写成了 > 0！"
           ],
-          spotCheckQuestion: "当题目提到‘相切 (tangent)’或者‘只碰到一个点 (touches at one point)’时，你第一反应写出的第一个公式是什么？（正确答案：b² - 4ac = 0）"
+          spotCheckQuestion: "如果题目说直线是曲线的切线 (tangent)，判别式应该等于多少？若曲线完全在 x 轴上方，b² - 4ac 是大于零还是小于零？（答：等于0；严格小于0）"
         },
         {
           id: "m-4",
           number: 4,
-          title: "二次及非线性不等式 (Quadratic & Non-Linear Inequalities)",
-          plainEnglish: "不是求曲线在哪里等于零，而是找曲线在什么时候高于海平面 (> 0) 或低于海平面 (< 0)。",
+          title: "指数与对数函数 (Exponential & Logarithmic Functions)",
+          plainEnglish: "对数其实就是在问一句话：“底数 b 要升到几次方，才能等于数字 x？” 例如 log₁₀(1000) = 3，因为 10³ = 1000。",
           routines: [
             {
-              name: "5步抛物线草图法则",
-              desc: "1. 移项将所有项移到左侧，右侧留零：x² - 5x + 6 < 0；\n2. 因式分解：(x - 2)(x - 3) < 0；\n3. 随手画一个U形抛物线草图，穿过x轴交点 2 和 3；\n4. 若求 < 0（轴下方），答案为两根中间的“夹心层”：2 < x < 3；\n5. 若求 > 0（轴上方），答案为两边向外展开的“双翼”：x < 2 或 x > 3。"
+              name: "换底公式 (Change of Base Formula)",
+              desc: "计算器只有常用对数 Base 10 (lg) 和自然对数 Base e (ln)。遇到 log_b a，立刻换底为 (lg a) / (lg b) 或 (ln a) / (ln b)。"
+            },
+            {
+              name: "降幂与对数运算法则",
+              desc: "降幂法则：log(x^k) = k · log(x)。乘积拆加法：log(xy) = log x + log y。商式拆减法：log(x/y) = log x - log y。"
             }
           ],
           traps: [
-            "像解普通线性方程那样直接拆开写 x - 2 < 0 ⇒ x < 2（这是完全错误的！）。解不等式必须画抛物线草图或列表！"
+            "致命高频陷阱：对数的真数部分绝对不能为零或负数！当你解出 x = 3 和 x = -5 时，必须把使括号内 ≤ 0 的解划掉，并在旁边明确写上“reject (舍去)”。如果忘记写，直接丢1至2分！"
           ],
-          spotCheckQuestion: "拿草稿纸给我看：你有没有画出那个小的 U 形抛物线草图来挑选不等式的区间？"
+          spotCheckQuestion: "你算出两个 x 的答案吗？有没有代回原题检验，看看会不会让 log 里面的任何括号变成负数或者零？"
         },
         {
           id: "m-5",
           number: 5,
-          title: "多项式、余数定理与因式定理 (Polynomials, Remainder & Factor Theorems)",
-          plainEnglish: "包含 x³、x⁴ 的高次代数式。就像小学做长除法一样，只是把数字换成了带有字母的代数表达式。",
+          title: "函数、图像与绝对值模函数 (Functions, Graphs & Modulus Functions)",
+          plainEnglish: "函数是将输入值（定义域 domain）映射到唯一输出值（值域 range）的加工机。绝对值模函数 |f(x)| 测量到零点的距离，将所有负数输出垂直翻折成正值。",
           routines: [
             {
-              name: "余数定理 (Remainder Theorem)",
-              desc: "将 f(x) 除以 (x - c)？完全不需要耗费5分钟做长除法。直接把 x = c 代入原式，计算出的值就是精确的余数：Remainder R = f(c)。"
+              name: "绝对值图像对称翻折法",
+              desc: "画 y = |f(x)| 的图像：1. 轻轻铅笔画出底图 y = f(x)；2. 保留 x 轴上方及轴上的部分；3. 将 x 轴下方的部分以 x 轴为镜面垂直向上对称翻折；4. 标明顶点和所有轴交点。"
             },
             {
-              name: "因式定理与完全分解 (Factor Theorem)",
-              desc: "如果 f(c) = 0，说明余数为零，(x - c) 就是一个完美因式！利用多项式长除法除出剩下的二次商式，再把该二次式彻底因式分解成两个括号。"
+              name: "绝对值方程分类讨论",
+              desc: "解 |f(x)| = g(x)：拆成两路求解 f(x) = g(x) 或 f(x) = -g(x)。解出后代入检验确保 g(x) ≥ 0，剔除增根 (extraneous roots)。"
             }
           ],
           traps: [
-            "因式分解不彻底：最后把三次式写成 (x - 1)(x² - 4) 就交卷。后面的 (x² - 4) 必须进一步拆解为 (x - 1)(x - 2)(x + 2)！"
+            "绝对值图像下方遗留线条：绝对值函数的输出永远不可能为负数，x 轴下方绝对不能留有任何曲线！"
           ],
-          spotCheckQuestion: "你的三次因式分解答案是不是还留着 (x² - 4) 这样的一半？再检查一遍后面的括号还能不能继续拆开！"
-        },
-        {
-          id: "m-6",
-          number: 6,
-          title: "部分分式与二项式定理 (Partial Fractions & Binomial Theorem)",
-          plainEnglish: "部分分式就是小学分数加法的反向工程（把一个复杂的大分式拆回几个简单的小分式相加减）。二项式定理则是快速展开如 (2 + 3x)⁸ 的捷径公式。",
-          routines: [
-            {
-              name: "部分分式分母拆分模板",
-              desc: "单线性因式：A/(x + 1)；\n重复线性因式：B/(x + 1)²；\n不可分解二次因式：(Cx + D)/(x² + 4)。"
-            },
-            {
-              name: "二项式通项公式 (General Term)",
-              desc: "T_(r+1) = ⁿCᵣ · a^(n - r) · b^r。考试常考“求常数项 (constant term) 或求 x³ 的系数”，直接令指数等于目标即可，无须展开整道题。"
-            }
-          ],
-          traps: [
-            "假分式陷阱！如果分子最高次数 ≥ 分母最高次数（如 (x² + 1)/(x² - 3)），绝对不能直接设 ABC 拆分！必须先做多项式长除法提取出整数部分！"
-          ],
-          spotCheckQuestion: "分子的最高次方是不是大于或等于分母的最高次方？如果是，你第一步做多项式长除法了吗？"
+          spotCheckQuestion: "你的绝对值图像在 x 轴下方还有遗留曲线吗？如果有，有没有全部向上翻折过去？"
         }
       ]
     },
     {
       id: "zone-2",
-      name: "第2考区：三角学与弧度制 (Trigonometry & Circular Measure)",
-      examWeight: "约占全卷 30% 分值",
-      summary: "得分效率最高；套路极强，属于按部就班拿满步骤分的考区。",
+      name: "第2考区：三角学、弧度制与三维方位角 (Trigonometry, Circular Measure & 3D Bearings)",
+      examWeight: "约占全卷 35% 分值",
+      summary: "解题步骤高度公式化与机械化；牢记运算协议与计算器模式即可稳拿高分。",
       topics: [
         {
-          id: "m-7",
-          number: 7,
-          title: "弧度制与圆测量 (Circular Measure - Radian System)",
-          plainEnglish: "角度制（360°）是人类为了方便人为规定的。弧度 (Radians) 才是圆的自然语言（圆弧长度与半径的比值）。π 弧度 = 180°。",
+          id: "m-6",
+          number: 6,
+          title: "三角比、任意三角形法则与3D方位角 (Trigonometric Ratios, Triangle Rules & 3D Bearings)",
+          plainEnglish: "在没有直角的一般三角形中求解边长、角度、罗盘方位角以及三维空间建筑高程结构。",
           routines: [
             {
-              name: "3大秒杀公式（试卷附录有，但必须肌肉记忆）",
-              desc: "1. 弧长：s = rθ（θ 必须为弧度 rad）；\n2. 扇形面积（披萨块）：A = ½ r² θ；\n3. 弓形面积（披萨边角 crust）：扇形面积减三角形面积 = ½ r² (θ - sin θ)。"
+              name: "一般三角形三大黄金公式",
+              desc: "1. 面积公式：Area = ½ ab sin C（夹角 C 必须是 a 与 b 的夹角）。2. 正弦定理：a / sin A = b / sin B = c / sin C。3. 余弦定理：c² = a² + b² - 2ab cos C。"
+            },
+            {
+              name: "方位角与三维空间图分析",
+              desc: "方位角：从正北方向顺时针旋转，记录3位数字（如 065°、240°）。仰角/俯角：永远以水平视线为基准测量。三维立体题：逐一抽取平面直角三角形于草稿纸计算。"
             }
           ],
           traps: [
-            "立化失分第一元凶：科学计算器屏幕顶部显示着 ‘D’（角度 DEG 模式），而不是 ‘R’（弧度 RAD 模式）！一旦按错模式，后面连环计算全军覆没，单题直接蒸发 4 至 6 分！"
+            "遗忘正弦定理的钝角模糊情况 (ambiguous case)：当求解角时，钝角 (180° - θ) 可能同样满足题意！",
+            "方位角从非正北方向或者逆时针测量，或者忘记写前导零（写成 65° 而非 065°）。"
           ],
-          spotCheckQuestion: "现在立刻看你的科学计算器屏幕正上方：显示的是小字母 ‘R’，还是 ‘D’？"
+          spotCheckQuestion: "你算三角形面积 ½ ab sin C 时用的角是两边中间的夹角吗？你的方位角是用三位数字从正北顺时针量出的吗？"
+        },
+        {
+          id: "m-7",
+          number: 7,
+          title: "弧长、扇形面积与弧度制 (Circular Measure: Arc Length & Radian System)",
+          plainEnglish: "用天然的弧度制取代人类定义的三百六十度（π 弧度 = 180°）。弧度以弧长与半径之比定义，让圆周几何公式极其优美简洁。",
+          routines: [
+            {
+              name: "圆周弧度三大秒杀公式",
+              desc: "1. 弧长：s = rθ（θ 必须为弧度）。2. 扇形面积（披萨块）：A = ½ r² θ。3. 弓形面积（披萨边）：扇形面积 - 三角形面积 = ½ r² (θ - sin θ)。"
+            }
+          ],
+          traps: [
+            "立化中学失分第一元凶：计算器遗留在角度 DEG 模式，未切换至弧度 RAD 模式！后续所有 sin、cos 计算全盘皆输，瞬间白丢 4 至 6 分！"
+          ],
+          spotCheckQuestion: "立刻低头看你的科学计算器屏幕正上方：显示的是小微标‘R’还是‘D’？"
         },
         {
           id: "m-8",
           number: 8,
-          title: "三角函数与图像 (Trigonometric Functions & Graphs)",
-          plainEnglish: "声波、潮汐与心跳都呈现周期性波浪规律。本考点专门考察快速识别与草绘 y = a·sin(bx) + c 或 y = a·cos(bx) + c 图像。",
+          title: "三角函数与周期图像 (Trigonometric Functions & Periodic Graphs)",
+          plainEnglish: "声波、潮汐和交流电等周期性波动现象：y = a·sin(bx) + c、y = a·cos(bx) + c 或 y = a·tan(bx)。快速识读并手绘波形特征是必考题。",
           routines: [
             {
-              name: "秒读图像3大关键数字",
-              desc: "a（振幅 Amplitude）：波峰波谷距离中心线的高度（|a|）；\nb（频率 / 周期 Period）：360° 或 2π 内包含的完整循环个数，周期 = 360°/b 或 2π/b；\nc（中心线位移）：把整条波浪向上或向下整体平移 c 格。"
+              name: "秒读波形3大参数",
+              desc: "a (振幅 Amplitude)：中线到波峰的高度 (|a|)。b (频率/周期)：周期 Period = 360°/b 或 2π/b（tan 周期为 180°/b 或 π/b）。c (中心平衡线平移)：将整条波上下平移，最高点 = c + |a|，最低点 = c - |a|。"
             }
           ],
           traps: [
-            "混淆频率与周期：b 代表循环次数而不是波长，必须牢记 Period = 2π / b。"
+            "混淆周期与频率：b 是 360° 内周期的循环次数，不是波长本身。千万记住 Period = 2π/b。振幅是半高，不是峰顶到谷底的总高！"
           ],
-          spotCheckQuestion: "如果题目给出 y = 4 cos(2x) - 1，这个函数图像能达到的最高点是多少？（正确答案：+4 - 1 = 3）"
+          spotCheckQuestion: "如果 y = 4 cos(2x) - 1，图像能达到的最高点是多少？周期是多长？（答：最高点 +3，周期 180° 或 π）"
         },
         {
           id: "m-9",
           number: 9,
-          title: "三角方程求解 (Trigonometric Equations)",
-          plainEnglish: "寻找波浪在指定区间内（例如 0° 到 360° 或 0 到 2π）何时达到某个特定数值。",
+          title: "三角方程与基本恒等式 (Trigonometric Equations & Simple Identities)",
+          plainEnglish: "在指定区间内（0° ≤ x ≤ 360° 或 0 ≤ x ≤ 2π），寻找波动曲线命中特定数值的所有有效角度。",
           routines: [
             {
-              name: "3步 ASTC 象限黄金法则",
-              desc: "第1步：计算锐角基准角 α = sin⁻¹(|数值|)。注意：按计算器时坚决忽略负号！\n第2步：判定象限（All 全正, Sin 正, Tan 正, Cos 正）；\n第3步：提取角度：第1象限 α；第2象限 180° - α；第3象限 180° + α；第4象限 360° - α。"
+              name: "3步 ASTC 象限定位法则",
+              desc: "第1步：算基准锐角 α = sin⁻¹(|值|)（绝对忽略负号！）；第2步：用 ASTC（All, Sin, Tan, Cos）确认象限；第3步：提取角度：Q1: α；Q2: 180° - α；Q3: 180° + α；Q4: 360° - α。"
+            },
+            {
+              name: "基本勾股三角恒等式",
+              desc: "tan θ = sin θ / cos θ；sin² θ + cos² θ = 1；sec² θ = 1 + tan² θ；csc² θ = 1 + cot² θ。"
             }
           ],
           traps: [
-            "致命错误：千万不要在方程两边同时除以 sin(x) 或 cos(x)（例如 2 sin x cos x = sin x）！一除就会把 sin x = 0 的一整套解全部杀死！必须移项到左边提取公因式进行因式分解！"
+            "致命操作陷阱：千万不要两边同除以 sin(x) 或 cos(x)（例如在 2 sin x cos x = sin x 中）。同除直接消灭了 sin x = 0 的一整套有效解！必须移项提取公因式因式分解：sin x (2 cos x - 1) = 0。"
           ],
-          spotCheckQuestion: "你在计算器上按出锐角基准角 α 的时候，是不是把负号忽略掉了？"
+          spotCheckQuestion: "算基准锐角时你忽略负号了吗？解方程时有没有提取公因式而不是盲目同除消掉三角函数？"
         },
         {
           id: "m-10",
           number: 10,
-          title: "三角恒等式与证明 (Trigonometric Identities & Proofs)",
-          plainEnglish: "代数解密游戏：证明看似完全不同的两个三角式子在数学上本质完全相等。",
+          title: "高阶三角恒等式、倍角公式与 R式法则 (Further Trigonometric Identities, Double Angles & R-Formula)",
+          plainEnglish: "高级代数工具，用于化简复合波形表达式、求波形最大最小值、以及进行严格的数学等式证明。",
           routines: [
             {
-              name: "单边变形黄金策略",
-              desc: "绝不要两边同时移项！挑选看起来更复杂丑陋的一边（通常是左边 LHS），一步一步化简推导，直到完全等于右边 RHS。"
+              name: "加法与倍角展开公式",
+              desc: "加法公式：sin(A ± B) = sin A cos B ± cos A sin B；cos(A ± B) = cos A cos B ∓ sin A sin B。倍角公式：sin 2A = 2 sin A cos A；cos 2A = 2 cos² A - 1 = 1 - 2 sin² A；tan 2A = (2 tan A)/(1 - tan² A)。"
             },
             {
-              name: "万能保命底牌",
-              desc: "如果完全卡住没有思路，把所有的 tan, cot, sec, csc 全部换成最基础的 sin θ 和 cos θ，然后通过通分化为一个大分数，利用 sin² θ + cos² θ = 1 消除。"
+              name: "R式法则与单侧推导策略",
+              desc: "R式：a sin θ ± b cos θ = R sin(θ ± α)，其中 R = √(a² + b²)，tan α = b/a。恒等式证明：挑复杂的一侧（通常是左侧 LHS），单侧推导变换至 RHS，绝对禁止跨等号两边移项！"
             }
           ],
           traps: [
-            "将证明题当方程解题！在恒等式证明中把项跨过等号 ‘=’ 移来移去，在立化评分标准中会被直接扣光所有步骤分 (method marks)！必须只在一边做推导！"
+            "恒等式证明当成方程移项：在‘证明 LHS = RHS’题中，跨过等号两边移项会被视为预设结论成立，立化与剑桥评分标准直接扣光所有方法分！"
           ],
-          spotCheckQuestion: "你在做证明题时是只在左边/右边单边推导，还是不小心跨过 ‘=’ 等号移项了？"
+          spotCheckQuestion: "你的恒等式证明是不是只在单独一侧进行推导？有没有跨过等号两边移项运算？"
         }
       ]
     },
     {
       id: "zone-3",
-      name: "第3考区：解析几何与线性化规律 (Geometry & Linear Transformations)",
+      name: "第3考区：多项式、部分分式与解析几何 (Polynomials, Partial Fractions & Coordinate Geometry)",
       examWeight: "约占全卷 25% 分值",
-      summary: "套路最清晰、结构最严密；是最容易拿到 100% 满分的考区。",
+      summary: "高度结构化与代数规范化；是全卷中最稳拿 100% 满分的考区。",
       topics: [
         {
           id: "m-11",
           number: 11,
-          title: "直线坐标几何 (Coordinate Geometry of Straight Lines)",
-          plainEnglish: "在 (x, y) 直角坐标系中用代数方程解析平面几何关系。",
+          title: "多项式、余数定理与因式定理 (Polynomials, Remainder & Factor Theorems)",
+          plainEnglish: "处理含有 x³、x⁴ 的高次代数式，免去冗长繁琐的多项式长除法。",
           routines: [
             {
-              name: "平行与垂直斜率规律",
-              desc: "平行直线：斜率完全相同 (m₁ = m₂)；\n垂直直线：斜率互为负倒数 (m₁ · m₂ = -1 ⇒ m₂ = -1/m₁)。例如一条直线斜率是 2/3，垂直线斜率必须是 -3/2。"
+              name: "余数定理",
+              desc: "多项式 f(x) 除以 (ax - b)？不用做除法，直接代入 x = b/a：余数 R = f(b/a)。"
             },
             {
-              name: "垂直平分线 (Perpendicular Bisector) 3步套路",
-              desc: "第1步：求线段 AB 的中点 M；\n第2步：算出直线 AB 的斜率 m_AB，然后颠倒取负得到垂直斜率 m_perp = -1/m_AB；\n第3步：用点斜式方程 y - y₁ = m_perp(x - x₁)，把中点代入写出最终方程。"
+              name: "因式定理与完全因式分解",
+              desc: "若 f(b/a) = 0，则 (ax - b) 是整除的线性因式！用长除法求出二次商式，再将二次式彻底因式分解成两个一次因式。"
             }
           ],
           traps: [
-            "计算垂直斜率时只取倒数而忘了加负号，或者只加负号忘了颠倒分子分母。"
+            "因式分解不彻底：将三次因式分解答案停留在 (x - 1)(x² - 4) 就草草收场，未进一步拆分为 (x - 1)(x - 2)(x + 2)！"
           ],
-          spotCheckQuestion: "与斜率为 m = -1/4 互相垂直的直线斜率是多少？（正确答案：+4）"
+          spotCheckQuestion: "你的最终答案是不是停留在 (x - 1)(x² - 4)？检查一下后面的括号还能不能继续往下分解！"
         },
         {
           id: "m-12",
           number: 12,
-          title: "圆的坐标几何 (Coordinate Geometry of Circles)",
-          plainEnglish: "描述到圆心 (a, b) 距离处处相等的全部点的代数集合。",
+          title: "部分分式 (Partial Fractions)",
+          plainEnglish: "分式加法的逆运算：将一个复杂庞大的代数有理分式，拆解为几个简单的基础分式之和。",
           routines: [
             {
-              name: "标准圆方程 (Standard Form)",
-              desc: "(x - a)² + (y - b)² = r²。牢记括号内符号颠倒：(x - 3)² + (y + 4)² = 49 的圆心坐标是 (3, -4)，半径 r = √49 = 7（而不是 49！）。"
-            },
-            {
-              name: "圆的切线套路 (Tangent Line)",
-              desc: "切线与切点处的圆半径永远呈 90° 垂直！先求出半径的斜率，倒置加负号获得切线斜率，再用切点坐标写出直线方程。"
+              name: "分母结构拆分三法则",
+              desc: "1. 互异一次因式：A/(x - a) + B/(x - b)。2. 重复一次因式：A/(x - a) + B/(x - a)²。3. 不可约二次因式：A/(x - a) + (Bx + C)/(x² + c)。"
             }
           ],
           traps: [
-            "把方程右侧的 r² 直接当成半径（如把 49 当半径，忘了开平方根变成 7）。",
-            "读取圆心坐标时把正负号搞反。"
+            "致命隐形陷阱：假分式 (Improper Fractions)！若分子最高次数 ≥ 分母最高次数（如 (x² + 1)/(x² - 3)），绝对不可直接拆分！必须先做多项式长除法提取整式，再拆分余式！"
           ],
-          spotCheckQuestion: "方程为 (x - 3)² + (y + 4)² = 49 的圆，圆心坐标和半径分别是多少？（圆心：(3, -4)，半径：7，不是49！）"
+          spotCheckQuestion: "分子最高幂次是否大于或等于分母最高幂次？如果是，你在拆分前做长除法提取了吗？"
         },
         {
           id: "m-13",
           number: 13,
-          title: "线性化规律 (Linear Law: Y = mX + c)",
-          plainEnglish: "在工程和科学实验中，现实数据通常是弯曲的曲线（如人口指数爆炸 y = ab^x）。弯曲的线难以读数，Linear Law 就是用对数把曲线“强行拉成一条笔直的直线”方便读取斜率与截距。",
+          title: "直线解析几何 (Coordinate Geometry of Straight Lines)",
+          plainEnglish: "在 (x, y) 笛卡尔坐标平面上，运用代数斜率与直线方程求解几何特性与垂直相交关系。",
           routines: [
             {
-              name: "幂函数转化 (y = ax^b)",
-              desc: "两边同时取常用对数 lg：lg y = b(lg x) + lg a。\n对应大 Y = lg y，大 X = lg x，斜率 m = b，纵截距 c = lg a ⇒ 常数 a = 10^c。"
+              name: "平行与垂直斜率判定",
+              desc: "平行：m₁ = m₂。垂直：m₁ · m₂ = -1 ⇒ m₂ = -1/m₁（倒数并取相反数！如 m₁ = 2/3 ⇒ m₂ = -3/2）。"
             },
             {
-              name: "指数函数转化 (y = ab^x)",
-              desc: "两边同时取常用对数 lg：lg y = (lg b)x + lg a。\n对应大 Y = lg y，大 X = x，斜率 m = lg b ⇒ b = 10^m，纵截距 c = lg a ⇒ a = 10^c。"
+              name: "垂直平分线3步套路",
+              desc: "1. 求中点 M = ((x₁+x₂)/2, (y₁+y₂)/2)；2. 求斜率 m_AB 并反转取反得 m_perp = -1/m_AB；3. 用点斜式 y - y_M = m_perp(x - x_M) 写出方程。"
             }
           ],
           traps: [
-            "还原常数时功亏一篑：求出纵轴截距 c 之后，直接以为 a = c。必须用 10 的幂次方还原：a = 10^c！"
+            "带负号坐标算斜率时符号算错：(y₂ - y₁) / (x₂ - x₁)。",
+            "算垂直斜率时只取相反数忘记取倒数（写成 -2/3 而不是 -3/2）。"
           ],
-          spotCheckQuestion: "当你从直线上读出纵截距 c 之后，你还记得 c 只是 lg a 吗？你有没有做 10^c 还原真正的常数 a？"
+          spotCheckQuestion: "若一条直线的斜率是 -1/4，与它垂直的直线斜率是多少？（正确答案：+4，反转并变正）"
         }
       ]
     }
   ],
   auditProtocol: {
-    title: "每日10分钟数学高效抽查流程（给家长与考生的对话指引）",
+    title: "每日 10 分钟数学口头抽查审计流程",
     steps: [
-      { step: 1, text: "“从13个专题中任选2个。”（严格遵循地图：先查第1考区，再查第2考区，最后第3考区）" },
-      { step: 2, text: "“拿出你第1至第3学期考卷或作业中做错的2道题。”" },
-      { step: 3, text: "“大声向我解释：为什么这道题的第一步要这么做？”\n• 如果孩子回答：“我不知道，我就是照搬公式”，那么考试遇到变式必定翻车。\n• 如果孩子清晰解释：“因为题目写了垂直平分线，所以我必须第一步先找中点”，这个考点就已经彻底刻入脑海！" }
+      { step: 1, text: "从 13 个专题中随机挑选 2 个（按考区重要性排序：先复习第1考区，再第2考区，最后第3考区）。" },
+      { step: 2, text: "拿出前几个学期错题本或测验试卷中，曾做错的 2 道对应经典题。" },
+      { step: 3, text: "让他大声口述为什么解题第一步要这么做（如果回答“我也不知道，照抄公式而已” ⇒ 考试稍加变形必错；若能解释“因为题目说了垂直平分线，所以我必须先找中点和负倒数斜率” ⇒ 说明考点已真正融会贯通！）。" }
     ]
   }
 };
