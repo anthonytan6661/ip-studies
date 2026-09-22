@@ -82,8 +82,17 @@
       border: 1px solid var(--border-color);
       border-radius: 20px;
       padding: 28px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .header-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
     }
 
     .badge {
@@ -98,7 +107,20 @@
       color: var(--accent-chem);
       padding: 4px 12px;
       border-radius: 999px;
-      margin-bottom: 12px;
+    }
+
+    .progress-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 750;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(4, 120, 87, 0.12);
+      color: var(--accent-success);
+      border: 1px solid rgba(4, 120, 87, 0.3);
     }
 
     h1 {
@@ -125,7 +147,7 @@
     .controls {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
       align-items: center;
       padding-top: 16px;
       border-top: 1px solid var(--border-color);
@@ -150,11 +172,34 @@
       border-radius: 8px;
       cursor: pointer;
       transition: all 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
     }
 
     .btn-control.active, .btn-control:hover {
       background: var(--bg-card);
       box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+    }
+
+    .btn-action {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 6px 13px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+
+    .btn-action:hover {
+      background: var(--bg-card);
+      border-color: var(--border-highlight);
     }
 
     .btn-print {
@@ -170,35 +215,36 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      box-shadow: 0 2px 6px rgba(29, 78, 216, 0.25);
     }
 
     /* Quick Jump Navigation */
     .nav-bar {
       position: sticky;
-      top: 12px;
+      top: 10px;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
       border: 1px solid var(--border-color);
       border-radius: 16px;
-      padding: 10px 14px;
-      margin-bottom: 24px;
+      padding: 8px 12px;
+      margin-bottom: 12px;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 6px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
 
     body.theme-dark .nav-bar {
-      background: rgba(17, 26, 46, 0.92);
+      background: rgba(17, 26, 46, 0.94);
     }
 
     .nav-pill {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 700;
       text-decoration: none;
       color: var(--text-muted);
-      padding: 6px 12px;
+      padding: 5px 10px;
       border-radius: 8px;
       transition: all 0.15s;
     }
@@ -208,11 +254,80 @@
       color: var(--text-main);
     }
 
-    .nav-pill.math {
-      color: var(--accent-math);
+    .nav-pill.math { color: var(--accent-math); }
+    .nav-pill.chem { color: var(--accent-chem); }
+
+    /* Sticky Search & Filter Bar */
+    .search-container {
+      position: sticky;
+      top: 66px;
+      z-index: 95;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 8px 14px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
     }
-    .nav-pill.chem {
-      color: var(--accent-chem);
+
+    body.theme-dark .search-container {
+      background: rgba(17, 26, 46, 0.96);
+    }
+
+    .search-input-wrapper {
+      flex: 1;
+      min-width: 240px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 6px 12px;
+    }
+
+    .search-icon {
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      color: var(--text-main);
+      font-size: 0.88rem;
+      font-family: inherit;
+      outline: none;
+    }
+
+    .search-clear-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    .search-clear-btn:hover {
+      color: var(--accent-trap);
+    }
+
+    .search-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      font-family: ui-monospace, monospace;
+      color: var(--text-muted);
+      font-weight: 700;
     }
 
     /* Section Headers */
@@ -220,13 +335,13 @@
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: 16px;
-      padding: 20px 24px;
-      margin: 32px 0 16px 0;
+      padding: 18px 22px;
+      margin: 28px 0 14px 0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
 
     .section-header h2 {
-      font-size: 1.45rem;
+      font-size: 1.35rem;
       font-weight: 800;
       display: flex;
       align-items: center;
@@ -239,30 +354,30 @@
     .zone-banner {
       background: var(--bg-card-subtle);
       border-left: 4px solid var(--accent-math);
-      padding: 14px 18px;
+      padding: 12px 16px;
       border-radius: 0 12px 12px 0;
-      margin: 24px 0 16px 0;
+      margin: 20px 0 14px 0;
     }
 
     .zone-banner h3 {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--accent-math);
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .zone-banner p {
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
     }
 
-    /* Cards */
+    /* Topic Cards */
     .topic-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: 16px;
-      padding: 22px;
-      margin-bottom: 20px;
+      padding: 20px;
+      margin-bottom: 18px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.03);
       transition: border-color 0.2s, box-shadow 0.2s;
     }
@@ -272,42 +387,158 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
 
-    .card-title {
-      font-size: 1.15rem;
-      font-weight: 750;
+    .card-header {
       display: flex;
-      align-items: baseline;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
       gap: 10px;
-      margin-bottom: 12px;
-      padding-bottom: 10px;
+      padding-bottom: 12px;
       border-bottom: 1px solid var(--border-color);
+      margin-bottom: 14px;
+    }
+
+    .card-title-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
     }
 
     .topic-badge {
       display: inline-block;
       background: var(--accent-math);
       color: #fff;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       font-weight: 800;
-      padding: 2px 8px;
+      padding: 3px 8px;
       border-radius: 6px;
+      letter-spacing: 0.02em;
     }
 
     .topic-badge.chem {
       background: var(--accent-chem);
     }
 
+    .chapter-chip {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.72rem;
+      font-weight: 750;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      padding: 2px 7px;
+      border-radius: 6px;
+    }
+
+    body.theme-dark .chapter-chip {
+      background: rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+    }
+
+    .card-title-text {
+      font-size: 1.12rem;
+      font-weight: 750;
+      color: var(--text-main);
+    }
+
+    .card-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Mastery Status Button */
+    .status-btn {
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s;
+      background: var(--bg-card-subtle);
+      color: var(--text-muted);
+      user-select: none;
+    }
+
+    .status-btn.status-review {
+      background: var(--bg-card-subtle);
+      color: var(--text-muted);
+      border-color: var(--border-color);
+    }
+
+    .status-btn.status-progress {
+      background: rgba(245, 158, 11, 0.14);
+      color: #b45309;
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+
+    body.theme-dark .status-btn.status-progress {
+      color: #fbbf24;
+    }
+
+    .status-btn.status-mastered {
+      background: rgba(16, 185, 129, 0.15);
+      color: #047857;
+      border-color: rgba(16, 185, 129, 0.4);
+      font-weight: 800;
+    }
+
+    body.theme-dark .status-btn.status-mastered {
+      color: #34d399;
+    }
+
+    .card-collapse-btn {
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+    }
+
+    .card-collapse-btn:hover {
+      background: var(--bg-card);
+      color: var(--text-main);
+    }
+
+    /* Collapsible Sections */
+    .card-detail-body {
+      transition: opacity 0.2s;
+    }
+
+    .topic-card.collapsed .card-detail-body {
+      display: none;
+    }
+
+    .topic-card.collapsed .card-collapse-btn {
+      transform: rotate(-90deg);
+    }
+
     /* Content Blocks */
     .block {
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .block-label {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -321,23 +552,23 @@
     .trap-box {
       background: rgba(190, 18, 60, 0.07);
       border-left: 4px solid var(--accent-trap);
-      padding: 12px 16px;
+      padding: 12px 15px;
       border-radius: 0 10px 10px 0;
       margin: 10px 0;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
     }
 
     .check-box {
       background: rgba(4, 120, 87, 0.07);
       border-left: 4px solid var(--accent-success);
-      padding: 12px 16px;
+      padding: 12px 15px;
       border-radius: 0 10px 10px 0;
       margin: 10px 0;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
     }
 
     ul, ol {
-      padding-left: 22px;
+      padding-left: 20px;
       margin: 6px 0;
     }
 
@@ -348,7 +579,7 @@
     /* Tables */
     .table-container {
       overflow-x: auto;
-      margin: 16px 0;
+      margin: 14px 0;
       border-radius: 12px;
       border: 1px solid var(--border-color);
     }
@@ -356,19 +587,19 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       text-align: left;
     }
 
     th {
       background: var(--bg-card-subtle);
       font-weight: 700;
-      padding: 12px 16px;
+      padding: 11px 14px;
       border-bottom: 1px solid var(--border-color);
     }
 
     td {
-      padding: 12px 16px;
+      padding: 11px 14px;
       border-bottom: 1px solid var(--border-color);
       vertical-align: top;
     }
@@ -377,9 +608,29 @@
       border-bottom: none;
     }
 
+    .no-results-box {
+      background: var(--bg-card);
+      border: 1px dashed var(--border-color);
+      border-radius: 14px;
+      padding: 32px;
+      text-align: center;
+      margin: 20px 0;
+      display: none;
+    }
+
+    .no-results-box h4 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .no-results-box p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
     /* KaTeX equation display spacing */
     .katex-display {
-      margin: 0.6em 0 !important;
+      margin: 0.5em 0 !important;
       overflow-x: auto;
       overflow-y: hidden;
     }
@@ -389,16 +640,27 @@
       body {
         background: #fff !important;
         color: #000 !important;
-        font-size: 11pt !important;
+        font-size: 10.5pt !important;
       }
-      .controls, .nav-bar, .btn-print {
+      .controls, .nav-bar, .search-container, .btn-print, .status-btn, .card-collapse-btn, #toggle-all-btn {
         display: none !important;
       }
-      .topic-card, .section-header {
+      .card-detail-body, .card-trap-body {
+        display: block !important;
+      }
+      .topic-card, .section-header, .zone-banner {
         border: 1px solid #ccc !important;
         box-shadow: none !important;
-        break-inside: avoid;
-        page-break-inside: avoid;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        margin-bottom: 16px !important;
+      }
+      .table-container, table {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+      .katex-display {
+        break-inside: avoid !important;
       }
     }
   </style>
@@ -408,7 +670,13 @@
   <div class="container">
     <!-- Header -->
     <header>
-      <div class="badge">River Valley High School (RVHS) • Sec 3 IP Syllabus</div>
+      <div class="header-top">
+        <div class="badge">River Valley High School (RVHS) • Sec 3 IP Syllabus</div>
+        <div class="progress-pill" id="header-progress">
+          <span>🎯</span> <span id="mastery-summary">Progress: 0/17 Mastered</span>
+        </div>
+      </div>
+
       <h1>Parent Fast-Track Master Guide</h1>
       <div class="subtitle">Integrated Mathematics (13 Topics) & Pure Chemistry (4 Pillars)</div>
       <p class="lead-text">
@@ -418,8 +686,8 @@
       <div class="controls">
         <div class="btn-group" title="Adjust Font Size">
           <button class="btn-control" onclick="setFontScale(15)">A-</button>
-          <button class="btn-control active" onclick="setFontScale(16.5)">Standard</button>
-          <button class="btn-control" onclick="setFontScale(18.5)">Large A+</button>
+          <button class="btn-control active" onclick="setFontScale(16)">Standard</button>
+          <button class="btn-control" onclick="setFontScale(18)">Large A+</button>
         </div>
 
         <div class="btn-group" title="Select Theme">
@@ -427,6 +695,10 @@
           <button class="btn-control" onclick="setTheme('white')">Clean White</button>
           <button class="btn-control" onclick="setTheme('dark')">Night Dark</button>
         </div>
+
+        <button id="toggle-all-btn" class="btn-action" onclick="toggleAllCards()">
+          <span id="toggle-all-icon">↕️</span> <span id="toggle-all-text">Collapse Details</span>
+        </button>
 
         <button class="btn-print" onclick="window.print()">
           🖨️ Print / Save PDF
@@ -446,427 +718,594 @@
       <a href="#evening-protocol" class="nav-pill">5-Min Protocol</a>
     </nav>
 
+    <!-- Search / Filter Bar -->
+    <div class="search-container" id="search-bar">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="topic-search" 
+          class="search-input" 
+          placeholder="Filter topics, methods, or traps (e.g., Radian, Discriminant, SPA, Titration, Modulus)..."
+          autocomplete="off"
+        >
+        <button id="search-clear-btn" class="search-clear-btn" onclick="clearSearch()" style="display:none;" title="Clear search">✕</button>
+      </div>
+      <div class="search-meta">
+        <span id="search-counter">Showing 17 / 17 topics</span>
+      </div>
+    </div>
+
+    <!-- No results notice -->
+    <div id="no-results" class="no-results-box">
+      <h4>🔍 No topics found</h4>
+      <p>No syllabus topics match your keyword. <button class="btn-action" onclick="clearSearch()" style="padding:2px 8px; font-size:0.75rem; margin-left:4px;">Clear Search</button></p>
+    </div>
+
     <!-- PART 1: INTEGRATED MATHEMATICS -->
     <div class="section-header math" id="math-section">
       <h2>📐 Part 1: Integrated Mathematics (13 Topics across 3 Exam Zones)</h2>
-      <p style="font-size:0.9rem; color:var(--text-muted); margin-top:4px;">
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-top:4px;">
         Focus: Algebra, Trigonometry, and Coordinate Geometry. (Vectors and Calculus are excluded).
       </p>
     </div>
 
     <!-- ZONE 1 -->
-    <div class="zone-banner" id="zone-1">
+    <div class="zone-banner" id="zone-1" data-zone="zone-1">
       <h3>Zone 1: Core Algebra & Functions (Topics 1 – 5)</h3>
       <p>Exam Weight: ~40%. The foundational algebraic engine; mastering Zone 1 secures passing marks and eliminates costly mechanical slips.</p>
     </div>
 
     <!-- Topic 1 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 1</span>
-        Quadratic Equations, Graphs & Completing the Square
+    <div class="topic-card" id="card-m-1" data-zone="zone-1">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 1</span>
+          <span class="chapter-chip">RV Ch 1</span>
+          <span class="card-title-text">Quadratic Equations, Graphs & Completing the Square</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-1')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-1')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>A quadratic equation sketches a symmetrical parabola (a U-shaped valley or hill). The primary skills are identifying the exact turning point (vertex), the axis of symmetry, and where the curve cuts the axes without guessing.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>A quadratic equation sketches a symmetrical parabola (a U-shaped valley or hill). The primary skills are identifying the exact turning point (vertex), the axis of symmetry, and where the curve cuts the axes without guessing.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Standard Method (Completing the Square)</div>
+          <ul>
+            <li>Transform $y = ax^2 + bx + c$ into vertex form: $y = a(x - h)^2 + k$.</li>
+            <li>Since $(x - h)^2 \ge 0$ for all real numbers:
+              <ul>
+                <li>If $a > 0$, the curve has a <strong>minimum value</strong> $k$ at $x = h$. Vertex is at $(h, k)$.</li>
+                <li>If $a < 0$, the curve has a <strong>maximum value</strong> $k$ at $x = h$. Vertex is at $(h, k)$.</li>
+              </ul>
+            </li>
+            <li>The vertical axis of symmetry is always $x = h$.</li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Standard Method (Completing the Square)</div>
-        <ul>
-          <li>Transform $y = ax^2 + bx + c$ into vertex form: $y = a(x - h)^2 + k$.</li>
-          <li>Since $(x - h)^2 \ge 0$ for all real numbers:
-            <ul>
-              <li>If $a > 0$, the curve has a <strong>minimum value</strong> $k$ at $x = h$. Vertex is at $(h, k)$.</li>
-              <li>If $a < 0$, the curve has a <strong>maximum value</strong> $k$ at $x = h$. Vertex is at $(h, k)$.</li>
-            </ul>
-          </li>
-          <li>The vertical axis of symmetry is always $x = h$.</li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Common Trap:</strong> Failing to flip the sign inside the bracket. For $y = 3(x - 4)^2 + 7$, the turning point is at $x = +4$, not $-4$. For $y = -(x + 2)^2 - 5$, the turning point is at $(-2, -5)$.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"When you completed the square, what are the coordinates of the turning point, and did you reverse the sign inside the bracket?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Common Trap:</strong> Failing to flip the sign inside the bracket. For $y = 3(x - 4)^2 + 7$, the turning point is at $x = +4$, not $-4$. For $y = -(x + 2)^2 - 5$, the turning point is at $(-2, -5)$.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"When you completed the square, what are the coordinates of the turning point, and did you reverse the sign inside the bracket?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 2 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 2</span>
-        Linear & Quadratic Inequalities and Simultaneous Equations
+    <div class="topic-card" id="card-m-2" data-zone="zone-1">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 2</span>
+          <span class="chapter-chip">RV Ch 2.1 & 2.3</span>
+          <span class="card-title-text">Linear & Quadratic Inequalities and Simultaneous Equations</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-2')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-2')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p><strong>Inequalities:</strong> Determining over what range of $x$ a curve sits strictly above the horizontal axis ($> 0$) or below it ($< 0$).<br>
-        <strong>Simultaneous Equations:</strong> Finding the exact $(x, y)$ coordinate points where a straight line and a curved quadratic intersect.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p><strong>Inequalities:</strong> Determining over what range of $x$ a curve sits strictly above the horizontal axis ($> 0$) or below it ($< 0$).<br>
+          <strong>Simultaneous Equations:</strong> Finding the exact $(x, y)$ coordinate points where a straight line and a curved quadratic intersect.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Standard Methods</div>
+          <ul>
+            <li><strong>Quadratic Inequalities (Parabola Protocol):</strong>
+              <ol>
+                <li>Rearrange all terms to the left so zero is on the right: $(x - \alpha)(x - \beta) < 0$ or $> 0$ (ensure $x^2$ coefficient is positive).</li>
+                <li>Sketch a quick U-shaped parabola with roots $\alpha$ and $\beta$ ($\alpha < \beta$) on the horizontal axis.</li>
+                <li>If $< 0$, select the bounded "sandwich" interval: $\alpha < x < \beta$.</li>
+                <li>If $> 0$, select the two separate outer "wings": $x < \alpha \text{ or } x > \beta$.</li>
+              </ol>
+            </li>
+            <li><strong>Simultaneous Equations (Substitution Protocol):</strong>
+              <ol>
+                <li>Express one variable from the linear equation: $y = mx + c$.</li>
+                <li>Substitute into the quadratic equation to eliminate $y$, yielding $Ax^2 + Bx + C = 0$.</li>
+                <li>Solve for two values of $x$.</li>
+                <li>Substitute each $x$ back into the linear equation to obtain both corresponding $y$ coordinates.</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Standard Methods</div>
-        <ul>
-          <li><strong>Quadratic Inequalities (Parabola Protocol):</strong>
-            <ol>
-              <li>Rearrange all terms to the left so zero is on the right: $(x - \alpha)(x - \beta) < 0$ or $> 0$ (ensure $x^2$ coefficient is positive).</li>
-              <li>Sketch a quick U-shaped parabola with roots $\alpha$ and $\beta$ ($\alpha < \beta$) on the horizontal axis.</li>
-              <li>If $< 0$, select the bounded "sandwich" interval: $\alpha < x < \beta$.</li>
-              <li>If $> 0$, select the two separate outer "wings": $x < \alpha \text{ or } x > \beta$.</li>
-            </ol>
-          </li>
-          <li><strong>Simultaneous Equations (Substitution Protocol):</strong>
-            <ol>
-              <li>Express one variable from the linear equation: $y = mx + c$.</li>
-              <li>Substitute into the quadratic equation to eliminate $y$, yielding $Ax^2 + Bx + C = 0$.</li>
-              <li>Solve for two values of $x$.</li>
-              <li>Substitute each $x$ back into the linear equation to obtain both corresponding $y$ coordinates.</li>
-            </ol>
-          </li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Common Traps:</strong><br>
-        • Splitting $(x - 2)(x - 5) < 0$ into $x < 2$ and $x < 5$ without sketching a parabola or sign chart (mathematically invalid; loses all method marks).<br>
-        • Stopping after finding $x$ values and forgetting to calculate the matching $y$ coordinates.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you sketch the parabola to see whether the solution sits between the two roots or outside them, and did you calculate both pairs of $(x, y)$?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Common Traps:</strong><br>
+          • Splitting $(x - 2)(x - 5) < 0$ into $x < 2$ and $x < 5$ without sketching a parabola or sign chart (mathematically invalid; loses all method marks).<br>
+          • Stopping after finding $x$ values and forgetting to calculate the matching $y$ coordinates.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you sketch the parabola to see whether the solution sits between the two roots or outside them, and did you calculate both pairs of $(x, y)$?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 3 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 3</span>
-        Nature of Roots of a Quadratic Equation (The Discriminant)
+    <div class="topic-card" id="card-m-3" data-zone="zone-1">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 3</span>
+          <span class="chapter-chip">RV Ch 2.2</span>
+          <span class="card-title-text">Nature of Roots of a Quadratic Equation (The Discriminant)</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-3')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-3')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Determining whether a line and a curve touch (tangent), cross twice, or never meet at all—purely using algebra without graphing.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Determining whether a line and a curve touch (tangent), cross twice, or never meet at all—purely using algebra without graphing.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Standard Method</div>
+          <p>For $ax^2 + bx + c = 0$, compute the Discriminant $D = b^2 - 4ac$:</p>
+          <ul>
+            <li><strong>$b^2 - 4ac > 0$:</strong> Two real and distinct roots (line cuts curve at 2 distinct points).</li>
+            <li><strong>$b^2 - 4ac = 0$:</strong> Two real and equal roots (line is tangent; touches at exactly 1 point).</li>
+            <li><strong>$b^2 - 4ac < 0$:</strong> No real roots (line and curve never intersect).</li>
+            <li><strong>$b^2 - 4ac \ge 0$:</strong> Real roots exist (distinct or coincident).</li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Standard Method</div>
-        <p>For $ax^2 + bx + c = 0$, compute the Discriminant $D = b^2 - 4ac$:</p>
-        <ul>
-          <li><strong>$b^2 - 4ac > 0$:</strong> Two real and distinct roots (line cuts curve at 2 distinct points).</li>
-          <li><strong>$b^2 - 4ac = 0$:</strong> Two real and equal roots (line is tangent; touches at exactly 1 point).</li>
-          <li><strong>$b^2 - 4ac < 0$:</strong> No real roots (line and curve never intersect).</li>
-          <li><strong>$b^2 - 4ac \ge 0$:</strong> Real roots exist (distinct or coincident).</li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ The #1 RVHS Quadratic Trap:</strong> When a problem states <em>"the curve lies entirely above the horizontal axis"</em> (or <em>"is always positive"</em>), students reflexively write $b^2 - 4ac > 0$. The correct condition is <strong>$b^2 - 4ac < 0$</strong> (it never touches or cuts the axis) combined with <strong>$a > 0$</strong> (a smiling parabola).
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"If the problem states the line is a tangent to the curve, what should your discriminant equal? And if a curve lies entirely above the axis, why is $b^2 - 4ac < 0$?"</em> (Answers: $b^2 - 4ac = 0$; because it never intersects the horizontal axis).
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ The #1 RVHS Quadratic Trap:</strong> When a problem states <em>"the curve lies entirely above the horizontal axis"</em> (or <em>"is always positive"</em>), students reflexively write $b^2 - 4ac > 0$. The correct condition is <strong>$b^2 - 4ac < 0$</strong> (it never touches or cuts the axis) combined with <strong>$a > 0$</strong> (a smiling parabola).
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"If the problem states the line is a tangent to the curve, what should your discriminant equal? And if a curve lies entirely above the axis, why is $b^2 - 4ac < 0$?"</em> (Answers: $b^2 - 4ac = 0$; because it never intersects the horizontal axis).
+        </div>
       </div>
     </div>
 
     <!-- Topic 4 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 4</span>
-        Exponential & Logarithmic Functions
+    <div class="topic-card" id="card-m-4" data-zone="zone-1">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 4</span>
+          <span class="chapter-chip">RV Ch 4</span>
+          <span class="card-title-text">Exponential & Logarithmic Functions</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-4')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-4')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>A logarithm answers the question: <em>"To what power must base $b$ be raised to produce this number?"</em> ($\log_{10} 100 = 2$ because $10^2 = 100$).</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>A logarithm answers the question: <em>"To what power must base $b$ be raised to produce this number?"</em> ($\log_{10} 100 = 2$ because $10^2 = 100$).</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Standard Methods</div>
+          <ul>
+            <li><strong>Change of Base Formula:</strong> $\log_b a = \frac{\lg a}{\lg b} = \frac{\ln a}{\ln b}$ (essential for evaluating non-standard bases on calculators).</li>
+            <li><strong>Power Drop Law:</strong> $\log_a (x^k) = k \log_a x$ (pulls exponents down to ground level so they can be solved linearly).</li>
+            <li><strong>Product & Quotient Laws:</strong> $\log_a (xy) = \log_a x + \log_a y$; $\log_a (x/y) = \log_a x - \log_a y$.</li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Standard Methods</div>
-        <ul>
-          <li><strong>Change of Base Formula:</strong> $\log_b a = \frac{\lg a}{\lg b} = \frac{\ln a}{\ln b}$ (essential for evaluating non-standard bases on calculators).</li>
-          <li><strong>Power Drop Law:</strong> $\log_a (x^k) = k \log_a x$ (pulls exponents down to ground level to be solved linearly).</li>
-          <li><strong>Product & Quotient Laws:</strong> $\log_a (xy) = \log_a x + \log_a y$; $\log_a (x/y) = \log_a x - \log_a y$.</li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Illegal Argument Trap:</strong> Taking the logarithm of zero or a negative value is strictly undefined. When solving quadratic equations involving logarithms, any solution that produces $\le 0$ inside any $\log(\dots)$ bracket <strong>must be rejected</strong> with explicit notation (<em>"reject $x = \dots$"</em>). Forgetting to reject costs 1–2 marks every time.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you check your final answers back in the original logarithmic terms to discard and write 'reject' for any non-positive arguments?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Illegal Argument Trap:</strong> Taking the logarithm of zero or a negative value is strictly undefined. When solving quadratic equations involving logarithms, any solution that produces $\le 0$ inside any $\log(\dots)$ bracket <strong>must be rejected</strong> with explicit notation (<em>"reject $x = \dots$"</em>). Forgetting to reject costs 1–2 marks every time.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you check your final answers back in the original logarithmic terms to discard and write 'reject' for any non-positive arguments?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 5 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 5</span>
-        Functions, Graphs & Modulus Functions
+    <div class="topic-card" id="card-m-5" data-zone="zone-1">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 5</span>
+          <span class="chapter-chip">RV Ch 5</span>
+          <span class="card-title-text">Functions, Graphs & Modulus Functions</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-5')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-5')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Functions are mathematical mapping machines where each valid input ($x$, domain) produces a unique output ($y$, range). The modulus function $|f(x)|$ measures absolute distance from zero, reflecting all negative outputs into positive values.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Functions are mathematical mapping machines where each valid input ($x$, domain) produces a unique output ($y$, range). The modulus function $|f(x)|$ measures absolute distance from zero, reflecting all negative outputs into positive values.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Standard Methods</div>
+          <ul>
+            <li><strong>Modulus Graph Sketching ($y = |f(x)|$):</strong>
+              <ol>
+                <li>Lightly sketch $y = f(x)$.</li>
+                <li>Keep all portions on or above the horizontal axis ($y \ge 0$) untouched.</li>
+                <li>Reflect all portions below the horizontal axis ($y < 0$) vertically upward across the $x$-axis.</li>
+                <li>Clearly label the vertex, $x$-intercepts, and $y$-intercept.</li>
+              </ol>
+            </li>
+            <li><strong>Modulus Equations ($|f(x)| = g(x)$):</strong> Solve $f(x) = g(x)$ or $f(x) = -g(x)$, then test each solution against $g(x) \ge 0$ to eliminate extraneous roots.</li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Standard Methods</div>
-        <ul>
-          <li><strong>Modulus Graph Sketching ($y = |f(x)|$):</strong>
-            <ol>
-              <li>Lightly sketch $y = f(x)$.</li>
-              <li>Keep all portions on or above the horizontal axis ($y \ge 0$) untouched.</li>
-              <li>Reflect all portions below the horizontal axis ($y < 0$) vertically upward across the $x$-axis.</li>
-              <li>Clearly label the vertex, $x$-intercepts, and $y$-intercept.</li>
-            </ol>
-          </li>
-          <li><strong>Modulus Equations ($|f(x)| = g(x)$):</strong> Solve $f(x) = g(x)$ or $f(x) = -g(x)$, then test each solution against $g(x) \ge 0$ to eliminate extraneous roots.</li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Common Trap:</strong> Leaving portions of a modulus curve below the horizontal axis. A modulus output can never be negative ($|f(x)| \ge 0$).
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Are any parts of your modulus curve below the horizontal axis? If so, they must be reflected upward."</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Common Trap:</strong> Leaving portions of a modulus curve below the horizontal axis. A modulus output can never be negative ($|f(x)| \ge 0$).
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Are any parts of your modulus curve below the horizontal axis? If so, they must be reflected upward."</em>
+        </div>
       </div>
     </div>
 
     <!-- ZONE 2 -->
-    <div class="zone-banner" id="zone-2">
+    <div class="zone-banner" id="zone-2" data-zone="zone-2">
       <h3>Zone 2: Trigonometry, Circular Measure & 3D Bearings (Topics 6 – 10)</h3>
       <p>Exam Weight: ~35%. Method-heavy and procedural; easy full marks with correct protocols and calculator modes.</p>
     </div>
 
     <!-- Topic 6 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 6</span>
-        Trigonometric Ratios, Triangle Rules & 3D Bearings
+    <div class="topic-card" id="card-m-6" data-zone="zone-2">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 6</span>
+          <span class="chapter-chip">RV Ch 6.1 & 6.2</span>
+          <span class="card-title-text">Trigonometric Ratios, Triangle Rules & 3D Bearings</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-6')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-6')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Solving side lengths, angles, compass directions, and 3D structural frameworks in general triangles that do not contain a right angle.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Solving side lengths, angles, compass directions, and 3D structural frameworks in general triangles that do not contain a right angle.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Core Formulas & Rules</div>
+          <ol>
+            <li><strong>Area of a Triangle:</strong> $\text{Area} = \frac{1}{2}ab\sin C$ (angle $C$ must be the included angle directly sandwiched between sides $a$ and $b$).</li>
+            <li><strong>Sine Rule:</strong> $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$ (for opposing pairs of sides and angles).</li>
+            <li><strong>Cosine Rule:</strong> $c^2 = a^2 + b^2 - 2ab\cos C \iff \cos C = \frac{a^2 + b^2 - c^2}{2ab}$ (for 3 sides, or 2 sides and included angle).</li>
+            <li><strong>Obtuse Angles:</strong> $\sin(180^\circ - \theta) = \sin\theta$; $\cos(180^\circ - \theta) = -\cos\theta$.</li>
+            <li><strong>Bearings:</strong> Always measured clockwise from North ($000^\circ$) using three digits (e.g., $065^\circ, 240^\circ$).</li>
+            <li><strong>Elevation & Depression:</strong> Always measured relative to the horizontal sightline, never from a vertical wall or pole.</li>
+          </ol>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Core Formulas & Rules</div>
-        <ol>
-          <li><strong>Area of a Triangle:</strong> $\text{Area} = \frac{1}{2}ab\sin C$ (angle $C$ must be the included angle directly sandwiched between sides $a$ and $b$).</li>
-          <li><strong>Sine Rule:</strong> $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$ (for opposing pairs of sides and angles).</li>
-          <li><strong>Cosine Rule:</strong> $c^2 = a^2 + b^2 - 2ab\cos C \iff \cos C = \frac{a^2 + b^2 - c^2}{2ab}$ (for 3 sides, or 2 sides and included angle).</li>
-          <li><strong>Obtuse Angles:</strong> $\sin(180^\circ - \theta) = \sin\theta$; $\cos(180^\circ - \theta) = -\cos\theta$.</li>
-          <li><strong>Bearings:</strong> Always measured clockwise from North ($000^\circ$) using three digits (e.g., $065^\circ, 240^\circ$).</li>
-          <li><strong>Elevation & Depression:</strong> Always measured relative to the horizontal sightline, never from a vertical wall or pole.</li>
-        </ol>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Ambiguous Case Trap:</strong> When solving for an angle opposite a given side, an obtuse angle ($180^\circ - \theta$) may also be a valid solution if the sum of angles does not exceed $180^\circ$.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Is the angle used in your $\frac{1}{2}ab\sin C$ calculation directly between the two chosen sides, and did you record your bearing clockwise from North in three digits?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Ambiguous Case Trap:</strong> When solving for an angle opposite a given side, an obtuse angle ($180^\circ - \theta$) may also be a valid solution if the sum of angles does not exceed $180^\circ$.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Is the angle used in your $\frac{1}{2}ab\sin C$ calculation directly between the two chosen sides, and did you record your bearing clockwise from North in three digits?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 7 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 7</span>
-        Arc Length, Sector Area & Radian Measure (Circular Measure)
+    <div class="topic-card" id="card-m-7" data-zone="zone-2">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 7</span>
+          <span class="chapter-chip">RV Ch 7</span>
+          <span class="card-title-text">Arc Length, Sector Area & Radian Measure (Circular Measure)</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-7')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-7')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Measuring angles using radians rather than arbitrary degrees ($\pi \text{ rad} = 180^\circ$). Radians define angle as arc length divided by radius, simplifying circular geometric formulas.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Measuring angles using radians rather than arbitrary degrees ($\pi \text{ rad} = 180^\circ$). Radians define angle as arc length divided by radius, simplifying circular geometric formulas.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The 3 Core Formulas</div>
+          <ol>
+            <li><strong>Arc Length:</strong> $s = r\theta$ ($\theta$ in radians).</li>
+            <li><strong>Sector Area:</strong> $A = \frac{1}{2}r^2\theta$ ($\theta$ in radians).</li>
+            <li><strong>Segment Area:</strong> $\text{Sector Area} - \text{Triangle Area} = \frac{1}{2}r^2(\theta - \sin\theta)$.</li>
+          </ol>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The 3 Core Formulas</div>
-        <ol>
-          <li><strong>Arc Length:</strong> $s = r\theta$ ($\theta$ in radians).</li>
-          <li><strong>Sector Area:</strong> $A = \frac{1}{2}r^2\theta$ ($\theta$ in radians).</li>
-          <li><strong>Segment Area:</strong> $\text{Sector Area} - \text{Triangle Area} = \frac{1}{2}r^2(\theta - \sin\theta)$.</li>
-        </ol>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ #1 Source of Lost Marks in RVHS:</strong> Leaving the scientific calculator in <strong>Degree (DEG)</strong> mode instead of <strong>Radian (RAD)</strong> mode. Every circular trig calculation ($\sin\theta, \cos\theta$) becomes mathematically invalid, costing 4–6 marks instantly.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Look at your calculator screen right now. Does it show a tiny 'R' for Radian mode, or a 'D' for Degree mode?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ #1 Source of Lost Marks in RVHS:</strong> Leaving the scientific calculator in <strong>Degree (DEG)</strong> mode instead of <strong>Radian (RAD)</strong> mode. Every circular trig calculation ($\sin\theta, \cos\theta$) becomes mathematically invalid, costing 4–6 marks instantly.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Look at your calculator screen right now. Does it show a tiny 'R' for Radian mode, or a 'D' for Degree mode?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 8 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 8</span>
-        Trigonometric Functions & Periodic Graphs
+    <div class="topic-card" id="card-m-8" data-zone="zone-2">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 8</span>
+          <span class="chapter-chip">RV Ch 8</span>
+          <span class="card-title-text">Trigonometric Functions & Periodic Graphs</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-8')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-8')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Plotting repeating periodic wave equations: $y = a\sin(bx) + c$, $y = a\cos(bx) + c$, or $y = a\tan(bx)$.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Plotting repeating periodic wave equations: $y = a\sin(bx) + c$, $y = a\cos(bx) + c$, or $y = a\tan(bx)$.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The 3 Wave Parameters</div>
+          <ul>
+            <li><strong>Amplitude ($|a|$):</strong> Height from the central midline to the crest (half total peak-to-trough distance). Note: $\tan x$ has no amplitude.</li>
+            <li><strong>Period ($\frac{360^\circ}{b}$ or $\frac{2\pi}{b}$):</strong> Horizontal distance required to complete one full cycle. (For $\tan(bx)$, period is $\frac{180^\circ}{b}$ or $\frac{\pi}{b}$).</li>
+            <li><strong>Midline ($c$):</strong> Vertical translation of central baseline. Maximum value $= c + |a|$; Minimum value $= c - |a|$.</li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The 3 Wave Parameters</div>
-        <ul>
-          <li><strong>Amplitude ($|a|$):</strong> Height from the central midline to the crest (half total peak-to-trough distance). Note: $\tan x$ has no amplitude.</li>
-          <li><strong>Period ($\frac{360^\circ}{b}$ or $\frac{2\pi}{b}$):</strong> Horizontal distance required to complete one full cycle. (For $\tan(bx)$, period is $\frac{180^\circ}{b}$ or $\frac{\pi}{b}$).</li>
-          <li><strong>Midline ($c$):</strong> Vertical translation of central baseline. Maximum value $= c + |a|$; Minimum value $= c - |a|$.</li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Common Trap:</strong> Confusing amplitude with total peak-to-trough distance (amplitude is half that total). Confusing frequency $b$ with the period itself.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"What is the midline of this wave, and how far above and below it do the crests and troughs reach?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Common Trap:</strong> Confusing amplitude with total peak-to-trough distance (amplitude is half that total). Confusing frequency $b$ with the period itself.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"What is the midline of this wave, and how far above and below it do the crests and troughs reach?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 9 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 9</span>
-        Trigonometric Equations & Simple Identities
+    <div class="topic-card" id="card-m-9" data-zone="zone-2">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 9</span>
+          <span class="chapter-chip">RV Ch 9</span>
+          <span class="card-title-text">Trigonometric Equations & Simple Identities</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-9')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-9')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Finding every angle over a given range ($0^\circ \le x \le 360^\circ$ or $0 \le x \le 2\pi$) that produces a specific trigonometric value (e.g., $\sin x = -0.5$).</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Finding every angle over a given range ($0^\circ \le x \le 360^\circ$ or $0 \le x \le 2\pi$) that produces a specific trigonometric value (e.g., $\sin x = -0.5$).</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Standard Method (ASTC Rule)</div>
+          <ol>
+            <li>Determine basic acute reference angle: $\alpha = \sin^{-1}(|k|)$ (always use positive value; ignore negative signs!).</li>
+            <li>Identify correct quadrants using ASTC (All in Q1, Sine in Q2, Tangent in Q3, Cosine in Q4).</li>
+            <li>Compute quadrant angles:
+              <ul>
+                <li>Quadrant 1: $\theta = \alpha$</li>
+                <li>Quadrant 2: $\theta = 180^\circ - \alpha$ (or $\pi - \alpha$)</li>
+                <li>Quadrant 3: $\theta = 180^\circ + \alpha$ (or $\pi + \alpha$)</li>
+                <li>Quadrant 4: $\theta = 360^\circ - \alpha$ (or $2\pi - \alpha$)</li>
+              </ul>
+            </li>
+            <li>Expand domain if angle is compound (e.g., if $0^\circ \le x \le 180^\circ$, then $0^\circ \le 2x \le 360^\circ$).</li>
+          </ol>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Standard Method (ASTC Rule)</div>
-        <ol>
-          <li>Determine basic acute reference angle: $\alpha = \sin^{-1}(|k|)$ (always use positive value; ignore negative signs!).</li>
-          <li>Identify correct quadrants using ASTC (All in Q1, Sine in Q2, Tangent in Q3, Cosine in Q4).</li>
-          <li>Compute quadrant angles:
-            <ul>
-              <li>Quadrant 1: $\theta = \alpha$</li>
-              <li>Quadrant 2: $\theta = 180^\circ - \alpha$ (or $\pi - \alpha$)</li>
-              <li>Quadrant 3: $\theta = 180^\circ + \alpha$ (or $\pi + \alpha$)</li>
-              <li>Quadrant 4: $\theta = 360^\circ - \alpha$ (or $2\pi - \alpha$)</li>
-            </ul>
-          </li>
-          <li>Expand domain if angle is compound (e.g., if $0^\circ \le x \le 180^\circ$, then $0^\circ \le 2x \le 360^\circ$).</li>
-        </ol>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Fatal Elimination Trap:</strong> Dividing both sides of an equation by a trigonometric term like $\sin x$ or $\cos x$ (e.g., in $2\sin x\cos x = \sin x$). Dividing eliminates the valid roots where $\sin x = 0$! Move all terms to the left and factorise: $\sin x(2\cos x - 1) = 0$.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you calculate the acute reference angle first using a positive value, and did you factorise rather than dividing by $\sin x$?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Fatal Elimination Trap:</strong> Dividing both sides of an equation by a trigonometric term like $\sin x$ or $\cos x$ (e.g., in $2\sin x\cos x = \sin x$). Dividing eliminates the valid roots where $\sin x = 0$! Move all terms to the left and factorise: $\sin x(2\cos x - 1) = 0$.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you calculate the acute reference angle first using a positive value, and did you factorise rather than dividing by $\sin x$?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 10 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 10</span>
-        Further Trigonometric Identities, Double Angles & $R$-Formula
+    <div class="topic-card" id="card-m-10" data-zone="zone-2">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 10</span>
+          <span class="chapter-chip">RV Ch 10</span>
+          <span class="card-title-text">Further Trigonometric Identities, Double Angles & $R$-Formula</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-10')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-10')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Advanced algebraic tools used to simplify complex wave expressions, solve compound equations, and execute formal proofs.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Advanced algebraic tools used to simplify complex wave expressions, solve compound equations, and execute formal proofs.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ Core Identities & Formulas</div>
+          <ul>
+            <li><strong>Addition Formulas:</strong>
+              $$\sin(A \pm B) = \sin A\cos B \pm \cos A\sin B$$
+              $$\cos(A \pm B) = \cos A\cos B \mp \sin A\sin B$$
+              $$\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A\tan B}$$
+            </li>
+            <li><strong>Double-Angle Formulas:</strong>
+              $$\sin 2A = 2\sin A\cos A$$
+              $$\cos 2A = \cos^2 A - \sin^2 A = 2\cos^2 A - 1 = 1 - 2\sin^2 A$$
+              $$\tan 2A = \frac{2\tan A}{1 - \tan^2 A}$$
+            </li>
+            <li><strong>The $R$-Formula:</strong> Express $a\sin\theta \pm b\cos\theta$ as $R\sin(\theta \pm \alpha)$ or $R\cos(\theta \mp \alpha)$, where $R = \sqrt{a^2 + b^2}$ and $\tan\alpha = \frac{b}{a}$. Used to find exact maximum/minimum values ($R$ and $-R$).</li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ Core Identities & Formulas</div>
-        <ul>
-          <li><strong>Addition Formulas:</strong>
-            $$\sin(A \pm B) = \sin A\cos B \pm \cos A\sin B$$
-            $$\cos(A \pm B) = \cos A\cos B \mp \sin A\sin B$$
-            $$\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A\tan B}$$
-          </li>
-          <li><strong>Double-Angle Formulas:</strong>
-            $$\sin 2A = 2\sin A\cos A$$
-            $$\cos 2A = \cos^2 A - \sin^2 A = 2\cos^2 A - 1 = 1 - 2\sin^2 A$$
-            $$\tan 2A = \frac{2\tan A}{1 - \tan^2 A}$$
-          </li>
-          <li><strong>The $R$-Formula:</strong> Express $a\sin\theta \pm b\cos\theta$ as $R\sin(\theta \pm \alpha)$ or $R\cos(\theta \mp \alpha)$, where $R = \sqrt{a^2 + b^2}$ and $\tan\alpha = \frac{b}{a}$. Used to find exact maximum/minimum values ($R$ and $-R$).</li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Proof Treatment Trap:</strong> In proof problems ("Prove that LHS = RHS"), moving terms across the equals sign. Working across the equals sign is treated as assuming what you are trying to prove, losing all method marks. Work on one side independently (usually LHS) until it matches RHS.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you work down one side of the identity independently without cross-multiplying across the equals sign?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Proof Treatment Trap:</strong> In proof problems ("Prove that LHS = RHS"), moving terms across the equals sign. Working across the equals sign is treated as assuming what you are trying to prove, losing all method marks. Work on one side independently (usually LHS) until it matches RHS.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you work down one side of the identity independently without cross-multiplying across the equals sign?"</em>
+        </div>
       </div>
     </div>
 
     <!-- ZONE 3 -->
-    <div class="zone-banner" id="zone-3">
+    <div class="zone-banner" id="zone-3" data-zone="zone-3">
       <h3>Zone 3: Polynomials, Partial Fractions & Coordinate Geometry (Topics 11 – 13)</h3>
       <p>Exam Weight: ~25%. Highly structured and algebraic; the most reliable section to achieve 100%.</p>
     </div>
 
     <!-- Topic 11 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 11</span>
-        Polynomials, Remainder & Factor Theorems
+    <div class="topic-card" id="card-m-11" data-zone="zone-3">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 11</span>
+          <span class="chapter-chip">RV Ch 11</span>
+          <span class="card-title-text">Polynomials, Remainder & Factor Theorems</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-11')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-11')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Managing cubic and higher-order algebraic expressions ($x^3, x^4$) without having to perform tedious polynomial long division repeatedly.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Managing cubic and higher-order algebraic expressions ($x^3, x^4$) without having to perform tedious polynomial long division repeatedly.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The Standard Methods</div>
+          <ul>
+            <li><strong>Remainder Theorem:</strong> Dividing polynomial $f(x)$ by $(ax - b)$ leaves remainder $R = f(b/a)$.</li>
+            <li><strong>Factor Theorem:</strong> If $f(b/a) = 0$, then $(ax - b)$ is an exact linear factor with zero remainder.</li>
+            <li><strong>Full Factorisation Protocol:</strong>
+              <ol>
+                <li>Use Factor Theorem by trial ($x = \pm 1, \pm 2, \dots$) to find a first factor $(x - c)$ such that $f(c) = 0$.</li>
+                <li>Divide $f(x)$ by $(x - c)$ using polynomial long division to obtain the quotient quadratic $Q(x)$.</li>
+                <li>Fully factorise the quadratic quotient $Q(x)$ into linear factors if possible.</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The Standard Methods</div>
-        <ul>
-          <li><strong>Remainder Theorem:</strong> Dividing polynomial $f(x)$ by $(ax - b)$ leaves remainder $R = f(b/a)$.</li>
-          <li><strong>Factor Theorem:</strong> If $f(b/a) = 0$, then $(ax - b)$ is an exact linear factor with zero remainder.</li>
-          <li><strong>Full Factorisation Protocol:</strong>
-            <ol>
-              <li>Use Factor Theorem by trial ($x = \pm 1, \pm 2, \dots$) to find a first factor $(x - c)$ such that $f(c) = 0$.</li>
-              <li>Divide $f(x)$ by $(x - c)$ using polynomial long division to obtain the quotient quadratic $Q(x)$.</li>
-              <li>Fully factorise the quadratic quotient $Q(x)$ into linear factors if possible.</li>
-            </ol>
-          </li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Incomplete Factorisation:</strong> After finding one factor and dividing to obtain a quadratic quotient, stopping at $(x - 1)(x^2 - 4)$ instead of factorising fully to $(x - 1)(x - 2)(x + 2)$.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you verify whether the remaining quadratic quotient can be factored down further into two linear brackets?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Incomplete Factorisation:</strong> After finding one factor and dividing to obtain a quadratic quotient, stopping at $(x - 1)(x^2 - 4)$ instead of factorising fully to $(x - 1)(x - 2)(x + 2)$.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Did you verify whether the remaining quadratic quotient can be factored down further into two linear brackets?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 12 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 12</span>
-        Partial Fractions
+    <div class="topic-card" id="card-m-12" data-zone="zone-3">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 12</span>
+          <span class="chapter-chip">RV Ch 12</span>
+          <span class="card-title-text">Partial Fractions</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-12')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-12')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Reversing fraction addition: breaking a complicated rational fraction into a sum of simpler component "baby" fractions.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Reversing fraction addition: breaking a complicated rational fraction into a sum of simpler component "baby" fractions.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ The 3 Denominator Rules</div>
+          <ol>
+            <li><strong>Distinct Linear Factors:</strong> $\frac{px+q}{(x-a)(x-b)} = \frac{A}{x-a} + \frac{B}{x-b}$</li>
+            <li><strong>Repeated Linear Factors:</strong> $\frac{px+q}{(x-a)^2(x-b)} = \frac{A}{x-a} + \frac{B}{(x-a)^2} + \frac{C}{x-b}$</li>
+            <li><strong>Irreducible Quadratic Factor:</strong> $\frac{px+q}{(x-a)(x^2+c)} = \frac{A}{x-a} + \frac{Bx+C}{x^2+c}$</li>
+          </ol>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ The 3 Denominator Rules</div>
-        <ol>
-          <li><strong>Distinct Linear Factors:</strong> $\frac{px+q}{(x-a)(x-b)} = \frac{A}{x-a} + \frac{B}{x-b}$</li>
-          <li><strong>Repeated Linear Factors:</strong> $\frac{px+q}{(x-a)^2(x-b)} = \frac{A}{x-a} + \frac{B}{(x-a)^2} + \frac{C}{x-b}$</li>
-          <li><strong>Irreducible Quadratic Factor:</strong> $\frac{px+q}{(x-a)(x^2+c)} = \frac{A}{x-a} + \frac{Bx+C}{x^2+c}$</li>
-        </ol>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ The Improper Fraction Minefield:</strong> Attempting to split an improper fraction (where numerator degree $\ge$ denominator degree) without performing polynomial long division first. You <strong>must</strong> divide first to extract the polynomial quotient before decomposing the remainder.
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Is the highest power on top smaller than the bottom? If not, did you perform polynomial long division first?"</em>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ The Improper Fraction Minefield:</strong> Attempting to split an improper fraction (where numerator degree $\ge$ denominator degree) without performing polynomial long division first. You <strong>must</strong> divide first to extract the polynomial quotient before decomposing the remainder.
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"Is the highest power on top smaller than the bottom? If not, did you perform polynomial long division first?"</em>
+        </div>
       </div>
     </div>
 
     <!-- Topic 13 -->
-    <div class="topic-card">
-      <div class="card-title">
-        <span class="topic-badge">Topic 13</span>
-        Coordinate Geometry of Straight Lines
+    <div class="topic-card" id="card-m-13" data-zone="zone-3">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge">Topic 13</span>
+          <span class="chapter-chip">RV Ch 13</span>
+          <span class="card-title-text">Coordinate Geometry of Straight Lines</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-m-13')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-m-13')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label concept">💡 Plain-English Concept</div>
-        <p>Applying algebra to calculate geometric properties, slopes, intersections, and perpendicularity of lines and polygons on a coordinate plane.</p>
+      <div class="card-detail-body">
+        <div class="block">
+          <div class="block-label concept">💡 Plain-English Concept</div>
+          <p>Applying algebra to calculate geometric properties, slopes, intersections, and perpendicularity of lines and polygons on a coordinate plane.</p>
+        </div>
+        <div class="block">
+          <div class="block-label methods">⚙️ Core Rules & Routines</div>
+          <ul>
+            <li><strong>Parallel Lines:</strong> $m_1 = m_2$.</li>
+            <li><strong>Perpendicular Lines:</strong> $m_1 \cdot m_2 = -1 \implies m_\perp = -\frac{1}{m_1}$ (both flip and negate!).</li>
+            <li><strong>Perpendicular Bisector (3-Step Protocol):</strong>
+              <ol>
+                <li>Find the midpoint $M = \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$ of segment $AB$.</li>
+                <li>Compute the gradient of $AB$: $m_{AB} = \frac{y_2 - y_1}{x_2 - x_1}$, then determine $m_\perp = -\frac{1}{m_{AB}}$.</li>
+                <li>Use the point-slope form: $y - y_M = m_\perp(x - x_M)$.</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="block">
-        <div class="block-label methods">⚙️ Core Rules & Routines</div>
-        <ul>
-          <li><strong>Parallel Lines:</strong> $m_1 = m_2$.</li>
-          <li><strong>Perpendicular Lines:</strong> $m_1 \cdot m_2 = -1 \implies m_\perp = -\frac{1}{m_1}$ (both flip and negate!).</li>
-          <li><strong>Perpendicular Bisector (3-Step Protocol):</strong>
-            <ol>
-              <li>Find the midpoint $M = \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$ of segment $AB$.</li>
-              <li>Compute the gradient of $AB$: $m_{AB} = \frac{y_2 - y_1}{x_2 - x_1}$, then determine $m_\perp = -\frac{1}{m_{AB}}$.</li>
-              <li>Use the point-slope form: $y - y_M = m_\perp(x - x_M)$.</li>
-            </ol>
-          </li>
-        </ul>
-      </div>
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Sign Calculation Errors:</strong> Arithmetic slips when computing slopes with negative coordinates: $\frac{y_2 - y_1}{x_2 - x_1}$. Forgetting to both negate AND invert for perpendicular gradients (e.g., writing $-\frac{2}{3}$ instead of $-\frac{3}{2}$).
-      </div>
-      <div class="check-box">
-        <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"If a line has a gradient of $-\frac{3}{4}$, what is the gradient of a line perpendicular to it?"</em> (Answer: $+\frac{4}{3}$).
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Sign Calculation Errors:</strong> Arithmetic slips when computing slopes with negative coordinates: $\frac{y_2 - y_1}{x_2 - x_1}$. Forgetting to both negate AND invert for perpendicular gradients (e.g., writing $-\frac{2}{3}$ instead of $-\frac{3}{2}$).
+        </div>
+        <div class="check-box">
+          <strong style="color:var(--accent-success)">💬 Quick Check Question:</strong> <em>"If a line has a gradient of $-\frac{3}{4}$, what is the gradient of a line perpendicular to it?"</em> (Answer: $+\frac{4}{3}$).
+        </div>
       </div>
     </div>
 
@@ -874,140 +1313,188 @@
     <!-- PART 2: PURE CHEMISTRY -->
     <div class="section-header chem" id="chem-section">
       <h2>🧪 Part 2: Pure Chemistry (4 Essential Pillars)</h2>
-      <p style="font-size:0.9rem; color:var(--text-muted); margin-top:4px;">
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-top:4px;">
         Chemistry marks depend on two things: <strong>mathematical stoichiometry</strong> and <strong>exact Cambridge/IP marking keywords</strong>.
       </p>
     </div>
 
     <!-- Pillar 1 -->
-    <div class="topic-card" id="chem-pillar-1">
-      <div class="card-title">
-        <span class="topic-badge chem">Pillar 1</span>
-        Bonding, Structure & Properties
+    <div class="topic-card" id="card-c-1" data-zone="chem">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge chem">Pillar 1</span>
+          <span class="chapter-chip">RV Chem Ch 3 & 4</span>
+          <span class="card-title-text">Bonding, Structure & Properties</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-c-1')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-c-1')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~30%. High keyword sensitivity.</p>
-      <div class="block">
-        <p>Questions routinely ask: <em>"Explain, in terms of structure and bonding, why substance X has a high/low melting point or conducts electricity."</em></p>
-      </div>
+      <div class="card-detail-body">
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~30%. High keyword sensitivity.</p>
+        <div class="block">
+          <p>Questions routinely ask: <em>"Explain, in terms of structure and bonding, why substance X has a high/low melting point or conducts electricity."</em></p>
+        </div>
 
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Structure Type</th>
-              <th>Real Examples</th>
-              <th>Key Explanatory Phrasing (Required for Marks)</th>
-              <th>Electrical Conductivity</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Giant Ionic Lattice</strong></td>
-              <td>Table salt ($\text{NaCl}$), $\text{MgO}$</td>
-              <td><em>"A large amount of thermal energy is required to overcome strong electrostatic forces of attraction between oppositely charged ions."</em></td>
-              <td>Only when <strong>molten or aqueous</strong> (<em>"ions are mobile to carry charge"</em>). In solid state, ions are fixed in lattice positions.</td>
-            </tr>
-            <tr>
-              <td><strong>Simple Covalent Molecule</strong></td>
-              <td>$\text{H}_2\text{O}$, $\text{CO}_2$, $\text{CH}_4$</td>
-              <td><em>"Little thermal energy is needed to overcome weak intermolecular forces of attraction between molecules."</em></td>
-              <td><strong>Non-conductor</strong> in all states (<em>"exists as neutral molecules; no mobile ions or delocalised electrons"</em>).</td>
-            </tr>
-            <tr>
-              <td><strong>Giant Covalent Network</strong></td>
-              <td>Diamond, Graphite, $\text{SiO}_2$</td>
-              <td><em>"A huge amount of thermal energy is needed to break an extensive network of numerous, strong covalent bonds."</em></td>
-              <td><strong>Diamond:</strong> Non-conductor.<br><strong>Graphite:</strong> Conducts (<em>"has delocalised electrons free to move along layers"</em>).</td>
-            </tr>
-            <tr>
-              <td><strong>Giant Metallic Lattice</strong></td>
-              <td>Copper wire, Iron</td>
-              <td><em>"Strong electrostatic forces of attraction between positive metal ions and a sea of delocalised electrons."</em></td>
-              <td><strong>Good conductor</strong> in both solid and liquid states (<em>"delocalised electrons are mobile to carry electrical charge"</em>).</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Structure Type</th>
+                <th>Real Examples</th>
+                <th>Key Explanatory Phrasing (Required for Marks)</th>
+                <th>Electrical Conductivity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Giant Ionic Lattice</strong></td>
+                <td>Table salt ($\text{NaCl}$), $\text{MgO}$</td>
+                <td><em>"A large amount of thermal energy is required to overcome strong electrostatic forces of attraction between oppositely charged ions."</em></td>
+                <td>Only when <strong>molten or aqueous</strong> (<em>"ions are mobile to carry charge"</em>). In solid state, ions are fixed in lattice positions.</td>
+              </tr>
+              <tr>
+                <td><strong>Simple Covalent Molecule</strong></td>
+                <td>$\text{H}_2\text{O}$, $\text{CO}_2$, $\text{CH}_4$</td>
+                <td><em>"Little thermal energy is needed to overcome weak intermolecular forces of attraction between molecules."</em></td>
+                <td><strong>Non-conductor</strong> in all states (<em>"exists as neutral molecules; no mobile ions or delocalised electrons"</em>).</td>
+              </tr>
+              <tr>
+                <td><strong>Giant Covalent Network</strong></td>
+                <td>Diamond, Graphite, $\text{SiO}_2$</td>
+                <td><em>"A huge amount of thermal energy is needed to break an extensive network of numerous, strong covalent bonds."</em></td>
+                <td><strong>Diamond:</strong> Non-conductor.<br><strong>Graphite:</strong> Conducts (<em>"has delocalised electrons free to move along layers"</em>).</td>
+              </tr>
+              <tr>
+                <td><strong>Giant Metallic Lattice</strong></td>
+                <td>Copper wire, Iron</td>
+                <td><em>"Strong electrostatic forces of attraction between positive metal ions and a sea of delocalised electrons."</em></td>
+                <td><strong>Good conductor</strong> in both solid and liquid states (<em>"delocalised electrons are mobile to carry electrical charge"</em>).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Critical Distinction:</strong> When boiling water or simple molecules, <strong>covalent bonds do not break</strong>. Only weak intermolecular forces are overcome. Citing "covalent bonds breaking" for simple molecules results in zero marks.
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Critical Distinction:</strong> When boiling water or simple molecules, <strong>covalent bonds do not break</strong>. Only weak intermolecular forces are overcome. Citing "covalent bonds breaking" for simple molecules results in zero marks.
+        </div>
       </div>
     </div>
 
     <!-- Pillar 2 -->
-    <div class="topic-card" id="chem-pillar-2">
-      <div class="card-title">
-        <span class="topic-badge chem">Pillar 2</span>
-        The Mole Concept & Calculations
+    <div class="topic-card" id="card-c-2" data-zone="chem">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge chem">Pillar 2</span>
+          <span class="chapter-chip">RV Chem Ch 7</span>
+          <span class="card-title-text">The Mole Concept & Calculations</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-c-2')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-c-2')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~35%. Quantitative foundation.</p>
-      
-      <div class="block">
-        <div class="block-label methods">⚙️ 3-Step Assembly Line</div>
-        $$\text{Step 1: Convert Given Quantity to Moles} \to \text{Step 2: Apply Mole Ratio from Equation} \to \text{Step 3: Convert Moles to Required Unit}$$
-      </div>
+      <div class="card-detail-body">
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~35%. Quantitative foundation.</p>
+        
+        <div class="block">
+          <div class="block-label methods">⚙️ 3-Step Assembly Line</div>
+          $$\text{Step 1: Convert Given Quantity to Moles} \to \text{Step 2: Apply Mole Ratio from Equation} \to \text{Step 3: Convert Moles to Required Unit}$$
+        </div>
 
-      <div class="block">
-        <div class="block-label methods">⚙️ 3 Essential Formulas</div>
-        <ol>
-          <li>$$\text{Moles} = \frac{\text{Mass in grams}}{\text{Molar Mass from Periodic Table}}$$</li>
-          <li>$$\text{Moles (Gas at r.t.p.)} = \frac{\text{Volume in }\text{dm}^3}{24\text{ dm}^3} \quad (\text{Note: Divide }\text{cm}^3\text{ by } 1000\text{ to get }\text{dm}^3)$$</li>
-          <li>$$\text{Moles (Solution)} = \text{Concentration } (\text{mol/dm}^3) \times \text{Volume } (\text{dm}^3)$$</li>
-        </ol>
+        <div class="block">
+          <div class="block-label methods">⚙️ 3 Essential Formulas</div>
+          <ol>
+            <li>$$\text{Moles} = \frac{\text{Mass in grams}}{\text{Molar Mass from Periodic Table}}$$</li>
+            <li>$$\text{Moles (Gas at r.t.p.)} = \frac{\text{Volume in }\text{dm}^3}{24\text{ dm}^3} \quad (\text{Note: Divide }\text{cm}^3\text{ by } 1000\text{ to get }\text{dm}^3)$$</li>
+            <li>$$\text{Moles (Solution)} = \text{Concentration } (\text{mol/dm}^3) \times \text{Volume } (\text{dm}^3)$$</li>
+          </ol>
+        </div>
       </div>
-
-      <div class="trap-box">
-        <strong style="color:var(--accent-trap)">⚠️ Limiting Reactants:</strong> The reactant that yields the smallest theoretical amount of product limits the reaction. All subsequent yield calculations must be derived from this limiting reagent.
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Limiting Reactants:</strong> The reactant that yields the smallest theoretical amount of product limits the reaction. All subsequent yield calculations must be derived from this limiting reagent.
+        </div>
       </div>
     </div>
 
     <!-- Pillar 3 -->
-    <div class="topic-card" id="chem-pillar-3">
-      <div class="card-title">
-        <span class="topic-badge chem">Pillar 3</span>
-        Acids, Bases & Salt Preparation
+    <div class="topic-card" id="card-c-3" data-zone="chem">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge chem">Pillar 3</span>
+          <span class="chapter-chip">RV Chem Ch 8 & 9</span>
+          <span class="card-title-text">Acids, Bases & Salt Preparation</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-c-3')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-c-3')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~25%. High procedural consistency.</p>
+      <div class="card-detail-body">
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~25%. High procedural consistency.</p>
 
-      <div class="block">
-        <div class="block-label methods">⚙️ The 3 Acid Reactions</div>
-        <ol>
-          <li>$\text{Acid} + \text{Metal} \to \text{Salt} + \text{Hydrogen Gas } (H_2)$ <em>(Test: Lighted splint extinguishes with a 'pop')</em></li>
-          <li>$\text{Acid} + \text{Carbonate} \to \text{Salt} + \text{Water} + \text{Carbon Dioxide } (CO_2)$ <em>(Test: White precipitate formed in limewater)</em></li>
-          <li>$\text{Acid} + \text{Base} \to \text{Salt} + \text{Water}$</li>
-        </ol>
+        <div class="block">
+          <div class="block-label methods">⚙️ The 3 Acid Reactions</div>
+          <ol>
+            <li>$\text{Acid} + \text{Metal} \to \text{Salt} + \text{Hydrogen Gas } (H_2)$ <em>(Test: Lighted splint extinguishes with a 'pop')</em></li>
+            <li>$\text{Acid} + \text{Carbonate} \to \text{Salt} + \text{Water} + \text{Carbon Dioxide } (CO_2)$ <em>(Test: White precipitate formed in limewater)</em></li>
+            <li>$\text{Acid} + \text{Base} \to \text{Salt} + \text{Water}$</li>
+          </ol>
+        </div>
+
+        <div class="block">
+          <div class="block-label methods">⚙️ Salt Preparation Decision Tree</div>
+          <ul>
+            <li><strong>Soluble SPA Salt</strong> (Sodium, Potassium, Ammonium): Use <strong>Titration</strong> (Burette + Pipette + Indicator).</li>
+            <li><strong>Soluble Non-SPA Salt:</strong> Use <strong>Excess Insoluble Base/Carbonate added to Acid</strong>, followed by filtration and crystallisation.</li>
+            <li><strong>Insoluble Salt</strong> (e.g., $\text{BaSO}_4, \text{AgCl}, \text{PbSO}_4$): Use <strong>Precipitation</strong> (mix two soluble solutions, filter residue, wash with distilled water, dry).</li>
+          </ul>
+        </div>
       </div>
-
-      <div class="block">
-        <div class="block-label methods">⚙️ Salt Preparation Decision Tree</div>
-        <ul>
-          <li><strong>Soluble SPA Salt</strong> (Sodium, Potassium, Ammonium): Use <strong>Titration</strong> (Burette + Pipette + Indicator).</li>
-          <li><strong>Soluble Non-SPA Salt:</strong> Use <strong>Excess Insoluble Base/Carbonate added to Acid</strong>, followed by filtration and crystallisation.</li>
-          <li><strong>Insoluble Salt</strong> (e.g., $\text{BaSO}_4, \text{AgCl}, \text{PbSO}_4$): Use <strong>Precipitation</strong> (mix two soluble solutions, filter residue, wash with distilled water, dry).</li>
-        </ul>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Unreactive Metal Trap:</strong> Copper (Cu) and Silver (Ag) are below hydrogen in the reactivity series. Adding dilute acid to copper produces NO reaction and NO bubbles!
+        </div>
       </div>
     </div>
 
     <!-- Pillar 4 -->
-    <div class="topic-card" id="chem-pillar-4">
-      <div class="card-title">
-        <span class="topic-badge chem">Pillar 4</span>
-        Metals & Redox
+    <div class="topic-card" id="card-c-4" data-zone="chem">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="topic-badge chem">Pillar 4</span>
+          <span class="chapter-chip">RV Chem Ch 10 & 11</span>
+          <span class="card-title-text">Metals & Redox</span>
+        </div>
+        <div class="card-actions">
+          <button class="status-btn status-review" onclick="cycleStatus('card-c-4')" title="Toggle Mastery Status">⬜ Review Needed</button>
+          <button class="card-collapse-btn" onclick="toggleCard('card-c-4')" title="Collapse/Expand Breakdown">▾</button>
+        </div>
       </div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~15%. Pattern-based questions.</p>
+      <div class="card-detail-body">
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Exam Weight: ~15%. Pattern-based questions.</p>
 
-      <div class="block">
-        <div class="block-label methods">⚙️ Reactivity Series (Descending)</div>
-        $$\text{K} > \text{Na} > \text{Ca} > \text{Mg} > \text{Al} > \text{Zn} > \text{Fe} > \text{Pb} > \text{Cu} > \text{Ag}$$
-        <p style="font-size:0.9rem; margin-top:6px;">A more reactive metal displaces a less reactive metal from its aqueous salt solution.</p>
+        <div class="block">
+          <div class="block-label methods">⚙️ Reactivity Series (Descending)</div>
+          $$\text{K} > \text{Na} > \text{Ca} > \text{Mg} > \text{Al} > \text{Zn} > \text{Fe} > \text{Pb} > \text{Cu} > \text{Ag}$$
+          <p style="font-size:0.88rem; margin-top:6px;">A more reactive metal displaces a less reactive metal from its aqueous salt solution.</p>
+        </div>
+
+        <div class="block">
+          <div class="block-label methods">⚙️ Redox Indicators to Know</div>
+          <ul>
+            <li><strong>Acidified Potassium Manganate(VII) ($\text{KMnO}_4$):</strong> Powerful oxidising agent. Color change: <strong>Purple to Colourless</strong>.</li>
+            <li><strong>Aqueous Potassium Iodide ($\text{KI}$):</strong> Powerful reducing agent. Color change: <strong>Colourless to Brown</strong>.</li>
+          </ul>
+        </div>
       </div>
-
-      <div class="block">
-        <div class="block-label methods">⚙️ Redox Indicators to Know</div>
-        <ul>
-          <li><strong>Acidified Potassium Manganate(VII) ($\text{KMnO}_4$):</strong> Powerful oxidising agent. Color change: <strong>Purple to Colourless</strong>.</li>
-          <li><strong>Aqueous Potassium Iodide ($\text{KI}$):</strong> Powerful reducing agent. Color change: <strong>Colourless to Brown</strong>.</li>
-        </ul>
+      <div class="card-trap-body">
+        <div class="trap-box">
+          <strong style="color:var(--accent-trap)">⚠️ Rusting Condition:</strong> Iron rusting strictly requires BOTH Oxygen AND Water simultaneously. Boiled water with an oil seal has no oxygen, preventing rust completely.
+        </div>
       </div>
     </div>
 
@@ -1015,13 +1502,13 @@
     <!-- 5-MINUTE EVENING REVIEW PROTOCOL -->
     <div class="section-header" id="evening-protocol">
       <h2 style="color:var(--text-main)">⏱️ 5-Minute Evening Review Protocol</h2>
-      <p style="font-size:0.9rem; color:var(--text-muted); margin-top:4px;">
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-top:4px;">
         Dedicate five focused minutes each evening to spot-check comprehension without doing full problem sets.
       </p>
     </div>
 
     <div class="topic-card">
-      <ol style="font-size:1rem; line-height:1.8;">
+      <ol style="font-size:0.95rem; line-height:1.8;">
         <li>
           <strong>Math (1 Question):</strong> Select one question from today's work. Ask: 
           <em>"What is the opening algebraic step for this problem, and where is the trap?"</em>
@@ -1062,10 +1549,152 @@
       document.querySelectorAll('.controls .btn-group:nth-child(1) .btn-control').forEach(btn => {
         btn.classList.remove('active');
         if (scalePx === 15 && btn.textContent === 'A-') btn.classList.add('active');
-        if (scalePx === 16.5 && btn.textContent === 'Standard') btn.classList.add('active');
-        if (scalePx === 18.5 && btn.textContent.includes('Large')) btn.classList.add('active');
+        if (scalePx === 16 && btn.textContent === 'Standard') btn.classList.add('active');
+        if (scalePx === 18 && btn.textContent.includes('Large')) btn.classList.add('active');
       });
       try { localStorage.setItem('fast_track_font', scalePx); } catch(e) {}
+    }
+
+    // Mastery Status Tracker (Persistent via localStorage)
+    const STATUS_STATES = [
+      { key: 'review', label: '⬜ Review Needed', class: 'status-review' },
+      { key: 'progress', label: '🟡 In Progress', class: 'status-progress' },
+      { key: 'mastered', label: '✅ Mastered', class: 'status-mastered' }
+    ];
+
+    function getMasteryData() {
+      try {
+        const saved = localStorage.getItem('fast_track_mastery_map');
+        return saved ? JSON.parse(saved) : {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveMasteryData(data) {
+      try {
+        localStorage.setItem('fast_track_mastery_map', JSON.stringify(data));
+      } catch (e) {}
+    }
+
+    function updateMasteryBadge() {
+      const data = getMasteryData();
+      const allCards = document.querySelectorAll('.topic-card[id^="card-"]');
+      const total = allCards.length;
+      let masteredCount = 0;
+
+      allCards.forEach(card => {
+        const id = card.id;
+        const stateIdx = data[id] !== undefined ? data[id] : 0;
+        const btn = card.querySelector('.status-btn');
+        if (btn) {
+          const state = STATUS_STATES[stateIdx];
+          btn.className = 'status-btn ' + state.class;
+          btn.textContent = state.label;
+        }
+        if (stateIdx === 2) masteredCount++;
+      });
+
+      const summaryEl = document.getElementById('mastery-summary');
+      if (summaryEl) {
+        summaryEl.textContent = `Progress: ${masteredCount}/${total} Mastered`;
+      }
+    }
+
+    function cycleStatus(cardId) {
+      const data = getMasteryData();
+      const currentIdx = data[cardId] !== undefined ? data[cardId] : 0;
+      const nextIdx = (currentIdx + 1) % STATUS_STATES.length;
+      data[cardId] = nextIdx;
+      saveMasteryData(data);
+      updateMasteryBadge();
+    }
+
+    // Real-Time Search & Filtering
+    function initSearch() {
+      const input = document.getElementById('topic-search');
+      const clearBtn = document.getElementById('search-clear-btn');
+      const counter = document.getElementById('search-counter');
+      const noResults = document.getElementById('no-results');
+      const allCards = document.querySelectorAll('.topic-card[id^="card-"]');
+      const totalCount = allCards.length;
+
+      input.addEventListener('input', function() {
+        const query = this.value.trim().toLowerCase();
+        let matchCount = 0;
+
+        if (query.length > 0) {
+          clearBtn.style.display = 'inline-block';
+        } else {
+          clearBtn.style.display = 'none';
+        }
+
+        allCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          const matches = query === '' || text.includes(query);
+          if (matches) {
+            card.style.display = '';
+            matchCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Update counter
+        counter.textContent = `Showing ${matchCount} / ${totalCount} topics`;
+
+        // Check if all cards in a zone are hidden, hide the banner too
+        document.querySelectorAll('.zone-banner').forEach(banner => {
+          const zoneId = banner.getAttribute('data-zone');
+          const visibleInZone = document.querySelectorAll(`.topic-card[data-zone="${zoneId}"]:not([style*="display: none"])`);
+          banner.style.display = visibleInZone.length > 0 ? '' : 'none';
+        });
+
+        if (matchCount === 0) {
+          noResults.style.display = 'block';
+        } else {
+          noResults.style.display = 'none';
+        }
+      });
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('topic-search');
+      input.value = '';
+      input.dispatchEvent(new Event('input'));
+      input.focus();
+    }
+
+    // Collapsible Card Sections
+    let allCollapsed = false;
+
+    function toggleCard(cardId) {
+      const card = document.getElementById(cardId);
+      if (card) {
+        card.classList.toggle('collapsed');
+      }
+    }
+
+    function toggleAllCards() {
+      allCollapsed = !allCollapsed;
+      const allCards = document.querySelectorAll('.topic-card[id^="card-"]');
+      allCards.forEach(card => {
+        if (allCollapsed) {
+          card.classList.add('collapsed');
+        } else {
+          card.classList.remove('collapsed');
+        }
+      });
+
+      const btnText = document.getElementById('toggle-all-text');
+      const btnIcon = document.getElementById('toggle-all-icon');
+      if (allCollapsed) {
+        btnText.textContent = 'Expand All';
+        btnIcon.textContent = '📖';
+      } else {
+        btnText.textContent = 'Collapse Details';
+        btnIcon.textContent = '↕️';
+      }
     }
 
     // Auto-render KaTeX on document load
@@ -1087,6 +1716,9 @@
         const savedFont = localStorage.getItem('fast_track_font');
         if (savedFont) setFontScale(parseFloat(savedFont));
       } catch(e) {}
+
+      updateMasteryBadge();
+      initSearch();
     });
   </script>
 </body>
