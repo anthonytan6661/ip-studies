@@ -6,7 +6,7 @@ import {
   AlertTriangle, 
   RotateCcw, 
   Award,
-  BookOpen,
+  Lightbulb,
   ChevronDown,
   ChevronUp,
   AlertOctagon
@@ -41,6 +41,8 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
     if (idx === q.correctAnswer) {
       setScore(prev => prev + 1);
     }
+    // Auto-reveal immediately after the student submits an answer (especially on incorrect attempts)
+    setShowSolution(true);
   };
 
   const handleNext = () => {
@@ -218,7 +220,7 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
             })}
           </div>
 
-          {/* Collapsible "Show Worked Solution" Section */}
+          {/* Interactive Toggle: "💡 View Full Worked Solution" */}
           {q.solution && (
             <div className="pt-2 border-t border-black/10 dark:border-white/10">
               <button
@@ -226,17 +228,17 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
                 onClick={() => setShowSolution(prev => !prev)}
                 className={`w-full py-3 px-4 rounded-2xl border font-mono font-bold text-xs sm:text-sm flex items-center justify-between transition-all duration-200 ${
                   showSolution
-                    ? 'bg-blue-600 text-white border-blue-700 shadow-md'
+                    ? 'bg-amber-600 text-white border-amber-700 shadow-md'
                     : theme === 'dark'
                       ? 'bg-slate-900/90 border-slate-700 text-slate-200 hover:bg-slate-800'
-                      : 'bg-blue-50/80 border-blue-200 text-blue-900 hover:bg-blue-100 shadow-xs'
+                      : 'bg-amber-50/80 border-amber-200 text-amber-900 hover:bg-amber-100 shadow-xs'
                 }`}
               >
                 <span className="flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 shrink-0" />
+                  <Lightbulb className="w-4 h-4 text-amber-400 shrink-0" />
                   {showSolution 
-                    ? (isZh ? '收起完整解题步骤与推导' : 'Hide Worked Solution')
-                    : (isZh ? '📝 查看完整解题步骤与推导 (Show Worked Solution)' : '📝 Show Worked Solution')}
+                    ? (isZh ? '💡 收起解题推导与步骤 (Hide Worked Solution)' : '💡 Hide Full Worked Solution')
+                    : (isZh ? '💡 查看完整解题推导与步骤 (View Full Worked Solution)' : '💡 View Full Worked Solution')}
                 </span>
                 <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-black/10 dark:bg-white/10 font-mono">
                   {showSolution ? (
@@ -249,56 +251,58 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
 
               {/* Collapsible Worked Solution Block */}
               {showSolution && (
-                <div className={`mt-3 p-5 sm:p-6 rounded-2xl border space-y-4 animate-fadeIn shadow-sm ${
-                  theme === 'dark' ? 'bg-slate-950/90 border-blue-500/30' : 'bg-[#faf8f4] border-blue-200'
+                <div className={`mt-3 p-5 sm:p-6 rounded-2xl border-2 space-y-4 animate-fadeIn shadow-sm ${
+                  theme === 'dark' 
+                    ? 'bg-slate-950/90 border-blue-500/30 text-slate-100' 
+                    : 'bg-[#faf8f4] border-blue-200/90 text-slate-900'
                 }`}>
-                  {/* Step 1: Opening algebraic setup / formula */}
+                  {/* Step 1: Starting Setup & Applicable Rule */}
                   <div className="space-y-1.5">
-                    <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
+                    <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
                       <span className="w-5 h-5 rounded-md bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 flex items-center justify-center font-bold text-xs">1</span>
-                      {isZh ? '第一步：核心公式与初始代数设定' : 'Step 1: Opening Algebraic Setup & Formula'}
+                      {isZh ? '第一步：起始代数设定与适用定理 (Starting Setup & Applicable Rule)' : 'Step 1: Starting Setup & Applicable Rule'}
                     </div>
                     <div className="pl-7 text-sm sm:text-base leading-relaxed opacity-95 font-medium">
-                      <FormattedMathText text={q.solution.step1} />
+                      <FormattedMathText text={q.solution.formulaSetup || q.solution.step1} />
                     </div>
                   </div>
 
-                  {/* Step 2: Line-by-line working with full KaTeX formatting */}
-                  <div className="space-y-2 border-t border-black/5 dark:border-white/5 pt-3">
-                    <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-400">
+                  {/* Step 2: Full Line-by-Line Algebraic Working */}
+                  <div className="space-y-2 border-t border-black/10 dark:border-white/10 pt-3">
+                    <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-400">
                       <span className="w-5 h-5 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 flex items-center justify-center font-bold text-xs">2</span>
-                      {isZh ? '第二步：考卷逐行推导与标准过程' : 'Step 2: Line-by-Line Working with Full KaTeX'}
+                      {isZh ? '第二步：考卷逐行代数推导与严密运算 (Line-by-Line Working)' : 'Step 2: Full Line-by-Line Algebraic Working'}
                     </div>
-                    <div className="pl-7 space-y-2">
-                      {q.solution.step2.map((line, idx) => (
-                        <div key={idx} className="text-sm sm:text-base leading-relaxed font-mono">
-                          <FormattedMathText text={line} />
+                    <div className="pl-7 space-y-2.5">
+                      {(q.solution.steps || q.solution.step2 || []).map((stepLine, sIdx) => (
+                        <div key={sIdx} className="text-sm sm:text-base leading-relaxed font-mono">
+                          <FormattedMathText text={stepLine} />
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  {/* Step 3: Final Answer Boxed */}
-                  <div className="border-t border-black/5 dark:border-white/5 pt-3">
+                  {/* Step 3: Boxed Final Answer */}
+                  <div className="border-t border-black/10 dark:border-white/10 pt-3">
                     <div className="p-4 rounded-xl border-2 border-emerald-500/60 bg-emerald-50/80 dark:bg-emerald-950/40 space-y-1.5">
-                      <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-400">
+                      <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-400">
                         <span className="w-5 h-5 rounded-md bg-emerald-200 dark:bg-emerald-900 text-emerald-900 dark:text-emerald-200 flex items-center justify-center font-bold text-xs">3</span>
-                        {isZh ? '第三步：规范最终答案与增根判定' : 'Step 3: Final Answer (Boxed & Validated)'}
+                        {isZh ? '第三步：规范最终答案与增根判定 (Boxed Final Answer)' : 'Step 3: Boxed Final Answer'}
                       </div>
                       <div className="pl-7 text-sm sm:text-base font-bold text-emerald-900 dark:text-emerald-200">
-                        <FormattedMathText text={`$$${q.solution.step3}$$`} />
+                        <FormattedMathText text={`$$${q.solution.finalAnswer || q.solution.step3}$$`} />
                       </div>
                     </div>
                   </div>
 
-                  {/* Warning Box: Common Trap */}
-                  <div className="p-4 rounded-xl border border-rose-400 dark:border-rose-900/60 bg-rose-50/90 dark:bg-rose-950/40 space-y-1.5">
-                    <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400">
+                  {/* Callout Box: ⚠️ "Common Trap to Avoid" highlighted in red/rose tone */}
+                  <div className="p-4 rounded-xl border-2 border-rose-400/80 dark:border-rose-900/70 bg-rose-50/90 dark:bg-rose-950/40 space-y-1.5 shadow-xs">
+                    <div className="flex items-center gap-2 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400">
                       <AlertOctagon className="w-4 h-4 text-rose-600 shrink-0" />
-                      {isZh ? '考场扣分雷区警示 (Common Trap)' : 'Common Trap: Where Method Marks Are Lost'}
+                      {isZh ? '⚠️ 考场扣分雷区警示 (Common Trap to Avoid)' : '⚠️ Common Trap to Avoid (Where Method Marks Are Lost)'}
                     </div>
-                    <p className="pl-6 text-xs sm:text-sm leading-relaxed text-rose-900 dark:text-rose-200 font-medium">
-                      <FormattedMathText text={q.solution.trap} />
+                    <p className="pl-6 text-xs sm:text-sm leading-relaxed text-rose-950 dark:text-rose-200 font-medium">
+                      <FormattedMathText text={q.solution.commonTrap || q.solution.trap} />
                     </p>
                   </div>
                 </div>

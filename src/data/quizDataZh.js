@@ -14,16 +14,28 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "因为平方项 $(x - 3)^2$ 的系数为负数 ($-2$)，抛物线开口向下呈倒 U 形，所以曲线在 $(x - 3) = 0$（即 $x = +3$）时取得【最大值 7】。转向点坐标为 $(3, 7)$。切记括号内的符号要反转：$(x - 3)$ 对应的横坐标是 $+3$，而不是 $-3$！",
     "solution": {
-      "step1": "使用二次函数顶点式（配方式）模型：$y = a(x - h)^2 + k$，顶点（转向点）坐标为 $(h, k)$。若 $a < 0$，抛物线开口向下，顶点为最高点（极大值）；若 $a > 0$，开口向上，顶点为最低点（极小值）。",
+      "formulaSetup": "二次函数标准顶点式模型：$y = a(x - h)^2 + k$，其中顶点（转向点）坐标为 $(h, k)$。若首项系数 $a < 0$，抛物线开口向下（倒 U 形）具有极大值最高点；若 $a > 0$，开口向上具有极小值最低点。",
+      "steps": [
+        "1. 列出题干给出的配方顶点式：$$y = -2(x - 3)^2 + 7$$",
+        "2. 提取顶点式各关键参数：$$a = -2, \\quad h = 3, \\quad k = 7$$",
+        "3. 括号零点归零化（Bracket Nullification）：由于实数平方项恒有 $(x - 3)^2 \\ge 0$，该平方项在括号内部归零时取得最小值 0：$$(x - 3) = 0 \\implies x = +3$$",
+        "4. 凹凸性与极值性质判定（Nature Evaluation）：由于首项系数为负数（$a = -2 < 0$），将非负平方项乘以 $-2$ 得到恒非正：$$-2(x - 3)^2 \\le 0 \\quad (\\forall x \\in \\mathbb{R})$$",
+        "5. 因此，当平方括号归零时，曲线取得【最大值】：$$y_{\\max} = -2(3 - 3)^2 + 7 = -2(0)^2 + 7 = 7$$",
+        "6. 综合得出转向点的坐标与几何性质：最高点（极大值转向点），坐标为 $(3, 7)$。"
+      ],
+      "finalAnswer": "\\mathbf{最高点\\ (极大值转向点)，坐标为\\ (3, 7)}",
+      "commonTrap": "看到括号内为 $(x - 3)$ 便直接写出横坐标 $-3$。顶点式为 $(x - h)$，括号归零 $x - 3 = 0$ 决定了横坐标必为正号 $+3$。此外，负系数 $a = -2 < 0$ 决定了曲线向上凸起达到最高峰，切勿误判为最低点。",
+      "step1": "二次函数标准顶点式模型：$y = a(x - h)^2 + k$，其中顶点（转向点）坐标为 $(h, k)$。若首项系数 $a < 0$，抛物线开口向下（倒 U 形）具有极大值最高点；若 $a > 0$，开口向上具有极小值最低点。",
       "step2": [
-        "1. 审阅题目给出的配方顶点式：$$y = -2(x - 3)^2 + 7$$",
-        "2. 对比标准顶点式，识别各关键参数：$$a = -2, \\quad h = 3, \\quad k = 7$$",
-        "3. 由于实数平方项恒为非负数 $(x - 3)^2 \\ge 0$，乘以负系数后恒非正：$$-2(x - 3)^2 \\le 0$$",
-        "4. 极大值在平方项取零时触发：$$(x - 3) = 0 \\implies x = 3$$",
-        "5. 将 $x = 3$ 代回函数计算纵坐标：$$y_{\\max} = -2(0)^2 + 7 = 7$$"
+        "1. 列出题干给出的配方顶点式：$$y = -2(x - 3)^2 + 7$$",
+        "2. 提取顶点式各关键参数：$$a = -2, \\quad h = 3, \\quad k = 7$$",
+        "3. 括号零点归零化（Bracket Nullification）：由于实数平方项恒有 $(x - 3)^2 \\ge 0$，该平方项在括号内部归零时取得最小值 0：$$(x - 3) = 0 \\implies x = +3$$",
+        "4. 凹凸性与极值性质判定（Nature Evaluation）：由于首项系数为负数（$a = -2 < 0$），将非负平方项乘以 $-2$ 得到恒非正：$$-2(x - 3)^2 \\le 0 \\quad (\\forall x \\in \\mathbb{R})$$",
+        "5. 因此，当平方括号归零时，曲线取得【最大值】：$$y_{\\max} = -2(3 - 3)^2 + 7 = -2(0)^2 + 7 = 7$$",
+        "6. 综合得出转向点的坐标与几何性质：最高点（极大值转向点），坐标为 $(3, 7)$。"
       ],
       "step3": "\\mathbf{最高点\\ (极大值转向点)，坐标为\\ (3, 7)}",
-      "trap": "看到括号内是 $(x - 3)$ 便不假思索地写出横坐标 $-3$。顶点式是 $(x - h)$，减号意味着横坐标发生反向平移，必须取相反数 $+3$。此外，二次项系数为负数 $-2$ 时必为开口向下的“倒 U”抛物线，切勿误判为最低点。"
+      "trap": "看到括号内为 $(x - 3)$ 便直接写出横坐标 $-3$。顶点式为 $(x - h)$，括号归零 $x - 3 = 0$ 决定了横坐标必为正号 $+3$。此外，负系数 $a = -2 < 0$ 决定了曲线向上凸起达到最高峰，切勿误判为最低点。"
     }
   },
   {
@@ -40,6 +52,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "不等式第一铁律：两边同乘或同除负数时，不等号必须立刻【调转方向】！$-x^2 + x + 6 > 0$ 除以 $-1$ 后变为 $x^2 - x - 6 < 0 \\implies (x - 3)(x + 2) < 0$。随手画一个穿过 $-2$ 和 $3$ 的微笑抛物线，轴下方 ($< 0$) 显然是夹在两根中间的区域：$-2 < x < 3$。",
     "solution": {
+      "formulaSetup": "不等式运算法则第一铁律：当不等式两边同乘或同除以一个负数时，不等号的方向必须发生严格反转（即 $>$ 变 $<$，$\\ge$ 变 $\\le$）。",
+      "steps": [
+        "1. 展开原不等式乘积：$$(3 - x)(x + 2) = 3x + 6 - x^2 - 2x = -x^2 + x + 6 > 0$$",
+        "2. 两边同时除以 $-1$（**立刻将大于号反转为小于号**）：$$x^2 - x - 6 < 0$$",
+        "3. 进行标准十字相乘因式分解：$$(x - 3)(x + 2) < 0$$",
+        "4. 标出二次函数的两个零点根（临界值）：$$x = -2 \\quad \\text{与} \\quad x = 3$$",
+        "5. 开口向上的抛物线 $y = x^2 - x - 6$ 在 $x$ 轴下方的部分（$< 0$）即为双根之间的夹心区间。"
+      ],
+      "finalAnswer": "\\mathbf{-2 < x < 3}",
+      "commonTrap": "在第 2 行两边同除 $-1$ 时忘记调转不等号，依然保留 $x^2 - x - 6 > 0$。这会导致把“夹心层解”错误算成两翼分离的开区间 $x < -2 \\text{ 或 } x > 3$，该步骤将导致过程分全部清零。",
       "step1": "不等式运算法则第一铁律：当不等式两边同乘或同除以一个负数时，不等号的方向必须发生严格反转（即 $>$ 变 $<$，$\\ge$ 变 $\\le$）。",
       "step2": [
         "1. 展开原不等式乘积：$$(3 - x)(x + 2) = 3x + 6 - x^2 - 2x = -x^2 + x + 6 > 0$$",
@@ -66,6 +88,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 1,
     "explanation": "考场低级失分陷阱！二元联立方程是求两曲线在坐标系中的交点，必须求出成对的 $(x, y)$ 坐标！将 $x = 2$ 代回得 $y = 3$；将 $x = -0.4$ 代回得 $y = -1.8$。最终解为两组坐标：$(2, 3)$ 和 $(-0.4, -1.8)$。遗漏 $y$ 坐标会直接丢掉最后的准确分 (accuracy mark)。",
     "solution": {
+      "formulaSetup": "代入消元法与成对解规范：二元非线性方程组表示平面几何图形的交点，必须逐一解出每一个 $x$ 对应的 $y$ 值，配对写成 $(x, y)$。",
+      "steps": [
+        "1. 将一次式 $y = 2x - 1$ 代入二次曲线方程 $x^2 + y^2 = 5$：$$x^2 + (2x - 1)^2 = 5$$",
+        "2. 展开完全平方式并整理为标准一元二次方程：$$x^2 + (4x^2 - 4x + 1) = 5 \\implies 5x^2 - 4x - 4 = 0$$",
+        "3. 因式分解或求解：$$(x - 2)(5x + 2) = 0 \\implies x_1 = 2, \\quad x_2 = -0.4$$",
+        "4. 将 $x_1 = 2$ 代回线性一次式：$$y_1 = 2(2) - 1 = 3$$",
+        "5. 将 $x_2 = -0.4$ 代回线性一次式：$$y_2 = 2(-0.4) - 1 = -0.8 - 1 = -1.8$$"
+      ],
+      "finalAnswer": "\\mathbf{(2, 3) \\quad \\text{与} \\quad (-0.4, -1.8)}",
+      "commonTrap": "算出 $x = 2, -0.4$ 后误以为大功告成直接收笔。二元方程组缺了 $y$ 坐标会被扣除全部的 Accuracy 分；代回时切记代入线性一次方程，千万不要代回非线性二次方程以免产生虚假多余解。",
       "step1": "代入消元法与成对解规范：二元非线性方程组表示平面几何图形的交点，必须逐一解出每一个 $x$ 对应的 $y$ 值，配对写成 $(x, y)$。",
       "step2": [
         "1. 将一次式 $y = 2x - 1$ 代入二次曲线方程 $x^2 + y^2 = 5$：$$x^2 + (2x - 1)^2 = 5$$",
@@ -92,6 +124,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 1,
     "explanation": "因为抛物线必须开口向上（微笑形状），所以 $a > 0$。因为图形【完全位于轴上方】，意味着与水平轴没有任何交点，即一元二次方程没有实数解，判别式必须小于零：$b^2 - 4ac < 0$！许多学生因看到“上方”二字盲目写下大于零，这是极度高发的概念混淆。",
     "solution": {
+      "formulaSetup": "判别式与图形位置关系：二次曲线恒正条件（$y > 0, \\forall x \\in \\mathbb{R}$）要求开口向上（$a > 0$）且与 $x$ 轴无交点（方程 $ax^2+bx+c=0$ 无实根，判别式 $\\Delta < 0$）。",
+      "steps": [
+        "1. 翻译几何语言：“完全位于 $x$ 轴上方”即对于所有实数 $x$，都有 $y > 0$。",
+        "2. 若 $a < 0$，抛物线开口向下，无论顶点多高，两翼必将向下延伸穿入负无穷，不可能完全在轴上方，故必须满足：$$a > 0$$",
+        "3. 若曲线与 $x$ 轴相交或相切，则存在 $y \\le 0$ 的点，故曲线绝不能接触 $y = 0$ 水平线。",
+        "4. 令 $ax^2 + bx + c = 0$，该方程必须没有实数解，因此根号内的判别式必须严格小于零：$$\\Delta = b^2 - 4ac < 0$$",
+        "5. 两个充分必要条件联立：$a > 0$ 且 $b^2 - 4ac < 0$。"
+      ],
+      "finalAnswer": "\\mathbf{a > 0 \\quad \\text{且} \\quad b^2 - 4ac < 0}",
+      "commonTrap": "思维定势陷阱：看到题干中的“上方 (above)”就下意识地写出 $b^2 - 4ac > 0$。切记：$b^2 - 4ac > 0$ 表示抛物线与轴有两个交点，底部必然会沉入 $x$ 轴下方！",
       "step1": "判别式与图形位置关系：二次曲线恒正条件（$y > 0, \\forall x \\in \\mathbb{R}$）要求开口向上（$a > 0$）且与 $x$ 轴无交点（方程 $ax^2+bx+c=0$ 无实根，判别式 $\\Delta < 0$）。",
       "step2": [
         "1. 翻译几何语言：“完全位于 $x$ 轴上方”即对于所有实数 $x$，都有 $y > 0$。",
@@ -118,6 +160,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "切线定理：直线与二次曲线相切时，交点方程有且仅有【重根（一个交点）】，判别式必须等于零！联立得 $x^2 - 6x + (7 - k) = 0$。令 $D = b^2 - 4ac = 0$：$36 - 4(7 - k) = 0 \\implies 36 - 28 + 4k = 0 \\implies 4k = -8 \\implies k = -2$。",
     "solution": {
+      "formulaSetup": "直线相切充要条件：联立两线方程化为标准一元二次方程 $Ax^2 + Bx + C = 0$。相切代表存在且仅存在一个公共切点（两相等实根），判别式必须为零：$$\\Delta = B^2 - 4AC = 0$$",
+      "steps": [
+        "1. 联立两方程：$$x^2 - 4x + 7 = 2x + k$$",
+        "2. 移项整理为降幂排列的标准一元二次方程：$$x^2 - 6x + (7 - k) = 0$$",
+        "3. 提取方程系数：$$A = 1, \\quad B = -6, \\quad C = 7 - k$$",
+        "4. 代入相切判别式 $\\Delta = 0$：$$(-6)^2 - 4(1)(7 - k) = 0$$",
+        "5. 去括号去负号求解 $k$：$$36 - 28 + 4k = 0 \\implies 8 + 4k = 0 \\implies 4k = -8 \\implies k = -2$$"
+      ],
+      "finalAnswer": "\\mathbf{k = -2}",
+      "commonTrap": "展开常数项负号时出现计算纰漏：将 $-4(7 - k)$ 错误展开为 $-28 - 4k$，导致解出 $k = 2$。负负得正：$-4 \\times (-k) = +4k$。",
       "step1": "直线相切充要条件：联立两线方程化为标准一元二次方程 $Ax^2 + Bx + C = 0$。相切代表存在且仅存在一个公共切点（两相等实根），判别式必须为零：$$\\Delta = B^2 - 4AC = 0$$",
       "step2": [
         "1. 联立两方程：$$x^2 - 4x + 7 = 2x + k$$",
@@ -144,6 +196,15 @@ export const quizQuestionsZh = [
     "correctAnswer": 2,
     "explanation": "对数定义域红线！对数函数的真数必须【严格大于零】！任何导致真数 $\\le 0$ 的代数候选解均为增根，在考卷上必须明确批注【reject (舍去)】，否则会被直接扣除 1 到 2 分的准确分。",
     "solution": {
+      "formulaSetup": "对数定义域合法性原则：在实数范围内，对数 $\\log_b(u)$ 存在的充要条件是真数严格为正数：$$u > 0 \\quad (\\text{底数 } b > 0, b \\ne 1)$$ 所有不满足该条件的解均为代数增根，必须书面剔除。",
+      "steps": [
+        "1. 解二次方程得到两个代数候选根：$$x = 5 \\quad \\text{或} \\quad x = -3$$",
+        "2. 检验 $x = 5$：代入原方程各项对数真数均大于 0，为合法有效解。",
+        "3. 检验 $x = -3$：代入产生负数真数（例如 $\\log(-3)$），在实数域中无定义。",
+        "4. 在考卷步骤中规范写出舍去说明：$$\\text{舍去 (reject) } x = -3 \\quad (\\because \\text{真数必须为正})$$"
+      ],
+      "finalAnswer": "\\mathbf{x = 5 \\quad (明确注明舍去\\ x = -3)}",
+      "commonTrap": "将两个答案都装进方框，或者仅用横线把 $-3$ 划掉却不写单词“reject”。剑桥考官评分细则明确规定：未明确写明理由并批注 reject 的，直接扣除最终的准确分。",
       "step1": "对数定义域合法性原则：在实数范围内，对数 $\\log_b(u)$ 存在的充要条件是真数严格为正数：$$u > 0 \\quad (\\text{底数 } b > 0, b \\ne 1)$$ 所有不满足该条件的解均为代数增根，必须书面剔除。",
       "step2": [
         "1. 解二次方程得到两个代数候选根：$$x = 5 \\quad \\text{或} \\quad x = -3$$",
@@ -169,6 +230,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "换底公式：$\\log_b(a) = \\frac{\\log_c(a)}{\\log_c(b)}$。在本题中 $\\log_9(x) = \\frac{\\log_3(x)}{\\log_3(9)} = \\frac{\\log_3(x)}{2} = \\frac{1}{2}\\log_3(x)$。原方程化为 $\\log_3(x) + \\frac{1}{2}\\log_3(x) = 1.5\\log_3(x) = 3 \\implies \\log_3(x) = 2 \\implies x = 3^2 = 9$。",
     "solution": {
+      "formulaSetup": "对数换底公式：$$\\log_b(a) = \\frac{\\log_c(a)}{\\log_c(b)}$$ 统一转化为较小的公共底数 $c = 3$。",
+      "steps": [
+        "1. 对含有底数 9 的项使用换底公式转为底数 3：$$\\log_9(x) = \\frac{\\log_3(x)}{\\log_3(9)} = \\frac{\\log_3(x)}{\\log_3(3^2)} = \\frac{\\log_3(x)}{2} = \\frac{1}{2}\\log_3(x)$$",
+        "2. 将化简后的项代回原方程：$$\\log_3(x) + \\frac{1}{2}\\log_3(x) = 3$$",
+        "3. 提取公因式合并同类项：$$\\left(1 + \\frac{1}{2}\\right)\\log_3(x) = 3 \\implies \\frac{3}{2}\\log_3(x) = 3$$",
+        "4. 两边同乘 $\\frac{2}{3}$：$$\\log_3(x) = 3 \\times \\frac{2}{3} = 2$$",
+        "5. 对数式改写为指数式完成求解：$$x = 3^2 = 9$$"
+      ],
+      "finalAnswer": "\\mathbf{x = 9}",
+      "commonTrap": "底数不同时直接相加真数，甚至臆造出 $\\log_{3+9}(x) = \\log_{12}(x)$ 或底数直接相乘 $\\log_{27}(x)$。对数的运算法则只有在“底数完全相同”的前提下才能生效！",
       "step1": "对数换底公式：$$\\log_b(a) = \\frac{\\log_c(a)}{\\log_c(b)}$$ 统一转化为较小的公共底数 $c = 3$。",
       "step2": [
         "1. 对含有底数 9 的项使用换底公式转为底数 3：$$\\log_9(x) = \\frac{\\log_3(x)}{\\log_3(9)} = \\frac{\\log_3(x)}{\\log_3(3^2)} = \\frac{\\log_3(x)}{2} = \\frac{1}{2}\\log_3(x)$$",
@@ -195,6 +266,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 1,
     "explanation": "绝对值函数会将所有负输出强制映射为正距离。绘制直线 $y = 2x - 6$，在 $x = 3$（此处 $2x - 6 = 0$）与横轴相交；下方负值区域以 $x$ 轴为镜面垂直向上反折，形成以 $(3, 0)$ 为尖点、截距为 $(0, 6)$ 的刚性 V 字形折线。",
     "solution": {
+      "formulaSetup": "绝对值分段函数定义：$$|f(x)| = \\begin{cases} f(x), & \\text{当 } f(x) \\ge 0 \\\\ -f(x), & \\text{当 } f(x) < 0 \\end{cases}$$ 绘制内部直线，并将 $y < 0$ 的部分沿着 $x$ 轴向上翻折。",
+      "steps": [
+        "1. 令绝对值内部等于零，求出尖角顶点（零点反折点）：$$2x - 6 = 0 \\implies x = 3 \\implies \\text{顶点坐标 } (3, 0)$$",
+        "2. 计算 $y$ 轴截距（令 $x = 0$）：$$y = |2(0) - 6| = |-6| = 6 \\implies \\text{截距点 } (0, 6)$$",
+        "3. 当 $x \\ge 3$ 时：原式为 $y = 2x - 6$（斜率为 $+2$ 的直线射线）。",
+        "4. 当 $x < 3$ 时：反折部分方程为 $y = -(2x - 6) = -2x + 6$（斜率为 $-2$ 的直线射线）。",
+        "5. 两条射线在 $(3, 0)$ 处形成对称锐角 V 形，值域恒满足 $y \\ge 0$。"
+      ],
+      "finalAnswer": "\\mathbf{以\\ (3, 0)\\ 为顶点的\\ V\\ 形折线，y\\ 轴截距为\\ (0, 6)}",
+      "commonTrap": "在顶点 $(3, 0)$ 处画出圆滑弧形的抛物线底部。绝对值一次函数是由两条刚性笔直的射线拼接而成，必须画出清晰尖锐的折角！",
       "step1": "绝对值分段函数定义：$$|f(x)| = \\begin{cases} f(x), & \\text{当 } f(x) \\ge 0 \\\\ -f(x), & \\text{当 } f(x) < 0 \\end{cases}$$ 绘制内部直线，并将 $y < 0$ 的部分沿着 $x$ 轴向上翻折。",
       "step2": [
         "1. 令绝对值内部等于零，求出尖角顶点（零点反折点）：$$2x - 6 = 0 \\implies x = 3 \\implies \\text{顶点坐标 } (3, 0)$$",
@@ -221,6 +302,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "因为 $|2x - 5| \\ge 0$ 对所有实数恒成立，方程右侧必须满足非负限制（$x + 1 \\ge 0 \\implies x \\ge -1$）。代入 $x = 6$：$|12 - 5| = 7$，右侧 $6 + 1 = 7$（成立）。代入 $x = 4/3$：$|8/3 - 5| = 7/3$，右侧 $4/3 + 1 = 7/3$（成立）。若未检验而碰上使右边为负的解，就会产生严重增根错误！",
     "solution": {
+      "formulaSetup": "方程 $|A| = B$ 求解模型：分两路线性方程求解：$$A = B \\quad \\text{或} \\quad A = -B$$ 隐性核心约束：因 $|A| \\ge 0$，等式成立的前提是 $B \\ge 0$。",
+      "steps": [
+        "1. 分支一（$2x - 5 = x + 1$）：$$2x - x = 1 + 5 \\implies x = 6$$",
+        "2. 分支二（$2x - 5 = -(x + 1)$）：$$2x - 5 = -x - 1 \\implies 3x = 4 \\implies x = \\frac{4}{3}$$",
+        "3. 检验根 $x = 6$：$$\\text{左边} = |2(6) - 5| = 7; \\quad \\text{右边} = 6 + 1 = 7 \\implies \\text{两边相等，解成立 } \\checkmark$$",
+        "4. 检验根 $x = \\frac{4}{3}$：$$\\text{左边} = \\left|2\\left(\\frac{4}{3}\\right) - 5\\right| = \\left|-\\frac{7}{3}\\right| = \\frac{7}{3}; \\quad \\text{右边} = \\frac{4}{3} + 1 = \\frac{7}{3} \\implies \\text{两边相等，解成立 } \\checkmark$$",
+        "5. 两根均满足非负约束条件 $x + 1 \\ge 0$（即 $x \\ge -1$）。"
+      ],
+      "finalAnswer": "\\mathbf{x = 6 \\quad \\text{与} \\quad x = \\frac{4}{3}}",
+      "commonTrap": "很多绝对值题目在右边含有未知数（如 $|2x - 5| = 1 - x$），若解出的 $x$ 会导致右式 $< 0$，该解即为绝对值无法达到的数学伪根，未舍去就会全题扣分。",
       "step1": "方程 $|A| = B$ 求解模型：分两路线性方程求解：$$A = B \\quad \\text{或} \\quad A = -B$$ 隐性核心约束：因 $|A| \\ge 0$，等式成立的前提是 $B \\ge 0$。",
       "step2": [
         "1. 分支一（$2x - 5 = x + 1$）：$$2x - x = 1 + 5 \\implies x = 6$$",
@@ -247,6 +338,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "正弦定理多值性陷阱 (Ambiguous Case)！当已知两边和其中一边对角，且已知角的对边小于邻边（$a < b$）时，利用正弦算出的角可能为锐角，也可能为其补角 $180^\\circ - B$。只要两角之和小于 $180^\\circ$，钝角解就完全有效！",
     "solution": {
+      "formulaSetup": "正弦定理：$$\\frac{\\sin B}{b} = \\frac{\\sin A}{a} \\implies \\sin B = \\frac{b\\sin A}{a}$$ 正弦函数的补角多值性：当 $\\sin B = k > 0$ 时，在 $0^\\circ < B < 180^\\circ$ 内存在锐角 $B_1$ 与钝角 $B_2 = 180^\\circ - B_1$。",
+      "steps": [
+        "1. 代入题目已知参数：$$\\sin B = \\frac{10\\sin 35^\\circ}{7} \\approx \\frac{10 \\times 0.573576}{7} \\approx 0.819395$$",
+        "2. 计算第一象限锐角主值：$$B_1 = \\sin^{-1}(0.819395) \\approx 55.02^\\circ \\approx 55.0^\\circ$$",
+        "3. 计算第二象限钝角备选解：$$B_2 = 180^\\circ - 55.02^\\circ = 124.98^\\circ \\approx 125.0^\\circ$$",
+        "4. 检验三角形内角和定理：已知角 $A = 35^\\circ$，将钝角代入求和：$$A + B_2 = 35^\\circ + 124.98^\\circ = 159.98^\\circ < 180^\\circ$$",
+        "5. 因为内角和小于 $180^\\circ$，第三个角 $C = 180^\\circ - 159.98^\\circ \\approx 20.0^\\circ$ 真实存在，故两组三角形均成立。"
+      ],
+      "finalAnswer": "\\mathbf{B \\approx 55.0^\\circ \\quad \\text{或} \\quad B \\approx 125.0^\\circ}",
+      "commonTrap": "只写出计算器直接给出的锐角 $55.0^\\circ$，完全遗漏钝角解 $125.0^\\circ$。在 RVHS 考卷中，若对边小于邻边（$a < b$），钝角解几乎必定存在，漏写会被扣除 2 分。",
       "step1": "正弦定理：$$\\frac{\\sin B}{b} = \\frac{\\sin A}{a} \\implies \\sin B = \\frac{b\\sin A}{a}$$ 正弦函数的补角多值性：当 $\\sin B = k > 0$ 时，在 $0^\\circ < B < 180^\\circ$ 内存在锐角 $B_1$ 与钝角 $B_2 = 180^\\circ - B_1$。",
       "step2": [
         "1. 代入题目已知参数：$$\\sin B = \\frac{10\\sin 35^\\circ}{7} \\approx \\frac{10 \\times 0.573576}{7} \\approx 0.819395$$",
@@ -273,6 +374,14 @@ export const quizQuestionsZh = [
     "correctAnswer": 2,
     "explanation": "反向方位角法则！因为 A 和 B 两处的正北线是相互平行的，两线之间的同旁内角互补为 $180^\\circ$。对于任何小于 $180^\\circ$ 的方位角 $\\theta$，其反向反向角恒为 $\\theta + 180^\\circ = 070^\\circ + 180^\\circ = 250^\\circ$。",
     "solution": {
+      "formulaSetup": "正北平行线几何法则：反向方位角（Back-bearing）对应相反方向的转角：$$\\text{反向方位角} = \\begin{cases} \\theta + 180^\\circ, & \\text{若 } \\theta < 180^\\circ \\\\ \\theta - 180^\\circ, & \\text{若 } \\theta \\ge 180^\\circ \\end{cases}$$",
+      "steps": [
+        "1. 提取题干中从 A 到 B 的方位角：$$\\theta = 070^\\circ$$",
+        "2. 由于 $070^\\circ < 180^\\circ$，根据内错角及正南平行线性质，反向方位角加上平角 $180^\\circ$：$$\\text{B 到 A 的方位角} = 070^\\circ + 180^\\circ = 250^\\circ$$",
+        "3. 几何图形验证：在 B 点画出正北十字。正南方向为 $180^\\circ$，从正南继续顺时针偏转内错角 $70^\\circ$ 指向 A 点：$$180^\\circ + 70^\\circ = 250^\\circ$$"
+      ],
+      "finalAnswer": "\\mathbf{250^\\circ}",
+      "commonTrap": "用 $180^\\circ - 70^\\circ = 110^\\circ$ 或 $360^\\circ - 70^\\circ = 290^\\circ$。方位角必须从正北严格顺时针旋转，且小于 $100^\\circ$ 的角度前面必须补零（如 $070^\\circ$ 而非 $70^\\circ$）。",
       "step1": "正北平行线几何法则：反向方位角（Back-bearing）对应相反方向的转角：$$\\text{反向方位角} = \\begin{cases} \\theta + 180^\\circ, & \\text{若 } \\theta < 180^\\circ \\\\ \\theta - 180^\\circ, & \\text{若 } \\theta \\ge 180^\\circ \\end{cases}$$",
       "step2": [
         "1. 提取题干中从 A 到 B 的方位角：$$\\theta = 070^\\circ$$",
@@ -297,6 +406,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "全校最惨痛失分点！计算器留在 DEG 角度模式！在弧度制公式中，$\\sin(1.2\\text{ rad}) \\approx 0.9320$，但若按成角度 $\\sin(1.2^\\circ) \\approx 0.0209$。这一微小疏忽会导致计算出完全错误的数值，丢掉全部后续过程分。",
     "solution": {
+      "formulaSetup": "弧度制基本公式：扇形面积 $A_{\\text{扇形}} = \\frac{1}{2}r^2\\theta$，弓形面积 $A_{\\text{弓形}} = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$。**前提条件**：计算 $\\sin\\theta$ 时计算器屏幕上方必须显示小写字母 【R】（RAD 模式）。",
+      "steps": [
+        "1. 计算扇形面积：$$A_{\\text{扇形}} = \\frac{1}{2}(5^2)(1.2) = \\frac{1}{2}(25)(1.2) = 15\\text{ cm}^2$$",
+        "2. 列出弓形面积公式：$$A_{\\text{弓形}} = \\frac{1}{2}(5^2)(1.2 - \\sin(1.2))$$",
+        "3. 在 RAD 模式下计算 $\\sin(1.2)$ 的精确值：$$\\sin(1.2\\text{ rad}) \\approx 0.932039$$",
+        "4. 弧度差值：$$1.2 - 0.932039 = 0.267961$$",
+        "5. 算出弓形面积：$$A_{\\text{弓形}} = 12.5 \\times 0.267961 \\approx 3.35\\text{ cm}^2 \\quad (\\text{保留 3 位有效数字})$$"
+      ],
+      "finalAnswer": "\\mathbf{A_{\\text{扇形}} = 15\\text{ cm}^2, \\quad A_{\\text{弓形}} \\approx 3.35\\text{ cm}^2}",
+      "commonTrap": "计算器留在 DEG 模式下按 $\\sin(1.2)$，算出错误值 $0.02094$，导致弓形面积算出荒谬的 $14.7\\text{ cm}^2$。进入微积分和弧度制大题前，第一件事就是检查计算器顶端是否为【R】模式。",
       "step1": "弧度制基本公式：扇形面积 $A_{\\text{扇形}} = \\frac{1}{2}r^2\\theta$，弓形面积 $A_{\\text{弓形}} = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$。**前提条件**：计算 $\\sin\\theta$ 时计算器屏幕上方必须显示小写字母 【R】（RAD 模式）。",
       "step2": [
         "1. 计算扇形面积：$$A_{\\text{扇形}} = \\frac{1}{2}(5^2)(1.2) = \\frac{1}{2}(25)(1.2) = 15\\text{ cm}^2$$",
@@ -323,6 +442,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "振幅必须严格为正数：$|a| = |-3| = 3$。周期由 $b$ 决定：$T = 2\\pi / b = 2\\pi / 4 = \\pi/2$（或 $90^\\circ$）。中轴线位于 $y = 2$，故极大值为 $2 + 3 = 5$（极小值为 $2 - 3 = -1$）。",
     "solution": {
+      "formulaSetup": "通用三角函数解析模型 $y = a\\cos(bx) + c$：$$\\text{振幅 (Amplitude)} = |a|, \\quad \\text{周期 (Period)} = \\frac{2\\pi}{b}, \\quad \\text{中轴线} = c, \\quad y_{\\max} = c + |a|$$",
+      "steps": [
+        "1. 对照原方程提取关键系数：$$a = -3, \\quad b = 4, \\quad c = 2$$",
+        "2. 计算振幅（定义为离开中轴线的绝对波动距离，绝不能为负）：$$\\text{振幅} = |-3| = 3$$",
+        "3. 计算完成一次完整余弦周期的跨度：$$\\text{周期 } T = \\frac{2\\pi}{b} = \\frac{2\\pi}{4} = \\frac{\\pi}{2} \\quad (\\text{即 } 90^\\circ)$$",
+        "4. 当 $\\cos(4x) = -1$ 时取得最大值：$$y_{\\max} = -3(-1) + 2 = 3 + 2 = 5$$",
+        "5. 极小值发生在 $\\cos(4x) = +1$ 时：$$y_{\\min} = -3(1) + 2 = -1$$"
+      ],
+      "finalAnswer": "\\mathbf{\\text{振幅} = 3, \\quad \\text{周期} = \\frac{\\pi}{2} \\text{ (或 } 90^\\circ\\text{)}, \\quad \\text{最大值} = 5}",
+      "commonTrap": "随手把振幅写成 $-3$。在数学和物理定义中，振幅代表距离标量，严格为非负数（$|a| > 0$），写负数直接扣分。",
       "step1": "通用三角函数解析模型 $y = a\\cos(bx) + c$：$$\\text{振幅 (Amplitude)} = |a|, \\quad \\text{周期 (Period)} = \\frac{2\\pi}{b}, \\quad \\text{中轴线} = c, \\quad y_{\\max} = c + |a|$$",
       "step2": [
         "1. 对照原方程提取关键系数：$$a = -3, \\quad b = 4, \\quad c = 2$$",
@@ -349,6 +478,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "考场最高危红线！解方程绝对不能两边同除以含有未知数的三角函数，因为这相当于假设该项绝不为零！正确做法是移项提公因式：$\\sin(x)(2\\cos(x) - 1) = 0$，由此同时得到 $\\sin(x) = 0$ 和 $\\cos(x) = 0.5$ 两组解！",
     "solution": {
+      "formulaSetup": "方程因式分解守恒原则：严禁在方程两边同除含有自变量的代数式，必须通过移项因式分解保留全部解支：$$A \\cdot B = A \\implies A(B - 1) = 0 \\implies A = 0 \\text{ 或 } B = 1$$",
+      "steps": [
+        "1. 移项将右边化为零：$$2\\sin(x)\\cos(x) - \\sin(x) = 0$$",
+        "2. 提取公因式 $\\sin(x)$：$$\\sin(x)(2\\cos(x) - 1) = 0$$",
+        "3. 分支一（原方法遗漏的部分）：$$\\sin(x) = 0 \\implies x = 0^\\circ, 180^\\circ, 360^\\circ \\quad (\\text{在 } 0^\\circ \\le x \\le 360^\\circ \\text{ 域内})$$",
+        "4. 分支二：$$2\\cos(x) - 1 = 0 \\implies \\cos(x) = 0.5 \\implies x = 60^\\circ, 300^\\circ$$",
+        "5. 汇集两支全部合法实根。"
+      ],
+      "finalAnswer": "\\mathbf{x = 0^\\circ, 60^\\circ, 180^\\circ, 300^\\circ, 360^\\circ}",
+      "commonTrap": "直接除以 $\\sin(x)$，把 $\\sin(x) = 0$ 连根拔起，导致 $0^\\circ, 180^\\circ, 360^\\circ$ 三个解全部丢失，痛失全题超过一半的分数。",
       "step1": "方程因式分解守恒原则：严禁在方程两边同除含有自变量的代数式，必须通过移项因式分解保留全部解支：$$A \\cdot B = A \\implies A(B - 1) = 0 \\implies A = 0 \\text{ 或 } B = 1$$",
       "step2": [
         "1. 移项将右边化为零：$$2\\sin(x)\\cos(x) - \\sin(x) = 0$$",
@@ -375,6 +514,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 1,
     "explanation": "区间放缩协议：从原始区间 $0^\\circ \\le x \\le 180^\\circ$ 出发，先整体乘以 2 得到 $0^\\circ \\le 2x \\le 360^\\circ$；再统一减去 30° 得到 $-30^\\circ \\le 2x - 30^\\circ \\le 330^\\circ$。若不修改区间，会导致严重漏掉第二或第四象限的有效根！",
     "solution": {
+      "formulaSetup": "区间变换法则：对自变量 $x$ 所处的原始不等式区间，同步施加与复合角相同的乘除与加减运算：$$x_1 \\le x \\le x_2 \\implies 2x_1 - 30^\\circ \\le 2x - 30^\\circ \\le 2x_2 - 30^\\circ$$",
+      "steps": [
+        "1. 明确自变量 $x$ 的初始给定期限：$$0^\\circ \\le x \\le 180^\\circ$$",
+        "2. 各部分乘以系数 2：$$0^\\circ \\le 2x \\le 360^\\circ$$",
+        "3. 各部分减去平移角 $30^\\circ$：$$0^\\circ - 30^\\circ \\le 2x - 30^\\circ \\le 360^\\circ - 30^\\circ$$",
+        "4. 得到 $\\theta = 2x - 30^\\circ$ 的真实搜寻视窗：$$-30^\\circ \\le \\theta \\le 330^\\circ$$",
+        "5. 在此视窗内求 $\\cos\\theta = 0.5$：锐角基准角 $\\alpha = 60^\\circ$。在视窗内的解为 $\\theta = 60^\\circ, 300^\\circ \\implies x = 45^\\circ, 165^\\circ$。"
+      ],
+      "finalAnswer": "\\mathbf{-30^\\circ \\le \\theta \\le 330^\\circ \\quad (x = 45^\\circ, 165^\\circ)}",
+      "commonTrap": "不调整区间，仍然在 $0^\\circ \\le \\theta \\le 180^\\circ$ 寻找解，导致遗漏 $\\theta = 300^\\circ$ 对应的 $x = 165^\\circ$ 这个完全处于合规范围内的有效答案。",
       "step1": "区间变换法则：对自变量 $x$ 所处的原始不等式区间，同步施加与复合角相同的乘除与加减运算：$$x_1 \\le x \\le x_2 \\implies 2x_1 - 30^\\circ \\le 2x - 30^\\circ \\le 2x_2 - 30^\\circ$$",
       "step2": [
         "1. 明确自变量 $x$ 的初始给定期限：$$0^\\circ \\le x \\le 180^\\circ$$",
@@ -401,6 +550,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "方程化待遇致命陷阱 (Treatment of Equation)！证明题绝不能像解方程那样左右两边跨等号移项交叉相乘！必须单侧起笔：$\\text{LHS} = \\frac{1 - (1 - 2\\sin^2\\theta)}{2\\sin\\theta\\cos\\theta} = \\frac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta} = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta = \\text{RHS}$。",
     "solution": {
+      "formulaSetup": "恒等式严密证明逻辑：从较复杂的一侧（通常为左侧 LHS）着手，逐行应用二倍角公式化简，严禁两边交叉相乘或跨等号移项：$$\\cos 2\\theta = 1 - 2\\sin^2\\theta, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta$$",
+      "steps": [
+        "1. 书写左侧起手式：$$\\text{LHS} = \\frac{1 - \\cos 2\\theta}{\\sin 2\\theta}$$",
+        "2. 将分子中的余弦二倍角用正弦替换（消除常数 1）：$$\\text{分子} = 1 - (1 - 2\\sin^2\\theta) = 2\\sin^2\\theta$$",
+        "3. 分母展开为正弦二倍角：$$\\text{分母} = 2\\sin\\theta\\cos\\theta$$",
+        "4. 分式约去公因式 $2\\sin\\theta$：$$\\text{LHS} = \\frac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta} = \\frac{\\sin\\theta}{\\cos\\theta}$$",
+        "5. 依据商数关系替换为正切：$$\\text{LHS} = \\tan\\theta = \\text{RHS} \\quad (\\text{得证 Proven})$$"
+      ],
+      "finalAnswer": "\\mathbf{\\text{LHS} = \\dots = \\tan\\theta = \\text{RHS \\quad (得证)}}",
+      "commonTrap": "把待证的恒等式当成已知方程，直接交叉相乘展开。剑桥评卷标准明确将其定性为“循环论证 (Circular Argument)”，整个大题的过程分直接归零。",
       "step1": "恒等式严密证明逻辑：从较复杂的一侧（通常为左侧 LHS）着手，逐行应用二倍角公式化简，严禁两边交叉相乘或跨等号移项：$$\\cos 2\\theta = 1 - 2\\sin^2\\theta, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta$$",
       "step2": [
         "1. 书写左侧起手式：$$\\text{LHS} = \\frac{1 - \\cos 2\\theta}{\\sin 2\\theta}$$",
@@ -427,6 +586,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "$R = \\sqrt{a^2 + b^2} = \\sqrt{3^2 + (-4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$。原式合成为 $5\\sin(\\theta - \\alpha)$。因为任何正弦波的振荡峰值均为 $+1$，所以整个表达式的最大值是 $5 \\times 1 = +5$。",
     "solution": {
+      "formulaSetup": "辅助角正弦合成公式：$$a\\sin\\theta - b\\cos\\theta = R\\sin(\\theta - \\alpha)$$ 其中模长 $R = \\sqrt{a^2 + b^2} > 0$，$\\tan\\alpha = \\frac{b}{a}$。因为 $-1 \\le \\sin(\\theta - \\alpha) \\le 1$，所以极大值为 $+R$，极小值为 $-R$。",
+      "steps": [
+        "1. 提取已知系数：$$a = 3, \\quad b = 4$$",
+        "2. 勾股定理计算合成振幅 $R$：$$R = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$$",
+        "3. 计算初相角 $\\alpha$：$$\\tan\\alpha = \\frac{4}{3} \\implies \\alpha = \\tan^{-1}\\left(\\frac{4}{3}\\right) \\approx 53.13^\\circ$$",
+        "4. 将原式改写为单一正弦波形式：$$3\\sin\\theta - 4\\cos\\theta = 5\\sin(\\theta - 53.13^\\circ)$$",
+        "5. 正弦项最大可达 $+1$，故：$$\\text{最大值} = 5 \\times 1 = +5$$"
+      ],
+      "finalAnswer": "\\mathbf{R = 5, \\quad \\text{最大值} = +5}",
+      "commonTrap": "算完 $3^2 + 4^2 = 25$ 后忘记开根号，误把 $R$ 当成 $25$；或者简单粗暴地相加 $3 + 4 = 7$。正弦与余弦在相位上相差 $90^\\circ$，振幅必须按几何正交向量勾股定理求得。",
       "step1": "辅助角正弦合成公式：$$a\\sin\\theta - b\\cos\\theta = R\\sin(\\theta - \\alpha)$$ 其中模长 $R = \\sqrt{a^2 + b^2} > 0$，$\\tan\\alpha = \\frac{b}{a}$。因为 $-1 \\le \\sin(\\theta - \\alpha) \\le 1$，所以极大值为 $+R$，极小值为 $-R$。",
       "step2": [
         "1. 提取已知系数：$$a = 3, \\quad b = 4$$",
@@ -453,6 +622,16 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "因式分解不彻底失分点！若题目要求“factorise completely (完全因式分解)”，把可以继续分解的二次商留在答案中会直接丢掉最后的准确分 (A-mark)。切记继续分解：$2x^2 + 3x - 2 = (2x - 1)(x + 2)$。",
     "solution": {
+      "formulaSetup": "完全因式分解原则：三次多项式 $P(x)$ 经因式定理提取一个一次因式后：$$P(x) = (x - c) \\cdot Q(x)$$ 必须对二次商式 $Q(x)$ 进行判别式或十字相乘检验，只要能拆就必须拆到一次因式为止。",
+      "steps": [
+        "1. 验证一次因式 $(x - 3)$：$$P(3) = 2(27) - 3(9) - 11(3) + 6 = 54 - 27 - 33 + 6 = 0 \\implies (x - 3) \\text{ 为因式}$$",
+        "2. 多项式长除法提取二次商：$$\\frac{2x^3 - 3x^2 - 11x + 6}{x - 3} = 2x^2 + 3x - 2$$",
+        "3. 检查二次商 $2x^2 + 3x - 2$ 的判别式：$$\\Delta = 3^2 - 4(2)(-2) = 9 + 16 = 25 > 0 \\quad (\\text{可继续因式分解})$$",
+        "4. 十字相乘法分解二次商：$$2x^2 + 3x - 2 = (2x - 1)(x + 2)$$",
+        "5. 完整汇集三个一次线性因式：$$P(x) = (x - 3)(2x - 1)(x + 2)$$"
+      ],
+      "finalAnswer": "\\mathbf{P(x) = (x - 3)(2x - 1)(x + 2)}",
+      "commonTrap": "长除完成后直接在 $(x - 3)(2x^2 + 3x - 2)$ 画框收工。当题干出现“completely”时，任何二次因式残留都会扣掉最后一分。",
       "step1": "完全因式分解原则：三次多项式 $P(x)$ 经因式定理提取一个一次因式后：$$P(x) = (x - c) \\cdot Q(x)$$ 必须对二次商式 $Q(x)$ 进行判别式或十字相乘检验，只要能拆就必须拆到一次因式为止。",
       "step2": [
         "1. 验证一次因式 $(x - 3)$：$$P(3) = 2(27) - 3(9) - 11(3) + 6 = 54 - 27 - 33 + 6 = 0 \\implies (x - 3) \\text{ 为因式}$$",
@@ -479,6 +658,20 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "假分式地雷区！若分子最高次数 $\\ge$ 分母最高次数，分式就是假分式！【绝对不能直接拆分】！必须先用长除法整除提取多项式商 $(2x + 1)$，然后仅对真分式余数部分拆分，否则整道大题全军覆没。",
     "solution": {
+      "formulaSetup": "部分分式基本定义域准则：部分分式拆分法则仅适用于**真分式**（Proper Fraction，即分子次数严格小于分母次数）。若 $\\deg(P) \\ge \\deg(Q)$，必须先进行多项式长除：$$\\frac{P(x)}{Q(x)} = \\text{多项式商 } S(x) + \\frac{\\text{余式 } R(x)}{Q(x)}$$",
+      "steps": [
+        "1. 核查分式分子分母的多项式次数：$$\\deg(\\text{分子}) = 3, \\quad \\deg(\\text{分母}) = 2$$",
+        "2. 由于 $3 \\ge 2$，判定为假分式，必须启动长除法：",
+        "3. 用 $2x^3 + 5x^2 - 4$ 除以 $x^2 + 2x$：",
+        "   - 首项相除：$2x^3 / x^2 = 2x$",
+        "   - 相乘相减：$(2x^3 + 5x^2 - 4) - 2x(x^2 + 2x) = x^2 - 4$",
+        "   - 次项相除：$x^2 / x^2 = +1$",
+        "   - 相乘相减：$(x^2 - 4) - 1(x^2 + 2x) = -2x - 4$",
+        "4. 长除后整式商为 $(2x + 1)$，余式为 $(-2x - 4)$：$$\\frac{2x^3 + 5x^2 - 4}{x^2 + 2x} = (2x + 1) + \\frac{-2x - 4}{x(x + 2)}$$",
+        "5. 对后面的真分式部分设待定系数：$\\frac{A}{x} + \\frac{B}{x + 2}$。"
+      ],
+      "finalAnswer": "\\mathbf{\\text{商式为 } (2x + 1); \\quad \\text{拆分模型为 } (2x + 1) + \\frac{A}{x} + \\frac{B}{x + 2}}",
+      "commonTrap": "不看次数直接写 $\\frac{A}{x} + \\frac{B}{x + 2}$。遗漏了整式商 $(2x + 1)$ 会导致后续待定系数对比完全失灵，全题 0 分。",
       "step1": "部分分式基本定义域准则：部分分式拆分法则仅适用于**真分式**（Proper Fraction，即分子次数严格小于分母次数）。若 $\\deg(P) \\ge \\deg(Q)$，必须先进行多项式长除：$$\\frac{P(x)}{Q(x)} = \\text{多项式商 } S(x) + \\frac{\\text{余式 } R(x)}{Q(x)}$$",
       "step2": [
         "1. 核查分式分子分母的多项式次数：$$\\deg(\\text{分子}) = 3, \\quad \\deg(\\text{分母}) = 2$$",
@@ -509,6 +702,15 @@ export const quizQuestionsZh = [
     "correctAnswer": 0,
     "explanation": "斜率公式 $m_{AB} = \\frac{-3 - 5}{4 - (-2)} = \\frac{-8}{6} = -\\frac{4}{3}$。根据两线垂直条件 $m_1 \\cdot m_2 = -1$，垂直斜率必须【取倒数并变号】（Negative Reciprocal）：$m_\\perp = -1 / (-4/3) = +\\frac{3}{4}$！切记负负得正。",
     "solution": {
+      "formulaSetup": "两直线垂直充要条件：若两直线斜率分别为 $m_1$ 和 $m_2$ 且互为垂直关系，则：$$m_1 \\cdot m_2 = -1 \\implies m_\\perp = -\\frac{1}{m_1}$$",
+      "steps": [
+        "1. 使用两点斜率公式计算线段 $AB$ 的斜率：$$m_{AB} = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{-3 - 5}{4 - (-2)} = \\frac{-8}{4 + 2} = \\frac{-8}{6} = -\\frac{4}{3}$$",
+        "2. 求其负倒数（即颠倒分子分母并反转正负号）：$$m_\\perp = -\\frac{1}{-\\frac{4}{3}} = +\\frac{3}{4}$$",
+        "3. （若需写出方程，求 $AB$ 中点）：$$M = \\left(\\frac{-2 + 4}{2}, \\frac{5 + (-3)}{2}\\right) = (1, 1)$$",
+        "4. 点斜式建立方程：$$y - 1 = \\frac{3}{4}(x - 1) \\implies 4y - 4 = 3x - 3 \\implies 3x - 4y + 1 = 0$$"
+      ],
+      "finalAnswer": "\\mathbf{m_\\perp = +\\frac{3}{4} \\quad (\\text{垂直平分线方程: } 3x - 4y + 1 = 0)}",
+      "commonTrap": "只倒数不变号（写成 $-\\frac{3}{4}$），或者只变号不倒数（写成 $+\\frac{4}{3}$）。记住四个字：【颠倒变号】。",
       "step1": "两直线垂直充要条件：若两直线斜率分别为 $m_1$ 和 $m_2$ 且互为垂直关系，则：$$m_1 \\cdot m_2 = -1 \\implies m_\\perp = -\\frac{1}{m_1}$$",
       "step2": [
         "1. 使用两点斜率公式计算线段 $AB$ 的斜率：$$m_{AB} = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{-3 - 5}{4 - (-2)} = \\frac{-8}{4 + 2} = \\frac{-8}{6} = -\\frac{4}{3}$$",
@@ -534,6 +736,15 @@ export const quizQuestionsZh = [
     "correctAnswer": 1,
     "explanation": "致命扣分词！水沸腾只是物理相变，分子散开，【绝不破坏分子内部的共价键】！写“break covalent bonds”直接给零分！必须严格书写：只需要较少能量克服分子间的【微弱分子间作用力】。",
     "solution": {
+      "formulaSetup": "简单分子结构（Simple Molecular Structure）标准得分答题模板：明确物质结构 $\\rightarrow$ 明确受热克服的作用力 $\\rightarrow$ 阐述能量高低。",
+      "steps": [
+        "1. 定性结构：水（$H_2O$）属于简单分子结构（Simple Molecular Structure）。",
+        "2. 相变本质：沸腾过程仅仅是分子间距增大，属于物理变化，共价键完好无损！",
+        "3. 规范得分表达：水分子之间仅靠【微弱的分子间引力】维系。",
+        "4. 能量论证：克服这些微弱的分子间作用力仅需要极少量的热能，因此沸点很低。"
+      ],
+      "finalAnswer": "\\mathbf{\\text{只需克服水分子之间微弱的分子间作用力 (共价键绝不破裂)}}",
+      "commonTrap": "习惯性写出“打碎了共价键 (break covalent bonds)”。共价键是极其坚韧的分子内化学键，若打破共价键，水就分解成氢气和氧气了！踩中这个错词直接 0 分。",
       "step1": "简单分子结构（Simple Molecular Structure）标准得分答题模板：明确物质结构 $\\rightarrow$ 明确受热克服的作用力 $\\rightarrow$ 阐述能量高低。",
       "step2": [
         "1. 定性结构：水（$H_2O$）属于简单分子结构（Simple Molecular Structure）。",
@@ -559,6 +770,15 @@ export const quizQuestionsZh = [
     "correctAnswer": 2,
     "explanation": "不活泼金属大坑！金属活动性顺序表中，铜 (Cu) 和银 (Ag) 排在【氢 (H) 的后面】，根本不能置换出稀酸中的氢！任何写产生气泡或有反应的答案全部零分。",
     "solution": {
+      "formulaSetup": "金属活动性顺序法则：排在氢之后的金属不会与稀盐酸或稀硫酸发生单置换置换出氢气：$$K > Na > Ca > Mg > Al > Zn > Fe > Pb > \\mathbf{[H]} > \\mathbf{Cu} > Ag > Au$$",
+      "steps": [
+        "1. 确认反应金属：铜（$Cu$）。",
+        "2. 比较活动性：铜的金属活泼性低于氢元素（$Cu < H$）。",
+        "3. 化学反应方程：$$Cu(s) + HCl(aq) \\longrightarrow \\text{无反应 (No Reaction)}$$",
+        "4. 考卷现象记录：无气泡、溶液颜色无变化、固体无溶解。"
+      ],
+      "finalAnswer": "\\mathbf{\\text{无明显反应 / 无任何气泡产生 (No visible reaction)}}",
+      "commonTrap": "形成“金属 + 酸 = 盐 + 氢气”的盲目肌肉记忆，看也不看金属名称就写“冒气泡”，痛失容易的现象分。",
       "step1": "金属活动性顺序法则：排在氢之后的金属不会与稀盐酸或稀硫酸发生单置换置换出氢气：$$K > Na > Ca > Mg > Al > Zn > Fe > Pb > \\mathbf{[H]} > \\mathbf{Cu} > Ag > Au$$",
       "step2": [
         "1. 确认反应金属：铜（$Cu$）。",
@@ -584,6 +804,15 @@ export const quizQuestionsZh = [
     "correctAnswer": 2,
     "explanation": "硫酸钡是典型的难溶硫酸盐（不溶盐）。不溶性盐类在考纲制备法中【只有唯一解法】：沉淀法！即混合两种可溶溶液，过滤沉淀、洗涤、在滤纸间压干！",
     "solution": {
+      "formulaSetup": "盐类制备决策树第一步：判断该盐在水中的溶解度。硫酸盐口诀：“全溶硫酸除钡钙铅”。硫酸钡（$BaSO_4$）为**不溶盐**，制备法则唯一锁定为**复分解沉淀法 (Precipitation)**。",
+      "steps": [
+        "1. 确认目标盐溶解度：硫酸钡为白色不溶沉淀。",
+        "2. 选取两款含目标离子的可溶性盐：$$\\text{可溶钡盐: } Ba(NO_3)_2(aq) \\quad \\text{与} \\quad \\text{可溶硫酸盐: } Na_2SO_4(aq)$$",
+        "3. 沉淀离子反应方程：$$Ba^{2+}(aq) + SO_4^{2-}(aq) \\longrightarrow BaSO_4(s)$$",
+        "4. 实验四部曲：(a) 烧杯中充分混合产生沉淀；(b) 漏斗过滤收集滤渣；(c) 冰蒸馏水冲洗洗净杂质离子；(d) 夹在滤纸之间压干水分。"
+      ],
+      "finalAnswer": "\\mathbf{\\text{沉淀法：混合两种可溶溶液，过滤沉淀，蒸馏水洗涤，滤纸压干}}",
+      "commonTrap": "误选滴定法（仅适用于可溶性钠钾铵 SPA 盐）或过量金属/碱反应法（适用于可溶性非 SPA 盐）。不溶盐根本无法通过蒸发滤液结晶制得！",
       "step1": "盐类制备决策树第一步：判断该盐在水中的溶解度。硫酸盐口诀：“全溶硫酸除钡钙铅”。硫酸钡（$BaSO_4$）为**不溶盐**，制备法则唯一锁定为**复分解沉淀法 (Precipitation)**。",
       "step2": [
         "1. 确认目标盐溶解度：硫酸钡为白色不溶沉淀。",
@@ -609,6 +838,15 @@ export const quizQuestionsZh = [
     "correctAnswer": 1,
     "explanation": "气体摩尔体积公式的单位陷阱！摩尔体积常数是 $24\\text{ dm}^3/\\text{mol}$，题干给的是 $\\text{cm}^3$！必须先除以 1000 换算：$480\\text{ cm}^3 = 0.48\\text{ dm}^3$。摩尔数 $= 0.48 / 24 = 0.02\\text{ mol}$！",
     "solution": {
+      "formulaSetup": "室温室压下气体摩尔计算公式：$$n = \\frac{V(\\text{dm}^3)}{24\\text{ dm}^3/\\text{mol}}$$ 单位强制换算准则：$$1\\text{ dm}^3 = 1000\\text{ cm}^3 \\implies V(\\text{dm}^3) = \\frac{V(\\text{cm}^3)}{1000}$$",
+      "steps": [
+        "1. 读取题干给定的气体体积：$$V = 480\\text{ cm}^3$$",
+        "2. 进行单位换算：$$V = \\frac{480}{1000} = 0.48\\text{ dm}^3$$",
+        "3. 代入常温常压摩尔体积公式：$$n = \\frac{0.48\\text{ dm}^3}{24\\text{ dm}^3/\\text{mol}} = 0.02\\text{ mol}$$",
+        "4. 科学计数法表示：$$n = 2.0 \\times 10^{-2}\\text{ mol}$$"
+      ],
+      "finalAnswer": "\\mathbf{0.02\\text{ mol} \\quad (\\text{或 } 2.0 \\times 10^{-2}\\text{ mol})}",
+      "commonTrap": "忘记将 $\\text{cm}^3$ 转化为 $\\text{dm}^3$，直接用 $480 / 24 = 20\\text{ mol}$。针筒里一点点气体不可能含有 20 摩尔（相当于几百克）物质，对生活常识数字缺乏敏感性。",
       "step1": "室温室压下气体摩尔计算公式：$$n = \\frac{V(\\text{dm}^3)}{24\\text{ dm}^3/\\text{mol}}$$ 单位强制换算准则：$$1\\text{ dm}^3 = 1000\\text{ cm}^3 \\implies V(\\text{dm}^3) = \\frac{V(\\text{cm}^3)}{1000}$$",
       "step2": [
         "1. 读取题干给定的气体体积：$$V = 480\\text{ cm}^3$$",
@@ -634,6 +872,15 @@ export const quizQuestionsZh = [
     "correctAnswer": 2,
     "explanation": "强氧化剂特征变色！酸化高锰酸钾 ($KMnO_4$) 自身被还原，锰由 $+7$ 价还原为 $+2$ 价，溶液由深紫色【褪为无色】。无色变棕色是碘化钾 ($KI$) 的特征；橙色变绿色是重铬酸钾 ($K_2Cr_2O_7$) 的特征。",
     "solution": {
+      "formulaSetup": "氧化剂变色机理：酸化高锰酸钾溶液含有深紫色的高锰酸根离子 ($MnO_4^-$)。当遇到还原剂时，锰元素由 $+7$ 价得到电子，被还原为无色（极淡粉色）的 $Mn^{2+}$ 离子。",
+      "steps": [
+        "1. 反应前试剂颜色：$KMnO_4$ 中 $Mn$ 处于最高氧化态 $+7$，呈现标志性的浓郁紫色。",
+        "2. 还原半反应方程：$$MnO_4^-(aq) + 8H^+(aq) + 5e^- \\longrightarrow Mn^{2+}(aq) + 4H_2O(l)$$",
+        "3. 反应后产物颜色：二价锰离子 $Mn^{2+}$ 在稀溶液中几乎无色。",
+        "4. 考卷标准实验现象表述：溶液由紫色褪为无色 (Purple to colourless)。"
+      ],
+      "finalAnswer": "\\mathbf{\\text{紫色变为无色 (Purple to Colourless 褪色)}}",
+      "commonTrap": "把高锰酸钾与碘化钾 $KI$（无色变棕色，还原剂）或重铬酸钾 $K_2Cr_2O_7$（橙色变绿色，氧化剂）的变色混淆。考前必须将氧化剂与还原剂的颜色对决表背诵准确。",
       "step1": "氧化剂变色机理：酸化高锰酸钾溶液含有深紫色的高锰酸根离子 ($MnO_4^-$)。当遇到还原剂时，锰元素由 $+7$ 价得到电子，被还原为无色（极淡粉色）的 $Mn^{2+}$ 离子。",
       "step2": [
         "1. 反应前试剂颜色：$KMnO_4$ 中 $Mn$ 处于最高氧化态 $+7$，呈现标志性的浓郁紫色。",
