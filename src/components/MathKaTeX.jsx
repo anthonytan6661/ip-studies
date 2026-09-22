@@ -21,3 +21,30 @@ export default function MathKaTeX({ math, block = false, className = '' }) {
     />
   );
 }
+
+export function FormattedMathText({ text, className = '' }) {
+  const html = useMemo(() => {
+    if (!text) return '';
+    try {
+      return text
+        .replace(/\$\$([\s\S]*?)\$\$/g, (_, math) => {
+          try {
+            return `<div class="my-2 overflow-x-auto text-center py-1">${katex.renderToString(math.trim(), { displayMode: true, throwOnError: false })}</div>`;
+          } catch {
+            return `$$${math}$$`;
+          }
+        })
+        .replace(/\$([^$]+?)\$/g, (_, math) => {
+          try {
+            return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false });
+          } catch {
+            return `$${math}$`;
+          }
+        });
+    } catch {
+      return text;
+    }
+  }, [text]);
+
+  return <span className={className} dangerouslySetInnerHTML={{ __html: html }} />;
+}

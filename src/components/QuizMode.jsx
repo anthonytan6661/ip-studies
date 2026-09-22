@@ -1,5 +1,17 @@
 import React, { useState } from 'react';
-import { Target, CheckCircle2, XCircle, AlertTriangle, RotateCcw, Award } from 'lucide-react';
+import { 
+  Target, 
+  CheckCircle2, 
+  XCircle, 
+  AlertTriangle, 
+  RotateCcw, 
+  Award,
+  BookOpen,
+  ChevronDown,
+  ChevronUp,
+  AlertOctagon
+} from 'lucide-react';
+import { FormattedMathText } from './MathKaTeX';
 import { quizQuestions } from '../data/quizData';
 import { quizQuestionsZh } from '../data/quizDataZh';
 
@@ -8,6 +20,7 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
+  const [showSolution, setShowSolution] = useState(false);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const isZh = lang === 'zh';
@@ -35,6 +48,7 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
       setCurrentIdx(prev => prev + 1);
       setSelectedOption(null);
       setIsAnswered(false);
+      setShowSolution(false);
     } else {
       setIsFinished(true);
     }
@@ -44,6 +58,7 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
     setCurrentIdx(0);
     setSelectedOption(null);
     setIsAnswered(false);
+    setShowSolution(false);
     setScore(0);
     setIsFinished(false);
   };
@@ -155,10 +170,10 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
             </div>
           </div>
 
-          {/* Question text */}
+          {/* Question text with KaTeX support */}
           <div className="space-y-2">
             <h4 className="text-lg sm:text-xl font-bold leading-relaxed">
-              {q.question}
+              <FormattedMathText text={q.question} />
             </h4>
           </div>
 
@@ -189,7 +204,9 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
                   <span className="w-6 h-6 rounded-lg bg-black/10 dark:bg-white/10 text-xs font-mono font-bold flex items-center justify-center shrink-0 mt-0.5">
                     {String.fromCharCode(65 + idx)}
                   </span>
-                  <span className="flex-1 leading-relaxed">{option}</span>
+                  <span className="flex-1 leading-relaxed">
+                    <FormattedMathText text={option} />
+                  </span>
                   {isAnswered && idx === q.correctAnswer && (
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
                   )}
@@ -201,17 +218,105 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
             })}
           </div>
 
-          {/* Answer Explanation */}
+          {/* Collapsible "Show Worked Solution" Section */}
+          {q.solution && (
+            <div className="pt-2 border-t border-black/10 dark:border-white/10">
+              <button
+                type="button"
+                onClick={() => setShowSolution(prev => !prev)}
+                className={`w-full py-3 px-4 rounded-2xl border font-mono font-bold text-xs sm:text-sm flex items-center justify-between transition-all duration-200 ${
+                  showSolution
+                    ? 'bg-blue-600 text-white border-blue-700 shadow-md'
+                    : theme === 'dark'
+                      ? 'bg-slate-900/90 border-slate-700 text-slate-200 hover:bg-slate-800'
+                      : 'bg-blue-50/80 border-blue-200 text-blue-900 hover:bg-blue-100 shadow-xs'
+                }`}
+              >
+                <span className="flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 shrink-0" />
+                  {showSolution 
+                    ? (isZh ? '收起完整解题步骤与推导' : 'Hide Worked Solution')
+                    : (isZh ? '📝 查看完整解题步骤与推导 (Show Worked Solution)' : '📝 Show Worked Solution')}
+                </span>
+                <span className="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-full bg-black/10 dark:bg-white/10 font-mono">
+                  {showSolution ? (
+                    <><ChevronUp className="w-3.5 h-3.5" /> {isZh ? '收起' : 'Hide'}</>
+                  ) : (
+                    <><ChevronDown className="w-3.5 h-3.5" /> {isZh ? '展开' : 'Reveal'}</>
+                  )}
+                </span>
+              </button>
+
+              {/* Collapsible Worked Solution Block */}
+              {showSolution && (
+                <div className={`mt-3 p-5 sm:p-6 rounded-2xl border space-y-4 animate-fadeIn shadow-sm ${
+                  theme === 'dark' ? 'bg-slate-950/90 border-blue-500/30' : 'bg-[#faf8f4] border-blue-200'
+                }`}>
+                  {/* Step 1: Opening algebraic setup / formula */}
+                  <div className="space-y-1.5">
+                    <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
+                      <span className="w-5 h-5 rounded-md bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 flex items-center justify-center font-bold text-xs">1</span>
+                      {isZh ? '第一步：核心公式与初始代数设定' : 'Step 1: Opening Algebraic Setup & Formula'}
+                    </div>
+                    <div className="pl-7 text-sm sm:text-base leading-relaxed opacity-95 font-medium">
+                      <FormattedMathText text={q.solution.step1} />
+                    </div>
+                  </div>
+
+                  {/* Step 2: Line-by-line working with full KaTeX formatting */}
+                  <div className="space-y-2 border-t border-black/5 dark:border-white/5 pt-3">
+                    <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-400">
+                      <span className="w-5 h-5 rounded-md bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 flex items-center justify-center font-bold text-xs">2</span>
+                      {isZh ? '第二步：考卷逐行推导与标准过程' : 'Step 2: Line-by-Line Working with Full KaTeX'}
+                    </div>
+                    <div className="pl-7 space-y-2">
+                      {q.solution.step2.map((line, idx) => (
+                        <div key={idx} className="text-sm sm:text-base leading-relaxed font-mono">
+                          <FormattedMathText text={line} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Step 3: Final Answer Boxed */}
+                  <div className="border-t border-black/5 dark:border-white/5 pt-3">
+                    <div className="p-4 rounded-xl border-2 border-emerald-500/60 bg-emerald-50/80 dark:bg-emerald-950/40 space-y-1.5">
+                      <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-400">
+                        <span className="w-5 h-5 rounded-md bg-emerald-200 dark:bg-emerald-900 text-emerald-900 dark:text-emerald-200 flex items-center justify-center font-bold text-xs">3</span>
+                        {isZh ? '第三步：规范最终答案与增根判定' : 'Step 3: Final Answer (Boxed & Validated)'}
+                      </div>
+                      <div className="pl-7 text-sm sm:text-base font-bold text-emerald-900 dark:text-emerald-200">
+                        <FormattedMathText text={`$$${q.solution.step3}$$`} />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Warning Box: Common Trap */}
+                  <div className="p-4 rounded-xl border border-rose-400 dark:border-rose-900/60 bg-rose-50/90 dark:bg-rose-950/40 space-y-1.5">
+                    <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400">
+                      <AlertOctagon className="w-4 h-4 text-rose-600 shrink-0" />
+                      {isZh ? '考场扣分雷区警示 (Common Trap)' : 'Common Trap: Where Method Marks Are Lost'}
+                    </div>
+                    <p className="pl-6 text-xs sm:text-sm leading-relaxed text-rose-900 dark:text-rose-200 font-medium">
+                      <FormattedMathText text={q.solution.trap} />
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Answer Explanation & Next Button */}
           {isAnswered && (
             <div className={`p-4 sm:p-5 rounded-2xl border space-y-3 animate-fadeIn ${
               theme === 'dark' ? 'bg-slate-950 border-slate-800' : 'bg-[#fffaf0] border-[#ecd8b0]'
             }`}>
               <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase text-amber-700 dark:text-amber-400">
-                <AlertTriangle className="w-4 h-4 text-amber-600" />
-                {isZh ? '考官深度解析与破局策略' : "Examiner's Explanation & Strategy"}
+                <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0" />
+                {isZh ? '考官深度解析与破局策略' : "Examiner's Strategy & Feedback"}
               </div>
               <p className="text-sm sm:text-base leading-relaxed font-medium">
-                {q.explanation}
+                <FormattedMathText text={q.explanation} />
               </p>
               <div className="pt-2 flex justify-end">
                 <button
@@ -219,7 +324,7 @@ export default function QuizMode({ lang = 'zh', theme = 'paper' }) {
                   className="px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs sm:text-sm font-mono font-bold transition-colors shadow-sm"
                 >
                   {currentIdx + 1 < questions.length 
-                    ? (isZh ? '进入下一道雷区 →' : 'Next Trap →') 
+                    ? (isZh ? '进入下一道雷区 →' : 'Next Question →') 
                     : (isZh ? '查看测验结果 →' : 'View Results →')}
                 </button>
               </div>
