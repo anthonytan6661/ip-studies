@@ -57,8 +57,9 @@
     }
 
     html {
-      font-size: var(--font-scale);
+      font-size: var(--font-scale, 16px);
       scroll-behavior: smooth;
+      transition: font-size 0.15s ease-out;
     }
 
     body {
@@ -685,15 +686,16 @@
 
       <div class="controls">
         <div class="btn-group" title="Adjust Font Size">
-          <button class="btn-control" onclick="setFontScale(15)">A-</button>
-          <button class="btn-control active" onclick="setFontScale(16)">Standard</button>
-          <button class="btn-control" onclick="setFontScale(18)">Large A+</button>
+          <button class="btn-control font-btn" data-scale="14" onclick="setFontScale(14)" title="Compact (14px)">A- Small</button>
+          <button class="btn-control font-btn active" data-scale="16" onclick="setFontScale(16)" title="Standard default (16px)">Standard</button>
+          <button class="btn-control font-btn" data-scale="19" onclick="setFontScale(19)" title="Comfortable Large (19px)">Large A+</button>
+          <button class="btn-control font-btn" data-scale="22" onclick="setFontScale(22)" title="Extra Large (22px)">Huge A++</button>
         </div>
 
         <div class="btn-group" title="Select Theme">
-          <button class="btn-control active" onclick="setTheme('paper')">Warm Paper</button>
-          <button class="btn-control" onclick="setTheme('white')">Clean White</button>
-          <button class="btn-control" onclick="setTheme('dark')">Night Dark</button>
+          <button class="btn-control theme-btn active" data-theme="paper" onclick="setTheme('paper')">Warm Paper</button>
+          <button class="btn-control theme-btn" data-theme="white" onclick="setTheme('white')">Clean White</button>
+          <button class="btn-control theme-btn" data-theme="dark" onclick="setTheme('dark')">Night Dark</button>
         </div>
 
         <button id="toggle-all-btn" class="btn-action" onclick="toggleAllCards()">
@@ -1534,25 +1536,42 @@
       if (themeName !== 'paper') {
         document.body.classList.add('theme-' + themeName);
       }
-      document.querySelectorAll('.controls .btn-group:nth-child(2) .btn-control').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.textContent.toLowerCase().includes(themeName)) {
+      document.querySelectorAll('.theme-btn').forEach(btn => {
+        if (btn.getAttribute('data-theme') === themeName) {
           btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
         }
       });
       try { localStorage.setItem('fast_track_theme', themeName); } catch(e) {}
     }
 
-    // Font Scale Switcher
+    // Font Scale Switcher (Direct root fontSize mutation + CSS var + persistent)
     function setFontScale(scalePx) {
-      document.documentElement.style.setProperty('--font-scale', scalePx + 'px');
-      document.querySelectorAll('.controls .btn-group:nth-child(1) .btn-control').forEach(btn => {
-        btn.classList.remove('active');
-        if (scalePx === 15 && btn.textContent === 'A-') btn.classList.add('active');
-        if (scalePx === 16 && btn.textContent === 'Standard') btn.classList.add('active');
-        if (scalePx === 18 && btn.textContent.includes('Large')) btn.classList.add('active');
+      let px = Number(scalePx) || 16;
+      // Gracefully map legacy or out-of-range values
+      if (px === 15) px = 14;
+      if (px === 18) px = 19;
+      if (px < 13) px = 14;
+      if (px > 24) px = 22;
+
+      // 1. Directly mutate root document fontSize so all rem values recalculate immediately across all browsers
+      document.documentElement.style.fontSize = px + 'px';
+      // 2. Also keep CSS custom variable updated
+      document.documentElement.style.setProperty('--font-scale', px + 'px');
+
+      // 3. Highlight the active button
+      document.querySelectorAll('.font-btn').forEach(btn => {
+        const btnScale = Number(btn.getAttribute('data-scale'));
+        if (btnScale === px) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
       });
-      try { localStorage.setItem('fast_track_font', scalePx); } catch(e) {}
+
+      // 4. Persist preference
+      try { localStorage.setItem('fast_track_font', px); } catch(e) {}
     }
 
     // Mastery Status Tracker (Persistent via localStorage)
