@@ -1,0 +1,487 @@
+{
+  "topicId": "chem-pillar-03",
+  "title": "Pillar 3: Acids, Bases, Salts & Qualitative Analysis (QA)",
+  "subject": "chem",
+  "chapterRef": "Pillar 3",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "c03-q01",
+      "topicId": "chem-pillar-03",
+      "tier": 1,
+      "questionText": "Which of the following oxides is classified as an amphoteric oxide?",
+      "options": [
+        "Zinc oxide ($ZnO$)",
+        "Calcium oxide ($CaO$)",
+        "Sulfur dioxide ($SO_2$)",
+        "Carbon monoxide ($CO$)"
+      ],
+      "correctAnswer": "Zinc oxide ($ZnO$)",
+      "solution": {
+        "formulaSetup": "Classification of oxides: Amphoteric oxides react with both acids and bases. Remember 'ZAP': Zinc ($ZnO$), Aluminium ($Al_2O_3$), Lead ($PbO$).",
+        "steps": [
+          "$ZnO$ reacts with acids (e.g. $HCl$) to form zinc chloride and water.",
+          "$ZnO$ reacts with strong bases (e.g. $NaOH$) to form sodium zincate ($Na_2ZnO_2$) and water.",
+          "$CaO$ is basic; $SO_2$ is acidic; $CO$ is neutral."
+        ],
+        "finalAnswer": "Zinc oxide ($ZnO$)",
+        "commonTrap": "Confusing amphoteric oxides with neutral oxides like $CO, NO, H_2O$."
+      }
+    },
+    {
+      "id": "c03-q02",
+      "topicId": "chem-pillar-03",
+      "tier": 1,
+      "questionText": "What is the best method to prepare an insoluble salt such as barium sulfate ($BaSO_4$)?",
+      "options": [
+        "Precipitation (mixing two soluble aqueous solutions)",
+        "Titration (acid + alkali)",
+        "Reacting acid with excess insoluble metal",
+        "Reacting acid with excess insoluble carbonate"
+      ],
+      "correctAnswer": "Precipitation (mixing two soluble aqueous solutions)",
+      "solution": {
+        "formulaSetup": "Salt preparation rules: Insoluble salts MUST be prepared by precipitation (ionic double decomposition).",
+        "steps": [
+          "$BaSO_4$ is an insoluble white salt.",
+          "Choose two soluble salts: e.g. aqueous barium nitrate ($Ba(NO_3)_2$) and aqueous sodium sulfate ($Na_2SO_4$).",
+          "Mix solutions: $Ba^{2+}(aq) + SO_4^{2-}(aq) \\to BaSO_4(s)$.",
+          "Filter to collect the residue, wash with cold distilled water, and dry between filter papers."
+        ],
+        "finalAnswer": "Precipitation (mixing two soluble aqueous solutions)",
+        "commonTrap": "Attempting to react barium metal or $BaCO_3$ with dilute $H_2SO_4$, which creates an insoluble $BaSO_4$ layer that coats the reactant and stops the reaction."
+      }
+    },
+    {
+      "id": "c03-q03",
+      "topicId": "chem-pillar-03",
+      "tier": 1,
+      "questionText": "Which method is required to prepare a pure, dry sample of potassium chloride ($KCl$)?",
+      "options": [
+        "Titration using hydrochloric acid and potassium hydroxide solution",
+        "Precipitation by mixing potassium nitrate and sodium chloride",
+        "Reacting hydrochloric acid with excess potassium metal",
+        "Thermal decomposition of potassium chlorate"
+      ],
+      "correctAnswer": "Titration using hydrochloric acid and potassium hydroxide solution",
+      "solution": {
+        "formulaSetup": "Soluble SPA salts (Sodium, Potassium, Ammonium) must be prepared by TITRATION because both reactants and products are completely soluble.",
+        "steps": [
+          "$KCl$ contains potassium ($K^+$), so it is an SPA salt and highly soluble in water.",
+          "Both $KOH(aq)$ and $HCl(aq)$ are clear aqueous solutions, so excess insoluble reactant cannot be filtered off.",
+          "Use titration with an indicator to find the exact equivalence volume.",
+          "Repeat without indicator, then crystallise the neutral solution."
+        ],
+        "finalAnswer": "Titration using hydrochloric acid and potassium hydroxide solution",
+        "commonTrap": "Suggesting adding excess potassium metal to acid (potassium reacts explosively with acid and is extremely hazardous)."
+      }
+    },
+    {
+      "id": "c03-q04",
+      "topicId": "chem-pillar-03",
+      "tier": 1,
+      "questionText": "When aqueous sodium hydroxide is added dropwise to a solution containing iron(II) ions ($Fe^{2+}$), what observation is made?",
+      "options": [
+        "A dirty green precipitate is formed, insoluble in excess $NaOH$",
+        "A reddish-brown precipitate is formed, insoluble in excess $NaOH$",
+        "A light blue precipitate is formed, soluble in excess $NaOH$",
+        "A white precipitate is formed, soluble in excess $NaOH$"
+      ],
+      "correctAnswer": "A dirty green precipitate is formed, insoluble in excess $NaOH$",
+      "solution": {
+        "formulaSetup": "Qualitative analysis test for $Fe^{2+}$: $Fe^{2+}(aq) + 2OH^-(aq) \\to Fe(OH)_2(s)$.",
+        "steps": [
+          "$Fe^{2+}$ produces a dirty green precipitate of iron(II) hydroxide, $Fe(OH)_2$.",
+          "The precipitate is insoluble in excess aqueous sodium hydroxide.",
+          "(On standing in air, it turns reddish-brown due to oxidation to $Fe(OH)_3$)."
+        ],
+        "finalAnswer": "A dirty green precipitate is formed, insoluble in excess $NaOH$",
+        "commonTrap": "Confusing $Fe^{2+}$ (green) with $Fe^{3+}$ (reddish-brown)."
+      }
+    },
+    {
+      "id": "c03-q05",
+      "topicId": "chem-pillar-03",
+      "tier": 1,
+      "questionText": "What is the reagent used to test for sulfate ions ($SO_4^{2-}$), and what positive observation confirms their presence?",
+      "options": [
+        "Add dilute nitric acid followed by aqueous barium nitrate; a white precipitate forms",
+        "Add dilute nitric acid followed by aqueous silver nitrate; a yellow precipitate forms",
+        "Add aqueous sodium hydroxide and warm; a pungent gas forms",
+        "Add acidified potassium manganate(VII); solution turns colourless"
+      ],
+      "correctAnswer": "Add dilute nitric acid followed by aqueous barium nitrate; a white precipitate forms",
+      "solution": {
+        "formulaSetup": "Test for sulfate: Acidify with dilute $HNO_3$ (or $HCl$), then add aqueous $Ba(NO_3)_2$ (or $BaCl_2$).",
+        "steps": [
+          "Acidification eliminates possible carbonate or sulfite interference: $2H^+ + CO_3^{2-} \\to CO_2 + H_2O$.",
+          "Addition of $Ba^{2+}$ produces insoluble barium sulfate:",
+          "$Ba^{2+}(aq) + SO_4^{2-}(aq) \\to BaSO_4(s)$ (white precipitate)."
+        ],
+        "finalAnswer": "Add dilute nitric acid followed by aqueous barium nitrate; a white precipitate forms",
+        "commonTrap": "Using aqueous silver nitrate instead of barium nitrate (silver nitrate tests for halides)."
+      }
+    },
+    {
+      "id": "c03-q06",
+      "topicId": "chem-pillar-03",
+      "tier": 1,
+      "questionText": "Why is ethanoic acid ($CH_3COOH$) classified as a WEAK acid, whereas hydrochloric acid ($HCl$) is a STRONG acid?",
+      "options": [
+        "Ethanoic acid only partially ionises in aqueous solution, whereas hydrochloric acid completely ionises",
+        "Ethanoic acid has a higher pH than hydrochloric acid at the same concentration",
+        "Ethanoic acid contains fewer hydrogen atoms than hydrochloric acid",
+        "Ethanoic acid cannot react with carbonates"
+      ],
+      "correctAnswer": "Ethanoic acid only partially ionises in aqueous solution, whereas hydrochloric acid completely ionises",
+      "solution": {
+        "formulaSetup": "Definition of acid strength: Degree of ionisation/dissociation in water.",
+        "steps": [
+          "A strong acid completely ionises in water: $HCl(aq) \\to H^+(aq) + Cl^-(aq)$ ($100\\%$ ionisation).",
+          "A weak acid only partially ionises in water, establishing a reversible equilibrium: $CH_3COOH(aq) \\rightleftharpoons CH_3COO^-(aq) + H^+(aq)$ (typically $<1\\%$ ionisation).",
+          "Note: Acid strength refers to extent of ionisation, NOT concentration."
+        ],
+        "finalAnswer": "Ethanoic acid only partially ionises in aqueous solution, whereas hydrochloric acid completely ionises",
+        "commonTrap": "Confusing 'weak' (degree of ionisation) with 'dilute' (amount of acid per unit volume of solution)."
+      }
+    },
+    {
+      "id": "c03-q07",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "Which cation gives a white precipitate with aqueous sodium hydroxide that DISSOLVES in excess $NaOH$, but gives a white precipitate with aqueous ammonia that is INSOLUBLE in excess aqueous ammonia?",
+      "options": [
+        "Aluminium ion ($Al^{3+}$) or Lead(II) ion ($Pb^{2+}$)",
+        "Zinc ion ($Zn^{2+}$)",
+        "Calcium ion ($Ca^{2+}$)",
+        "Magnesium ion ($Mg^{2+}$)"
+      ],
+      "correctAnswer": "Aluminium ion ($Al^{3+}$) or Lead(II) ion ($Pb^{2+}$)",
+      "solution": {
+        "formulaSetup": "Distinguishing amphoteric metal hydroxides: $Al^{3+}$ and $Pb^{2+}$ vs $Zn^{2+}$.",
+        "steps": [
+          "With $NaOH$: $Al^{3+}, Pb^{2+}, Zn^{2+}$ all give white precipitates that dissolve in excess $NaOH$ to give colourless solutions.",
+          "With aqueous $NH_3$:",
+          "$Zn^{2+}$ forms a white precipitate that DISSOLVES in excess aqueous $NH_3$ (forming complex $[Zn(NH_3)_4]^{2+}$).",
+          "$Al^{3+}$ and $Pb^{2+}$ form white precipitates that remain INSOLUBLE in excess aqueous $NH_3$.",
+          "Thus, insoluble in excess $NH_3$ identifies $Al^{3+}$ or $Pb^{2+}$."
+        ],
+        "finalAnswer": "Aluminium ion ($Al^{3+}$) or Lead(II) ion ($Pb^{2+}$)",
+        "commonTrap": "Choosing $Zn^{2+}$, which is soluble in BOTH excess $NaOH$ and excess aqueous $NH_3$."
+      }
+    },
+    {
+      "id": "c03-q08",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "How can a student definitively distinguish between a solution of aluminium nitrate ($Al(NO_3)_3$) and a solution of lead(II) nitrate ($Pb(NO_3)_2$)?",
+      "options": [
+        "Add aqueous potassium iodide (or dilute $HCl$); $Pb^{2+}$ forms a yellow precipitate ($PbI_2$), whereas $Al^{3+}$ gives no precipitate",
+        "Add aqueous sodium hydroxide; only $Pb^{2+}$ forms a precipitate",
+        "Add aqueous ammonia; only $Al^{3+}$ forms a precipitate",
+        "Use blue litmus paper; only lead nitrate turns it red"
+      ],
+      "correctAnswer": "Add aqueous potassium iodide (or dilute $HCl$); $Pb^{2+}$ forms a yellow precipitate ($PbI_2$), whereas $Al^{3+}$ gives no precipitate",
+      "solution": {
+        "formulaSetup": "Distinguishing $Al^{3+}$ from $Pb^{2+}$: use chloride or iodide precipitation.",
+        "steps": [
+          "$Al^{3+}$ and $Pb^{2+}$ show identical precipitation behavior with both $NaOH$ and $NH_3$.",
+          "To distinguish them, add aqueous potassium iodide ($KI$) or dilute hydrochloric acid ($HCl$):",
+          "$Pb^{2+}(aq) + 2I^-(aq) \\to PbI_2(s)$ (bright bright canary-yellow precipitate).",
+          "$Al^{3+}$ forms soluble $AlI_3$, so no precipitate is observed.",
+          "(Alternatively, $HCl$ produces white precipitate $PbCl_2(s)$ with $Pb^{2+}$, while $AlCl_3$ is soluble)."
+        ],
+        "finalAnswer": "Add aqueous potassium iodide (or dilute $HCl$); $Pb^{2+}$ forms a yellow precipitate ($PbI_2$), whereas $Al^{3+}$ gives no precipitate",
+        "commonTrap": "Trying to distinguish them using $NaOH$ or $NH_3$, which give identical results for both cations."
+      }
+    },
+    {
+      "id": "c03-q09",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "Why can copper(II) sulfate ($CuSO_4$) NOT be prepared by adding copper metal to dilute sulfuric acid?",
+      "options": [
+        "Copper is less reactive than hydrogen and cannot displace hydrogen ions from dilute acid",
+        "Copper(II) sulfate is an insoluble salt that coats the metal",
+        "Copper reacts with acid to form a toxic green gas",
+        "Dilute sulfuric acid oxidises copper to copper(I) oxide"
+      ],
+      "correctAnswer": "Copper is less reactive than hydrogen and cannot displace hydrogen ions from dilute acid",
+      "solution": {
+        "formulaSetup": "Reactivity series position: Metal + dilute acid $\\to$ Salt + $H_2$ requires the metal to be above hydrogen.",
+        "steps": [
+          "In the reactivity series, copper lies below hydrogen ($Cu < H$).",
+          "Copper cannot reduce $H^+$ ions into $H_2$ gas.",
+          "Therefore, no reaction occurs between copper metal and dilute sulfuric acid.",
+          "To prepare $CuSO_4$, one must react dilute sulfuric acid with copper(II) oxide ($CuO$) or copper(II) carbonate ($CuCO_3$)."
+        ],
+        "finalAnswer": "Copper is less reactive than hydrogen and cannot displace hydrogen ions from dilute acid",
+        "commonTrap": "Assuming all metals react with acids to produce hydrogen gas."
+      }
+    },
+    {
+      "id": "c03-q10",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "Which pair of substances could be used to prepare pure zinc sulfate crystals by reacting an acid with an EXCESS of an insoluble substance?",
+      "options": [
+        "Dilute sulfuric acid and zinc carbonate ($ZnCO_3$)",
+        "Dilute hydrochloric acid and zinc oxide ($ZnO$)",
+        "Dilute sulfuric acid and zinc nitrate solution",
+        "Dilute nitric acid and zinc metal"
+      ],
+      "correctAnswer": "Dilute sulfuric acid and zinc carbonate ($ZnCO_3$)",
+      "solution": {
+        "formulaSetup": "Method 2 for soluble non-SPA salts: Acid + excess insoluble metal/oxide/carbonate/hydroxide.",
+        "steps": [
+          "Target salt is zinc sulfate ($ZnSO_4$).",
+          "The required acid must be sulfuric acid ($H_2SO_4$).",
+          "The insoluble precursor can be zinc metal ($Zn$), zinc oxide ($ZnO$), or zinc carbonate ($ZnCO_3$).",
+          "Excess $ZnCO_3$ is added to ensure all acid is consumed.",
+          "The unreacted excess $ZnCO_3$ is easily removed by filtration, leaving a pure aqueous $ZnSO_4$ filtrate."
+        ],
+        "finalAnswer": "Dilute sulfuric acid and zinc carbonate ($ZnCO_3$)",
+        "commonTrap": "Selecting hydrochloric acid, which produces zinc chloride instead of zinc sulfate."
+      }
+    },
+    {
+      "id": "c03-q11",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "A colourless gas $G$ turns damp red litmus paper blue. What is the identity of $G$, and what is the standard confirmatory test for its corresponding cation?",
+      "options": [
+        "$NH_3$ (ammonia); warm with aqueous $NaOH$ and test gas evolved with damp red litmus paper",
+        "$SO_2$ (sulfur dioxide); bubble through acidified potassium manganate(VII)",
+        "$CO_2$ (carbon dioxide); bubble through limewater",
+        "$Cl_2$ (chlorine); bleaches damp blue litmus paper"
+      ],
+      "correctAnswer": "$NH_3$ (ammonia); warm with aqueous $NaOH$ and test gas evolved with damp red litmus paper",
+      "solution": {
+        "formulaSetup": "Gas testing: Ammonia is the ONLY common alkaline gas in the O-Level syllabus.",
+        "steps": [
+          "Ammonia ($NH_3$) is alkaline and turns moist red litmus paper blue.",
+          "The corresponding cation is the ammonium ion ($NH_4^+$).",
+          "Confirmatory test for $NH_4^+$: Add aqueous sodium hydroxide ($NaOH$) and gently warm the mixture.",
+          "Ammonia gas is liberated: $NH_4^+(aq) + OH^-(aq) \\to NH_3(g) + H_2O(l)$, turning damp red litmus paper blue."
+        ],
+        "finalAnswer": "$NH_3$ (ammonia); warm with aqueous $NaOH$ and test gas evolved with damp red litmus paper",
+        "commonTrap": "Confusing $NH_3$ with sulfur dioxide or chlorine (which are acidic gases that turn blue litmus red)."
+      }
+    },
+    {
+      "id": "c03-q12",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "What observation is made when excess aqueous ammonia is added to a solution of copper(II) sulfate ($CuSO_4$)?",
+      "options": [
+        "A light blue precipitate dissolves in excess aqueous ammonia to form a deep blue (royal blue) solution",
+        "A light blue precipitate remains insoluble in excess aqueous ammonia",
+        "A dirty green precipitate dissolves to form a yellow solution",
+        "A white precipitate dissolves to form a colourless solution"
+      ],
+      "correctAnswer": "A light blue precipitate dissolves in excess aqueous ammonia to form a deep blue (royal blue) solution",
+      "solution": {
+        "formulaSetup": "Complex ion formation with $Cu^{2+}$: $Cu(OH)_2(s) + 4NH_3(aq) \\to [Cu(NH_3)_4]^{2+}(aq) + 2OH^-(aq)$.",
+        "steps": [
+          "Dropwise addition of aqueous $NH_3$: $Cu^{2+}(aq) + 2OH^-(aq) \\to Cu(OH)_2(s)$ (light blue precipitate).",
+          "Addition of excess aqueous $NH_3$: the precipitate dissolves, forming the tetraamminecopper(II) complex $[Cu(NH_3)_4]^{2+}$, giving a characteristic deep blue solution.",
+          "(Contrast with excess $NaOH$, where the light blue precipitate remains completely insoluble)."
+        ],
+        "finalAnswer": "A light blue precipitate dissolves in excess aqueous ammonia to form a deep blue (royal blue) solution",
+        "commonTrap": "Claiming the precipitate dissolves in excess $NaOH$ (it only dissolves in excess aqueous $NH_3$)."
+      }
+    },
+    {
+      "id": "c03-q13",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "Which statement correctly explains why solid calcium oxide ($CaO$) is added to acidic agricultural soil?",
+      "options": [
+        "$CaO$ is a basic oxide that neutralises soil acidity by reacting with hydrogen ions to form water",
+        "$CaO$ acts as a catalyst for plant nitrogen fixation",
+        "$CaO$ precipitates heavy metal ions as insoluble carbonates",
+        "$CaO$ oxidises soil bacteria to prevent fungal infections"
+      ],
+      "correctAnswer": "$CaO$ is a basic oxide that neutralises soil acidity by reacting with hydrogen ions to form water",
+      "solution": {
+        "formulaSetup": "Application of acid-base neutralisation: Liming of soil.",
+        "steps": [
+          "Excess acidity in agricultural soils hinders crop growth.",
+          "Calcium oxide ($CaO$, quicklime) and calcium hydroxide ($Ca(OH)_2$, slaked lime) are basic compounds.",
+          "They neutralise the excess acid: $CaO + 2H^+ \\to Ca^{2+} + H_2O$.",
+          "This raises soil pH to the optimal range for plant nutrient uptake."
+        ],
+        "finalAnswer": "$CaO$ is a basic oxide that neutralises soil acidity by reacting with hydrogen ions to form water",
+        "commonTrap": "Adding lime simultaneously with ammonium fertilisers, which causes loss of nitrogen as $NH_3$ gas."
+      }
+    },
+    {
+      "id": "c03-q14",
+      "topicId": "chem-pillar-03",
+      "tier": 2,
+      "questionText": "A white solid $W$ dissolves in water to give a colourless solution. When acidified barium nitrate is added, a white precipitate forms. When aqueous sodium hydroxide is added dropwise, a white precipitate forms that is INSOLUBLE in excess $NaOH$. When aqueous ammonia is added, NO precipitate is formed. Identify the cation in $W$.",
+      "options": [
+        "Calcium ion ($Ca^{2+}$)",
+        "Aluminium ion ($Al^{3+}$)",
+        "Zinc ion ($Zn^{2+}$)",
+        "Lead(II) ion ($Pb^{2+}$)"
+      ],
+      "correctAnswer": "Calcium ion ($Ca^{2+}$)",
+      "solution": {
+        "formulaSetup": "Qualitative analysis deductions for white precipitates.",
+        "steps": [
+          "Cations giving white precipitate with $NaOH$: $Ca^{2+}, Mg^{2+}, Al^{3+}, Zn^{2+}, Pb^{2+}$.",
+          "Wait! $Ca^{2+}$ gives a white precipitate with $NaOH$ which is INSOLUBLE in excess $NaOH$ (unless solution is very dilute)! Wait, let's re-read: 'dissolves in excess $NaOH$ to give colourless solution'?",
+          "Wait: $Al^{3+}, Zn^{2+}, Pb^{2+}$ dissolve in excess $NaOH$.",
+          "Now with aqueous ammonia: $Zn^{2+}$ forms white ppt soluble in excess; $Al^{3+}$ and $Pb^{2+}$ form white ppt insoluble in excess.",
+          "What cation gives NO precipitate with aqueous $NH_3$?! $Ca^{2+}$ gives NO precipitate with aqueous $NH_3$! But does $Ca(OH)_2$ dissolve in excess $NaOH$? No, $Ca(OH)_2$ is insoluble in excess $NaOH$!",
+          "Wait, let's correct the question: 'When aqueous sodium hydroxide is added dropwise, a white precipitate forms that is INSOLUBLE in excess $NaOH$. When aqueous ammonia is added, NO precipitate is formed.' That uniquely identifies $Ca^{2+}$!",
+          "Let's update the question text to 'insoluble in excess $NaOH$'!"
+        ],
+        "finalAnswer": "Calcium ion ($Ca^{2+}$)",
+        "commonTrap": "Confusing $Ca^{2+}$ with $Mg^{2+}$ ($Mg^{2+}$ gives a white precipitate with BOTH $NaOH$ and aqueous $NH_3$)."
+      }
+    },
+    {
+      "id": "c03-q15",
+      "topicId": "chem-pillar-03",
+      "tier": 3,
+      "questionText": "A green solid $X$ decomposes upon strong heating to produce a black solid $Y$ and a colourless gas $Z$ that turns limewater milky. When dilute sulfuric acid is added to black solid $Y$, a blue solution is obtained. Identify $X$, $Y$, and $Z$.",
+      "options": [
+        "$X = CuCO_3$, $Y = CuO$, $Z = CO_2$",
+        "$X = FeCO_3$, $Y = FeO$, $Z = CO_2$",
+        "$X = Cu(OH)_2$, $Y = CuO$, $Z = H_2O$",
+        "$X = NiCO_3$, $Y = NiO$, $Z = CO_2$"
+      ],
+      "correctAnswer": "$X = CuCO_3$, $Y = CuO$, $Z = CO_2$",
+      "solution": {
+        "formulaSetup": "Thermal decomposition: $CuCO_3(s) \\xrightarrow{\\Delta} CuO(s) + CO_2(g)$.",
+        "steps": [
+          "Gas $Z$ turns limewater milky $\\implies Z$ is carbon dioxide ($CO_2$).",
+          "Black solid $Y$ reacts with dilute sulfuric acid to form a blue solution $\\implies$ blue solution contains $Cu^{2+}$ ($CuSO_4(aq)$), so black solid $Y$ is copper(II) oxide ($CuO$).",
+          "Reaction with acid: $CuO(s) + H_2SO_4(aq) \\to CuSO_4(aq) + H_2O(l)$.",
+          "Therefore, green solid $X$ is copper(II) carbonate ($CuCO_3$)."
+        ],
+        "finalAnswer": "$X = CuCO_3$, $Y = CuO$, $Z = CO_2$",
+        "commonTrap": "Choosing iron(II) carbonate because of the green colour, forgetting that iron(II) sulfate is pale green, not blue."
+      }
+    },
+    {
+      "id": "c03-q16",
+      "topicId": "chem-pillar-03",
+      "tier": 3,
+      "questionText": "Why must farmers avoid adding slaked lime (calcium hydroxide, $Ca(OH)_2$) to soil simultaneously with ammonium nitrate ($NH_4NO_3$) fertiliser?",
+      "options": [
+        "The base reacts with ammonium ions to release ammonia gas into the air, causing severe nitrogen loss from the soil",
+        "Slaked lime causes the fertiliser to explode",
+        "The mixture forms insoluble calcium nitrate, preventing plant root absorption",
+        "The pH drops drastically, killing beneficial soil bacteria"
+      ],
+      "correctAnswer": "The base reacts with ammonium ions to release ammonia gas into the air, causing severe nitrogen loss from the soil",
+      "solution": {
+        "formulaSetup": "Reaction between base and ammonium salt: $Base + \\text{Ammonium salt} \\to \\text{Salt} + H_2O + NH_3(g)$.",
+        "steps": [
+          "Chemical reaction: $Ca(OH)_2 + 2NH_4NO_3 \\to Ca(NO_3)_2 + 2H_2O + 2NH_3(g)$.",
+          "The reaction liberates gaseous ammonia ($NH_3$), which rapidly escapes into the atmosphere.",
+          "This severely depletes the nitrogen content of the fertiliser, rendering the application ineffective."
+        ],
+        "finalAnswer": "The base reacts with ammonium ions to release ammonia gas into the air, causing severe nitrogen loss from the soil",
+        "commonTrap": "Claiming calcium nitrate is insoluble (all nitrates are completely soluble in water)."
+      }
+    },
+    {
+      "id": "c03-q17",
+      "topicId": "chem-pillar-03",
+      "tier": 3,
+      "questionText": "A solution contains both chloride ($Cl^-$) and iodide ($I^-$) ions. Which sequence of reagents allows both anions to be confirmed without interference?",
+      "options": [
+        "Add excess aqueous lead(II) nitrate; $PbI_2$ forms as a bright yellow precipitate while $PbCl_2$ can be dissolved by boiling water, or add dilute aqueous ammonia to silver halide precipitates",
+        "Add aqueous barium chloride followed by sulfuric acid",
+        "Add aqueous sodium hydroxide followed by potassium manganate",
+        "Add limewater followed by universal indicator"
+      ],
+      "correctAnswer": "Add excess aqueous lead(II) nitrate; $PbI_2$ forms as a bright yellow precipitate while $PbCl_2$ can be dissolved by boiling water, or add dilute aqueous ammonia to silver halide precipitates",
+      "solution": {
+        "formulaSetup": "Separation and confirmation of halide mixtures: Silver halide solubilities in aqueous ammonia ($AgCl$ dissolves in dilute $NH_3$, $AgI$ insoluble in concentrated $NH_3$).",
+        "steps": [
+          "Adding $AgNO_3$ precipitates white $AgCl$ and yellow $AgI$.",
+          "Adding dilute aqueous ammonia dissolves only $AgCl$ as $[Ag(NH_3)_2]^+$, leaving yellow $AgI$ as an insoluble residue.",
+          "Alternatively, $PbI_2$ is bright yellow, easily distinguished from white $PbCl_2$."
+        ],
+        "finalAnswer": "Add excess aqueous lead(II) nitrate; $PbI_2$ forms as a bright yellow precipitate while $PbCl_2$ can be dissolved by boiling water, or add dilute aqueous ammonia to silver halide precipitates",
+        "commonTrap": "Using barium salts, which do not form precipitates with either chloride or iodide."
+      }
+    },
+    {
+      "id": "c03-q18",
+      "topicId": "chem-pillar-03",
+      "tier": 3,
+      "questionText": "An unknown solid $S$ is suspected of containing carbonate ions ($CO_3^{2-}$). In the standard QA test, dilute nitric acid is added and the gas is bubbled into limewater. Why is dilute NITRIC acid preferred over dilute sulfuric acid when testing an unknown solid?",
+      "options": [
+        "Dilute sulfuric acid could form an insoluble sulfate layer (e.g. $CaSO_4, BaSO_4, PbSO_4$) on the solid surface, stopping the reaction prematurely",
+        "Nitric acid is a stronger acid than sulfuric acid",
+        "Sulfuric acid reacts with limewater directly to produce false positives",
+        "Nitric acid bleaches the limewater to make milkiness clearer"
+      ],
+      "correctAnswer": "Dilute sulfuric acid could form an insoluble sulfate layer (e.g. $CaSO_4, BaSO_4, PbSO_4$) on the solid surface, stopping the reaction prematurely",
+      "solution": {
+        "formulaSetup": "Choice of acid in qualitative analysis: All nitrates are soluble.",
+        "steps": [
+          "All metal nitrates are completely soluble in water without exception.",
+          "If sulfuric acid is used and the solid contains $Ca^{2+}, Ba^{2+}$, or $Pb^{2+}$, an insoluble sulfate coating ($CaSO_4, BaSO_4, PbSO_4$) forms over the solid.",
+          "This protective coating prevents further acid from reaching the carbonate, stopping effervescence prematurely and leading to a false negative result.",
+          "Therefore, dilute nitric acid is strictly preferred."
+        ],
+        "finalAnswer": "Dilute sulfuric acid could form an insoluble sulfate layer (e.g. $CaSO_4, BaSO_4, PbSO_4$) on the solid surface, stopping the reaction prematurely",
+        "commonTrap": "Thinking nitric acid is chosen because it produces more carbon dioxide."
+      }
+    },
+    {
+      "id": "c03-q19",
+      "topicId": "chem-pillar-03",
+      "tier": 3,
+      "questionText": "Which of the following salts CANNOT be prepared by reacting dilute sulfuric acid with the corresponding metal, and MUST instead be prepared by reacting the acid with the metal carbonate or oxide?",
+      "options": [
+        "Lead(II) sulfate ($PbSO_4$) and Copper(II) sulfate ($CuSO_4$)",
+        "Magnesium sulfate ($MgSO_4$)",
+        "Zinc sulfate ($ZnSO_4$)",
+        "Iron(II) sulfate ($FeSO_4$)"
+      ],
+      "correctAnswer": "Lead(II) sulfate ($PbSO_4$) and Copper(II) sulfate ($CuSO_4$)",
+      "solution": {
+        "formulaSetup": "Reactivity and solubility limitations of metal + acid reaction.",
+        "steps": [
+          "For copper: $Cu$ is below hydrogen in the reactivity series, so it does NOT react with dilute acids at all.",
+          "For lead: $Pb$ initially reacts with $H_2SO_4$, but immediately forms an insoluble layer of $PbSO_4(s)$ on its surface, which halts the reaction.",
+          "In contrast, $Mg, Zn, Fe$ are above hydrogen and form soluble sulfates ($MgSO_4, ZnSO_4, FeSO_4$), allowing the reaction to proceed to completion."
+        ],
+        "finalAnswer": "Lead(II) sulfate ($PbSO_4$) and Copper(II) sulfate ($CuSO_4$)",
+        "commonTrap": "Assuming lead reacts continuously with sulfuric acid like zinc does."
+      }
+    },
+    {
+      "id": "c03-q20",
+      "topicId": "chem-pillar-03",
+      "tier": 3,
+      "questionText": "A solution contains an unknown anion. When dilute nitric acid followed by aqueous silver nitrate is added, a cream precipitate forms. When concentrated aqueous ammonia is added, the precipitate dissolves. What is the anion?",
+      "options": [
+        "Bromide ion ($Br^-$)",
+        "Chloride ion ($Cl^-$)",
+        "Iodide ion ($I^-$)",
+        "Carbonate ion ($CO_3^{2-}$)"
+      ],
+      "correctAnswer": "Bromide ion ($Br^-$)",
+      "solution": {
+        "formulaSetup": "Silver halide identification by colour and solubility in aqueous ammonia:",
+        "steps": [
+          "$AgCl$: White precipitate, soluble in DILUTE aqueous ammonia.",
+          "$AgBr$: Cream (pale yellow) precipitate, insoluble in dilute ammonia but SOLUBLE in CONCENTRATED aqueous ammonia.",
+          "$AgI$: Yellow precipitate, INSOLUBLE in both dilute and concentrated aqueous ammonia.",
+          "Since the precipitate is cream and dissolves in concentrated ammonia, the anion is bromide ($Br^-$)."
+        ],
+        "finalAnswer": "Bromide ion ($Br^-$)",
+        "commonTrap": "Confusing cream $AgBr$ with white $AgCl$ or yellow $AgI$."
+      }
+    }
+  ]
+}

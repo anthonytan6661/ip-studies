@@ -1,0 +1,481 @@
+{
+  "topicId": "chem-pillar-01",
+  "title": "Pillar 1: Chemical Bonding & Structures",
+  "subject": "chem",
+  "chapterRef": "Pillar 1",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "c01-q01",
+      "topicId": "chem-pillar-01",
+      "tier": 1,
+      "questionText": "Which of the following substances consists of a giant covalent lattice?",
+      "options": [
+        "Silicon dioxide ($SiO_2$)",
+        "Carbon dioxide ($CO_2$)",
+        "Sodium chloride ($NaCl$)",
+        "Magnesium oxide ($MgO$)"
+      ],
+      "correctAnswer": "Silicon dioxide ($SiO_2$)",
+      "solution": {
+        "formulaSetup": "Classification of chemical structures: simple molecular vs giant covalent vs giant ionic.",
+        "steps": [
+          "$SiO_2$ has a giant covalent macromolecular structure where every silicon atom is covalently bonded to 4 oxygen atoms in a tetrahedral arrangement.",
+          "$CO_2$ is simple covalent molecular (individual molecules held by weak intermolecular forces).",
+          "$NaCl$ and $MgO$ are giant ionic lattices held by electrostatic attraction between ions."
+        ],
+        "finalAnswer": "Silicon dioxide ($SiO_2$)",
+        "commonTrap": "Confusing $SiO_2$ with $CO_2$ because carbon and silicon are in the same Group 14."
+      }
+    },
+    {
+      "id": "c01-q02",
+      "topicId": "chem-pillar-01",
+      "tier": 1,
+      "questionText": "Why does molten potassium chloride ($KCl$) conduct electricity, whereas solid $KCl$ does not?",
+      "options": [
+        "Potassium and chloride ions become mobile in the molten state",
+        "Electrons become delocalised in the liquid state",
+        "Molecules can rotate freely when melted",
+        "Potassium metal is produced upon heating"
+      ],
+      "correctAnswer": "Potassium and chloride ions become mobile in the molten state",
+      "solution": {
+        "formulaSetup": "Electrical conductivity requires mobile charge carriers (delocalised electrons or mobile ions).",
+        "steps": [
+          "In solid $KCl$, $K^+$ and $Cl^-$ ions are held in fixed positions within the giant ionic lattice by strong electrostatic forces, so they cannot move.",
+          "When melted into liquid state, the ionic lattice breaks down, allowing the ions to become mobile and act as charge carriers.",
+          "Note: Ionic compounds NEVER conduct via mobile electrons (electrons remain tightly held by ions)."
+        ],
+        "finalAnswer": "Potassium and chloride ions become mobile in the molten state",
+        "commonTrap": "Claiming that 'delocalised electrons conduct electricity in molten salts', which loses the mark immediately."
+      }
+    },
+    {
+      "id": "c01-q03",
+      "topicId": "chem-pillar-01",
+      "tier": 1,
+      "questionText": "Why does graphite conduct electricity along its layers, whereas diamond is an electrical insulator?",
+      "options": [
+        "Each carbon in graphite forms 3 covalent bonds, leaving one delocalised electron per atom",
+        "Graphite contains mobile carbon ions",
+        "Graphite is an ionic compound",
+        "Diamond has weak intermolecular forces that block electrons"
+      ],
+      "correctAnswer": "Each carbon in graphite forms 3 covalent bonds, leaving one delocalised electron per atom",
+      "solution": {
+        "formulaSetup": "Structure-property relationship of carbon allotropes.",
+        "steps": [
+          "In graphite, each carbon atom is covalently bonded to 3 other carbon atoms in hexagonal planar layers.",
+          "The fourth valence electron of each carbon atom is delocalised across the hexagonal sheets, acting as mobile charge carriers.",
+          "In diamond, each carbon forms 4 strong covalent bonds in a rigid tetrahedral structure; all valence electrons are localised in single bonds, leaving no mobile charge carriers."
+        ],
+        "finalAnswer": "Each carbon in graphite forms 3 covalent bonds, leaving one delocalised electron per atom",
+        "commonTrap": "Suggesting graphite conducts between layers rather than along/within the layers, or claiming graphite has mobile ions."
+      }
+    },
+    {
+      "id": "c01-q04",
+      "topicId": "chem-pillar-01",
+      "tier": 1,
+      "questionText": "Which statement correctly describes metallic bonding in copper metal?",
+      "options": [
+        "Electrostatic attraction between positive metal cations and a sea of delocalised electrons",
+        "Shared pairs of electrons between adjacent metal atoms",
+        "Electrostatic attraction between oppositely charged ions",
+        "Weak van der Waals forces between neutral metal atoms"
+      ],
+      "correctAnswer": "Electrostatic attraction between positive metal cations and a sea of delocalised electrons",
+      "solution": {
+        "formulaSetup": "Standard Cambridge O-Level / IP definition of metallic bonding.",
+        "steps": [
+          "Metals shed their outermost valence electrons into a shared electron cloud ('sea of delocalised electrons').",
+          "The bonding consists of the strong electrostatic attraction between the positively charged metal ions (cations) and this sea of delocalised electrons."
+        ],
+        "finalAnswer": "Electrostatic attraction between positive metal cations and a sea of delocalised electrons",
+        "commonTrap": "Stating attraction between 'metal atoms' and electrons instead of 'positive metal cations'."
+      }
+    },
+    {
+      "id": "c01-q05",
+      "topicId": "chem-pillar-01",
+      "tier": 1,
+      "questionText": "Why does chlorine gas ($Cl_2$) have a very low boiling point ($-34^\\circ\\text{C}$)?",
+      "options": [
+        "Little energy is required to overcome the weak intermolecular van der Waals forces between molecules",
+        "The covalent bond between chlorine atoms is very weak",
+        "Chlorine molecules are easily ionised into chloride ions",
+        "Chlorine has a low relative atomic mass"
+      ],
+      "correctAnswer": "Little energy is required to overcome the weak intermolecular van der Waals forces between molecules",
+      "solution": {
+        "formulaSetup": "State changes in simple molecular structures involve overcoming intermolecular forces, NOT covalent bonds.",
+        "steps": [
+          "$Cl_2$ has a simple covalent molecular structure.",
+          "During boiling, the strong intramolecular covalent bonds between chlorine atoms remain intact.",
+          "Only the weak intermolecular van der Waals forces between $Cl_2$ molecules are overcome.",
+          "Because these forces are weak, little thermal energy is needed, resulting in a low boiling point."
+        ],
+        "finalAnswer": "Little energy is required to overcome the weak intermolecular van der Waals forces between molecules",
+        "commonTrap": "Saying 'covalent bonds between atoms are broken during boiling' — a classic zero-mark misconception."
+      }
+    },
+    {
+      "id": "c01-q06",
+      "topicId": "chem-pillar-01",
+      "tier": 1,
+      "questionText": "What is the formula of the ionic compound formed between aluminium ($Al$, Group 13) and oxygen ($O$, Group 16)?",
+      "options": [
+        "$Al_2O_3$",
+        "$Al_3O_2$",
+        "$AlO$",
+        "$AlO_2$"
+      ],
+      "correctAnswer": "$Al_2O_3$",
+      "solution": {
+        "formulaSetup": "Cation: $Al^{3+}$. Anion: $O^{2-}$. Total net charge must equal zero.",
+        "steps": [
+          "Aluminium loses 3 valence electrons: $Al \\to Al^{3+} + 3e^-$.",
+          "Oxygen gains 2 valence electrons: $O + 2e^- \\to O^{2-}$.",
+          "To balance charges: $2 \\times (+3) + 3 \\times (-2) = +6 - 6 = 0$.",
+          "Empirical formula is $Al_2O_3$."
+        ],
+        "finalAnswer": "$Al_2O_3$",
+        "commonTrap": "Inverting subscripts to $Al_3O_2$."
+      }
+    },
+    {
+      "id": "c01-q07",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "Magnesium oxide ($MgO$) has a melting point of $2852^\\circ\\text{C}$, whereas sodium chloride ($NaCl$) has a melting point of $801^\\circ\\text{C}$. Why is the melting point of $MgO$ much higher?",
+      "options": [
+        "$Mg^{2+}$ and $O^{2-}$ have higher ionic charges than $Na^+$ and $Cl^-$, resulting in stronger electrostatic attraction",
+        "$MgO$ has a giant covalent structure whereas $NaCl$ is ionic",
+        "Magnesium has more delocalised electrons than sodium",
+        "Oxygen has a smaller atomic radius than chlorine"
+      ],
+      "correctAnswer": "$Mg^{2+}$ and $O^{2-}$ have higher ionic charges than $Na^+$ and $Cl^-$, resulting in stronger electrostatic attraction",
+      "solution": {
+        "formulaSetup": "Lattice energy is proportional to $\\frac{q_1 q_2}{r_1 + r_2}$ (product of ionic charges over internuclear distance).",
+        "steps": [
+          "Both $MgO$ and $NaCl$ have giant ionic lattice structures.",
+          "In $MgO$, ions carry charges of $+2$ and $-2$ (product of charges $= 4$).",
+          "In $NaCl$, ions carry charges of $+1$ and $-1$ (product of charges $= 1$).",
+          "Additionally, $Mg^{2+}$ and $O^{2-}$ have smaller ionic radii than $Na^+$ and $Cl^-$.",
+          "The electrostatic attraction between $Mg^{2+}$ and $O^{2-}$ is much stronger, requiring significantly more thermal energy to overcome."
+        ],
+        "finalAnswer": "$Mg^{2+}$ and $O^{2-}$ have higher ionic charges than $Na^+$ and $Cl^-$, resulting in stronger electrostatic attraction",
+        "commonTrap": "Falsely claiming $MgO$ is covalent because of its extraordinarily high melting point."
+      }
+    },
+    {
+      "id": "c01-q08",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "Why are pure metals malleable and ductile, whereas giant ionic salts shatter (are brittle) when struck with a hammer?",
+      "options": [
+        "In metals, layers of cations can slide over each other without breaking metallic bonds; in ionic salts, sliding brings like charges together causing repulsion",
+        "Metals have flexible covalent bonds; ionic salts have weak bonds",
+        "Ionic salts have mobile electrons that repel each other",
+        "Metals have empty spaces between atoms that absorb the impact"
+      ],
+      "correctAnswer": "In metals, layers of cations can slide over each other without breaking metallic bonds; in ionic salts, sliding brings like charges together causing repulsion",
+      "solution": {
+        "formulaSetup": "Comparison of mechanical properties based on bonding models.",
+        "steps": [
+          "In pure metals, orderly layers of positive metal cations can slide over each other without disrupting the non-directional sea of delocalised electrons.",
+          "In an ionic lattice, when a shear force is applied, layers of ions slide, bringing ions of the SAME charge next to each other (e.g., $Na^+$ next to $Na^+$, $Cl^-$ next to $Cl^-$).",
+          "The resulting strong electrostatic repulsion shatters the crystal lattice, making it brittle."
+        ],
+        "finalAnswer": "In metals, layers of cations can slide over each other without breaking metallic bonds; in ionic salts, sliding brings like charges together causing repulsion",
+        "commonTrap": "Failing to mention 'like charges are brought together causing repulsion' for ionic brittleness."
+      }
+    },
+    {
+      "id": "c01-q09",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "An alloy of copper and zinc (brass) is much harder and less malleable than pure copper. What is the structural reason for this?",
+      "options": [
+        "Zinc atoms have a different size, disrupting the regular layers of copper atoms and preventing them from sliding easily",
+        "Zinc forms strong ionic bonds with copper",
+        "Zinc removes the delocalised electrons from copper",
+        "Zinc forms a protective oxide layer that resists deformation"
+      ],
+      "correctAnswer": "Zinc atoms have a different size, disrupting the regular layers of copper atoms and preventing them from sliding easily",
+      "solution": {
+        "formulaSetup": "Alloy hardness explanation in O-Level Chemistry syllabus.",
+        "steps": [
+          "Pure copper consists of orderly, identical layers of copper cations that easily slide over one another when stress is applied.",
+          "Zinc atoms have a different atomic radius from copper atoms.",
+          "Introducing zinc disrupts the orderly arrangement and regularity of the lattice layers.",
+          "More force is required for the layers to slide over one another, making the alloy harder and less malleable."
+        ],
+        "finalAnswer": "Zinc atoms have a different size, disrupting the regular layers of copper atoms and preventing them from sliding easily",
+        "commonTrap": "Claiming chemical bonds are formed between copper and zinc (alloys are physical mixtures/solutions of elements, not new chemical compounds)."
+      }
+    },
+    {
+      "id": "c01-q10",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "Which of the following compounds contains BOTH ionic and covalent bonds?",
+      "options": [
+        "Ammonium chloride ($NH_4Cl$)",
+        "Methane ($CH_4$)",
+        "Calcium chloride ($CaCl_2$)",
+        "Water ($H_2O$)"
+      ],
+      "correctAnswer": "Ammonium chloride ($NH_4Cl$)",
+      "solution": {
+        "formulaSetup": "Identify compounds containing polyatomic ions.",
+        "steps": [
+          "$NH_4Cl$ consists of ammonium cations ($NH_4^+$) and chloride anions ($Cl^-$) held together by ionic bonds in a crystal lattice.",
+          "Within each ammonium cation ($NH_4^+$), the nitrogen atom is bonded to 4 hydrogen atoms via covalent bonds (including one dative coordinate bond).",
+          "Therefore, $NH_4Cl$ contains both ionic and covalent bonding."
+        ],
+        "finalAnswer": "Ammonium chloride ($NH_4Cl$)",
+        "commonTrap": "Assuming all salts only have ionic bonds, overlooking polyatomic ions like $NH_4^+, SO_4^{2-}, NO_3^-, CO_3^{2-}$."
+      }
+    },
+    {
+      "id": "c01-q11",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "Why is diamond extremely hard and has a very high melting point ($>3500^\\circ\\text{C}$)?",
+      "options": [
+        "Each carbon atom is tetrahedrally bonded to 4 other carbons by strong covalent bonds in a rigid 3D lattice",
+        "Diamond has extremely strong electrostatic forces between carbon ions",
+        "Diamond has a sea of delocalised electrons holding atoms tightly",
+        "Diamond has heavy intermolecular forces between macromolecules"
+      ],
+      "correctAnswer": "Each carbon atom is tetrahedrally bonded to 4 other carbons by strong covalent bonds in a rigid 3D lattice",
+      "solution": {
+        "formulaSetup": "Giant covalent network structure of diamond.",
+        "steps": [
+          "Diamond has a giant covalent macromolecular structure.",
+          "Every carbon atom is covalently bonded to 4 other carbon atoms in a continuous, rigid 3D tetrahedral network.",
+          "Breaking this rigid network requires breaking a massive number of strong C-C covalent bonds, which requires an enormous amount of thermal/mechanical energy."
+        ],
+        "finalAnswer": "Each carbon atom is tetrahedrally bonded to 4 other carbons by strong covalent bonds in a rigid 3D lattice",
+        "commonTrap": "Referring to 'intermolecular forces' in diamond (there are NO separate molecules, hence no intermolecular forces)."
+      }
+    },
+    {
+      "id": "c01-q12",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "What type of bonding and structure does iodine ($I_2$) possess at room temperature, and what holds the crystal lattice together?",
+      "options": [
+        "Simple molecular structure held by weak intermolecular van der Waals forces",
+        "Giant covalent lattice held by strong covalent bonds",
+        "Giant ionic lattice held by electrostatic attraction",
+        "Metallic structure held by delocalised electrons"
+      ],
+      "correctAnswer": "Simple molecular structure held by weak intermolecular van der Waals forces",
+      "solution": {
+        "formulaSetup": "Group 17 halogens at room temperature.",
+        "steps": [
+          "Iodine exists as diatomic molecules ($I_2$) where iodine atoms share a pair of electrons in a strong covalent bond.",
+          "In the solid state, $I_2$ forms a face-centred molecular crystal lattice.",
+          "The crystal is held together solely by weak intermolecular forces (induced dipole-dipole / van der Waals forces).",
+          "Because these intermolecular forces are weak, iodine readily sublimes upon gentle warming into purple vapor."
+        ],
+        "finalAnswer": "Simple molecular structure held by weak intermolecular van der Waals forces",
+        "commonTrap": "Thinking solid iodine is a giant covalent structure because it is a solid at room temperature."
+      }
+    },
+    {
+      "id": "c01-q13",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "Why does aqueous hydrogen chloride ($HCl$) conduct electricity, whereas liquid hydrogen chloride ($HCl$) does not?",
+      "options": [
+        "$HCl$ ionises in water into mobile $H^+$ and $Cl^-$ ions, whereas liquid $HCl$ consists only of neutral covalent molecules",
+        "Water provides free electrons that conduct electricity",
+        "Liquid $HCl$ forms an insulating ionic lattice",
+        "Water oxidises chlorine to form mobile chlorate ions"
+      ],
+      "correctAnswer": "$HCl$ ionises in water into mobile $H^+$ and $Cl^-$ ions, whereas liquid $HCl$ consists only of neutral covalent molecules",
+      "solution": {
+        "formulaSetup": "Acid behavior: $HCl(g) + H_2O(l) \\to H_3O^+(aq) + Cl^-(aq)$.",
+        "steps": [
+          "Pure liquid $HCl$ is composed of discrete, neutral covalent molecules held by dipole-dipole forces; with no mobile ions or electrons, it cannot conduct electricity.",
+          "When dissolved in water, polar water molecules induce complete ionisation: $HCl(aq) \\to H^+(aq) + Cl^-(aq)$.",
+          "The resulting mobile hydrogen and chloride ions are free to move and carry electric charge."
+        ],
+        "finalAnswer": "$HCl$ ionises in water into mobile $H^+$ and $Cl^-$ ions, whereas liquid $HCl$ consists only of neutral covalent molecules",
+        "commonTrap": "Assuming pure liquid $HCl$ is an ionic liquid like molten $NaCl$."
+      }
+    },
+    {
+      "id": "c01-q14",
+      "topicId": "chem-pillar-01",
+      "tier": 2,
+      "questionText": "How many shared pairs of electrons (covalent bonds) and how many unshared pairs (lone pairs) are present on the nitrogen atom in an ammonia molecule ($NH_3$)?",
+      "options": [
+        "3 bonding pairs, 1 lone pair",
+        "3 bonding pairs, 0 lone pairs",
+        "2 bonding pairs, 2 lone pairs",
+        "4 bonding pairs, 0 lone pairs"
+      ],
+      "correctAnswer": "3 bonding pairs, 1 lone pair",
+      "solution": {
+        "formulaSetup": "Nitrogen has 5 valence electrons (Group 15). Each hydrogen contributes 1 valence electron.",
+        "steps": [
+          "Nitrogen shares 1 electron with each of the 3 hydrogen atoms to form 3 single covalent bonds (3 bonding pairs).",
+          "Remaining valence electrons on nitrogen: $5 - 3 = 2$ non-bonding electrons.",
+          "2 non-bonding electrons form 1 lone pair.",
+          "Total: 3 bonding pairs and 1 lone pair (giving a trigonal pyramidal geometry)."
+        ],
+        "finalAnswer": "3 bonding pairs, 1 lone pair",
+        "commonTrap": "Confusing total lone electrons (2) with lone pairs (1)."
+      }
+    },
+    {
+      "id": "c01-q15",
+      "topicId": "chem-pillar-01",
+      "tier": 3,
+      "questionText": "Substance $X$ has a melting point of $1410^\\circ\\text{C}$, does not conduct electricity when solid or molten, and is insoluble in water. What is the most likely identity and structure of $X$?",
+      "options": [
+        "Silicon ($Si$), giant covalent structure",
+        "Sodium chloride ($NaCl$), giant ionic lattice",
+        "Magnesium ($Mg$), giant metallic lattice",
+        "Poly(ethene), macromolecular polymer"
+      ],
+      "correctAnswer": "Silicon ($Si$), giant covalent structure",
+      "solution": {
+        "formulaSetup": "Deduce structure from physical properties: high m.p. ($>1000^\\circ\\text{C}$), non-conductor in both solid AND liquid state, insoluble.",
+        "steps": [
+          "High melting point eliminates simple molecular substances (e.g. polyethene).",
+          "Non-conductor in the molten state eliminates giant ionic substances ($NaCl$ conducts when molten) and giant metallic substances ($Mg$ conducts in all states).",
+          "Giant covalent network (macromolecule) has high melting point and non-conducting properties in both solid and molten states.",
+          "Silicon ($Si$) forms a diamond-like giant covalent network with melting point $1410^\\circ\\text{C}$."
+        ],
+        "finalAnswer": "Silicon ($Si$), giant covalent structure",
+        "commonTrap": "Choosing $NaCl$ without noticing the condition 'does not conduct electricity when molten'."
+      }
+    },
+    {
+      "id": "c01-q16",
+      "topicId": "chem-pillar-01",
+      "tier": 3,
+      "questionText": "Explain why the boiling point of ethanol ($CH_3CH_2OH$, $78^\\circ\\text{C}$) is significantly higher than that of propane ($C_3H_8$, $-42^\\circ\\text{C}$), despite having similar relative molecular masses ($M_r = 46$ vs $44$).",
+      "options": [
+        "Ethanol molecules can form strong intermolecular hydrogen bonds via the $-OH$ group, whereas propane only possesses weak van der Waals forces",
+        "Ethanol has stronger covalent C-O and O-H bonds that break during boiling",
+        "Propane is a non-polar gas that decomposes upon heating",
+        "Ethanol is an ionic liquid at room temperature"
+      ],
+      "correctAnswer": "Ethanol molecules can form strong intermolecular hydrogen bonds via the $-OH$ group, whereas propane only possesses weak van der Waals forces",
+      "solution": {
+        "formulaSetup": "Intermolecular forces comparison between molecules of comparable $M_r$.",
+        "steps": [
+          "Both ethanol ($M_r = 46$) and propane ($M_r = 44$) have simple molecular structures.",
+          "Ethanol possesses a highly electronegative oxygen atom bonded to hydrogen ($-OH$), enabling the formation of intermolecular hydrogen bonds.",
+          "Hydrogen bonds are substantially stronger than the instantaneous dipole-induced dipole (van der Waals) forces found between non-polar propane molecules.",
+          "Much more thermal energy is needed to overcome hydrogen bonds between ethanol molecules, giving it a much higher boiling point."
+        ],
+        "finalAnswer": "Ethanol molecules can form strong intermolecular hydrogen bonds via the $-OH$ group, whereas propane only possesses weak van der Waals forces",
+        "commonTrap": "Claiming covalent bonds within the ethanol molecule break during boiling."
+      }
+    },
+    {
+      "id": "c01-q17",
+      "topicId": "chem-pillar-01",
+      "tier": 3,
+      "questionText": "Graphene is a single 2D layer of carbon atoms. Which combination of properties correctly describes graphene?",
+      "options": [
+        "High electrical conductivity, exceptionally high tensile strength, single atom thickness",
+        "Insulator, brittle, transparent",
+        "Low melting point, poor conductor, ductile",
+        "Conducts only when dissolved, ionic lattice"
+      ],
+      "correctAnswer": "High electrical conductivity, exceptionally high tensile strength, single atom thickness",
+      "solution": {
+        "formulaSetup": "Structure and advanced properties of graphene.",
+        "steps": [
+          "Graphene is a 2D monolayer of carbon atoms arranged in an $sp^2$ hexagonal honeycomb lattice.",
+          "Electrical conductivity: Each carbon has 1 delocalised electron that moves freely across the 2D sheet, granting extremely high electrical conductivity.",
+          "Mechanical strength: Strong in-plane covalent $C-C$ bonds make graphene one of the strongest materials known (high tensile strength).",
+          "Thickness: Exactly one carbon atom thick."
+        ],
+        "finalAnswer": "High electrical conductivity, exceptionally high tensile strength, single atom thickness",
+        "commonTrap": "Assuming graphene is an insulator like diamond or soft like bulk graphite."
+      }
+    },
+    {
+      "id": "c01-q18",
+      "topicId": "chem-pillar-01",
+      "tier": 3,
+      "questionText": "Why is calcium fluoride ($CaF_2$) insoluble in water, whereas calcium chloride ($CaCl_2$) is highly soluble?",
+      "options": [
+        "The lattice energy of $CaF_2$ is much greater than that of $CaCl_2$ because $F^-$ has a much smaller ionic radius than $Cl^-$",
+        "$CaF_2$ has a giant covalent macromolecular structure",
+        "Fluoride ions repel water molecules strongly",
+        "$CaCl_2$ forms covalent bonds with water"
+      ],
+      "correctAnswer": "The lattice energy of $CaF_2$ is much greater than that of $CaCl_2$ because $F^-$ has a much smaller ionic radius than $Cl^-$",
+      "solution": {
+        "formulaSetup": "Solubility of ionic salts involves competition between lattice energy (energy needed to break the lattice) and hydration enthalpy.",
+        "steps": [
+          "Both $CaF_2$ and $CaCl_2$ are ionic compounds.",
+          "Fluoride ion ($F^-$) has a much smaller ionic radius than chloride ($Cl^-$).",
+          "The smaller internuclear distance between $Ca^{2+}$ and $F^-$ results in an exceptionally large lattice energy for $CaF_2$.",
+          "The hydration energy released when ions are surrounded by water is insufficient to overcome the massive lattice energy of $CaF_2$, rendering it insoluble."
+        ],
+        "finalAnswer": "The lattice energy of $CaF_2$ is much greater than that of $CaCl_2$ because $F^-$ has a much smaller ionic radius than $Cl^-$",
+        "commonTrap": "Claiming $CaF_2$ is covalent."
+      }
+    },
+    {
+      "id": "c01-q19",
+      "topicId": "chem-pillar-01",
+      "tier": 3,
+      "questionText": "In the solid state, carbon dioxide forms dry ice, which sublimes at $-78.5^\\circ\\text{C}$. In contrast, silicon dioxide ($SiO_2$) melts at $1710^\\circ\\text{C}$. Why is there such a massive difference in physical properties between these two Group 14 dioxides?",
+      "options": [
+        "$CO_2$ consists of simple molecules held by weak van der Waals forces, while $SiO_2$ is a giant covalent macromolecular network",
+        "$CO_2$ is ionic while $SiO_2$ is metallic",
+        "Silicon is a metal and forms metallic bonds",
+        "The $C=O$ double bond is weaker than the $Si-O$ single bond"
+      ],
+      "correctAnswer": "$CO_2$ consists of simple molecules held by weak van der Waals forces, while $SiO_2$ is a giant covalent macromolecular network",
+      "solution": {
+        "formulaSetup": "Structural contrast: Simple molecular vs Giant covalent network.",
+        "steps": [
+          "Carbon forms strong $p\\pi-p\\pi$ double bonds with oxygen, creating stable, discrete linear $O=C=O$ molecules.",
+          "These discrete $CO_2$ molecules interact with each other via weak intermolecular van der Waals forces, requiring very little energy to separate (sublimes at $-78.5^\\circ\\text{C}$).",
+          "Silicon has larger $3p$ orbitals, making $p\\pi-p\\pi$ overlap with oxygen unfavorable; instead, silicon forms four single $\\sigma$-bonds with oxygen atoms.",
+          "This creates an infinite 3D giant covalent network where every $Si$ is bonded to $4$ oxygens and every $O$ to $2$ silicons, requiring immense energy to break."
+        ],
+        "finalAnswer": "$CO_2$ consists of simple molecules held by weak van der Waals forces, while $SiO_2$ is a giant covalent macromolecular network",
+        "commonTrap": "Stating that $C=O$ bonds are broken during sublimation of dry ice."
+      }
+    },
+    {
+      "id": "c01-q20",
+      "topicId": "chem-pillar-01",
+      "tier": 3,
+      "questionText": "A white crystalline solid $Z$ melts at $801^\\circ\\text{C}$. In solid form, it has a density of $2.16\\text{ g/cm}^3$. When molten, it undergoes electrolysis to produce a silvery metal at the cathode and a pungent greenish-yellow gas at the anode. What are the identities of the products?",
+      "options": [
+        "Sodium metal at cathode, chlorine gas at anode",
+        "Chlorine gas at cathode, sodium metal at anode",
+        "Hydrogen gas at cathode, oxygen gas at anode",
+        "Sodium hydroxide at cathode, chlorine at anode"
+      ],
+      "correctAnswer": "Sodium metal at cathode, chlorine gas at anode",
+      "solution": {
+        "formulaSetup": "Electrolysis of molten $NaCl$: Cathode: reduction of metal cation ($Na^+ + e^- \\to Na(l)$); Anode: oxidation of halide anion ($2Cl^- \\to Cl_2(g) + 2e^-$).",
+        "steps": [
+          "Identify solid $Z$: $NaCl$ (melting point $801^\\circ\\text{C}$).",
+          "At cathode (negative electrode): $Na^+$ ions migrate and gain electrons (reduction): $Na^+ + e^- \\to Na(l)$ (silvery liquid metal).",
+          "At anode (positive electrode): $Cl^-$ ions migrate and lose electrons (oxidation): $2Cl^- \\to Cl_2(g) + 2e^-$ (greenish-yellow pungent gas).",
+          "Because it is MOLTEN (anhydrous, no water present), $H^+$ and $OH^-$ are absent, so $H_2$ and $O_2$ cannot form."
+        ],
+        "finalAnswer": "Sodium metal at cathode, chlorine gas at anode",
+        "commonTrap": "Confusing electrolysis of MOLTEN $NaCl$ with AQUEOUS $NaCl$ (where $H_2$ gas is discharged at the cathode instead of $Na$ metal)."
+      }
+    }
+  ]
+}

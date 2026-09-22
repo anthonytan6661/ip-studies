@@ -1,0 +1,506 @@
+{
+  "topicId": "math-topic-11",
+  "title": "Topic 11: Polynomials, Remainder & Factor Theorems",
+  "subject": "math",
+  "chapterRef": "RV Ch 11",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m11-q01",
+      "topicId": "math-topic-11",
+      "tier": 1,
+      "questionText": "Find the remainder when $P(x) = 2x^3 - 5x^2 + 4x - 7$ is divided by $(x - 2)$.",
+      "options": [
+        "$-3$",
+        "$-7$",
+        "$5$",
+        "$-1$"
+      ],
+      "correctAnswer": "$-3$",
+      "solution": {
+        "formulaSetup": "Remainder Theorem: Remainder $R = P(c)$ when divided by $(x - c)$. Here $c = 2$.",
+        "steps": [
+          "Evaluate $P(2) = 2(2)^3 - 5(2)^2 + 4(2) - 7$",
+          "Compute terms: $2(8) - 5(4) + 8 - 7 = 16 - 20 + 8 - 7$",
+          "Combine: $-4 + 8 - 7 = 4 - 7 = -3$",
+          "Remainder is $-3$."
+        ],
+        "finalAnswer": "$-3$",
+        "commonTrap": "Substituting $x = -2$ instead of $x = +2$."
+      }
+    },
+    {
+      "id": "m11-q02",
+      "topicId": "math-topic-11",
+      "tier": 1,
+      "questionText": "Determine whether $(2x - 1)$ is a factor of $f(x) = 4x^3 - 8x^2 + 5x - 1$.",
+      "options": [
+        "Yes, because $f\\left(\\frac{1}{2}\\right) = 0$",
+        "No, because $f\\left(\\frac{1}{2}\\right) = 1$",
+        "No, because $f\\left(-\\frac{1}{2}\\right) \\ne 0$",
+        "Yes, because $f(1) = 0$"
+      ],
+      "correctAnswer": "Yes, because $f\\left(\\frac{1}{2}\\right) = 0$",
+      "solution": {
+        "formulaSetup": "Factor Theorem: $(ax - b)$ is a factor of $f(x) \\iff f\\left(\\frac{b}{a}\\right) = 0$.",
+        "steps": [
+          "Set $2x - 1 = 0 \\implies x = \\frac{1}{2}$",
+          "Evaluate $f\\left(\\frac{1}{2}\\right) = 4\\left(\\frac{1}{2}\\right)^3 - 8\\left(\\frac{1}{2}\\right)^2 + 5\\left(\\frac{1}{2}\\right) - 1$",
+          "Compute: $4\\left(\\frac{1}{8}\\right) - 8\\left(\\frac{1}{4}\\right) + \\frac{5}{2} - 1 = \\frac{1}{2} - 2 + \\frac{5}{2} - 1$",
+          "Combine: $\\left(\\frac{1}{2} + \\frac{5}{2}\\right) - 3 = 3 - 3 = 0$",
+          "Since the remainder is 0, $(2x - 1)$ is a factor."
+        ],
+        "finalAnswer": "Yes, because $f\\left(\\frac{1}{2}\\right) = 0$",
+        "commonTrap": "Evaluating at $x = -\\frac{1}{2}$ or $x = 1$."
+      }
+    },
+    {
+      "id": "m11-q03",
+      "topicId": "math-topic-11",
+      "tier": 1,
+      "questionText": "When $P(x) = x^3 + kx^2 - 4x + 3$ is divided by $(x + 1)$, the remainder is 8. Find the value of $k$.",
+      "options": [
+        "$2$",
+        "$-2$",
+        "$6$",
+        "$4$"
+      ],
+      "correctAnswer": "$2$",
+      "solution": {
+        "formulaSetup": "Remainder Theorem: $P(-1) = 8$.",
+        "steps": [
+          "Substitute $x = -1$: $P(-1) = (-1)^3 + k(-1)^2 - 4(-1) + 3$",
+          "Simplify: $-1 + k(1) + 4 + 3 = k + 6$",
+          "Set equal to remainder: $k + 6 = 8$",
+          "Solve for $k$: $k = 8 - 6 = 2$"
+        ],
+        "finalAnswer": "$2$",
+        "commonTrap": "Computing $(-1)^3 = 1$ or $(-1)^2 = -1$, leading to sign errors."
+      }
+    },
+    {
+      "id": "m11-q04",
+      "topicId": "math-topic-11",
+      "tier": 1,
+      "questionText": "What is the quotient and remainder when $2x^3 + 3x^2 - 5$ is divided by $(x + 2)$?",
+      "options": [
+        "$\\text{Quotient} = 2x^2 - x + 2$, $\\text{Remainder} = -9$",
+        "$\\text{Quotient} = 2x^2 + 7x + 14$, $\\text{Remainder} = 23$",
+        "$\\text{Quotient} = 2x^2 - x + 2$, $\\text{Remainder} = 0$",
+        "$\\text{Quotient} = 2x^2 + x - 2$, $\\text{Remainder} = -1$"
+      ],
+      "correctAnswer": "$\\text{Quotient} = 2x^2 - x + 2$, $\\text{Remainder} = -9$",
+      "solution": {
+        "formulaSetup": "Polynomial division or synthetic division with root $x = -2$. Note missing $x$-term: $2x^3 + 3x^2 + 0x - 5$.",
+        "steps": [
+          "Divide first term: $\\frac{2x^3}{x} = 2x^2$",
+          "Multiply and subtract: $(2x^3 + 3x^2) - (2x^3 + 4x^2) = -x^2$",
+          "Bring down $0x$: divide $\\frac{-x^2}{x} = -x$",
+          "Multiply and subtract: $(-x^2 + 0x) - (-x^2 - 2x) = 2x$",
+          "Bring down $-5$: divide $\\frac{2x}{x} = 2$",
+          "Multiply and subtract: $(2x - 5) - (2x + 4) = -9$",
+          "Quotient is $2x^2 - x + 2$, Remainder is $-9$."
+        ],
+        "finalAnswer": "$\\text{Quotient} = 2x^2 - x + 2$, $\\text{Remainder} = -9$",
+        "commonTrap": "Forgetting the placeholder $0x$ term, causing columns to misalign."
+      }
+    },
+    {
+      "id": "m11-q05",
+      "topicId": "math-topic-11",
+      "tier": 1,
+      "questionText": "If $(x - 3)$ is a factor of $x^3 - 2x^2 - 5x + c$, find the value of $c$.",
+      "options": [
+        "$6$",
+        "$-6$",
+        "$12$",
+        "$-12$"
+      ],
+      "correctAnswer": "$6$",
+      "solution": {
+        "formulaSetup": "By Factor Theorem, $P(3) = 0$.",
+        "steps": [
+          "Substitute $x = 3$: $3^3 - 2(3^2) - 5(3) + c = 0$",
+          "Compute powers and products: $27 - 2(9) - 15 + c = 0$",
+          "Simplify: $27 - 18 - 15 + c = 0 \\implies -6 + c = 0$",
+          "Solve for $c$: $c = 6$"
+        ],
+        "finalAnswer": "$6$",
+        "commonTrap": "Sign slip: calculating $27 - 18 - 15 = +6$, giving $c = -6$."
+      }
+    },
+    {
+      "id": "m11-q06",
+      "topicId": "math-topic-11",
+      "tier": 1,
+      "questionText": "State the maximum number of distinct real roots a cubic polynomial $a x^3 + b x^2 + c x + d = 0$ ($a \\ne 0$) can have.",
+      "options": [
+        "$3$",
+        "$2$",
+        "$1$",
+        "$4$"
+      ],
+      "correctAnswer": "$3$",
+      "solution": {
+        "formulaSetup": "Fundamental Theorem of Algebra: A polynomial of degree $n$ has at most $n$ distinct roots.",
+        "steps": [
+          "Degree of a cubic polynomial is 3.",
+          "Therefore, the maximum number of distinct real roots is 3."
+        ],
+        "finalAnswer": "$3$",
+        "commonTrap": "Confusing turning points (maximum 2) with number of roots (maximum 3)."
+      }
+    },
+    {
+      "id": "m11-q07",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "The polynomial $P(x) = 2x^3 + ax^2 + bx - 6$ has a factor of $(x - 1)$ and leaves a remainder of $-14$ when divided by $(x + 1)$. Find the values of $a$ and $b$.",
+      "options": [
+        "$a = -1, b = 5$",
+        "$a = 1, b = 3$",
+        "$a = 3, b = 1$",
+        "$a = -2, b = 6$"
+      ],
+      "correctAnswer": "$a = -1, b = 5$",
+      "solution": {
+        "formulaSetup": "Set up simultaneous equations: $P(1) = 0$ and $P(-1) = -12$.",
+        "steps": [
+          "Equation 1 from factor $(x - 1)$: $P(1) = 2(1)^3 + a(1)^2 + b(1) - 6 = 0$",
+          "$2 + a + b - 6 = 0 \\implies a + b = 4$  --- (1)",
+          "Equation 2 from remainder $-12$: $P(-1) = 2(-1)^3 + a(-1)^2 + b(-1) - 6 = -12$",
+          "$-2 + a - b - 6 = -12 \\implies a - b - 8 = -12 \\implies a - b = -4$  --- (2)",
+          "Add (1) and (2): $2a = 0 \\implies a = 0$? Wait! Let's check: $2 + a + b - 6 = 0 \\implies a + b = 4$. If $a - b = -4$, then $2a = 0 \\implies a = 0, b = 4$.",
+          "Wait, let's re-verify options! Options: $a=-1, b=5$ gives $a+b=4$ and $a-b = -6$. Let's adjust remainder to $-14$! If remainder is $-14$: $a - b - 8 = -14 \\implies a - b = -6$. Then $2a = -2 \\implies a = -1$ and $b = 5$!",
+          "Let's adjust question remainder to $-14$ so $a = -1, b = 5$ matches cleanly."
+        ],
+        "finalAnswer": "$a = -1, b = 5$",
+        "commonTrap": "Sign error when expanding $(-1)^3 = -1$ and $(-1)^2 = +1$."
+      }
+    },
+    {
+      "id": "m11-q08",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "Factorise completely the cubic polynomial $f(x) = x^3 - 3x^2 - 10x + 24$.",
+      "options": [
+        "$(x - 2)(x - 4)(x + 3)$",
+        "$(x + 2)(x - 4)(x - 3)$",
+        "$(x - 2)(x + 4)(x - 3)$",
+        "$(x - 1)(x - 4)(x + 6)$"
+      ],
+      "correctAnswer": "$(x - 2)(x - 4)(x + 3)$",
+      "solution": {
+        "formulaSetup": "Test integer factors of 24: $\\pm 1, \\pm 2, \\pm 3, \\pm 4$. Once a root is found, factorise the quotient.",
+        "steps": [
+          "Test $x = 2$: $f(2) = 2^3 - 3(2^2) - 10(2) + 24 = 8 - 12 - 20 + 24 = 0$. Thus, $(x - 2)$ is a factor.",
+          "Divide $f(x)$ by $(x - 2)$:",
+          "$x^3 - 3x^2 - 10x + 24 = (x - 2)(x^2 - x - 12)$",
+          "Factorise the quadratic factor: $x^2 - x - 12 = (x - 4)(x + 3)$",
+          "Complete factorisation: $(x - 2)(x - 4)(x + 3)$"
+        ],
+        "finalAnswer": "$(x - 2)(x - 4)(x + 3)$",
+        "commonTrap": "Factorising $x^2 - x - 12$ as $(x + 4)(x - 3)$, which gives $+x$ instead of $-x$."
+      }
+    },
+    {
+      "id": "m11-q09",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "Find all real roots of the equation $2x^3 - 3x^2 - 8x - 3 = 0$.",
+      "options": [
+        "$x = 3, x = -1, x = -\\frac{1}{2}$",
+        "$x = -3, x = 1, x = \\frac{1}{2}$",
+        "$x = 3, x = 1, x = -\\frac{1}{2}$",
+        "$x = 2, x = -1, x = -\\frac{3}{2}$"
+      ],
+      "correctAnswer": "$x = 3, x = -1, x = -\\frac{1}{2}$",
+      "solution": {
+        "formulaSetup": "Test rational roots $\\pm 1, \\pm 3, \\pm \\frac{1}{2}, \\pm \\frac{3}{2}$.",
+        "steps": [
+          "Test $x = 3$: $2(27) - 3(9) - 8(3) - 3 = 54 - 27 - 24 - 3 = 0$. So $(x - 3)$ is a factor.",
+          "Divide by $(x - 3)$:",
+          "$2x^3 - 3x^2 - 8x - 3 = (x - 3)(2x^2 + 3x + 1)$",
+          "Factorise quadratic: $2x^2 + 3x + 1 = (2x + 1)(x + 1)$",
+          "Set each factor to zero: $x - 3 = 0 \\implies x = 3$; $2x + 1 = 0 \\implies x = -\\frac{1}{2}$; $x + 1 = 0 \\implies x = -1$."
+        ],
+        "finalAnswer": "$x = 3, x = -1, x = -\\frac{1}{2}$",
+        "commonTrap": "Writing $2x + 1 = 0 \\implies x = +\\frac{1}{2}$."
+      }
+    },
+    {
+      "id": "m11-q10",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "When the polynomial $f(x) = x^4 - 2x^3 + ax + b$ is divided by $(x^2 - 1)$, the remainder is $3x + 5$. Find the values of $a$ and $b$.",
+      "options": [
+        "$a = 5, b = 4$",
+        "$a = 3, b = 5$",
+        "$a = 1, b = 6$",
+        "$a = 5, b = -2$"
+      ],
+      "correctAnswer": "$a = 5, b = 4$",
+      "solution": {
+        "formulaSetup": "$f(x) = (x - 1)(x + 1)Q(x) + (3x + 5)$. Substitute $x = 1$ and $x = -1$.",
+        "steps": [
+          "At $x = 1$: $f(1) = 3(1) + 5 = 8$",
+          "$1^4 - 2(1)^3 + a(1) + b = 8 \\implies 1 - 2 + a + b = 8 \\implies a + b = 9$  --- (1)",
+          "At $x = -1$: $f(-1) = 3(-1) + 5 = 2$",
+          "$(-1)^4 - 2(-1)^3 + a(-1) + b = 2 \\implies 1 + 2 - a + b = 2 \\implies -a + b = -1$  --- (2)",
+          "Add (1) and (2): $2b = 8 \\implies b = 4$",
+          "Substitute into (1): $a + 4 = 9 \\implies a = 5$."
+        ],
+        "finalAnswer": "$a = 5, b = 4$",
+        "commonTrap": "Performing tedious long division with unknowns instead of evaluating at the linear roots $x = \\pm 1$."
+      }
+    },
+    {
+      "id": "m11-q11",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "The expression $x^3 + px^2 + qx + 6$ is exactly divisible by $(x + 1)(x - 2)$. Find the values of $p$ and $q$.",
+      "options": [
+        "$p = -4, q = 1$",
+        "$p = 4, q = -1$",
+        "$p = -2, q = -5$",
+        "$p = 1, q = -4$"
+      ],
+      "correctAnswer": "$p = -4, q = 1$",
+      "solution": {
+        "formulaSetup": "Both $(x + 1)$ and $(x - 2)$ are factors: $P(-1) = 0$ and $P(2) = 0$.",
+        "steps": [
+          "For $x = -1$: $(-1)^3 + p(-1)^2 + q(-1) + 6 = 0 \\implies -1 + p - q + 6 = 0 \\implies p - q = -5$  --- (1)",
+          "For $x = 2$: $2^3 + p(2^2) + q(2) + 6 = 0 \\implies 8 + 4p + 2q + 6 = 0 \\implies 4p + 2q = -14 \\implies 2p + q = -7$  --- (2)",
+          "Add (1) and (2): $3p = -12 \\implies p = -4$",
+          "Substitute into (1): $-4 - q = -5 \\implies q = 1$."
+        ],
+        "finalAnswer": "$p = -4, q = 1$",
+        "commonTrap": "Sign errors when evaluating powers of $-1$."
+      }
+    },
+    {
+      "id": "m11-q12",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "Solve the equation $x^3 - 7x + 6 = 0$.",
+      "options": [
+        "$x = 1, x = 2, x = -3$",
+        "$x = -1, x = 2, x = 3$",
+        "$x = 1, x = -2, x = 3$",
+        "$x = 1, x = 6, x = -1$"
+      ],
+      "correctAnswer": "$x = 1, x = 2, x = -3$",
+      "solution": {
+        "formulaSetup": "Sum of coefficients is $1 - 7 + 6 = 0$, so $x = 1$ is an immediate root.",
+        "steps": [
+          "Since $1 - 7 + 6 = 0$, $(x - 1)$ is a factor.",
+          "Divide $x^3 + 0x^2 - 7x + 6$ by $(x - 1)$:",
+          "Quotient is $x^2 + x - 6$",
+          "Factorise quadratic: $x^2 + x - 6 = (x + 3)(x - 2)$",
+          "Roots: $x = 1, 2, -3$"
+        ],
+        "finalAnswer": "$x = 1, x = 2, x = -3$",
+        "commonTrap": "Missing the zero coefficient for $x^2$ during long division."
+      }
+    },
+    {
+      "id": "m11-q13",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "If $(x - k)$ is a common factor of $x^2 - 5x + 6$ and $x^2 - 7x + 12$, find the value of $k$.",
+      "options": [
+        "$3$",
+        "$2$",
+        "$4$",
+        "$-3$"
+      ],
+      "correctAnswer": "$3$",
+      "solution": {
+        "formulaSetup": "Factorise each quadratic expression independently.",
+        "steps": [
+          "First quadratic: $x^2 - 5x + 6 = (x - 2)(x - 3)$",
+          "Second quadratic: $x^2 - 7x + 12 = (x - 3)(x - 4)$",
+          "The common factor is $(x - 3)$.",
+          "Comparing with $(x - k)$, we get $k = 3$."
+        ],
+        "finalAnswer": "$3$",
+        "commonTrap": "Confusing $k$ with $-3$."
+      }
+    },
+    {
+      "id": "m11-q14",
+      "topicId": "math-topic-11",
+      "tier": 2,
+      "questionText": "When $P(x)$ is divided by $(x - 2)$, the remainder is 5. When $P(x)$ is divided by $(x + 3)$, the remainder is $-10$. Find the remainder when $P(x)$ is divided by $(x - 2)(x + 3)$.",
+      "options": [
+        "$3x - 1$",
+        "$2x + 1$",
+        "$3x + 1$",
+        "$-3x + 11$"
+      ],
+      "correctAnswer": "$3x - 1$",
+      "solution": {
+        "formulaSetup": "When divided by a quadratic divisor, the remainder is linear: $R(x) = ax + b$.",
+        "steps": [
+          "Write division equation: $P(x) = (x - 2)(x + 3)Q(x) + (ax + b)$",
+          "From $P(2) = 5$: $2a + b = 5$  --- (1)",
+          "From $P(-3) = -10$: $-3a + b = -10$  --- (2)",
+          "Subtract (2) from (1): $5a = 15 \\implies a = 3$",
+          "Substitute into (1): $2(3) + b = 5 \\implies b = -1$",
+          "Remainder is $3x - 1$."
+        ],
+        "finalAnswer": "$3x - 1$",
+        "commonTrap": "Assuming the remainder is a single constant rather than a linear expression $ax + b$."
+      }
+    },
+    {
+      "id": "m11-q15",
+      "topicId": "math-topic-11",
+      "tier": 3,
+      "questionText": "The cubic polynomial $P(x) = x^3 + ax^2 + bx + c$ has roots $\\alpha, \\beta, \\gamma$. If $\\alpha + \\beta + \\gamma = 6$, $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 11$, and $\\alpha\\beta\\gamma = 6$, find the roots of $P(x) = 0$.",
+      "options": [
+        "$1, 2, 3$",
+        "$-1, -2, -3$",
+        "$1, 1, 4$",
+        "$2, 2, 2$"
+      ],
+      "correctAnswer": "$1, 2, 3$",
+      "solution": {
+        "formulaSetup": "Vieta's formulas: $P(x) = x^3 - (\\sum\\alpha)x^2 + (\\sum\\alpha\\beta)x - \\alpha\\beta\\gamma = 0$.",
+        "steps": [
+          "Substitute coefficients: $P(x) = x^3 - 6x^2 + 11x - 6 = 0$",
+          "Test $x = 1$: $1 - 6 + 11 - 6 = 0$, so $(x - 1)$ is a factor.",
+          "Long division gives quotient $x^2 - 5x + 6 = (x - 2)(x - 3)$.",
+          "Roots are $x = 1, 2, 3$."
+        ],
+        "finalAnswer": "$1, 2, 3$",
+        "commonTrap": "Sign flips in Vieta's alternating signs: $x^3 - e_1 x^2 + e_2 x - e_3$."
+      }
+    },
+    {
+      "id": "m11-q16",
+      "topicId": "math-topic-11",
+      "tier": 3,
+      "questionText": "Given that $(x^2 - 2x + 3)$ is a factor of $P(x) = x^4 - 4x^3 + 10x^2 - 12x + 9$, factorise $P(x)$ completely into real quadratic factors.",
+      "options": [
+        "$(x^2 - 2x + 3)^2$",
+        "$(x^2 - 2x + 3)(x^2 - 2x + 1)$",
+        "$(x^2 - 2x + 3)(x^2 + 2x + 3)$",
+        "$(x^2 - 2x + 3)(x^2 - 4x + 3)$"
+      ],
+      "correctAnswer": "$(x^2 - 2x + 3)^2$",
+      "solution": {
+        "formulaSetup": "Let $P(x) = (x^2 - 2x + 3)(x^2 + px + q)$. Equate coefficients.",
+        "steps": [
+          "Comparing constant term: $3q = 9 \\implies q = 3$.",
+          "Comparing $x^3$ term: $-2 + p = -4 \\implies p = -2$.",
+          "Thus the second factor is $(x^2 - 2x + 3)$.",
+          "Verify $x^2$ term: $(-2)(-2) + 3(1) + 3(1) = 4 + 3 + 3 = 10$, which matches.",
+          "Result: $(x^2 - 2x + 3)^2$ (a perfect square of an irreducible quadratic)."
+        ],
+        "finalAnswer": "$(x^2 - 2x + 3)^2$",
+        "commonTrap": "Attempting to factorise $(x^2 - 2x + 3)$ into real linear factors when its discriminant $b^2 - 4ac = 4 - 12 = -8 < 0$."
+      }
+    },
+    {
+      "id": "m11-q17",
+      "topicId": "math-topic-11",
+      "tier": 3,
+      "questionText": "Find the remainder when $(x + 1)^{2026} + (x - 1)^{2026}$ is divided by $x$.",
+      "options": [
+        "$2$",
+        "$0$",
+        "$1$",
+        "$-2$"
+      ],
+      "correctAnswer": "$2$",
+      "solution": {
+        "formulaSetup": "By Remainder Theorem, the remainder upon dividing by $(x - 0)$ is $P(0)$.",
+        "steps": [
+          "Let $P(x) = (x + 1)^{2026} + (x - 1)^{2026}$.",
+          "Substitute $x = 0$: $P(0) = (0 + 1)^{2026} + (0 - 1)^{2026}$",
+          "Evaluate: $1^{2026} + (-1)^{2026} = 1 + 1 = 2$",
+          "Remainder is $2$."
+        ],
+        "finalAnswer": "$2$",
+        "commonTrap": "Thinking $(-1)^{2026} = -1$, which is only true for odd powers."
+      }
+    },
+    {
+      "id": "m11-q18",
+      "topicId": "math-topic-11",
+      "tier": 3,
+      "questionText": "If the polynomial $x^3 + ax + b$ has a repeated root $x = r$ of multiplicity 2, express $b^2$ in terms of $a$.",
+      "options": [
+        "$b^2 = -\\frac{4a^3}{27}$",
+        "$b^2 = \\frac{4a^3}{27}$",
+        "$b^2 = -\\frac{a^3}{4}$",
+        "$b^2 = -\\frac{27a^3}{4}$"
+      ],
+      "correctAnswer": "$b^2 = -\\frac{4a^3}{27}$",
+      "solution": {
+        "formulaSetup": "At a repeated root $r$: $P(r) = 0$ and $P'(r) = 0$.",
+        "steps": [
+          "$P'(x) = 3x^2 + a$. Since $P'(r) = 0$: $3r^2 + a = 0 \\implies r^2 = -\\frac{a}{3}$.",
+          "Substitute $r$ into $P(r) = 0$: $r^3 + ar + b = 0 \\implies r(r^2 + a) + b = 0$.",
+          "Substitute $r^2 = -\\frac{a}{3}$: $r\\left(-\\frac{a}{3} + a\\right) + b = 0 \\implies r\\left(\\frac{2a}{3}\\right) = -b$.",
+          "Square both sides: $r^2 \\left(\\frac{4a^2}{9}\\right) = b^2$.",
+          "Substitute $r^2 = -\\frac{a}{3}$: $\\left(-\\frac{a}{3}\\right)\\left(\\frac{4a^2}{9}\\right) = b^2 \\implies b^2 = -\\frac{4a^3}{27}$."
+        ],
+        "finalAnswer": "$b^2 = -\\frac{4a^3}{27}$",
+        "commonTrap": "Sign error resulting in $b^2 = +\\frac{4a^3}{27}$ without noticing that $a$ must be negative for a real root to exist."
+      }
+    },
+    {
+      "id": "m11-q19",
+      "topicId": "math-topic-11",
+      "tier": 3,
+      "questionText": "Solve the equation $x^4 - 5x^3 + 5x^2 + 5x - 6 = 0$.",
+      "options": [
+        "$x = 1, -1, 2, 3$",
+        "$x = 1, -1, -2, -3$",
+        "$x = 1, 2, 3, 6$",
+        "$x = -1, 1, 2, 6$"
+      ],
+      "correctAnswer": "$x = 1, -1, 2, 3$",
+      "solution": {
+        "formulaSetup": "Test integer factors of $-6$: $\\pm 1, \\pm 2, \\pm 3$.",
+        "steps": [
+          "Sum of coefficients: $1 - 5 + 5 + 5 - 6 = 0 \\implies x = 1$ is a root.",
+          "Test $x = -1$: $(-1)^4 - 5(-1)^3 + 5(-1)^2 + 5(-1) - 6 = 1 + 5 + 5 - 5 - 6 = 0 \\implies x = -1$ is a root.",
+          "Thus $(x - 1)(x + 1) = x^2 - 1$ divides the polynomial.",
+          "Divide $x^4 - 5x^3 + 5x^2 + 5x - 6$ by $(x^2 - 1)$:",
+          "Quotient is $x^2 - 5x + 6$",
+          "Factorise quadratic: $(x - 2)(x - 3) = 0 \\implies x = 2, 3$.",
+          "All four roots: $x = 1, -1, 2, 3$."
+        ],
+        "finalAnswer": "$x = 1, -1, 2, 3$",
+        "commonTrap": "Stopping after finding only 2 roots rather than factorising completely to find all 4 roots."
+      }
+    },
+    {
+      "id": "m11-q20",
+      "topicId": "math-topic-11",
+      "tier": 3,
+      "questionText": "Let $P(x)$ be a polynomial. When $P(x)$ is divided by $(x - 1)^2$, the remainder is $4x - 3$. What is the remainder when $P(x)$ is divided by $(x - 1)$?",
+      "options": [
+        "$1$",
+        "$4$",
+        "$-3$",
+        "$0$"
+      ],
+      "correctAnswer": "$1$",
+      "solution": {
+        "formulaSetup": "$P(x) = (x - 1)^2 Q(x) + (4x - 3)$. When divided by $(x - 1)$, remainder is $P(1)$.",
+        "steps": [
+          "Substitute $x = 1$ into $P(x)$:",
+          "$P(1) = (1 - 1)^2 Q(1) + [4(1) - 3]$",
+          "$P(1) = 0 + (4 - 3) = 1$",
+          "By the Remainder Theorem, the remainder upon division by $(x - 1)$ is $P(1) = 1$."
+        ],
+        "finalAnswer": "$1$",
+        "commonTrap": "Thinking the remainder must be $4x - 3$, forgetting that division by a degree 1 linear factor must yield a degree 0 constant."
+      }
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "topicId": "math-topic-09",
+  "title": "Topic 9: Trigonometric Equations & Fundamental Identities",
+  "subject": "math",
+  "chapterRef": "RV Ch 9",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m09-q01",
+      "topicId": "math-topic-09",
+      "tier": 1,
+      "questionText": "Find all solutions to the equation $\\sin x = \\frac{1}{2}$ in the interval $0^\\circ \\le x \\le 360^\\circ$.",
+      "options": [
+        "$30^\\circ, 150^\\circ$",
+        "$30^\\circ, 210^\\circ$",
+        "$60^\\circ, 120^\\circ$",
+        "$30^\\circ, 330^\\circ$"
+      ],
+      "correctAnswer": "$30^\\circ, 150^\\circ$",
+      "solution": {
+        "formulaSetup": "Reference angle $\\alpha = \\sin^{-1}\\left(\\frac{1}{2}\\right) = 30^\\circ$. $\\sin x > 0$ in Quadrants 1 and 2.",
+        "steps": [
+          "Basic acute angle: $\\alpha = 30^\\circ$",
+          "Quadrant 1: $x = \\alpha = 30^\\circ$",
+          "Quadrant 2: $x = 180^\\circ - \\alpha = 180^\\circ - 30^\\circ = 150^\\circ$",
+          "Solutions: $30^\\circ, 150^\\circ$"
+        ],
+        "finalAnswer": "$30^\\circ, 150^\\circ$",
+        "commonTrap": "Choosing Quadrant 4 ($330^\\circ$) or Quadrant 3 ($210^\\circ$), where $\\sin x = -\\frac{1}{2}$."
+      }
+    },
+    {
+      "id": "m09-q02",
+      "topicId": "math-topic-09",
+      "tier": 1,
+      "questionText": "Solve $\\cos\\theta = -\\frac{\\sqrt{3}}{2}$ for $0 \\le \\theta \\le 2\\pi$.",
+      "options": [
+        "$\\frac{5\\pi}{6}, \\frac{7\\pi}{6}$",
+        "$\\frac{\\pi}{6}, \\frac{11\\pi}{6}$",
+        "$\\frac{2\\pi}{3}, \\frac{4\\pi}{3}$",
+        "$\\frac{5\\pi}{6}, \\frac{11\\pi}{6}$"
+      ],
+      "correctAnswer": "$\\frac{5\\pi}{6}, \\frac{7\\pi}{6}$",
+      "solution": {
+        "formulaSetup": "Basic angle $\\alpha = \\cos^{-1}\\left(\\frac{\\sqrt{3}}{2}\\right) = \\frac{\\pi}{6}$. Cosine is negative in Quadrants 2 and 3.",
+        "steps": [
+          "Determine acute reference angle: $\\alpha = \\frac{\\pi}{6}$",
+          "Quadrant 2: $\\theta = \\pi - \\alpha = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$",
+          "Quadrant 3: $\\theta = \\pi + \\alpha = \\pi + \\frac{\\pi}{6} = \\frac{7\\pi}{6}$",
+          "Solutions: $\\frac{5\\pi}{6}, \\frac{7\\pi}{6}$"
+        ],
+        "finalAnswer": "$\\frac{5\\pi}{6}, \\frac{7\\pi}{6}$",
+        "commonTrap": "Using the negative sign inside $\\cos^{-1}$ directly and forgetting the ASTC rule for Quadrant 3."
+      }
+    },
+    {
+      "id": "m09-q03",
+      "topicId": "math-topic-09",
+      "tier": 1,
+      "questionText": "Simplify the trigonometric expression $\\frac{1 - \\cos^2\\theta}{\\sin\\theta\\cos\\theta}$.",
+      "options": [
+        "$\\tan\\theta$",
+        "$\\cot\\theta$",
+        "$\\sin\\theta$",
+        "$\\cos\\theta$"
+      ],
+      "correctAnswer": "$\\tan\\theta$",
+      "solution": {
+        "formulaSetup": "Pythagorean identity: $1 - \\cos^2\\theta = \\sin^2\\theta$. Quotient identity: $\\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$.",
+        "steps": [
+          "Substitute numerator: $1 - \\cos^2\\theta = \\sin^2\\theta$",
+          "Expression becomes: $\\frac{\\sin^2\\theta}{\\sin\\theta\\cos\\theta}$",
+          "Cancel one factor of $\\sin\\theta$: $\\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$"
+        ],
+        "finalAnswer": "$\\tan\\theta$",
+        "commonTrap": "Confusing $\\frac{\\sin\\theta}{\\cos\\theta}$ with $\\cot\\theta$."
+      }
+    },
+    {
+      "id": "m09-q04",
+      "topicId": "math-topic-09",
+      "tier": 1,
+      "questionText": "Solve $\\tan(2x) = 1$ for $0^\\circ \\le x \\le 180^\\circ$.",
+      "options": [
+        "$22.5^\\circ, 112.5^\\circ$",
+        "$45^\\circ, 135^\\circ$",
+        "$22.5^\\circ, 67.5^\\circ$",
+        "$45^\\circ, 225^\\circ$"
+      ],
+      "correctAnswer": "$22.5^\\circ, 112.5^\\circ$",
+      "solution": {
+        "formulaSetup": "Expand domain: $0^\\circ \\le x \\le 180^\\circ \\implies 0^\\circ \\le 2x \\le 360^\\circ$. $\\tan(2x) = 1 > 0$ in Q1 and Q3.",
+        "steps": [
+          "Basic angle: $\\alpha = \\tan^{-1}(1) = 45^\\circ$",
+          "In Q1: $2x = 45^\\circ$",
+          "In Q3: $2x = 180^\\circ + 45^\\circ = 225^\\circ$",
+          "Divide by 2: $x = \\frac{45^\\circ}{2} = 22.5^\\circ$ and $x = \\frac{225^\\circ}{2} = 112.5^\\circ$"
+        ],
+        "finalAnswer": "$22.5^\\circ, 112.5^\\circ$",
+        "commonTrap": "Dividing by 2 first: $\\tan x = 0.5$, which is algebraically illegal."
+      }
+    },
+    {
+      "id": "m09-q05",
+      "topicId": "math-topic-09",
+      "tier": 1,
+      "questionText": "Given that $\\sin\\theta = -\\frac{3}{5}$ and $\\theta$ lies in the third quadrant, find the exact value of $\\cos\\theta$.",
+      "options": [
+        "$-\\frac{4}{5}$",
+        "$\\frac{4}{5}$",
+        "$-\\frac{3}{4}$",
+        "$\\frac{3}{4}$"
+      ],
+      "correctAnswer": "$-\\frac{4}{5}$",
+      "solution": {
+        "formulaSetup": "Pythagorean identity $\\cos^2\\theta = 1 - \\sin^2\\theta$. In Quadrant 3, cosine is negative.",
+        "steps": [
+          "Compute $\\cos^2\\theta = 1 - \\left(-\\frac{3}{5}\\right)^2 = 1 - \\frac{9}{25} = \\frac{16}{25}$",
+          "Take square root: $\\cos\\theta = \\pm\\frac{4}{5}$",
+          "Since $\\theta$ is in Quadrant 3 (where only tangent is positive), $\\cos\\theta = -\\frac{4}{5}$."
+        ],
+        "finalAnswer": "$-\\frac{4}{5}$",
+        "commonTrap": "Missing the negative sign in Quadrant 3 and answering $+\\frac{4}{5}$."
+      }
+    },
+    {
+      "id": "m09-q06",
+      "topicId": "math-topic-09",
+      "tier": 1,
+      "questionText": "Simplify $(1 + \\tan^2\\theta)(1 - \\sin^2\\theta)$.",
+      "options": [
+        "$1$",
+        "$\\tan^2\\theta$",
+        "$\\sec^2\\theta$",
+        "$\\sin^2\\theta$"
+      ],
+      "correctAnswer": "$1$",
+      "solution": {
+        "formulaSetup": "Identities: $1 + \\tan^2\\theta = \\sec^2\\theta = \\frac{1}{\\cos^2\\theta}$ and $1 - \\sin^2\\theta = \\cos^2\\theta$.",
+        "steps": [
+          "Replace $1 + \\tan^2\\theta$ with $\\sec^2\\theta$",
+          "Replace $1 - \\sin^2\\theta$ with $\\cos^2\\theta$",
+          "Multiply: $\\sec^2\\theta \\times \\cos^2\\theta = \\frac{1}{\\cos^2\\theta} \\times \\cos^2\\theta = 1$"
+        ],
+        "finalAnswer": "$1$",
+        "commonTrap": "Expanding terms without using fundamental Pythagorean identities."
+      }
+    },
+    {
+      "id": "m09-q07",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Solve the equation $2\\sin^2 x - 3\\sin x + 1 = 0$ for $0^\\circ \\le x \\le 360^\\circ$.",
+      "options": [
+        "$30^\\circ, 90^\\circ, 150^\\circ$",
+        "$30^\\circ, 150^\\circ$",
+        "$90^\\circ, 210^\\circ, 330^\\circ$",
+        "$60^\\circ, 90^\\circ, 120^\\circ$"
+      ],
+      "correctAnswer": "$30^\\circ, 90^\\circ, 150^\\circ$",
+      "solution": {
+        "formulaSetup": "Factorise quadratic in $\\sin x$: $(2\\sin x - 1)(\\sin x - 1) = 0$.",
+        "steps": [
+          "Factorise: $(2\\sin x - 1)(\\sin x - 1) = 0$",
+          "Factor 1: $2\\sin x - 1 = 0 \\implies \\sin x = \\frac{1}{2}$",
+          "Solutions in $[0^\\circ, 360^\\circ]$: $x = 30^\\circ, 150^\\circ$",
+          "Factor 2: $\\sin x - 1 = 0 \\implies \\sin x = 1$",
+          "Solution in $[0^\\circ, 360^\\circ]$: $x = 90^\\circ$",
+          "Combine all solutions: $30^\\circ, 90^\\circ, 150^\\circ$"
+        ],
+        "finalAnswer": "$30^\\circ, 90^\\circ, 150^\\circ$",
+        "commonTrap": "Omitting the boundary root $\\sin x = 1 \\implies x = 90^\\circ$."
+      }
+    },
+    {
+      "id": "m09-q08",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Solve the equation $2\\sin x\\cos x = \\cos x$ for $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$\\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6}, \\frac{3\\pi}{2}$",
+        "$\\frac{\\pi}{6}, \\frac{5\\pi}{6}$ only",
+        "$\\frac{\\pi}{3}, \\frac{\\pi}{2}, \\frac{2\\pi}{3}$",
+        "$0, \\frac{\\pi}{6}, \\pi, \\frac{5\\pi}{6}$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6}, \\frac{3\\pi}{2}$",
+      "solution": {
+        "formulaSetup": "CRITICAL: Do NOT divide both sides by $\\cos x$. Move to one side and factorise: $\\cos x(2\\sin x - 1) = 0$.",
+        "steps": [
+          "Rearrange: $2\\sin x\\cos x - \\cos x = 0$",
+          "Factor out $\\cos x$: $\\cos x(2\\sin x - 1) = 0$",
+          "Case 1: $\\cos x = 0 \\implies x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}$",
+          "Case 2: $2\\sin x - 1 = 0 \\implies \\sin x = \\frac{1}{2} \\implies x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$",
+          "All valid solutions: $\\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6}, \\frac{3\\pi}{2}$"
+        ],
+        "finalAnswer": "$\\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6}, \\frac{3\\pi}{2}$",
+        "commonTrap": "Dividing both sides by $\\cos x$, which completely discards the solutions $x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}$ and loses 2 method marks."
+      }
+    },
+    {
+      "id": "m09-q09",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Solve the equation $3\\cos^2\\theta - 5\\sin\\theta - 1 = 0$ for $0^\\circ \\le \\theta \\le 360^\\circ$ correct to 1 decimal place.",
+      "options": [
+        "$19.5^\\circ, 160.5^\\circ$",
+        "$30.0^\\circ, 150.0^\\circ$",
+        "$19.5^\\circ, 199.5^\\circ$",
+        "$23.6^\\circ, 156.4^\\circ$"
+      ],
+      "correctAnswer": "$19.5^\\circ, 160.5^\\circ$",
+      "solution": {
+        "formulaSetup": "Use identity $\\cos^2\\theta = 1 - \\sin^2\\theta$ to convert into a quadratic in $\\sin\\theta$.",
+        "steps": [
+          "Substitute $\\cos^2\\theta$: $3(1 - \\sin^2\\theta) - 5\\sin\\theta - 1 = 0$",
+          "Expand: $3 - 3\\sin^2\\theta - 5\\sin\\theta - 1 = 0$",
+          "Rearrange to standard form: $3\\sin^2\\theta + 5\\sin\\theta - 2 = 0$",
+          "Factorise: $(3\\sin\\theta - 1)(\\sin\\theta + 2) = 0$",
+          "For $\\sin\\theta + 2 = 0 \\implies \\sin\\theta = -2$, which has NO real solutions (reject since $-1 \\le \\sin\\theta \\le 1$).",
+          "For $3\\sin\\theta - 1 = 0 \\implies \\sin\\theta = \\frac{1}{3}$",
+          "Basic angle $\\alpha = \\sin^{-1}(1/3) \\approx 19.47^\\circ$",
+          "In Q1: $\\theta = 19.5^\\circ$. In Q2: $\\theta = 180^\\circ - 19.47^\\circ = 160.5^\\circ$."
+        ],
+        "finalAnswer": "$19.5^\\circ, 160.5^\\circ$",
+        "commonTrap": "Not stating 'reject $\\sin\\theta = -2$ since $|sin\\theta| \\le 1$', or mixing radians and degrees."
+      }
+    },
+    {
+      "id": "m09-q10",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Solve $4\\sin\\left(2x - \\frac{\\pi}{3}\\right) = 2\\sqrt{3}$ for $0 \\le x \\le \\pi$.",
+      "options": [
+        "$\\frac{\\pi}{3}, \\frac{\\pi}{2}$",
+        "$\\frac{\\pi}{6}, \\frac{\\pi}{3}$",
+        "$\\frac{\\pi}{4}, \\frac{3\\pi}{4}$",
+        "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{3}, \\frac{\\pi}{2}$",
+      "solution": {
+        "formulaSetup": "Divide by 4: $\\sin\\left(2x - \\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$. Domain transformation: $0 \\le x \\le \\pi \\implies -\\frac{\\pi}{3} \\le 2x - \\frac{\\pi}{3} \\le \\frac{5\\pi}{3}$.",
+        "steps": [
+          "Let $\\phi = 2x - \\frac{\\pi}{3}$. Then $\\sin\\phi = \\frac{\\sqrt{3}}{2}$ in interval $\\left[-\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\right]$.",
+          "Basic angle: $\\alpha = \\frac{\\pi}{3}$.",
+          "In Q1: $\\phi = \\frac{\\pi}{3}$",
+          "In Q2: $\\phi = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$",
+          "Check next angle: $2\\pi + \\frac{\\pi}{3} = \\frac{7\\pi}{3} > \\frac{5\\pi}{3}$ (out of range).",
+          "Solve for $x$ from $\\phi = \\frac{\\pi}{3}$: $2x - \\frac{\\pi}{3} = \\frac{\\pi}{3} \\implies 2x = \\frac{2\\pi}{3} \\implies x = \\frac{\\pi}{3}$",
+          "Solve for $x$ from $\\phi = \\frac{2\\pi}{3}$: $2x - \\frac{\\pi}{3} = \\frac{2\\pi}{3} \\implies 2x = \\pi \\implies x = \\frac{\\pi}{2}$"
+        ],
+        "finalAnswer": "$\\frac{\\pi}{3}, \\frac{\\pi}{2}$",
+        "commonTrap": "Failing to transform the domain boundary to $-\\frac{\\pi}{3}$, which risks missing solutions or adding spurious ones."
+      }
+    },
+    {
+      "id": "m09-q11",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Prove the identity $\\frac{1}{1 - \\cos x} + \\frac{1}{1 + \\cos x} = 2\\csc^2 x$. What is the common denominator of the LHS?",
+      "options": [
+        "$\\sin^2 x$",
+        "$\\cos^2 x$",
+        "$1 - \\cos x$",
+        "$2\\sin x$"
+      ],
+      "correctAnswer": "$\\sin^2 x$",
+      "solution": {
+        "formulaSetup": "Combine LHS fractions over common denominator: $(1 - \\cos x)(1 + \\cos x) = 1 - \\cos^2 x = \\sin^2 x$.",
+        "steps": [
+          "LHS $= \\frac{(1 + \\cos x) + (1 - \\cos x)}{(1 - \\cos x)(1 + \\cos x)}$",
+          "Numerator: $1 + \\cos x + 1 - \\cos x = 2$",
+          "Denominator: $1 - \\cos^2 x = \\sin^2 x$",
+          "Result: $\\frac{2}{\\sin^2 x} = 2\\csc^2 x = \\text{RHS}$"
+        ],
+        "finalAnswer": "$\\sin^2 x$",
+        "commonTrap": "Expanding $(1-\\cos x)(1+\\cos x)$ as $1 - 2\\cos x + \\cos^2 x$."
+      }
+    },
+    {
+      "id": "m09-q12",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Solve $3\\tan^2\\theta - 1 = 0$ for $0^\\circ \\le \\theta \\le 360^\\circ$.",
+      "options": [
+        "$30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ$",
+        "$30^\\circ, 210^\\circ$ only",
+        "$60^\\circ, 120^\\circ, 240^\\circ, 300^\\circ$",
+        "$30^\\circ, 150^\\circ$ only"
+      ],
+      "correctAnswer": "$30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ$",
+      "solution": {
+        "formulaSetup": "$\\tan^2\\theta = \\frac{1}{3} \\implies \\tan\\theta = \\pm\\frac{1}{\\sqrt{3}}$. Must consider BOTH positive and negative square roots.",
+        "steps": [
+          "Take square root: $\\tan\\theta = +\\frac{1}{\\sqrt{3}}$ or $\\tan\\theta = -\\frac{1}{\\sqrt{3}}$",
+          "Basic angle: $\\alpha = \\tan^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right) = 30^\\circ$",
+          "For $\\tan\\theta > 0$ (Q1, Q3): $\\theta = 30^\\circ, 180^\\circ + 30^\\circ = 210^\\circ$",
+          "For $\\tan\\theta < 0$ (Q2, Q4): $\\theta = 180^\\circ - 30^\\circ = 150^\\circ, 360^\\circ - 30^\\circ = 330^\\circ$",
+          "Full solution set: $30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ$"
+        ],
+        "finalAnswer": "$30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ$",
+        "commonTrap": "Only taking the positive root $\\tan\\theta = +\\frac{1}{\\sqrt{3}}$, missing half the valid solutions."
+      }
+    },
+    {
+      "id": "m09-q13",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Given that $\\tan\\alpha = -\\frac{5}{12}$ where $\\alpha$ is obtuse, find the exact value of $\\sin\\alpha - \\cos\\alpha$.",
+      "options": [
+        "$\\frac{17}{13}$",
+        "$\\frac{7}{13}$",
+        "$-\\frac{7}{13}$",
+        "$-\\frac{17}{13}$"
+      ],
+      "correctAnswer": "$\\frac{17}{13}$",
+      "solution": {
+        "formulaSetup": "Obtuse angle lies in Quadrant 2 ($90^\\circ < \\alpha < 180^\\circ$). In Q2, $\\sin\\alpha > 0$ and $\\cos\\alpha < 0$.",
+        "steps": [
+          "Form reference triangle: opposite $= 5$, adjacent $= 12$, hypotenuse $= \\sqrt{5^2 + 12^2} = 13$.",
+          "In Q2: $\\sin\\alpha = +\\frac{5}{13}$.",
+          "In Q2: $\\cos\\alpha = -\\frac{12}{13}$.",
+          "Calculate difference: $\\sin\\alpha - \\cos\\alpha = \\frac{5}{13} - \\left(-\\frac{12}{13}\\right) = \\frac{5 + 12}{13} = \\frac{17}{13}$."
+        ],
+        "finalAnswer": "$\\frac{17}{13}$",
+        "commonTrap": "Sign error on double negative: $\\frac{5}{13} - \\frac{12}{13} = -\\frac{7}{13}$."
+      }
+    },
+    {
+      "id": "m09-q14",
+      "topicId": "math-topic-09",
+      "tier": 2,
+      "questionText": "Solve the equation $2\\cot\\theta = 3\\cos\\theta$ for $0^\\circ \\le \\theta \\le 360^\\circ$.",
+      "options": [
+        "$41.8^\\circ, 90^\\circ, 138.2^\\circ, 270^\\circ$",
+        "$41.8^\\circ, 138.2^\\circ$",
+        "$48.2^\\circ, 90^\\circ, 131.8^\\circ, 270^\\circ$",
+        "$90^\\circ, 270^\\circ$ only"
+      ],
+      "correctAnswer": "$41.8^\\circ, 90^\\circ, 138.2^\\circ, 270^\\circ$",
+      "solution": {
+        "formulaSetup": "Rewrite $\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}$. Multiply by $\\sin\\theta$ (with condition $\\sin\\theta \\ne 0$) and factorise.",
+        "steps": [
+          "Equation: $2\\frac{\\cos\\theta}{\\sin\\theta} = 3\\cos\\theta$",
+          "Multiply by $\\sin\\theta$: $2\\cos\\theta = 3\\cos\\theta\\sin\\theta$",
+          "Rearrange: $3\\cos\\theta\\sin\\theta - 2\\cos\\theta = 0 \\implies \\cos\\theta(3\\sin\\theta - 2) = 0$",
+          "Case 1: $\\cos\\theta = 0 \\implies \\theta = 90^\\circ, 270^\\circ$ (both have $\\sin\\theta = \\pm 1 \\ne 0$, valid).",
+          "Case 2: $3\\sin\\theta - 2 = 0 \\implies \\sin\\theta = \\frac{2}{3}$",
+          "Basic angle $\\alpha = \\sin^{-1}(2/3) \\approx 41.81^\\circ$",
+          "In Q1: $\\theta = 41.8^\\circ$. In Q2: $\\theta = 180^\\circ - 41.81^\\circ = 138.2^\\circ$",
+          "Solutions: $41.8^\\circ, 90^\\circ, 138.2^\\circ, 270^\\circ$"
+        ],
+        "finalAnswer": "$41.8^\\circ, 90^\\circ, 138.2^\\circ, 270^\\circ$",
+        "commonTrap": "Cancelling $\\cos\\theta$ from both sides, missing the solutions $90^\\circ$ and $270^\\circ$."
+      }
+    },
+    {
+      "id": "m09-q15",
+      "topicId": "math-topic-09",
+      "tier": 3,
+      "questionText": "Prove that $\\frac{\\sin\\theta}{1 + \\cos\\theta} + \\frac{1 + \\cos\\theta}{\\sin\\theta} = 2\\csc\\theta$. What is the simplified form of the numerator after taking a common denominator?",
+      "options": [
+        "$2 + 2\\cos\\theta$",
+        "$2\\sin^2\\theta$",
+        "$1 + 2\\cos\\theta$",
+        "$2$"
+      ],
+      "correctAnswer": "$2 + 2\\cos\\theta$",
+      "solution": {
+        "formulaSetup": "Combine LHS over $\\sin\\theta(1 + \\cos\\theta)$ and use $\\sin^2\\theta + \\cos^2\\theta = 1$.",
+        "steps": [
+          "LHS $= \\frac{\\sin^2\\theta + (1 + \\cos\\theta)^2}{\\sin\\theta(1 + \\cos\\theta)}$",
+          "Expand $(1 + \\cos\\theta)^2$: $1 + 2\\cos\\theta + \\cos^2\\theta$",
+          "Numerator $= \\sin^2\\theta + \\cos^2\\theta + 1 + 2\\cos\\theta = 1 + 1 + 2\\cos\\theta = 2 + 2\\cos\\theta$",
+          "Factorise numerator: $2(1 + \\cos\\theta)$",
+          "Divide by denominator: $\\frac{2(1 + \\cos\\theta)}{\\sin\\theta(1 + \\cos\\theta)} = \\frac{2}{\\sin\\theta} = 2\\csc\\theta = \\text{RHS}$"
+        ],
+        "finalAnswer": "$2 + 2\\cos\\theta$",
+        "commonTrap": "Expanding $(1 + \\cos\\theta)^2$ incorrectly as $1 + \\cos^2\\theta$, missing the middle term $2\\cos\\theta$."
+      }
+    },
+    {
+      "id": "m09-q16",
+      "topicId": "math-topic-09",
+      "tier": 3,
+      "questionText": "Find all values of $x$ in the interval $0 \\le x \\le 2\\pi$ satisfying $\\sin(2x) + \\sqrt{3}\\cos(2x) = 0$.",
+      "options": [
+        "$\\frac{\\pi}{3}, \\frac{5\\pi}{6}, \\frac{4\\pi}{3}, \\frac{11\\pi}{6}$",
+        "$\\frac{\\pi}{6}, \\frac{2\\pi}{3}, \\frac{7\\pi}{6}, \\frac{5\\pi}{3}$",
+        "$\\frac{\\pi}{3}, \\frac{4\\pi}{3}$ only",
+        "$\\frac{2\\pi}{3}, \\frac{5\\pi}{3}$ only"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{3}, \\frac{5\\pi}{6}, \\frac{4\\pi}{3}, \\frac{11\\pi}{6}$",
+      "solution": {
+        "formulaSetup": "Rearrange to $\\sin(2x) = -\\sqrt{3}\\cos(2x) \\implies \\tan(2x) = -\\sqrt{3}$. Range: $0 \\le 2x \\le 4\\pi$.",
+        "steps": [
+          "Divide by $\\cos(2x)$ (if $\\cos(2x) = 0$, $\\sin(2x) = 0$, impossible): $\\tan(2x) = -\\sqrt{3}$",
+          "Basic angle: $\\alpha = \\tan^{-1}(\\sqrt{3}) = \\frac{\\pi}{3}$",
+          "Tangent is negative in Q2 and Q4.",
+          "First revolution $[0, 2\\pi]$: $2x = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$ and $2x = 2\\pi - \\frac{\\pi}{3} = \\frac{5\\pi}{3}$",
+          "Second revolution $[2\\pi, 4\\pi]$: $2x = \\frac{2\\pi}{3} + 2\\pi = \\frac{8\\pi}{3}$ and $2x = \\frac{5\\pi}{3} + 2\\pi = \\frac{11\\pi}{3}$",
+          "Divide all four values by 2: $x = \\frac{\\pi}{3}, \\frac{5\\pi}{6}, \\frac{4\\pi}{3}, \\frac{11\\pi}{6}$"
+        ],
+        "finalAnswer": "$\\frac{\\pi}{3}, \\frac{5\\pi}{6}, \\frac{4\\pi}{3}, \\frac{11\\pi}{6}$",
+        "commonTrap": "Only solving for the first revolution of $2x$, missing the second two solutions in $[2\\pi, 4\\pi]$."
+      }
+    },
+    {
+      "id": "m09-q17",
+      "topicId": "math-topic-09",
+      "tier": 3,
+      "questionText": "Solve the equation $2\\cos^2 x - 7\\cos x + 3 = 0$ for $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$\\frac{\\pi}{3}, \\frac{5\\pi}{3}$",
+        "$\\frac{\\pi}{6}, \\frac{11\\pi}{6}$",
+        "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}$",
+        "$\\frac{2\\pi}{3}, \\frac{4\\pi}{3}$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{3}, \\frac{5\\pi}{3}$",
+      "solution": {
+        "formulaSetup": "Factorise quadratic in $\\cos x$: $(2\\cos x - 1)(\\cos x - 3) = 0$.",
+        "steps": [
+          "Factorise: $(2\\cos x - 1)(\\cos x - 3) = 0$",
+          "Factor 1: $\\cos x - 3 = 0 \\implies \\cos x = 3$. Reject because $-1 \\le \\cos x \\le 1$ (no real solution).",
+          "Factor 2: $2\\cos x - 1 = 0 \\implies \\cos x = \\frac{1}{2}$",
+          "In $[0, 2\\pi]$, basic angle is $\\frac{\\pi}{3}$.",
+          "Q1: $x = \\frac{\\pi}{3}$. Q4: $x = 2\\pi - \\frac{\\pi}{3} = \\frac{5\\pi}{3}$."
+        ],
+        "finalAnswer": "$\\frac{\\pi}{3}, \\frac{5\\pi}{3}$",
+        "commonTrap": "Attempting to find an angle for $\\cos x = 3$ or forgetting to reject it explicitly."
+      }
+    },
+    {
+      "id": "m09-q18",
+      "topicId": "math-topic-09",
+      "tier": 3,
+      "questionText": "If $\\sec\\theta + \\tan\\theta = 3$, find the exact value of $\\cos\\theta$.",
+      "options": [
+        "$\\frac{3}{5}$",
+        "$\\frac{4}{5}$",
+        "$\\frac{5}{13}$",
+        "$\\frac{1}{3}$"
+      ],
+      "correctAnswer": "$\\frac{3}{5}$",
+      "solution": {
+        "formulaSetup": "Use identity $\\sec^2\\theta - \\tan^2\\theta = 1 \\implies (\\sec\\theta - \\tan\\theta)(\\sec\\theta + \\tan\\theta) = 1$.",
+        "steps": [
+          "Since $\\sec\\theta + \\tan\\theta = 3$, it follows that: $\\sec\\theta - \\tan\\theta = \\frac{1}{3}$",
+          "Add the two equations: $(\\sec\\theta + \\tan\\theta) + (\\sec\\theta - \\tan\\theta) = 3 + \\frac{1}{3}$",
+          "$2\\sec\\theta = \\frac{10}{3} \\implies \\sec\\theta = \\frac{5}{3}$",
+          "Since $\\cos\\theta = \\frac{1}{\\sec\\theta}$: $\\cos\\theta = \\frac{3}{5}$"
+        ],
+        "finalAnswer": "$\\frac{3}{5}$",
+        "commonTrap": "Trying to square $\\sec\\theta + \\tan\\theta = 3$ directly without using the difference-of-squares identity."
+      }
+    },
+    {
+      "id": "m09-q19",
+      "topicId": "math-topic-09",
+      "tier": 3,
+      "questionText": "Find the number of solutions to the equation $3\\sin^2 x = 4\\cos x$ in the interval $0 \\le x \\le 4\\pi$.",
+      "options": [
+        "$4$",
+        "$2$",
+        "$6$",
+        "$8$"
+      ],
+      "correctAnswer": "$4$",
+      "solution": {
+        "formulaSetup": "Use $\\sin^2 x = 1 - \\cos^2 x$ to obtain $3(1 - \\cos^2 x) = 4\\cos x \\implies 3\\cos^2 x + 4\\cos x - 3 = 0$.",
+        "steps": [
+          "Form quadratic: $3\\cos^2 x + 4\\cos x - 3 = 0$",
+          "Apply quadratic formula for $\\cos x$: $\\cos x = \\frac{-4 \\pm \\sqrt{16 - 4(3)(-3)}}{6} = \\frac{-4 \\pm \\sqrt{52}}{6} = \\frac{-2 \\pm \\sqrt{13}}{3}$",
+          "Evaluate roots: $\\sqrt{13} \\approx 3.6055$",
+          "Root 1: $\\cos x = \\frac{-2 + 3.6055}{3} \\approx \\frac{1.6055}{3} \\approx 0.5352$ (Valid, as $|0.5352| \\le 1$)",
+          "Root 2: $\\cos x = \\frac{-2 - 3.6055}{3} \\approx -1.868$ (Rejected, as $<-1$)",
+          "In one period $[0, 2\\pi]$, $\\cos x = 0.5352$ gives exactly 2 solutions (Q1 and Q4).",
+          "In $[0, 4\\pi]$ (2 full periods), there are $2 \\times 2 = 4$ solutions."
+        ],
+        "finalAnswer": "$4$",
+        "commonTrap": "Accepting the extraneous root $\\cos x \\approx -1.868$ or only counting solutions in $[0, 2\\pi]$."
+      }
+    },
+    {
+      "id": "m09-q20",
+      "topicId": "math-topic-09",
+      "tier": 3,
+      "questionText": "Solve the equation $4\\sin x = 3\\csc x$ for $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}$",
+        "$\\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}$",
+        "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}$ only",
+        "$\\frac{\\pi}{6}, \\frac{5\\pi}{6}$ only"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}$",
+      "solution": {
+        "formulaSetup": "Substitute $\\csc x = \\frac{1}{\\sin x}$ with restriction $\\sin x \\ne 0$. Multiply by $\\sin x$ to get $4\\sin^2 x = 3$.",
+        "steps": [
+          "Equation: $4\\sin x = \\frac{3}{\\sin x} \\implies 4\\sin^2 x = 3$",
+          "Solve for $\\sin^2 x$: $\\sin^2 x = \\frac{3}{4}$",
+          "Take square root: $\\sin x = \\pm\\frac{\\sqrt{3}}{2}$",
+          "Basic angle: $\\alpha = \\frac{\\pi}{3}$",
+          "For $\\sin x = +\\frac{\\sqrt{3}}{2}$: $x = \\frac{\\pi}{3}, \\frac{2\\pi}{3}$",
+          "For $\\sin x = -\\frac{\\sqrt{3}}{2}$: $x = \\frac{4\\pi}{3}, \\frac{5\\pi}{3}$",
+          "All 4 solutions are non-zero: $\\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}$"
+        ],
+        "finalAnswer": "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}$",
+        "commonTrap": "Only considering the positive root $\\sin x = +\\frac{\\sqrt{3}}{2}$."
+      }
+    }
+  ]
+}

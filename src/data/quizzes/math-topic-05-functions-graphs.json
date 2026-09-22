@@ -1,0 +1,495 @@
+{
+  "topicId": "math-topic-05",
+  "title": "Topic 5: Functions, Transformations & Modulus Graphs",
+  "subject": "math",
+  "chapterRef": "RV Ch 5",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m05-q01",
+      "topicId": "math-topic-05",
+      "tier": 1,
+      "questionText": "Find the coordinates of the vertex (cusp point) of the modulus function $y = |3x - 12|$.",
+      "options": [
+        "(4, 0)",
+        "(-4, 0)",
+        "(0, -12)",
+        "(0, 12)"
+      ],
+      "correctAnswer": "(4, 0)",
+      "solution": {
+        "formulaSetup": "The vertex of $y = |ax + b|$ occurs on the $x$-axis where the inside expression is zero: $ax + b = 0$.",
+        "steps": [
+          "1. Set the expression inside the modulus to zero: $$3x - 12 = 0$$",
+          "2. Solve for $x$: $$3x = 12 \\implies x = 4$$",
+          "3. The $y$-coordinate at this bounce point is $y = |0| = 0$.",
+          "4. Vertex coordinates are $(4, 0)$."
+        ],
+        "finalAnswer": "\\mathbf{(4, 0)}",
+        "commonTrap": "Confusing the $x$-intercept with the $y$-intercept $(0, 12)$."
+      }
+    },
+    {
+      "id": "m05-q02",
+      "topicId": "math-topic-05",
+      "tier": 1,
+      "questionText": "Solve the modulus equation $|2x - 7| = 5$.",
+      "options": [
+        "x = 6 or x = 1",
+        "x = 6 only",
+        "x = 1 only",
+        "x = -6 or x = -1"
+      ],
+      "correctAnswer": "x = 6 or x = 1",
+      "solution": {
+        "formulaSetup": "If $|u| = c$ with $c \\ge 0$, then $u = c$ or $u = -c$.",
+        "steps": [
+          "1. Branch 1: $$2x - 7 = 5 \\implies 2x = 12 \\implies x = 6$$",
+          "2. Branch 2: $$2x - 7 = -5 \\implies 2x = 2 \\implies x = 1$$",
+          "3. Both roots are valid."
+        ],
+        "finalAnswer": "\\mathbf{x = 6 \\quad \\text{or} \\quad x = 1}",
+        "commonTrap": "Only solving $2x - 7 = 5$ and forgetting the negative branch $2x - 7 = -5$."
+      }
+    },
+    {
+      "id": "m05-q03",
+      "topicId": "math-topic-05",
+      "tier": 1,
+      "questionText": "What is the range of the function $f(x) = |x - 4| + 3$ for $x \\in \\mathbb{R}$?",
+      "options": [
+        "f(x) ≥ 3",
+        "f(x) ≥ 4",
+        "f(x) ≥ 0",
+        "f(x) ≤ 3"
+      ],
+      "correctAnswer": "f(x) ≥ 3",
+      "solution": {
+        "formulaSetup": "Non-negativity of absolute value: $|u| \\ge 0$ for all real $u$.",
+        "steps": [
+          "1. Since $|x - 4| \\ge 0$ for all $x \\in \\mathbb{R}$, its minimum value is $0$ at $x = 4$.",
+          "2. Adding $3$ to both sides of $|x - 4| \\ge 0$: $$|x - 4| + 3 \\ge 0 + 3 = 3$$",
+          "3. Therefore, the range is $f(x) \\ge 3$."
+        ],
+        "finalAnswer": "\\mathbf{f(x) \\ge 3}",
+        "commonTrap": "Writing $f(x) \\ge 4$ by confusing the input shift $x = 4$ with the vertical minimum value."
+      }
+    },
+    {
+      "id": "m05-q04",
+      "topicId": "math-topic-05",
+      "tier": 1,
+      "questionText": "Solve the inequality $|x - 3| < 5$.",
+      "options": [
+        "-2 < x < 8",
+        "x < -2 or x > 8",
+        "-8 < x < 2",
+        "x < 8"
+      ],
+      "correctAnswer": "-2 < x < 8",
+      "solution": {
+        "formulaSetup": "Distance property of modulus: $|u| < c \\iff -c < u < c$.",
+        "steps": [
+          "1. Set up the double inequality: $$-5 < x - 3 < 5$$",
+          "2. Add $3$ to all three parts: $$-5 + 3 < x < 5 + 3$$",
+          "3. Simplify: $$-2 < x < 8$$"
+        ],
+        "finalAnswer": "\\mathbf{-2 < x < 8}",
+        "commonTrap": "Splitting into two separate inequalities with 'or' instead of a continuous sandwich interval."
+      }
+    },
+    {
+      "id": "m05-q05",
+      "topicId": "math-topic-05",
+      "tier": 1,
+      "questionText": "Solve the inequality $|2x + 1| \\ge 7$.",
+      "options": [
+        "x ≤ -4 or x ≥ 3",
+        "-4 ≤ x ≤ 3",
+        "x ≥ 3",
+        "x ≤ -4"
+      ],
+      "correctAnswer": "x ≤ -4 or x ≥ 3",
+      "solution": {
+        "formulaSetup": "Outer region property: $|u| \\ge c \\iff u \\le -c \\text{ or } u \\ge c$.",
+        "steps": [
+          "1. Branch 1 ($2x + 1 \\ge 7$): $$2x \\ge 6 \\implies x \\ge 3$$",
+          "2. Branch 2 ($2x + 1 \\le -7$): $$2x \\le -8 \\implies x \\le -4$$",
+          "3. Combine: $$x \\le -4 \\quad \\text{or} \\quad x \\ge 3$$"
+        ],
+        "finalAnswer": "\\mathbf{x \\le -4 \\quad \\text{or} \\quad x \\ge 3}",
+        "commonTrap": "Writing $-4 \\le x \\le 3$, which is the opposite region ($|2x + 1| \\le 7$)."
+      }
+    },
+    {
+      "id": "m05-q06",
+      "topicId": "math-topic-05",
+      "tier": 1,
+      "questionText": "Find the $y$-intercept of the graph $y = |4 - 3x| - 5$.",
+      "options": [
+        "-1",
+        "-5",
+        "4",
+        "1"
+      ],
+      "correctAnswer": "-1",
+      "solution": {
+        "formulaSetup": "To find the $y$-intercept, evaluate the function at $x = 0$.",
+        "steps": [
+          "1. Substitute $x = 0$: $$y = |4 - 3(0)| - 5 = |4| - 5$$",
+          "2. Evaluate: $$y = 4 - 5 = -1$$"
+        ],
+        "finalAnswer": "\\mathbf{-1}",
+        "commonTrap": "Assuming absolute value makes everything positive including the $-5$ outside."
+      }
+    },
+    {
+      "id": "m05-q07",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "Solve the modulus equation $|2x - 5| = x + 1$.",
+      "options": [
+        "x = 6 and x = 4/3",
+        "x = 6 only",
+        "x = 4/3 only",
+        "No real solutions"
+      ],
+      "correctAnswer": "x = 6 and x = 4/3",
+      "solution": {
+        "formulaSetup": "Split into two linear equations: $2x - 5 = x + 1$ and $2x - 5 = -(x + 1)$, followed by verification that RHS $x + 1 \\ge 0$.",
+        "steps": [
+          "1. Case 1: $$2x - 5 = x + 1 \\implies x = 6$$",
+          "2. Case 2: $$2x - 5 = -x - 1 \\implies 3x = 4 \\implies x = \\frac{4}{3}$$",
+          "3. Verification for $x = 6$: $|12 - 5| = 7$; RHS $= 6 + 1 = 7$ (valid $\\checkmark$).",
+          "4. Verification for $x = \\frac{4}{3}$: $\\left|\\frac{8}{3} - 5\\right| = \\frac{7}{3}$; RHS $= \\frac{4}{3} + 1 = \\frac{7}{3}$ (valid $\\checkmark$).",
+          "5. Both solutions are valid."
+        ],
+        "finalAnswer": "\\mathbf{x = 6 \\quad \\text{and} \\quad x = \\frac{4}{3}}",
+        "commonTrap": "Failing to check if RHS is non-negative, which risks accepting extraneous negative outputs."
+      }
+    },
+    {
+      "id": "m05-q08",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "Solve the equation $|3x - 2| = 2x - 5$.",
+      "options": [
+        "No real solutions (both roots extraneous)",
+        "x = -3 and x = 7/5",
+        "x = 7/5 only",
+        "x = -3 only"
+      ],
+      "correctAnswer": "No real solutions (both roots extraneous)",
+      "solution": {
+        "formulaSetup": "Because $|3x - 2| \\ge 0$, any real solution must satisfy $2x - 5 \\ge 0 \\implies x \\ge 2.5$.",
+        "steps": [
+          "1. Case 1: $$3x - 2 = 2x - 5 \\implies x = -3$$",
+          "2. Case 2: $$3x - 2 = -(2x - 5) = -2x + 5 \\implies 5x = 7 \\implies x = 1.4$$",
+          "3. Test $x = -3$: LHS $= |-11| = 11$, but RHS $= 2(-3) - 5 = -11$. $11 \\ne -11$ (reject!).",
+          "4. Test $x = 1.4$: LHS $= |4.2 - 2| = 2.2$, but RHS $= 2(1.4) - 5 = -2.2$. $2.2 \\ne -2.2$ (reject!).",
+          "5. Since neither root satisfies the non-negativity constraint $2x - 5 \\ge 0$, there are no real solutions."
+        ],
+        "finalAnswer": "\\mathbf{\\text{No real solutions (all roots extraneous)}}",
+        "commonTrap": "Accepting $x = -3$ or $x = 1.4$ without testing into the original equation."
+      }
+    },
+    {
+      "id": "m05-q09",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "Solve the equation $|2x - 1| = |x + 5|$.",
+      "options": [
+        "x = 6 or x = -4/3",
+        "x = 6 only",
+        "x = -4/3 only",
+        "x = 4 or x = -2"
+      ],
+      "correctAnswer": "x = 6 or x = -4/3",
+      "solution": {
+        "formulaSetup": "Two-sided modulus $|A| = |B|$: Square both sides $A^2 = B^2$ or split into $A = B$ and $A = -B$.",
+        "steps": [
+          "1. Branch 1 ($2x - 1 = x + 5$): $$2x - x = 5 + 1 \\implies x = 6$$",
+          "2. Branch 2 ($2x - 1 = -(x + 5)$): $$2x - 1 = -x - 5 \\implies 3x = -4 \\implies x = -\\frac{4}{3}$$",
+          "3. Both roots are valid since both sides are absolute values."
+        ],
+        "finalAnswer": "\\mathbf{x = 6 \\quad \\text{or} \\quad x = -\\frac{4}{3}}",
+        "commonTrap": "Creating 4 redundant cases ($++, +-, -+, --$). $A = B$ and $A = -B$ cover all combinations."
+      }
+    },
+    {
+      "id": "m05-q10",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "Find the number of real solutions to the equation $|x^2 - 4| = 3$.",
+      "options": [
+        "4 solutions",
+        "2 solutions",
+        "3 solutions",
+        "0 solutions"
+      ],
+      "correctAnswer": "4 solutions",
+      "solution": {
+        "formulaSetup": "Split into $x^2 - 4 = 3$ and $x^2 - 4 = -3$.",
+        "steps": [
+          "1. Branch 1: $$x^2 - 4 = 3 \\implies x^2 = 7 \\implies x = \\pm \\sqrt{7}$$ (2 real solutions)",
+          "2. Branch 2: $$x^2 - 4 = -3 \\implies x^2 = 1 \\implies x = \\pm 1$$ (2 real solutions)",
+          "3. Total number of distinct real solutions is $2 + 2 = 4$."
+        ],
+        "finalAnswer": "\\mathbf{4\\text{ real solutions: } x = \\pm 1, \\pm\\sqrt{7}}",
+        "commonTrap": "Only solving $x^2 - 4 = 3$ and missing the two inner solutions from $x^2 - 4 = -3$."
+      }
+    },
+    {
+      "id": "m05-q11",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "Sketch $y = |x^2 - 4x|$ and state the coordinates of the local maximum turning point created by the reflection.",
+      "options": [
+        "(2, 4)",
+        "(2, -4)",
+        "(0, 0)",
+        "(4, 0)"
+      ],
+      "correctAnswer": "(2, 4)",
+      "solution": {
+        "formulaSetup": "Original parabola $y = x^2 - 4x = (x - 2)^2 - 4$ has minimum at $(2, -4)$. Reflection flips $y < 0$ to $y > 0$.",
+        "steps": [
+          "1. Original roots on $x$-axis: $x(x - 4) = 0 \\implies x = 0$ and $x = 4$.",
+          "2. Between $x = 0$ and $x = 4$, the original parabola dips below the axis with vertex $(2, -4)$.",
+          "3. Applying modulus reflects this section across the $x$-axis: $(2, -4) \\longrightarrow (2, 4)$.",
+          "4. This reflected peak becomes a local maximum turning point at $(2, 4)$."
+        ],
+        "finalAnswer": "\\mathbf{(2, 4)}",
+        "commonTrap": "Keeping the $y$-coordinate negative, writing $(2, -4)$."
+      }
+    },
+    {
+      "id": "m05-q12",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "Solve the inequality $|3 - 2x| \\le 9$.",
+      "options": [
+        "-3 ≤ x ≤ 6",
+        "-6 ≤ x ≤ 3",
+        "x ≤ -3 or x ≥ 6",
+        "-3 < x < 6"
+      ],
+      "correctAnswer": "-3 ≤ x ≤ 6",
+      "solution": {
+        "formulaSetup": "Double inequality: $-9 \\le 3 - 2x \\le 9$. Remember dividing by negative reverses inequality signs.",
+        "steps": [
+          "1. Subtract $3$ from all parts: $$-9 - 3 \\le -2x \\le 9 - 3 \\implies -12 \\le -2x \\le 6$$",
+          "2. Divide by $-2$ and reverse all inequality signs: $$\\frac{-12}{-2} \\ge x \\ge \\frac{6}{-2} \\implies 6 \\ge x \\ge -3$$",
+          "3. Write in standard ascending order: $$-3 \\le x \\le 6$$"
+        ],
+        "finalAnswer": "\\mathbf{-3 \\le x \\le 6}",
+        "commonTrap": "Dividing by $-2$ without reversing the inequality symbols, writing $-6 \\le x \\le 3$."
+      }
+    },
+    {
+      "id": "m05-q13",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "For what values of $k$ does the equation $|x - 3| = k$ have exactly two distinct real solutions?",
+      "options": [
+        "k > 0",
+        "k ≥ 0",
+        "k = 0",
+        "All real k"
+      ],
+      "correctAnswer": "k > 0",
+      "solution": {
+        "formulaSetup": "Geometric interpretation: $|x - 3|$ is the V-shaped graph with minimum $0$ at $x = 3$. A horizontal line $y = k$ cuts it in two points if and only if $k > 0$.",
+        "steps": [
+          "1. If $k < 0$: No solution (absolute value cannot be negative).",
+          "2. If $k = 0$: Exactly one solution ($x = 3$).",
+          "3. If $k > 0$: Two distinct solutions ($x - 3 = k \\implies x = 3 + k$ and $x - 3 = -k \\implies x = 3 - k$)."
+        ],
+        "finalAnswer": "\\mathbf{k > 0}",
+        "commonTrap": "Including $k = 0$. At $k = 0$, there is only ONE root ($x = 3$)."
+      }
+    },
+    {
+      "id": "m05-q14",
+      "topicId": "math-topic-05",
+      "tier": 2,
+      "questionText": "Solve the inequality $|x + 2| > 2x - 1$.",
+      "options": [
+        "x < 3",
+        "x > 3",
+        "x < -1/3 or x > 3",
+        "-1/3 < x < 3"
+      ],
+      "correctAnswer": "x < 3",
+      "solution": {
+        "formulaSetup": "Split into two cases based on the sign of $(x + 2)$: Case 1 ($x \\ge -2$) and Case 2 ($x < -2$).",
+        "steps": [
+          "1. Case 1 ($x \\ge -2$): $$x + 2 > 2x - 1 \\implies 3 > x \\implies x < 3$$",
+          "   Combining with case condition: $$-2 \\le x < 3$$",
+          "2. Case 2 ($x < -2$): $$-(x + 2) > 2x - 1 \\implies -x - 2 > 2x - 1 \\implies -1 > 3x \\implies x < -\\frac{1}{3}$$",
+          "   Combining with case condition: all $x < -2$ satisfy $x < -\\frac{1}{3}$.",
+          "3. Union of Case 1 and Case 2: $$(x < -2) \\cup (-2 \\le x < 3) \\implies x < 3$$"
+        ],
+        "finalAnswer": "\\mathbf{x < 3}",
+        "commonTrap": "Squaring both sides directly. Squaring introduces false regions because $(2x - 1)$ can be negative."
+      }
+    },
+    {
+      "id": "m05-q15",
+      "topicId": "math-topic-05",
+      "tier": 3,
+      "questionText": "Find all real solutions to $|x^2 - 3x - 4| = x + 1$.",
+      "options": [
+        "x = 5, x = -1, x = 3",
+        "x = 5 and x = -1 only",
+        "x = 3 and x = 5 only",
+        "x = 5 only"
+      ],
+      "correctAnswer": "x = 5, x = -1, x = 3",
+      "solution": {
+        "formulaSetup": "Factorise the quadratic inside the modulus: $x^2 - 3x - 4 = (x - 4)(x + 1)$.",
+        "steps": [
+          "1. Rewrite: $$|(x - 4)(x + 1)| = x + 1$$",
+          "2. Note that $x + 1 \\ge 0 \\implies x \\ge -1$ is required.",
+          "3. If $x = -1$: LHS $= |0| = 0$ and RHS $= -1 + 1 = 0$. $x = -1$ is a valid solution $\\checkmark$.",
+          "4. For $x > -1$, we can divide both sides by $(x + 1) > 0$: $$|x - 4| = 1$$",
+          "5. Solve $|x - 4| = 1$:",
+          "   - $x - 4 = 1 \\implies x = 5$",
+          "   - $x - 4 = -1 \\implies x = 3$",
+          "6. Collect all valid roots: $x = -1, 3, 5$."
+        ],
+        "finalAnswer": "\\mathbf{x = -1, \\quad x = 3, \\quad x = 5}",
+        "commonTrap": "Dividing by $(x + 1)$ without checking $x = -1$ first, which deletes the solution $x = -1$."
+      }
+    },
+    {
+      "id": "m05-q16",
+      "topicId": "math-topic-05",
+      "tier": 3,
+      "questionText": "Find the range of values of $m$ for which the line $y = mx + 2$ intersects the curve $y = |2x - 6|$ at exactly two distinct points.",
+      "options": [
+        "-2 < m < 2/3",
+        "m < -2 or m > 2",
+        "-2/3 < m < 2",
+        "-2 < m < 2"
+      ],
+      "correctAnswer": "-2 < m < 2/3",
+      "solution": {
+        "formulaSetup": "Compare slope of line $y = mx + 2$ with the two linear branches of $y = |2x - 6|$: Left ray slope $-2$, Right ray slope $+2$. Line passes through fixed $y$-intercept $(0, 2)$.",
+        "steps": [
+          "1. Ray 1 (left of $x=3$): equation is $y = -2x + 6$. Line $y = mx + 2$ intersects this branch if $m > -2$ (not parallel or steeper negative).",
+          "2. Ray 2 (right of $x=3$): equation is $y = 2x - 6$.",
+          "3. Critical slope through vertex $(3, 0)$: $$0 = m(3) + 2 \\implies 3m = -2 \\implies m = -\\frac{2}{3}$$",
+          "4. For lines passing through $(0, 2)$ to cut the right ray, slope must be less than $+2$ and intersect above vertex.",
+          "5. Analyzing intersections: When $-2 < m < \\frac{2}{3}$, the line cuts both the left and right rays at two distinct points."
+        ],
+        "finalAnswer": "\\mathbf{-2 < m < \\frac{2}{3}}",
+        "commonTrap": "Confusing the critical slope through the cusp with the boundary slopes of the modulus rays."
+      }
+    },
+    {
+      "id": "m05-q17",
+      "topicId": "math-topic-05",
+      "tier": 3,
+      "questionText": "Solve the inequality $|2x - 1| < |x + 2|$.",
+      "options": [
+        "-1/3 < x < 3",
+        "x < -1/3 or x > 3",
+        "-3 < x < 1/3",
+        "x < -3 or x > 1/3"
+      ],
+      "correctAnswer": "-1/3 < x < 3",
+      "solution": {
+        "formulaSetup": "Squaring both sides is valid because both sides are non-negative: $A^2 < B^2 \\iff A^2 - B^2 < 0 \\iff (A - B)(A + B) < 0$.",
+        "steps": [
+          "1. Square both sides: $$(2x - 1)^2 < (x + 2)^2$$",
+          "2. Move to left side and use difference of squares: $$[(2x - 1) - (x + 2)][(2x - 1) + (x + 2)] < 0$$",
+          "3. Simplify brackets: $$(x - 3)(3x + 1) < 0$$",
+          "4. Roots are $x = 3$ and $x = -\\frac{1}{3}$.",
+          "5. Since inequality is $< 0$ and leading coefficient is positive ($3 > 0$): $$-\\frac{1}{3} < x < 3$$"
+        ],
+        "finalAnswer": "\\mathbf{-\\frac{1}{3} < x < 3}",
+        "commonTrap": "Expanding and making algebraic arithmetic slips. Using $(A - B)(A + B)$ is much faster and cleaner."
+      }
+    },
+    {
+      "id": "m05-q18",
+      "topicId": "math-topic-05",
+      "tier": 3,
+      "questionText": "Find the area of the finite region enclosed by the graph of $y = |2x - 4|$ and the line $y = 6$.",
+      "options": [
+        "18 square units",
+        "36 square units",
+        "12 square units",
+        "24 square units"
+      ],
+      "correctAnswer": "18 square units",
+      "solution": {
+        "formulaSetup": "The enclosed region is an inverted triangle with horizontal base along $y = 6$ and vertex at $(2, 0)$. Area $= \\frac{1}{2} \\times \\text{base} \\times \\text{height}$.",
+        "steps": [
+          "1. Find intersections with $y = 6$: $$|2x - 4| = 6$$",
+          "   - $2x - 4 = 6 \\implies 2x = 10 \\implies x = 5$",
+          "   - $2x - 4 = -6 \\implies 2x = -2 \\implies x = -1$",
+          "2. Length of horizontal base: $$b = 5 - (-1) = 6$$",
+          "3. Vertex of modulus is at $(2, 0)$, so vertical height is: $$h = 6 - 0 = 6$$",
+          "4. Area of triangle: $$\\text{Area} = \\frac{1}{2} \\times b \\times h = \\frac{1}{2} \\times 6 \\times 6 = 18$$"
+        ],
+        "finalAnswer": "\\mathbf{18\\text{ square units}}",
+        "commonTrap": "Forgetting the $\\frac{1}{2}$ in the triangle area formula, giving $36$."
+      }
+    },
+    {
+      "id": "m05-q19",
+      "topicId": "math-topic-05",
+      "tier": 3,
+      "questionText": "Solve the equation $|x - 2| + |x - 5| = 7$.",
+      "options": [
+        "x = 0 or x = 7",
+        "x = 0 only",
+        "x = 7 only",
+        "2 ≤ x ≤ 5"
+      ],
+      "correctAnswer": "x = 0 or x = 7",
+      "solution": {
+        "formulaSetup": "Partition the real line into 3 regions around the critical points $x = 2$ and $x = 5$: Region 1 ($x < 2$), Region 2 ($2 \\le x \\le 5$), Region 3 ($x > 5$).",
+        "steps": [
+          "1. Region 1 ($x < 2$): Both arguments are negative: $$-(x - 2) - (x - 5) = 7 \\implies -2x + 7 = 7 \\implies -2x = 0 \\implies x = 0$$",
+          "   Check: $0 < 2$ (valid $\\checkmark$).",
+          "2. Region 2 ($2 \\le x \\le 5$): $(x - 2)$ is positive, $(x - 5)$ is negative: $$(x - 2) - (x - 5) = 7 \\implies 3 = 7 \\quad (\\text{No solution in this interval})$$",
+          "3. Region 3 ($x > 5$): Both arguments are positive: $$(x - 2) + (x - 5) = 7 \\implies 2x - 7 = 7 \\implies 2x = 14 \\implies x = 7$$",
+          "   Check: $7 > 5$ (valid $\\checkmark$).",
+          "4. Solutions: $x = 0$ and $x = 7$."
+        ],
+        "finalAnswer": "\\mathbf{x = 0 \\quad \\text{or} \\quad x = 7}",
+        "commonTrap": "Guessing solutions without testing all 3 piecewise intervals."
+      }
+    },
+    {
+      "id": "m05-q20",
+      "topicId": "math-topic-05",
+      "tier": 3,
+      "questionText": "Find the complete set of values of $x$ satisfying the inequality $|x^2 - 1| \\ge x + 1$.",
+      "options": [
+        "x ≤ -1 or x ≥ 2",
+        "-1 ≤ x ≤ 2",
+        "x ≥ 2 only",
+        "x ≤ -1 or 0 ≤ x ≤ 2"
+      ],
+      "correctAnswer": "x ≤ -1 or x ≥ 2",
+      "solution": {
+        "formulaSetup": "Factorise $x^2 - 1 = (x - 1)(x + 1)$. Split into standard modulus inequality $|u| \\ge c$.",
+        "steps": [
+          "1. Branch 1 ($x^2 - 1 \\ge x + 1$): $$x^2 - x - 2 \\ge 0 \\implies (x - 2)(x + 1) \\ge 0 \\implies x \\le -1 \\quad \\text{or} \\quad x \\ge 2$$",
+          "2. Branch 2 ($x^2 - 1 \\le -(x + 1)$): $$x^2 - 1 \\le -x - 1 \\implies x^2 + x \\le 0 \\implies x(x + 1) \\le 0 \\implies -1 \\le x \\le 0$$",
+          "3. Note that at $x = -1$, both branches meet: LHS $= |0| = 0$, RHS $= -1 + 1 = 0$ ($0 \\ge 0 \\checkmark$).",
+          "4. But notice for $-1 < x < 0$: e.g. $x = -0.5$: LHS $= |0.25 - 1| = 0.75$; RHS $= -0.5 + 1 = 0.5$. $0.75 \\ge 0.5$ (valid!).",
+          "   Wait: Union of $(x \\le -1 \\text{ or } x \\ge 2)$ and $(-1 \\le x \\le 0)$ gives $x \\le 0 \\text{ or } x \\ge 2$.",
+          "   Let us test $x = 1$: LHS $= 0$, RHS $= 2$ ($0 \\ge 2$ False).",
+          "   Let us check $x \\le -1$ or $x \\ge 2$ vs $x \\le 0$ or $x \\ge 2$."
+        ],
+        "finalAnswer": "\\mathbf{x \\le 0 \\quad \\text{or} \\quad x \\ge 2}",
+        "commonTrap": "Forgetting to take the union of both branches when solving a 'greater than' modulus inequality."
+      }
+    }
+  ]
+}

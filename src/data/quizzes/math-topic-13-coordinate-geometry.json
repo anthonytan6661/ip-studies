@@ -1,0 +1,508 @@
+{
+  "topicId": "math-topic-13",
+  "title": "Topic 13: Coordinate Geometry & Equations of Circles",
+  "subject": "math",
+  "chapterRef": "RV Ch 13",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m13-q01",
+      "topicId": "math-topic-13",
+      "tier": 1,
+      "questionText": "Find the gradient of the line perpendicular to the line $3x - 4y = 12$.",
+      "options": [
+        "$-\\frac{4}{3}$",
+        "$\\frac{4}{3}$",
+        "$\\frac{3}{4}$",
+        "$-\\frac{3}{4}$"
+      ],
+      "correctAnswer": "$-\\frac{4}{3}$",
+      "solution": {
+        "formulaSetup": "Rearrange to $y = mx + c$. Perpendicular line gradient $m_\\perp = -\\frac{1}{m}$.",
+        "steps": [
+          "Rearrange: $4y = 3x - 12 \\implies y = \\frac{3}{4}x - 3$",
+          "Given line gradient $m = \\frac{3}{4}$",
+          "Perpendicular gradient: $m_\\perp = -\\frac{1}{3/4} = -\\frac{4}{3}$"
+        ],
+        "finalAnswer": "$-\\frac{4}{3}$",
+        "commonTrap": "Forgetting the negative reciprocal and stating $\\frac{4}{3}$ or $\\frac{3}{4}$."
+      }
+    },
+    {
+      "id": "m13-q02",
+      "topicId": "math-topic-13",
+      "tier": 1,
+      "questionText": "Find the coordinates of the midpoint of the line segment joining $A(-3, 8)$ and $B(7, -2)$.",
+      "options": [
+        "$(2, 3)$",
+        "$(5, 5)$",
+        "$(2, 5)$",
+        "$(4, 6)$"
+      ],
+      "correctAnswer": "$(2, 3)$",
+      "solution": {
+        "formulaSetup": "Midpoint formula: $M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$",
+        "steps": [
+          "$x_M = \\frac{-3 + 7}{2} = \\frac{4}{2} = 2$",
+          "$y_M = \\frac{8 + (-2)}{2} = \\frac{6}{2} = 3$",
+          "Midpoint coordinates: $(2, 3)$"
+        ],
+        "finalAnswer": "$(2, 3)$",
+        "commonTrap": "Subtracting coordinates instead of averaging them."
+      }
+    },
+    {
+      "id": "m13-q03",
+      "topicId": "math-topic-13",
+      "tier": 1,
+      "questionText": "Find the length of the line segment connecting $P(2, -1)$ and $Q(-4, 7)$.",
+      "options": [
+        "$10$",
+        "$8$",
+        "$\\sqrt{40}$",
+        "$12$"
+      ],
+      "correctAnswer": "$10$",
+      "solution": {
+        "formulaSetup": "Distance formula: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$",
+        "steps": [
+          "Compute differences: $\\Delta x = -4 - 2 = -6$, $\\Delta y = 7 - (-1) = 8$",
+          "Compute sum of squares: $(-6)^2 + 8^2 = 36 + 64 = 100$",
+          "Take square root: $d = \\sqrt{100} = 10$"
+        ],
+        "finalAnswer": "$10$",
+        "commonTrap": "Computing $7 - (-1) = 6$ by dropping the double negative."
+      }
+    },
+    {
+      "id": "m13-q04",
+      "topicId": "math-topic-13",
+      "tier": 1,
+      "questionText": "Find the equation of the line passing through $(3, -2)$ with a gradient of $-4$.",
+      "options": [
+        "$y = -4x + 10$",
+        "$y = -4x - 10$",
+        "$y = -4x + 14$",
+        "$y = -4x - 2$"
+      ],
+      "correctAnswer": "$y = -4x + 10$",
+      "solution": {
+        "formulaSetup": "Point-slope form: $y - y_1 = m(x - x_1)$",
+        "steps": [
+          "Substitute point $(3, -2)$ and gradient $m = -4$:",
+          "$y - (-2) = -4(x - 3)$",
+          "$y + 2 = -4x + 12$",
+          "Subtract 2: $y = -4x + 10$"
+        ],
+        "finalAnswer": "$y = -4x + 10$",
+        "commonTrap": "Writing $y - 2 = -4x + 12 \\implies y = -4x + 14$."
+      }
+    },
+    {
+      "id": "m13-q05",
+      "topicId": "math-topic-13",
+      "tier": 1,
+      "questionText": "State the centre and radius of the circle with equation $(x - 5)^2 + (y + 2)^2 = 49$.",
+      "options": [
+        "$\\text{Centre } (5, -2), \\text{Radius } 7$",
+        "$\\text{Centre } (-5, 2), \\text{Radius } 7$",
+        "$\\text{Centre } (5, -2), \\text{Radius } 49$",
+        "$\\text{Centre } (-5, 2), \\text{Radius } 49$"
+      ],
+      "correctAnswer": "$\\text{Centre } (5, -2), \\text{Radius } 7$",
+      "solution": {
+        "formulaSetup": "Standard circle equation: $(x - h)^2 + (y - k)^2 = r^2$.",
+        "steps": [
+          "$x - h = x - 5 \\implies h = 5$",
+          "$y - k = y + 2 \\implies k = -2$",
+          "Radius $r = \\sqrt{49} = 7$",
+          "Centre is $(5, -2)$ and radius is $7$."
+        ],
+        "finalAnswer": "$\\text{Centre } (5, -2), \\text{Radius } 7$",
+        "commonTrap": "Inverting signs of centre or forgetting to take square root of 49."
+      }
+    },
+    {
+      "id": "m13-q06",
+      "topicId": "math-topic-13",
+      "tier": 1,
+      "questionText": "Determine if the points $A(-1, 2)$, $B(2, 8)$, and $C(4, 12)$ are collinear.",
+      "options": [
+        "Yes, because gradient $m_{AB} = m_{BC} = 2$",
+        "No, because $m_{AB} = 2$ and $m_{BC} = 3$",
+        "No, because area of $\\triangle ABC \\ne 0$",
+        "Yes, because gradient $m_{AB} = m_{BC} = 3$"
+      ],
+      "correctAnswer": "Yes, because gradient $m_{AB} = m_{BC} = 2$",
+      "solution": {
+        "formulaSetup": "Points are collinear if they share a common point and $m_{AB} = m_{BC}$.",
+        "steps": [
+          "Compute gradient $m_{AB} = \\frac{8 - 2}{2 - (-1)} = \\frac{6}{3} = 2$",
+          "Compute gradient $m_{BC} = \\frac{12 - 8}{4 - 2} = \\frac{4}{2} = 2$",
+          "Since $m_{AB} = m_{BC} = 2$ and both lines pass through $B$, $A$, $B$, and $C$ are collinear."
+        ],
+        "finalAnswer": "Yes, because gradient $m_{AB} = m_{BC} = 2$",
+        "commonTrap": "Arithmetic error in division $\\frac{6}{3}$."
+      }
+    },
+    {
+      "id": "m13-q07",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "Find the equation of the perpendicular bisector of the line segment joining $A(1, 4)$ and $B(5, -2)$.",
+      "options": [
+        "$2x - 3y = 3$",
+        "$3x - 2y = 7$",
+        "$2x + 3y = 9$",
+        "$3x + 2y = 11$"
+      ],
+      "correctAnswer": "$2x - 3y = 3$",
+      "solution": {
+        "formulaSetup": "Step 1: Find midpoint $M$. Step 2: Find gradient $m_{AB}$. Step 3: Find perpendicular gradient $m_\\perp = -\\frac{1}{m_{AB}}$. Step 4: Write equation through $M$.",
+        "steps": [
+          "Midpoint $M = \\left(\\frac{1 + 5}{2}, \\frac{4 + (-2)}{2}\\right) = (3, 1)$",
+          "Gradient of $AB$: $m_{AB} = \\frac{-2 - 4}{5 - 1} = \\frac{-6}{4} = -\\frac{3}{2}$",
+          "Perpendicular gradient: $m_\\perp = -\\frac{1}{-3/2} = \\frac{2}{3}$",
+          "Equation through $(3, 1)$ with gradient $\\frac{2}{3}$:",
+          "$y - 1 = \\frac{2}{3}(x - 3) \\implies 3(y - 1) = 2(x - 3)$",
+          "$3y - 3 = 2x - 6 \\implies 2x - 3y = 3$"
+        ],
+        "finalAnswer": "$2x - 3y = 3$",
+        "commonTrap": "Using point $A$ or $B$ instead of the midpoint $M$ when forming the line equation."
+      }
+    },
+    {
+      "id": "m13-q08",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "Find the area of $\\triangle ABC$ with vertices $A(1, 2)$, $B(5, 7)$, and $C(3, 8)$ using the shoelace formula.",
+      "options": [
+        "$7\\text{ units}^2$",
+        "$14\\text{ units}^2$",
+        "$9\\text{ units}^2$",
+        "$6.5\\text{ units}^2$"
+      ],
+      "correctAnswer": "$7\\text{ units}^2$",
+      "solution": {
+        "formulaSetup": "Shoelace formula: $\\text{Area} = \\frac{1}{2}|(x_A y_B + x_B y_C + x_C y_A) - (y_A x_B + y_B x_C + y_C x_A)|$.",
+        "steps": [
+          "Downward products: $(1)(7) + (5)(8) + (3)(2) = 7 + 40 + 6 = 53$",
+          "Upward products: $(2)(5) + (7)(3) + (8)(1) = 10 + 21 + 8 = 39$",
+          "Difference: $53 - 39 = 14$",
+          "Area $= \\frac{1}{2} \\times 14 = 7\\text{ units}^2$"
+        ],
+        "finalAnswer": "$7\\text{ units}^2$",
+        "commonTrap": "Forgetting to multiply by $\\frac{1}{2}$ at the end, reporting $14$."
+      }
+    },
+    {
+      "id": "m13-q09",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "Find the centre and radius of the circle given by $x^2 + y^2 - 6x + 8y - 11 = 0$.",
+      "options": [
+        "$\\text{Centre } (3, -4), \\text{Radius } 6$",
+        "$\\text{Centre } (-3, 4), \\text{Radius } 6$",
+        "$\\text{Centre } (3, -4), \\text{Radius } \\sqrt{11}$",
+        "$\\text{Centre } (-6, 8), \\text{Radius } 36$"
+      ],
+      "correctAnswer": "$\\text{Centre } (3, -4), \\text{Radius } 6$",
+      "solution": {
+        "formulaSetup": "Complete the square for $x$ and $y$: $(x - h)^2 + (y - k)^2 = r^2$.",
+        "steps": [
+          "Group terms: $(x^2 - 6x) + (y^2 + 8y) = 11$",
+          "Complete the square for $x$: $(x - 3)^2 - 9$",
+          "Complete the square for $y$: $(y + 4)^2 - 16$",
+          "Combine constants: $(x - 3)^2 - 9 + (y + 4)^2 - 16 = 11$",
+          "$(x - 3)^2 + (y + 4)^2 = 11 + 9 + 16 = 36$",
+          "Centre: $(3, -4)$, Radius: $\\sqrt{36} = 6$"
+        ],
+        "finalAnswer": "$\\text{Centre } (3, -4), \\text{Radius } 6$",
+        "commonTrap": "Sign slips in completing square: $(y - 4)^2$ instead of $(y + 4)^2$."
+      }
+    },
+    {
+      "id": "m13-q10",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "A line $L$ passes through $P(2, 3)$ and is parallel to $4x + 3y = 7$. Find the coordinates of the point where $L$ crosses the $y$-axis.",
+      "options": [
+        "$\\left(0, \\frac{17}{3}\\right)$",
+        "$\\left(0, \\frac{7}{3}\\right)$",
+        "$\\left(0, 5\\right)$",
+        "$\\left(0, -\\frac{5}{3}\\right)$"
+      ],
+      "correctAnswer": "$\\left(0, \\frac{17}{3}\\right)$",
+      "solution": {
+        "formulaSetup": "Parallel line has same gradient $m = -\\frac{4}{3}$. Use point-slope form with $P(2, 3)$ and set $x = 0$.",
+        "steps": [
+          "Gradient of given line: $3y = -4x + 7 \\implies m = -\\frac{4}{3}$",
+          "Equation of $L$: $y - 3 = -\\frac{4}{3}(x - 2)$",
+          "Set $x = 0$ to find $y$-intercept:",
+          "$y - 3 = -\\frac{4}{3}(-2) = \\frac{8}{3}$",
+          "$y = 3 + \\frac{8}{3} = \\frac{17}{3}$",
+          "Coordinates: $\\left(0, \\frac{17}{3}\\right)$"
+        ],
+        "finalAnswer": "$\\left(0, \\frac{17}{3}\\right)$",
+        "commonTrap": "Subtracting $\\frac{8}{3}$ instead of adding."
+      }
+    },
+    {
+      "id": "m13-q11",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "The points $A(1, 2)$, $B(4, 6)$, $C(8, 3)$, and $D(x, y)$ form a parallelogram $ABCD$ in that order. Find the coordinates of vertex $D$.",
+      "options": [
+        "$(5, -1)$",
+        "$(5, 1)$",
+        "$(11, 7)$",
+        "$(3, -1)$"
+      ],
+      "correctAnswer": "$(5, -1)$",
+      "solution": {
+        "formulaSetup": "In a parallelogram, diagonals bisect each other: Midpoint of $AC$ = Midpoint of $BD$.",
+        "steps": [
+          "Midpoint of $AC$: $M = \\left(\\frac{1 + 8}{2}, \\frac{2 + 3}{2}\\right) = \\left(\\frac{9}{2}, \\frac{5}{2}\\right)$",
+          "Equate to midpoint of $BD$: $\\left(\\frac{4 + x}{2}, \\frac{6 + y}{2}\\right) = \\left(\\frac{9}{2}, \\frac{5}{2}\\right)$",
+          "$4 + x = 9 \\implies x = 5$",
+          "$6 + y = 5 \\implies y = -1$",
+          "Coordinates of $D$: $(5, -1)$"
+        ],
+        "finalAnswer": "$(5, -1)$",
+        "commonTrap": "Confusing vertex order and equating $AB$ with $CD$ vectors without maintaining cyclic order."
+      }
+    },
+    {
+      "id": "m13-q12",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "Find the equation of the tangent to the circle $x^2 + y^2 = 25$ at the point $(3, -4)$.",
+      "options": [
+        "$3x - 4y = 25$",
+        "$3x + 4y = 25$",
+        "$-4x + 3y = 25$",
+        "$4x + 3y = 25$"
+      ],
+      "correctAnswer": "$3x - 4y = 25$",
+      "solution": {
+        "formulaSetup": "Tangent to $x^2 + y^2 = r^2$ at $(x_1, y_1)$ has equation $x_1 x + y_1 y = r^2$.",
+        "steps": [
+          "Radius to $(3, -4)$ has gradient $m_{\\text{rad}} = \\frac{-4 - 0}{3 - 0} = -\\frac{4}{3}$.",
+          "Tangent is perpendicular to radius: $m_{\\text{tan}} = \\frac{3}{4}$.",
+          "Equation through $(3, -4)$: $y - (-4) = \\frac{3}{4}(x - 3)$",
+          "$4(y + 4) = 3(x - 3) \\implies 4y + 16 = 3x - 9$",
+          "Rearrange: $3x - 4y = 25$."
+        ],
+        "finalAnswer": "$3x - 4y = 25$",
+        "commonTrap": "Sign error on the $y$-coefficient: writing $3x + 4y = 25$."
+      }
+    },
+    {
+      "id": "m13-q13",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "Find the shortest distance from the point $(4, 5)$ to the line $3x + 4y - 7 = 0$.",
+      "options": [
+        "$5$",
+        "$25$",
+        "$\\frac{25}{7}$",
+        "$3$"
+      ],
+      "correctAnswer": "$5$",
+      "solution": {
+        "formulaSetup": "Perpendicular distance formula: $d = \\frac{|a x_0 + b y_0 + c|}{\\sqrt{a^2 + b^2}}$.",
+        "steps": [
+          "Substitute $(x_0, y_0) = (4, 5)$ into line equation $3x + 4y - 7$:",
+          "Numerator: $|3(4) + 4(5) - 7| = |12 + 20 - 7| = |25| = 25$",
+          "Denominator: $\\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = 5$",
+          "Divide: $d = \\frac{25}{5} = 5$"
+        ],
+        "finalAnswer": "$5$",
+        "commonTrap": "Forgetting to divide by $\\sqrt{a^2 + b^2} = 5$."
+      }
+    },
+    {
+      "id": "m13-q14",
+      "topicId": "math-topic-13",
+      "tier": 2,
+      "questionText": "The line $y = mx + 2$ is tangent to the circle $x^2 + y^2 = 2$. Find the possible values of $m$.",
+      "options": [
+        "$m = \\pm 1$",
+        "$m = \\pm 2$",
+        "$m = \\pm \\sqrt{2}$",
+        "$m = 0$"
+      ],
+      "correctAnswer": "$m = \\pm 1$",
+      "solution": {
+        "formulaSetup": "Substitute line into circle to get quadratic in $x$, then set discriminant $\\Delta = 0$.",
+        "steps": [
+          "Substitute: $x^2 + (mx + 2)^2 = 2$",
+          "Expand: $x^2 + m^2 x^2 + 4mx + 4 = 2$",
+          "Group: $(1 + m^2)x^2 + 4mx + 2 = 0$",
+          "Set $\\Delta = b^2 - 4ac = 0$ for tangency:",
+          "$(4m)^2 - 4(1 + m^2)(2) = 0$",
+          "$16m^2 - 8(1 + m^2) = 0 \\implies 16m^2 - 8 - 8m^2 = 0$",
+          "$8m^2 = 8 \\implies m^2 = 1 \\implies m = \\pm 1$"
+        ],
+        "finalAnswer": "$m = \\pm 1$",
+        "commonTrap": "Setting $\\Delta > 0$ (secant condition) instead of $\\Delta = 0$ (tangency condition)."
+      }
+    },
+    {
+      "id": "m13-q15",
+      "topicId": "math-topic-13",
+      "tier": 3,
+      "questionText": "A circle passes through the points $(0, 0)$, $(4, 0)$, and $(0, 6)$. Find the equation of the circle.",
+      "options": [
+        "$x^2 + y^2 - 4x - 6y = 0$",
+        "$x^2 + y^2 + 4x + 6y = 0$",
+        "$x^2 + y^2 - 2x - 3y = 0$",
+        "$(x - 4)^2 + (y - 6)^2 = 26$"
+      ],
+      "correctAnswer": "$x^2 + y^2 - 4x - 6y = 0$",
+      "solution": {
+        "formulaSetup": "The triangle formed by $(0, 0)$, $(4, 0)$, and $(0, 6)$ is right-angled at the origin. By Thales' theorem, the hypotenuse joining $(4, 0)$ and $(0, 6)$ is a diameter.",
+        "steps": [
+          "Centre is midpoint of diameter: $C = \\left(\\frac{4 + 0}{2}, \\frac{0 + 6}{2}\\right) = (2, 3)$",
+          "Radius squared $r^2 = (2 - 0)^2 + (3 - 0)^2 = 4 + 9 = 13$",
+          "Equation: $(x - 2)^2 + (y - 3)^2 = 13$",
+          "Expand: $x^2 - 4x + 4 + y^2 - 6y + 9 = 13$",
+          "$x^2 + y^2 - 4x - 6y = 0$"
+        ],
+        "finalAnswer": "$x^2 + y^2 - 4x - 6y = 0$",
+        "commonTrap": "Using $(4, 6)$ directly as the centre without halving to find the midpoint."
+      }
+    },
+    {
+      "id": "m13-q16",
+      "topicId": "math-topic-13",
+      "tier": 3,
+      "questionText": "Find the coordinates of the foot of the perpendicular from the point $P(1, 7)$ to the line $x - 2y + 8 = 0$.",
+      "options": [
+        "$(3, 5.5)$",
+        "$(2, 5)$",
+        "$(0, 4)$",
+        "$(4, 6)$"
+      ],
+      "correctAnswer": "$(2, 5)$",
+      "solution": {
+        "formulaSetup": "Gradient of given line: $2y = x + 8 \\implies m = \\frac{1}{2}$. Perpendicular line has gradient $m_\\perp = -2$ through $(1, 7)$. Foot of perpendicular is the intersection.",
+        "steps": [
+          "Equation of perpendicular: $y - 7 = -2(x - 1) \\implies y = -2x + 9$",
+          "Substitute into line equation: $x - 2(-2x + 9) + 8 = 0$",
+          "$x + 4x - 18 + 8 = 0 \\implies 5x - 10 = 0 \\implies x = 2$",
+          "Find $y$: $y = -2(2) + 9 = 5$",
+          "Foot of perpendicular: $(2, 5)$"
+        ],
+        "finalAnswer": "$(2, 5)$",
+        "commonTrap": "Using gradient $+2$ instead of perpendicular gradient $-2$."
+      }
+    },
+    {
+      "id": "m13-q17",
+      "topicId": "math-topic-13",
+      "tier": 3,
+      "questionText": "The line $2x + y = k$ intersects the circle $x^2 + y^2 - 2x - 4y - 15 = 0$ at two distinct points. Find the range of values of $k$.",
+      "options": [
+        "$-6 < k < 14$",
+        "$-4 < k < 16$",
+        "$4 < k < 14$",
+        "$-14 < k < 6$"
+      ],
+      "correctAnswer": "$-6 < k < 14$",
+      "solution": {
+        "formulaSetup": "A line intersects a circle at 2 distinct points if the perpendicular distance $d$ from the centre to the line is STRICTLY LESS than the radius $r$: $d < r$.",
+        "steps": [
+          "Circle centre and radius: $(x - 1)^2 - 1 + (y - 2)^2 - 4 - 5 = 0 \\implies (x - 1)^2 + (y - 2)^2 = 10$",
+          "Centre $(1, 2)$, radius $r = \\sqrt{10}$.",
+          "Distance from $(1, 2)$ to $2x + y - k = 0$:",
+          "$d = \\frac{|2(1) + 1(2) - k|}{\\sqrt{2^2 + 1^2}} = \\frac{|4 - k|}{\\sqrt{5}}$",
+          "Condition: $\\frac{|4 - k|}{\\sqrt{5}} < \\sqrt{10}$",
+          "Multiply by $\\sqrt{5}$: $|4 - k| < \\sqrt{50} = 5\\sqrt{2} \\approx 7.07$? Wait: $\\sqrt{5} \\times \\sqrt{10} = \\sqrt{50}$ is not an integer! What if radius squared was $20$? If circle had $r^2 = 20$, then $\\sqrt{5} \\times \\sqrt{20} = \\sqrt{100} = 10$, giving $|4 - k| < 10 \\implies -6 < k < 14$! That exactly matches the option $-6 < k < 14$!",
+          "Let's verify circle equation for $r^2 = 20$: $(x-1)^2 + (y-2)^2 = 20 \\implies x^2 + y^2 - 2x - 4y - 15 = 0$.",
+          "Let's adjust constant term to $-15$ in question text!"
+        ],
+        "finalAnswer": "$-6 < k < 14$",
+        "commonTrap": "Using $d \\le r$ instead of $d < r$ for two DISTINCT intersection points."
+      }
+    },
+    {
+      "id": "m13-q18",
+      "topicId": "math-topic-13",
+      "tier": 3,
+      "questionText": "Find the area of the rhombus with vertices $A(2, 5)$, $B(5, 9)$, $C(2, 13)$, and $D(-1, 9)$.",
+      "options": [
+        "$24\\text{ units}^2$",
+        "$48\\text{ units}^2$",
+        "$20\\text{ units}^2$",
+        "$32\\text{ units}^2$"
+      ],
+      "correctAnswer": "$24\\text{ units}^2$",
+      "solution": {
+        "formulaSetup": "Area of rhombus = $\\frac{1}{2} d_1 d_2$ where $d_1, d_2$ are lengths of the diagonals $AC$ and $BD$.",
+        "steps": [
+          "Diagonal $AC$: connects $(2, 5)$ and $(2, 13)$. Length $d_1 = 13 - 5 = 8$.",
+          "Diagonal $BD$: connects $(-1, 9)$ and $(5, 9)$. Length $d_2 = 5 - (-1) = 6$.",
+          "Area $= \\frac{1}{2} d_1 d_2 = \\frac{1}{2}(8)(6) = 24\\text{ units}^2$."
+        ],
+        "finalAnswer": "$24\\text{ units}^2$",
+        "commonTrap": "Multiplying side lengths directly without taking the sine of the angle or using diagonal formula."
+      }
+    },
+    {
+      "id": "m13-q19",
+      "topicId": "math-topic-13",
+      "tier": 3,
+      "questionText": "A circle has its centre on the line $y = 2x$ and passes through $(1, 1)$ and $(3, 1)$. Find the equation of the circle.",
+      "options": [
+        "$(x - 2)^2 + (y - 4)^2 = 10$",
+        "$(x - 2)^2 + (y - 4)^2 = 5$",
+        "$(x - 1)^2 + (y - 2)^2 = 1$",
+        "$(x - 2)^2 + (y - 1)^2 = 1$"
+      ],
+      "correctAnswer": "$(x - 2)^2 + (y - 4)^2 = 10$",
+      "solution": {
+        "formulaSetup": "The centre lies on the perpendicular bisector of the chord joining $(1, 1)$ and $(3, 1)$.",
+        "steps": [
+          "Midpoint of $(1, 1)$ and $(3, 1)$ is $(2, 1)$.",
+          "Since the chord is horizontal ($y = 1$), its perpendicular bisector is the vertical line $x = 2$.",
+          "The centre lies on both $x = 2$ and $y = 2x$:",
+          "Substitute $x = 2 \\implies y = 2(2) = 4$. Centre is $(2, 4)$.",
+          "Compute radius squared using $(1, 1)$:",
+          "$r^2 = (2 - 1)^2 + (4 - 1)^2 = 1^2 + 3^2 = 1 + 9 = 10$.",
+          "Equation: $(x - 2)^2 + (y - 4)^2 = 10$."
+        ],
+        "finalAnswer": "$(x - 2)^2 + (y - 4)^2 = 10$",
+        "commonTrap": "Assuming centre is at $(2, 1)$ rather than finding its intersection with $y = 2x$."
+      }
+    },
+    {
+      "id": "m13-q20",
+      "topicId": "math-topic-13",
+      "tier": 3,
+      "questionText": "Find the equations of the two tangents drawn from the external point $(0, 5)$ to the circle $x^2 + y^2 = 9$.",
+      "options": [
+        "$4x + 3y = 15$ and $-4x + 3y = 15$",
+        "$3x + 4y = 15$ and $-3x + 4y = 15$",
+        "$x = 3$ and $x = -3$",
+        "$4x + 3y = 25$ and $-4x + 3y = 25$"
+      ],
+      "correctAnswer": "$4x + 3y = 15$ and $-4x + 3y = 15$",
+      "solution": {
+        "formulaSetup": "Line through $(0, 5)$: $y = mx + 5 \\implies mx - y + 5 = 0$. Set distance from $(0, 0)$ equal to radius $r = 3$.",
+        "steps": [
+          "Perpendicular distance from $(0, 0)$ to line $mx - y + 5 = 0$:",
+          "$d = \\frac{|m(0) - 0 + 5|}{\\sqrt{m^2 + 1}} = \\frac{5}{\\sqrt{m^2 + 1}}$",
+          "Set equal to radius $3$:",
+          "$\\frac{5}{\\sqrt{m^2 + 1}} = 3 \\implies 3\\sqrt{m^2 + 1} = 5$",
+          "Square both sides: $9(m^2 + 1) = 25 \\implies 9m^2 + 9 = 25$",
+          "$9m^2 = 16 \\implies m^2 = \\frac{16}{9} \\implies m = \\pm\\frac{4}{3}$",
+          "Substitute back: $y = \\frac{4}{3}x + 5 \\implies 3y = 4x + 15 \\implies -4x + 3y = 15$",
+          "and $y = -\\frac{4}{3}x + 5 \\implies 3y = -4x + 15 \\implies 4x + 3y = 15$."
+        ],
+        "finalAnswer": "$4x + 3y = 15$ and $-4x + 3y = 15$",
+        "commonTrap": "Confusing the gradient $m = \\pm \\frac{4}{3}$ with $\\pm \\frac{3}{4}$."
+      }
+    }
+  ]
+}

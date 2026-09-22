@@ -1,0 +1,499 @@
+{
+  "topicId": "math-topic-10",
+  "title": "Topic 10: Further Trigonometric Identities & R-Formula",
+  "subject": "math",
+  "chapterRef": "RV Ch 10",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m10-q01",
+      "topicId": "math-topic-10",
+      "tier": 1,
+      "questionText": "Using the compound angle formula, find the exact value of $\\sin 75^\\circ$.",
+      "options": [
+        "$\\frac{\\sqrt{6} + \\sqrt{2}}{4}$",
+        "$\\frac{\\sqrt{6} - \\sqrt{2}}{4}$",
+        "$\\frac{\\sqrt{3} + 1}{2\\sqrt{2}}$",
+        "$\\frac{\\sqrt{2} + 1}{4}$"
+      ],
+      "correctAnswer": "$\\frac{\\sqrt{6} + \\sqrt{2}}{4}$",
+      "solution": {
+        "formulaSetup": "$\\sin(45^\\circ + 30^\\circ) = \\sin 45^\\circ\\cos 30^\\circ + \\cos 45^\\circ\\sin 30^\\circ$",
+        "steps": [
+          "Substitute exact values: $\\sin 45^\\circ = \\frac{\\sqrt{2}}{2}$, $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$, $\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}$, $\\sin 30^\\circ = \\frac{1}{2}$",
+          "Multiply terms: $\\left(\\frac{\\sqrt{2}}{2}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right) + \\left(\\frac{\\sqrt{2}}{2}\\right)\\left(\\frac{1}{2}\\right) = \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}$",
+          "Combine over common denominator: $\\frac{\\sqrt{6} + \\sqrt{2}}{4}$"
+        ],
+        "finalAnswer": "$\\frac{\\sqrt{6} + \\sqrt{2}}{4}$",
+        "commonTrap": "Writing $\\sin(45^\\circ + 30^\\circ) = \\sin 45^\\circ + \\sin 30^\\circ$, which is completely false."
+      }
+    },
+    {
+      "id": "m10-q02",
+      "topicId": "math-topic-10",
+      "tier": 1,
+      "questionText": "Given that $\\sin A = \\frac{3}{5}$ where $A$ is acute, find the exact value of $\\sin(2A)$.",
+      "options": [
+        "$\\frac{24}{25}$",
+        "$\\frac{6}{5}$",
+        "$\\frac{7}{25}$",
+        "$\\frac{12}{25}$"
+      ],
+      "correctAnswer": "$\\frac{24}{25}$",
+      "solution": {
+        "formulaSetup": "Double angle formula: $\\sin(2A) = 2\\sin A\\cos A$",
+        "steps": [
+          "Since $A$ is acute and $\\sin A = \\frac{3}{5}$, $\\cos A = \\sqrt{1 - (3/5)^2} = \\frac{4}{5}$.",
+          "Substitute into formula: $\\sin(2A) = 2\\left(\\frac{3}{5}\\right)\\left(\\frac{4}{5}\\right)$",
+          "Compute product: $\\frac{2 \\times 3 \\times 4}{25} = \\frac{24}{25}$"
+        ],
+        "finalAnswer": "$\\frac{24}{25}$",
+        "commonTrap": "Computing $2\\sin A = 2(3/5) = \\frac{6}{5}$, which is not $\\sin(2A)$."
+      }
+    },
+    {
+      "id": "m10-q03",
+      "topicId": "math-topic-10",
+      "tier": 1,
+      "questionText": "For the same angle $A$ (acute, $\\sin A = \\frac{3}{5}$, $\\cos A = \\frac{4}{5}$), find the exact value of $\\cos(2A)$.",
+      "options": [
+        "$\\frac{7}{25}$",
+        "$\\frac{1}{5}$",
+        "$-\\frac{7}{25}$",
+        "$\\frac{16}{25}$"
+      ],
+      "correctAnswer": "$\\frac{7}{25}$",
+      "solution": {
+        "formulaSetup": "Double angle formula: $\\cos(2A) = \\cos^2 A - \\sin^2 A = 1 - 2\\sin^2 A$",
+        "steps": [
+          "Using $1 - 2\\sin^2 A$: $1 - 2\\left(\\frac{3}{5}\\right)^2 = 1 - 2\\left(\\frac{9}{25}\\right)$",
+          "Calculate: $1 - \\frac{18}{25} = \\frac{7}{25}$"
+        ],
+        "finalAnswer": "$\\frac{7}{25}$",
+        "commonTrap": "Subtracting in reverse order $\\sin^2 A - \\cos^2 A$, giving $-\\frac{7}{25}$."
+      }
+    },
+    {
+      "id": "m10-q04",
+      "topicId": "math-topic-10",
+      "tier": 1,
+      "questionText": "Express $3\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $\\alpha$ is an acute angle.",
+      "options": [
+        "$5\\sin(\\theta + 53.1^\\circ)$",
+        "$5\\sin(\\theta + 36.9^\\circ)$",
+        "$7\\sin(\\theta + 53.1^\\circ)$",
+        "$25\\sin(\\theta + 36.9^\\circ)$"
+      ],
+      "correctAnswer": "$5\\sin(\\theta + 53.1^\\circ)$",
+      "solution": {
+        "formulaSetup": "$R\\sin(\\theta + \\alpha) = R\\sin\\theta\\cos\\alpha + R\\cos\\theta\\sin\\alpha$. Equating coefficients: $R\\cos\\alpha = 3$, $R\\sin\\alpha = 4$.",
+        "steps": [
+          "Compute $R = \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = 5$",
+          "Find $\\tan\\alpha = \\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{4}{3}$",
+          "Calculate $\\alpha = \\tan^{-1}\\left(\\frac{4}{3}\\right) \\approx 53.13^\\circ \\approx 53.1^\\circ$",
+          "Result: $5\\sin(\\theta + 53.1^\\circ)$"
+        ],
+        "finalAnswer": "$5\\sin(\\theta + 53.1^\\circ)$",
+        "commonTrap": "Calculating $\\tan\\alpha = \\frac{3}{4} \\implies \\alpha = 36.9^\\circ$ by inverting the sine and cosine coefficients."
+      }
+    },
+    {
+      "id": "m10-q05",
+      "topicId": "math-topic-10",
+      "tier": 1,
+      "questionText": "State the maximum value of $5 - 12\\sin\\theta + 5\\cos\\theta$ and the minimum value.",
+      "options": [
+        "$\\text{Max} = 18$, $\\text{Min} = -8$",
+        "$\\text{Max} = 17$, $\\text{Min} = -7$",
+        "$\\text{Max} = 13$, $\\text{Min} = -13$",
+        "$\\text{Max} = 18$, $\\text{Min} = 5$"
+      ],
+      "correctAnswer": "$\\text{Max} = 18$, $\\text{Min} = -8$",
+      "solution": {
+        "formulaSetup": "Express $-12\\sin\\theta + 5\\cos\\theta$ as $R\\cos(\\theta + \\alpha)$ where $R = \\sqrt{(-12)^2 + 5^2} = 13$.",
+        "steps": [
+          "The amplitude of $-12\\sin\\theta + 5\\cos\\theta$ is $R = \\sqrt{144 + 25} = \\sqrt{169} = 13$.",
+          "So $-13 \\le -12\\sin\\theta + 5\\cos\\theta \\le 13$.",
+          "Add constant 5: $\\text{Max} = 5 + 13 = 18$, $\\text{Min} = 5 - 13 = -8$."
+        ],
+        "finalAnswer": "$\\text{Max} = 18$, $\\text{Min} = -8$",
+        "commonTrap": "Adding the absolute values of the coefficients: $5 + 12 + 5 = 22$."
+      }
+    },
+    {
+      "id": "m10-q06",
+      "topicId": "math-topic-10",
+      "tier": 1,
+      "questionText": "Simplify the expression $\\cos(x + y)\\cos(x - y) - \\sin(x + y)\\sin(x - y)$.",
+      "options": [
+        "$\\cos(2x)$",
+        "$\\cos(2y)$",
+        "$\\sin(2x)$",
+        "$1$"
+      ],
+      "correctAnswer": "$\\cos(2x)$",
+      "solution": {
+        "formulaSetup": "Compound angle identity: $\\cos A\\cos B - \\sin A\\sin B = \\cos(A + B)$.",
+        "steps": [
+          "Let $A = x + y$ and $B = x - y$.",
+          "The expression is $\\cos(A + B)$.",
+          "Evaluate argument: $A + B = (x + y) + (x - y) = 2x$.",
+          "Therefore, the expression equals $\\cos(2x)$."
+        ],
+        "finalAnswer": "$\\cos(2x)$",
+        "commonTrap": "Writing $\\cos(A - B) = \\cos(2y)$, confusing the signs in the cosine compound formula."
+      }
+    },
+    {
+      "id": "m10-q07",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "Solve the equation $5\\cos\\theta + 12\\sin\\theta = 6.5$ for $0^\\circ \\le \\theta \\le 360^\\circ$ correct to 1 decimal place.",
+      "options": [
+        "$7.4^\\circ, 127.4^\\circ$",
+        "$37.4^\\circ, 97.4^\\circ$",
+        "$67.4^\\circ, 127.4^\\circ$",
+        "$7.4^\\circ, 112.6^\\circ$"
+      ],
+      "correctAnswer": "$7.4^\\circ, 127.4^\\circ$",
+      "solution": {
+        "formulaSetup": "Express in $R\\sin(\\theta + \\alpha)$ or $R\\cos(\\theta - \\alpha)$. Using $R\\cos(\\theta - \\alpha)$: $R = \\sqrt{5^2 + 12^2} = 13$, $\\tan\\alpha = \\frac{12}{5} \\implies \\alpha \\approx 67.38^\\circ$.",
+        "steps": [
+          "Form: $13\\cos(\\theta - 67.38^\\circ) = 6.5$",
+          "Divide by 13: $\\cos(\\theta - 67.38^\\circ) = \\frac{6.5}{13} = 0.5$",
+          "Basic angle: $\\cos^{-1}(0.5) = 60^\\circ$",
+          "Case 1: $\\theta - 67.38^\\circ = 60^\\circ \\implies \\theta = 127.38^\\circ \\approx 127.4^\\circ$",
+          "Case 2: $\\theta - 67.38^\\circ = -60^\\circ \\implies \\theta = 7.38^\\circ \\approx 7.4^\\circ$",
+          "Both solutions lie in $[0^\\circ, 360^\\circ]$: $7.4^\\circ, 127.4^\\circ$"
+        ],
+        "finalAnswer": "$7.4^\\circ, 127.4^\\circ$",
+        "commonTrap": "Using $360^\\circ - 60^\\circ = 300^\\circ$ and adding $67.4^\\circ$ to get $367.4^\\circ$, exceeding $360^\\circ$."
+      }
+    },
+    {
+      "id": "m10-q08",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "Prove that $\\frac{\\sin(2x)}{1 + \\cos(2x)} = \\tan x$. Which double angle formula for $\\cos(2x)$ cancels the constant 1 in the denominator?",
+      "options": [
+        "$\\cos(2x) = 2\\cos^2 x - 1$",
+        "$\\cos(2x) = 1 - 2\\sin^2 x$",
+        "$\\cos(2x) = \\cos^2 x - \\sin^2 x$",
+        "$\\cos(2x) = 2\\sin x\\cos x$"
+      ],
+      "correctAnswer": "$\\cos(2x) = 2\\cos^2 x - 1$",
+      "solution": {
+        "formulaSetup": "Select double angle form: $1 + \\cos(2x) = 1 + (2\\cos^2 x - 1) = 2\\cos^2 x$.",
+        "steps": [
+          "Numerator: $\\sin(2x) = 2\\sin x\\cos x$",
+          "Denominator: $1 + (2\\cos^2 x - 1) = 2\\cos^2 x$",
+          "Divide: $\\frac{2\\sin x\\cos x}{2\\cos^2 x} = \\frac{\\sin x}{\\cos x} = \\tan x$"
+        ],
+        "finalAnswer": "$\\cos(2x) = 2\\cos^2 x - 1$",
+        "commonTrap": "Using $1 - 2\\sin^2 x$, which results in $2 - 2\\sin^2 x$ and does not eliminate the constant 1 cleanly."
+      }
+    },
+    {
+      "id": "m10-q09",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "Given that $\\tan A = \\frac{1}{2}$ and $\\tan(A + B) = 3$, find the exact value of $\\tan B$.",
+      "options": [
+        "$1$",
+        "$\\frac{5}{7}$",
+        "$\\frac{7}{5}$",
+        "$\\frac{2}{3}$"
+      ],
+      "correctAnswer": "$1$",
+      "solution": {
+        "formulaSetup": "Compound angle for tangent: $\\tan B = \\tan((A + B) - A) = \\frac{\\tan(A+B) - \\tan A}{1 + \\tan(A+B)\\tan A}$",
+        "steps": [
+          "Substitute known values: $\\tan(A+B) = 3$, $\\tan A = \\frac{1}{2}$",
+          "Numerator: $3 - \\frac{1}{2} = \\frac{5}{2}$",
+          "Denominator: $1 + 3\\left(\\frac{1}{2}\\right) = 1 + \\frac{3}{2} = \\frac{5}{2}$",
+          "Divide: $\\tan B = \\frac{5/2}{5/2} = 1$"
+        ],
+        "finalAnswer": "$1$",
+        "commonTrap": "Writing $\\tan B = \\tan(A+B) - \\tan A = 3 - 0.5 = 2.5$."
+      }
+    },
+    {
+      "id": "m10-q10",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "Find the maximum value of $f(\\theta) = \\frac{1}{7 - 4\\sin\\theta - 3\\cos\\theta}$.",
+      "options": [
+        "$\\frac{1}{2}$",
+        "$\\frac{1}{12}$",
+        "$\\frac{1}{7}$",
+        "$1$"
+      ],
+      "correctAnswer": "$\\frac{1}{2}$",
+      "solution": {
+        "formulaSetup": "To maximise a fraction with positive denominator, MINIMISE the denominator: $D(\\theta) = 7 - (4\\sin\\theta + 3\\cos\\theta)$.",
+        "steps": [
+          "Express $4\\sin\\theta + 3\\cos\\theta$ as $R\\sin(\\theta + \\alpha)$ where $R = \\sqrt{4^2 + 3^2} = 5$.",
+          "So $-5 \\le 4\\sin\\theta + 3\\cos\\theta \\le 5$.",
+          "The minimum value of denominator $D(\\theta)$ occurs when $4\\sin\\theta + 3\\cos\\theta = +5$:",
+          "$D_{\\text{min}} = 7 - 5 = 2$.",
+          "Thus, maximum value of the fraction is $\\frac{1}{D_{\\text{min}}} = \\frac{1}{2}$."
+        ],
+        "finalAnswer": "$\\frac{1}{2}$",
+        "commonTrap": "Maximising the denominator $7 + 5 = 12$ to give $\\frac{1}{12}$, which is actually the minimum value."
+      }
+    },
+    {
+      "id": "m10-q11",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "Solve the equation $\\cos(2x) = 3\\sin x - 1$ for $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$\\frac{\\pi}{6}, \\frac{5\\pi}{6}$",
+        "$\\frac{\\pi}{3}, \\frac{2\\pi}{3}$",
+        "$\\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6}$",
+        "$\\frac{7\\pi}{6}, \\frac{11\\pi}{6}$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{6}, \\frac{5\\pi}{6}$",
+      "solution": {
+        "formulaSetup": "Replace $\\cos(2x)$ with $1 - 2\\sin^2 x$ to obtain a quadratic in $\\sin x$.",
+        "steps": [
+          "Substitute: $1 - 2\\sin^2 x = 3\\sin x - 1$",
+          "Rearrange: $2\\sin^2 x + 3\\sin x - 2 = 0$",
+          "Factorise: $(2\\sin x - 1)(\\sin x + 2) = 0$",
+          "Case 1: $\\sin x + 2 = 0 \\implies \\sin x = -2$ (Reject, since $|\\sin x| \\le 1$).",
+          "Case 2: $2\\sin x - 1 = 0 \\implies \\sin x = \\frac{1}{2}$",
+          "In $[0, 2\\pi]$, solutions are $x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$."
+        ],
+        "finalAnswer": "$\\frac{\\pi}{6}, \\frac{5\\pi}{6}$",
+        "commonTrap": "Using $\\cos(2x) = 2\\cos^2 x - 1$, producing a mixed equation with both $\\cos^2 x$ and $\\sin x$."
+      }
+    },
+    {
+      "id": "m10-q12",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "If $\\cos\\theta = -\\frac{5}{13}$ and $\\pi < \\theta < \\frac{3\\pi}{2}$, find the exact value of $\\tan(2\\theta)$.",
+      "options": [
+        "$\\frac{120}{119}$",
+        "$-\\frac{120}{119}$",
+        "$\\frac{119}{120}$",
+        "$\\frac{60}{119}$"
+      ],
+      "correctAnswer": "$\\frac{120}{119}$",
+      "solution": {
+        "formulaSetup": "In Quadrant 3, $\\sin\\theta < 0$, $\\cos\\theta < 0$, $\\tan\\theta > 0$. Use $\\tan(2\\theta) = \\frac{2\\tan\\theta}{1 - \\tan^2\\theta}$.",
+        "steps": [
+          "In Q3: $\\sin\\theta = -\\sqrt{1 - (-5/13)^2} = -\\frac{12}{13}$.",
+          "$\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{-12/13}{-5/13} = +\\frac{12}{5}$.",
+          "Compute $\\tan(2\\theta) = \\frac{2(12/5)}{1 - (12/5)^2} = \\frac{24/5}{1 - 144/25} = \\frac{24/5}{-119/25}$.",
+          "Multiply by 25: $\\frac{120}{-119} = -\\frac{120}{119}$? Wait! Let's check: $2\\theta \\in (2\\pi, 3\\pi)$. In Quadrant 2 of the second revolution, tangent is negative! So $\\tan(2\\theta) = -\\frac{120}{119}$!",
+          "Yes, $1 - \\frac{144}{25} = -\\frac{119}{25}$, so $\\tan(2\\theta) = -\\frac{120}{119}$."
+        ],
+        "finalAnswer": "$-\\frac{120}{119}$",
+        "commonTrap": "Assuming that because $\\tan\\theta > 0$, $\\tan(2\\theta)$ must also be positive, missing the negative denominator $1 - \\tan^2\\theta < 0$."
+      }
+    },
+    {
+      "id": "m10-q13",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "Express $f(x) = 8\\cos^2 x - 3$ in terms of $\\cos(2x)$.",
+      "options": [
+        "$4\\cos(2x) + 1$",
+        "$4\\cos(2x) - 1$",
+        "$8\\cos(2x) + 5$",
+        "$4\\cos(2x) + 5$"
+      ],
+      "correctAnswer": "$4\\cos(2x) + 1$",
+      "solution": {
+        "formulaSetup": "Double angle identity: $\\cos(2x) = 2\\cos^2 x - 1 \\implies \\cos^2 x = \\frac{1 + \\cos(2x)}{2}$.",
+        "steps": [
+          "Substitute $\\cos^2 x$: $8\\left(\\frac{1 + \\cos(2x)}{2}\\right) - 3$",
+          "Multiply: $4(1 + \\cos(2x)) - 3$",
+          "Expand: $4 + 4\\cos(2x) - 3 = 4\\cos(2x) + 1$"
+        ],
+        "finalAnswer": "$4\\cos(2x) + 1$",
+        "commonTrap": "Forgetting to divide by 2 when substituting for $\\cos^2 x$."
+      }
+    },
+    {
+      "id": "m10-q14",
+      "topicId": "math-topic-10",
+      "tier": 2,
+      "questionText": "Find the smallest positive value of $\\theta$ (in radians) for which $\\sin\\theta + \\cos\\theta = 1$.",
+      "options": [
+        "$\\frac{\\pi}{2}$",
+        "$\\frac{\\pi}{4}$",
+        "$0$",
+        "$\\pi$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{2}$",
+      "solution": {
+        "formulaSetup": "Express as $\\sqrt{2}\\sin\\left(\\theta + \\frac{\\pi}{4}\\right) = 1 \\implies \\sin\\left(\\theta + \\frac{\\pi}{4}\\right) = \\frac{1}{\\sqrt{2}}$.",
+        "steps": [
+          "Argument $\\theta + \\frac{\\pi}{4}$ can be $\\frac{\\pi}{4}$ or $\\frac{3\\pi}{4}$.",
+          "If $\\theta + \\frac{\\pi}{4} = \\frac{\\pi}{4} \\implies \\theta = 0$ (not strictly positive, $\\theta > 0$).",
+          "If $\\theta + \\frac{\\pi}{4} = \\frac{3\\pi}{4} \\implies \\theta = \\frac{3\\pi}{4} - \\frac{\\pi}{4} = \\frac{2\\pi}{4} = \\frac{\\pi}{2}$.",
+          "Thus, the smallest POSITIVE value is $\\frac{\\pi}{2}$."
+        ],
+        "finalAnswer": "$\\frac{\\pi}{2}$",
+        "commonTrap": "Selecting $\\theta = 0$ which is non-negative but NOT positive."
+      }
+    },
+    {
+      "id": "m10-q15",
+      "topicId": "math-topic-10",
+      "tier": 3,
+      "questionText": "Prove that $\\cos(3x) = 4\\cos^3 x - 3\\cos x$. What is the first expansion step using compound angle identities?",
+      "options": [
+        "$\\cos(2x + x) = \\cos(2x)\\cos x - \\sin(2x)\\sin x$",
+        "$\\cos(2x + x) = \\cos(2x)\\cos x + \\sin(2x)\\sin x$",
+        "$\\cos(3x) = 3\\cos x$",
+        "$\\cos(3x) = \\cos^3 x - 3\\sin^2 x$"
+      ],
+      "correctAnswer": "$\\cos(2x + x) = \\cos(2x)\\cos x - \\sin(2x)\\sin x$",
+      "solution": {
+        "formulaSetup": "Write $3x = 2x + x$ and apply $\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B$.",
+        "steps": [
+          "Step 1: $\\cos(2x + x) = \\cos(2x)\\cos x - \\sin(2x)\\sin x$",
+          "Step 2: Substitute $\\cos(2x) = 2\\cos^2 x - 1$ and $\\sin(2x) = 2\\sin x\\cos x$:",
+          "$(2\\cos^2 x - 1)\\cos x - (2\\sin x\\cos x)\\sin x$",
+          "Step 3: Expand: $2\\cos^3 x - \\cos x - 2\\sin^2 x\\cos x$",
+          "Step 4: Substitute $\\sin^2 x = 1 - \\cos^2 x$: $2\\cos^3 x - \\cos x - 2(1 - \\cos^2 x)\\cos x$",
+          "Step 5: $2\\cos^3 x - \\cos x - 2\\cos x + 2\\cos^3 x = 4\\cos^3 x - 3\\cos x$."
+        ],
+        "finalAnswer": "$\\cos(2x + x) = \\cos(2x)\\cos x - \\sin(2x)\\sin x$",
+        "commonTrap": "Using $+$ instead of $-$ in the cosine addition formula."
+      }
+    },
+    {
+      "id": "m10-q16",
+      "topicId": "math-topic-10",
+      "tier": 3,
+      "questionText": "Given that $\\tan x = t$, express $\\sin(2x) + \\cos(2x)$ as a rational function of $t$.",
+      "options": [
+        "$\\frac{1 + 2t - t^2}{1 + t^2}$",
+        "$\\frac{2t + 1}{1 + t^2}$",
+        "$\\frac{1 - 2t + t^2}{1 + t^2}$",
+        "$\\frac{2t - t^2}{1 + t^2}$"
+      ],
+      "correctAnswer": "$\\frac{1 + 2t - t^2}{1 + t^2}$",
+      "solution": {
+        "formulaSetup": "$t$-formulae: $\\sin(2x) = \\frac{2t}{1 + t^2}$, $\\cos(2x) = \\frac{1 - t^2}{1 + t^2}$.",
+        "steps": [
+          "State identities in terms of $t = \\tan x$:",
+          "$\\sin(2x) = \\frac{2\\tan x}{\\sec^2 x} = \\frac{2t}{1 + t^2}$",
+          "$\\cos(2x) = \\frac{1 - \\tan^2 x}{\\sec^2 x} = \\frac{1 - t^2}{1 + t^2}$",
+          "Add expressions: $\\frac{2t}{1 + t^2} + \\frac{1 - t^2}{1 + t^2} = \\frac{1 + 2t - t^2}{1 + t^2}$"
+        ],
+        "finalAnswer": "$\\frac{1 + 2t - t^2}{1 + t^2}$",
+        "commonTrap": "Sign error in numerator: writing $t^2 - 1$ instead of $1 - t^2$."
+      }
+    },
+    {
+      "id": "m10-q17",
+      "topicId": "math-topic-10",
+      "tier": 3,
+      "questionText": "Find the exact value of $\\tan 15^\\circ$ in the form $a - \\sqrt{b}$.",
+      "options": [
+        "$2 - \\sqrt{3}$",
+        "$2 - \\sqrt{2}$",
+        "$\\sqrt{3} - 1$",
+        "$3 - \\sqrt{3}$"
+      ],
+      "correctAnswer": "$2 - \\sqrt{3}$",
+      "solution": {
+        "formulaSetup": "$\\tan(45^\\circ - 30^\\circ) = \\frac{\\tan 45^\\circ - \\tan 30^\\circ}{1 + \\tan 45^\\circ\\tan 30^\\circ}$",
+        "steps": [
+          "Substitute $\\tan 45^\\circ = 1$ and $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$:",
+          "$\\tan 15^\\circ = \\frac{1 - 1/\\sqrt{3}}{1 + 1/\\sqrt{3}} = \\frac{\\sqrt{3} - 1}{\\sqrt{3} + 1}$",
+          "Rationalise denominator by multiplying by $(\\sqrt{3} - 1)$:",
+          "$\\frac{(\\sqrt{3} - 1)^2}{(\\sqrt{3} + 1)(\\sqrt{3} - 1)} = \\frac{3 - 2\\sqrt{3} + 1}{3 - 1} = \\frac{4 - 2\\sqrt{3}}{2} = 2 - \\sqrt{3}$"
+        ],
+        "finalAnswer": "$2 - \\sqrt{3}$",
+        "commonTrap": "Failing to rationalise the surd denominator completely."
+      }
+    },
+    {
+      "id": "m10-q18",
+      "topicId": "math-topic-10",
+      "tier": 3,
+      "questionText": "Find the range of the function $g(\\theta) = 3\\sin(2\\theta) - 4\\cos(2\\theta) + 7$.",
+      "options": [
+        "$[2, 12]$",
+        "$[0, 14]$",
+        "$[-5, 5]$",
+        "$[3, 11]$"
+      ],
+      "correctAnswer": "$[2, 12]$",
+      "solution": {
+        "formulaSetup": "Express $3\\sin(2\\theta) - 4\\cos(2\\theta)$ as $R\\sin(2\\theta - \\alpha)$ where $R = \\sqrt{3^2 + (-4)^2} = 5$.",
+        "steps": [
+          "Compute amplitude: $R = \\sqrt{9 + 16} = 5$.",
+          "Therefore, $-5 \\le 3\\sin(2\\theta) - 4\\cos(2\\theta) \\le 5$.",
+          "Add vertical shift $+7$:",
+          "Minimum $= 7 - 5 = 2$.",
+          "Maximum $= 7 + 5 = 12$.",
+          "Range is $[2, 12]$."
+        ],
+        "finalAnswer": "$[2, 12]$",
+        "commonTrap": "Using $2\\theta$ to scale the amplitude by 2, which affects period but NOT amplitude."
+      }
+    },
+    {
+      "id": "m10-q19",
+      "topicId": "math-topic-10",
+      "tier": 3,
+      "questionText": "If $\\sin\\alpha + \\sin\\beta = a$ and $\\cos\\alpha + \\cos\\beta = b$, express $\\cos(\\alpha - \\beta)$ in terms of $a$ and $b$.",
+      "options": [
+        "$\\frac{a^2 + b^2 - 2}{2}$",
+        "$\\frac{a^2 + b^2}{2}$",
+        "$a^2 + b^2 - 1$",
+        "$\\frac{a^2 - b^2 + 2}{2}$"
+      ],
+      "correctAnswer": "$\\frac{a^2 + b^2 - 2}{2}$",
+      "solution": {
+        "formulaSetup": "Square both equations and add: $(\\sin\\alpha + \\sin\\beta)^2 + (\\cos\\alpha + \\cos\\beta)^2 = a^2 + b^2$.",
+        "steps": [
+          "Expand equation 1: $\\sin^2\\alpha + 2\\sin\\alpha\\sin\\beta + \\sin^2\\beta = a^2$",
+          "Expand equation 2: $\\cos^2\\alpha + 2\\cos\\alpha\\cos\\beta + \\cos^2\\beta = b^2$",
+          "Add both equations:",
+          "$(\\sin^2\\alpha + \\cos^2\\alpha) + (\\sin^2\\beta + \\cos^2\\beta) + 2(\\cos\\alpha\\cos\\beta + \\sin\\alpha\\sin\\beta) = a^2 + b^2$",
+          "$1 + 1 + 2\\cos(\\alpha - \\beta) = a^2 + b^2$",
+          "$2 + 2\\cos(\\alpha - \\beta) = a^2 + b^2$",
+          "Isolate $\\cos(\\alpha - \\beta)$: $\\cos(\\alpha - \\beta) = \\frac{a^2 + b^2 - 2}{2}$"
+        ],
+        "finalAnswer": "$\\frac{a^2 + b^2 - 2}{2}$",
+        "commonTrap": "Forgetting the sum of the two Pythagorean identities $1 + 1 = 2$, omitting the $-2$."
+      }
+    },
+    {
+      "id": "m10-q20",
+      "topicId": "math-topic-10",
+      "tier": 3,
+      "questionText": "Solve the equation $\\sin(3x) = \\sin x$ for $0 \\le x \\le \\pi$.",
+      "options": [
+        "$0, \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\pi$",
+        "$0, \\frac{\\pi}{2}, \\pi$",
+        "$\\frac{\\pi}{4}, \\frac{3\\pi}{4}$ only",
+        "$0, \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\pi$"
+      ],
+      "correctAnswer": "$0, \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\pi$",
+      "solution": {
+        "formulaSetup": "Rearrange: $\\sin(3x) - \\sin x = 0$. Apply sum-to-product formula or expand $\\sin(3x) = 3\\sin x - 4\\sin^3 x$.",
+        "steps": [
+          "Using identity: $3\\sin x - 4\\sin^3 x - \\sin x = 0$",
+          "Simplify: $2\\sin x - 4\\sin^3 x = 0$",
+          "Factorise: $2\\sin x(1 - 2\\sin^2 x) = 0$",
+          "Notice that $1 - 2\\sin^2 x = \\cos(2x)$, so: $2\\sin x\\cos(2x) = 0$",
+          "Case 1: $\\sin x = 0 \\implies x = 0, \\pi$",
+          "Case 2: $\\cos(2x) = 0$ for $0 \\le 2x \\le 2\\pi$:",
+          "$2x = \\frac{\\pi}{2}, \\frac{3\\pi}{2} \\implies x = \\frac{\\pi}{4}, \\frac{3\\pi}{4}$",
+          "Combined solutions in $[0, \\pi]$: $0, \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\pi$"
+        ],
+        "finalAnswer": "$0, \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\pi$",
+        "commonTrap": "Writing $3x = x \\implies 2x = 0 \\implies x = 0$ only, ignoring the supplementary condition $3x = \\pi - x$."
+      }
+    }
+  ]
+}

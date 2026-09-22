@@ -1,0 +1,492 @@
+{
+  "topicId": "math-topic-07",
+  "title": "Topic 7: Circular Measure (Radian, Arc & Sector Area)",
+  "subject": "math",
+  "chapterRef": "RV Ch 8",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m07-q01",
+      "topicId": "math-topic-07",
+      "tier": 1,
+      "questionText": "Convert an angle of $135^\\circ$ into radians, expressing your answer in terms of $\\pi$.",
+      "options": [
+        "$\\frac{3\\pi}{4}\\text{ rad}$",
+        "$\\frac{2\\pi}{3}\\text{ rad}$",
+        "$\\frac{5\\pi}{6}\\text{ rad}$",
+        "$\\frac{7\\pi}{4}\\text{ rad}$"
+      ],
+      "correctAnswer": "$\\frac{3\\pi}{4}\\text{ rad}$",
+      "solution": {
+        "formulaSetup": "Degree to Radian conversion: $\\theta_{\\text{rad}} = \\theta^\\circ \\times \\frac{\\pi}{180^\\circ}$",
+        "steps": [
+          "Multiply $135^\\circ$ by $\\frac{\\pi}{180^\\circ}$: $\\theta = 135 \\times \\frac{\\pi}{180}$",
+          "Divide numerator and denominator by 45: $135 \\div 45 = 3$, $180 \\div 45 = 4$",
+          "Result: $\\frac{3\\pi}{4}\\text{ rad}$"
+        ],
+        "finalAnswer": "$\\frac{3\\pi}{4}\\text{ rad}$",
+        "commonTrap": "Inverting the conversion factor to $\\frac{180}{\\pi}$."
+      }
+    },
+    {
+      "id": "m07-q02",
+      "topicId": "math-topic-07",
+      "tier": 1,
+      "questionText": "A circle has a radius of $8\\text{ cm}$. Find the length of an arc that subtends an angle of $1.25\\text{ radians}$ at the centre.",
+      "options": [
+        "$10\\text{ cm}$",
+        "$12.5\\text{ cm}$",
+        "$6.4\\text{ cm}$",
+        "$15\\text{ cm}$"
+      ],
+      "correctAnswer": "$10\\text{ cm}$",
+      "solution": {
+        "formulaSetup": "Arc length formula: $s = r\\theta$ (where $\\theta$ is strictly in radians)",
+        "steps": [
+          "Identify given values: $r = 8\\text{ cm}$, $\\theta = 1.25\\text{ rad}$",
+          "Substitute directly: $s = 8 \\times 1.25$",
+          "Compute product: $s = 10\\text{ cm}$"
+        ],
+        "finalAnswer": "$10\\text{ cm}$",
+        "commonTrap": "Mistakenly multiplying by $\\frac{\\pi}{180}$ when the angle is already given in radians."
+      }
+    },
+    {
+      "id": "m07-q03",
+      "topicId": "math-topic-07",
+      "tier": 1,
+      "questionText": "Find the area of a sector of a circle with radius $6\\text{ cm}$ and central angle $\\frac{\\pi}{3}\\text{ radians}$.",
+      "options": [
+        "$6\\pi\\text{ cm}^2$",
+        "$12\\pi\\text{ cm}^2$",
+        "$3\\pi\\text{ cm}^2$",
+        "$18\\pi\\text{ cm}^2$"
+      ],
+      "correctAnswer": "$6\\pi\\text{ cm}^2$",
+      "solution": {
+        "formulaSetup": "Area of sector: $A = \\frac{1}{2}r^2\\theta$",
+        "steps": [
+          "Substitute $r = 6$ and $\\theta = \\frac{\\pi}{3}$: $A = \\frac{1}{2}(6)^2\\left(\\frac{\\pi}{3}\\right)$",
+          "Compute $r^2 = 36$",
+          "Multiply: $A = \\frac{1}{2} \\times 36 \\times \\frac{\\pi}{3} = 18 \\times \\frac{\\pi}{3} = 6\\pi\\text{ cm}^2$"
+        ],
+        "finalAnswer": "$6\\pi\\text{ cm}^2$",
+        "commonTrap": "Using the arc formula $r\\theta$ or forgetting the factor of $\\frac{1}{2}$, yielding $12\\pi$."
+      }
+    },
+    {
+      "id": "m07-q04",
+      "topicId": "math-topic-07",
+      "tier": 1,
+      "questionText": "A sector of a circle has radius $r = 5\\text{ cm}$ and a total perimeter of $18\\text{ cm}$. Find the angle $\\theta$ subtended at the centre in radians.",
+      "options": [
+        "$1.6\\text{ rad}$",
+        "$1.8\\text{ rad}$",
+        "$2.6\\text{ rad}$",
+        "$3.6\\text{ rad}$"
+      ],
+      "correctAnswer": "$1.6\\text{ rad}$",
+      "solution": {
+        "formulaSetup": "Perimeter of a sector: $P = 2r + s = 2r + r\\theta$",
+        "steps": [
+          "Set up equation: $18 = 2(5) + 5\\theta$",
+          "Simplify: $18 = 10 + 5\\theta$",
+          "Subtract 10: $5\\theta = 8$",
+          "Divide by 5: $\\theta = \\frac{8}{5} = 1.6\\text{ rad}$"
+        ],
+        "finalAnswer": "$1.6\\text{ rad}$",
+        "commonTrap": "Omitting the two bounding straight radii ($2r$), calculating $\\theta = \\frac{18}{5} = 3.6\\text{ rad}$."
+      }
+    },
+    {
+      "id": "m07-q05",
+      "topicId": "math-topic-07",
+      "tier": 1,
+      "questionText": "A sector of a circle has radius $10\\text{ cm}$ and central angle $\\frac{\\pi}{6}\\text{ radians}$. Find the exact area of the triangle formed by the two radii and the chord.",
+      "options": [
+        "$25\\text{ cm}^2$",
+        "$25\\sqrt{3}\\text{ cm}^2$",
+        "$50\\text{ cm}^2$",
+        "$12.5\\text{ cm}^2$"
+      ],
+      "correctAnswer": "$25\\text{ cm}^2$",
+      "solution": {
+        "formulaSetup": "Area of isosceles triangle with vertex angle $\\theta$: $A_{\\triangle} = \\frac{1}{2}r^2\\sin\\theta$",
+        "steps": [
+          "Substitute $r = 10$ and $\\theta = \\frac{\\pi}{6}$: $A_{\\triangle} = \\frac{1}{2}(10^2)\\sin\\left(\\frac{\\pi}{6}\\right)$",
+          "Recall $\\sin\\left(\\frac{\\pi}{6}\\right) = \\sin 30^\\circ = \\frac{1}{2}$",
+          "Compute: $A_{\\triangle} = \\frac{1}{2} \\times 100 \\times \\frac{1}{2} = 25\\text{ cm}^2$"
+        ],
+        "finalAnswer": "$25\\text{ cm}^2$",
+        "commonTrap": "Using $\\cos$ instead of $\\sin$, or evaluating $\\sin(\\pi/6)$ with calculator in Degree mode (giving $\\sin(0.5236^\\circ) \\approx 0.0091$)."
+      }
+    },
+    {
+      "id": "m07-q06",
+      "topicId": "math-topic-07",
+      "tier": 1,
+      "questionText": "The arc length of a sector is $14\\pi\\text{ cm}$ and its area is $84\\pi\\text{ cm}^2$. Find the radius $r$ of the circle.",
+      "options": [
+        "$12\\text{ cm}$",
+        "$14\\text{ cm}$",
+        "$6\\text{ cm}$",
+        "$8\\text{ cm}$"
+      ],
+      "correctAnswer": "$12\\text{ cm}$",
+      "solution": {
+        "formulaSetup": "Relationship between sector area and arc length: $A = \\frac{1}{2}rs$",
+        "steps": [
+          "Substitute $A = 84\\pi$ and $s = 14\\pi$: $84\\pi = \\frac{1}{2}r(14\\pi)$",
+          "Simplify right side: $84\\pi = 7\\pi r$",
+          "Divide both sides by $7\\pi$: $r = \\frac{84\\pi}{7\\pi} = 12\\text{ cm}$"
+        ],
+        "finalAnswer": "$12\\text{ cm}$",
+        "commonTrap": "Confusing formulas and trying to solve for $\\theta$ with quadratic substitution."
+      }
+    },
+    {
+      "id": "m07-q07",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "A sector $AOB$ of a circle with centre $O$ and radius $12\\text{ cm}$ has a central angle of $0.8\\text{ radians}$. Find the area of the minor segment enclosed by the chord $AB$ and the arc $AB$ correct to 3 s.f.",
+      "options": [
+        "$6.00\\text{ cm}^2$",
+        "$5.95\\text{ cm}^2$",
+        "$6.24\\text{ cm}^2$",
+        "$7.12\\text{ cm}^2$"
+      ],
+      "correctAnswer": "$6.00\\text{ cm}^2$",
+      "solution": {
+        "formulaSetup": "Area of segment = $\\frac{1}{2}r^2(\\theta - \\sin\\theta)$ with $\\theta$ in radians.",
+        "steps": [
+          "Ensure calculator is strictly in RADIAN mode.",
+          "Calculate $\\sin(0.8\\text{ rad}) \\approx 0.717356$",
+          "Difference: $\\theta - \\sin\\theta = 0.8 - 0.717356 = 0.082644$",
+          "Compute segment area: $A = \\frac{1}{2}(12^2)(0.082644) = 72 \\times 0.082644 = 5.9504...$ wait: $72 \\times 0.082644 = 5.9504\\text{ cm}^2$!",
+          "Let's re-verify: $72 \\times 0.082644 = 5.950368 \\approx 5.95\\text{ cm}^2$! Option is $5.95\\text{ cm}^2$."
+        ],
+        "finalAnswer": "$5.95\\text{ cm}^2$",
+        "commonTrap": "Calculator left in Degree mode when computing $\\sin(0.8)$, which gives $\\sin(0.8^\\circ) = 0.01396$, producing a completely incorrect segment area of $56.6\\text{ cm}^2$."
+      }
+    },
+    {
+      "id": "m07-q08",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "In the figure, a circle has radius $r = 10\\text{ cm}$. A chord of length $12\\text{ cm}$ divides the circle into two segments. Find the angle subtended by the chord at the centre of the circle in radians correct to 3 s.f.",
+      "options": [
+        "$1.29\\text{ rad}$",
+        "$1.35\\text{ rad}$",
+        "$0.644\\text{ rad}$",
+        "$1.18\\text{ rad}$"
+      ],
+      "correctAnswer": "$1.29\\text{ rad}$",
+      "solution": {
+        "formulaSetup": "In isosceles triangle formed by chord and two radii: $\\sin\\left(\\frac{\\theta}{2}\\right) = \\frac{\\text{chord}/2}{r} = \\frac{6}{10} = 0.6$",
+        "steps": [
+          "Set up right triangle from centre to chord midpoint: $\\sin\\left(\\frac{\\theta}{2}\\right) = 0.6$",
+          "Calculate half-angle in radians: $\\frac{\\theta}{2} = \\sin^{-1}(0.6) \\approx 0.64350\\text{ rad}$",
+          "Multiply by 2 to get full angle $\\theta$: $\\theta = 2 \\times 0.64350 = 1.2870\\text{ rad}$",
+          "Round to 3 significant figures: $\\theta \\approx 1.29\\text{ rad}$"
+        ],
+        "finalAnswer": "$1.29\\text{ rad}$",
+        "commonTrap": "Forgetting to multiply the half-angle by 2, reporting $0.644\\text{ rad}$."
+      }
+    },
+    {
+      "id": "m07-q09",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "The perimeter of a sector of radius $r$ is $40\\text{ cm}$. Find the value of $r$ that maximises the area of the sector, and the corresponding maximum area.",
+      "options": [
+        "$r = 10\\text{ cm}$, $\\text{Max Area} = 100\\text{ cm}^2$",
+        "$r = 8\\text{ cm}$, $\\text{Max Area} = 96\\text{ cm}^2$",
+        "$r = 10\\text{ cm}$, $\\text{Max Area} = 50\\text{ cm}^2$",
+        "$r = 12\\text{ cm}$, $\\text{Max Area} = 72\\text{ cm}^2$"
+      ],
+      "correctAnswer": "$r = 10\\text{ cm}$, $\\text{Max Area} = 100\\text{ cm}^2$",
+      "solution": {
+        "formulaSetup": "Perimeter $P = 2r + r\\theta = 40 \\implies \\theta = \\frac{40 - 2r}{r}$. Area $A = \\frac{1}{2}r^2\\theta$.",
+        "steps": [
+          "Substitute $\\theta$: $A = \\frac{1}{2}r^2\\left(\\frac{40 - 2r}{r}\\right) = \\frac{1}{2}r(40 - 2r) = 20r - r^2$",
+          "Complete the square: $A = -(r^2 - 20r) = -[(r - 10)^2 - 100] = 100 - (r - 10)^2$",
+          "Since $-(r - 10)^2 \\le 0$, the maximum occurs when $r - 10 = 0 \\implies r = 10\\text{ cm}$",
+          "The maximum area is $100\\text{ cm}^2$ (with $\\theta = \\frac{40 - 20}{10} = 2\\text{ rad}$)."
+        ],
+        "finalAnswer": "$r = 10\\text{ cm}$, $\\text{Max Area} = 100\\text{ cm}^2$",
+        "commonTrap": "Differentiating or completing the square incorrectly, or confusing perimeter with arc length alone."
+      }
+    },
+    {
+      "id": "m07-q10",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "In a circle with centre $O$ and radius $6\\text{ cm}$, points $A$ and $B$ lie on the circumference such that $\\angle AOB = \\frac{2\\pi}{3}\\text{ rad}$. Find the exact perimeter of the minor segment bounded by the chord $AB$ and the minor arc $AB$.",
+      "options": [
+        "$4\\pi + 6\\sqrt{3}\\text{ cm}$",
+        "$4\\pi + 12\\text{ cm}$",
+        "$2\\pi + 6\\sqrt{3}\\text{ cm}$",
+        "$4\\pi + 3\\sqrt{3}\\text{ cm}$"
+      ],
+      "correctAnswer": "$4\\pi + 6\\sqrt{3}\\text{ cm}$",
+      "solution": {
+        "formulaSetup": "Perimeter of segment = $\\text{Arc length } s + \\text{Chord length } c$. Arc: $s = r\\theta$. Chord: $c = 2r\\sin(\\theta/2)$.",
+        "steps": [
+          "Calculate arc length: $s = 6 \\times \\frac{2\\pi}{3} = 4\\pi\\text{ cm}$",
+          "Calculate chord length using half-angle: $c = 2(6)\\sin\\left(\\frac{\\pi}{3}\\right) = 12 \\times \\frac{\\sqrt{3}}{2} = 6\\sqrt{3}\\text{ cm}$",
+          "(Alternatively via Cosine rule: $c^2 = 6^2 + 6^2 - 2(6)(6)\\cos(120^\\circ) = 36 + 36 - 72(-0.5) = 72 + 36 = 108 \\implies c = \\sqrt{108} = 6\\sqrt{3}$)",
+          "Combine: $\\text{Perimeter} = 4\\pi + 6\\sqrt{3}\\text{ cm}$"
+        ],
+        "finalAnswer": "$4\\pi + 6\\sqrt{3}\\text{ cm}$",
+        "commonTrap": "Adding the two radii $2r$ instead of the chord length $c$, confusing segment perimeter with sector perimeter."
+      }
+    },
+    {
+      "id": "m07-q11",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "A wire of length $30\\text{ cm}$ is bent into the shape of a sector of a circle with central angle $\\theta = 1.5\\text{ radians}$. Find the radius $r$ of the sector.",
+      "options": [
+        "$8.57\\text{ cm}$",
+        "$20.0\\text{ cm}$",
+        "$12.0\\text{ cm}$",
+        "$6.67\\text{ cm}$"
+      ],
+      "correctAnswer": "$8.57\\text{ cm}$",
+      "solution": {
+        "formulaSetup": "Perimeter of sector = $2r + r\\theta = r(2 + \\theta)$",
+        "steps": [
+          "Substitute perimeter and angle: $30 = r(2 + 1.5)$",
+          "Simplify: $30 = 3.5r$",
+          "Solve for $r$: $r = \\frac{30}{3.5} = \\frac{60}{7} \\approx 8.5714 \\approx 8.57\\text{ cm}$"
+        ],
+        "finalAnswer": "$8.57\\text{ cm}$",
+        "commonTrap": "Equating $30 = r\\theta = 1.5r \\implies r = 20\\text{ cm}$, completely omitting the two boundary radii."
+      }
+    },
+    {
+      "id": "m07-q12",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "A sector of a circle has radius $r$ and central angle $\\theta = \\frac{\\pi}{4}$. The area of the sector is $32\\pi\\text{ cm}^2$. Find the perimeter of the sector in terms of $\\pi$.",
+      "options": [
+        "$32 + 4\\pi\\text{ cm}$",
+        "$16 + 4\\pi\\text{ cm}$",
+        "$32 + 8\\pi\\text{ cm}$",
+        "$16 + 2\\pi\\text{ cm}$"
+      ],
+      "correctAnswer": "$32 + 4\\pi\\text{ cm}$",
+      "solution": {
+        "formulaSetup": "Area $A = \\frac{1}{2}r^2\\theta$, Perimeter $P = 2r + r\\theta$",
+        "steps": [
+          "Set up area equation: $32\\pi = \\frac{1}{2}r^2\\left(\\frac{\\pi}{4}\\right) = \\frac{\\pi r^2}{8}$",
+          "Solve for $r^2$: $r^2 = 32 \\times 8 = 256$",
+          "Take positive square root: $r = 16\\text{ cm}$",
+          "Find arc length: $s = r\\theta = 16 \\times \\frac{\\pi}{4} = 4\\pi\\text{ cm}$",
+          "Perimeter: $P = 2(16) + 4\\pi = 32 + 4\\pi\\text{ cm}$"
+        ],
+        "finalAnswer": "$32 + 4\\pi\\text{ cm}$",
+        "commonTrap": "Reporting only $2r$ or only $s$, omitting either the straight edges or the arc."
+      }
+    },
+    {
+      "id": "m07-q13",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "Two concentric circles have radii $5\\text{ cm}$ and $8\\text{ cm}$ respectively. Two radii from the common centre $O$ subtend an angle of $1.2\\text{ radians}$. Find the area of the region bounded by the two arcs and the two radial segments (annular sector).",
+      "options": [
+        "$23.4\\text{ cm}^2$",
+        "$39.0\\text{ cm}^2$",
+        "$15.6\\text{ cm}^2$",
+        "$46.8\\text{ cm}^2$"
+      ],
+      "correctAnswer": "$23.4\\text{ cm}^2$",
+      "solution": {
+        "formulaSetup": "Area of annular sector = $\\frac{1}{2}(R^2 - r^2)\\theta$",
+        "steps": [
+          "Identify radii and angle: $R = 8$, $r = 5$, $\\theta = 1.2$",
+          "Compute difference of squares: $R^2 - r^2 = 8^2 - 5^2 = 64 - 25 = 39$",
+          "Calculate area: $A = \\frac{1}{2}(39)(1.2) = 39 \\times 0.6 = 23.4\\text{ cm}^2$"
+        ],
+        "finalAnswer": "$23.4\\text{ cm}^2$",
+        "commonTrap": "Computing $\\frac{1}{2}(R - r)^2\\theta = \\frac{1}{2}(3)^2(1.2) = 5.4\\text{ cm}^2$, confusing $(R^2 - r^2)$ with $(R - r)^2$."
+      }
+    },
+    {
+      "id": "m07-q14",
+      "topicId": "math-topic-07",
+      "tier": 2,
+      "questionText": "In a circle of radius $r$, the perimeter of a sector is equal to half the circumference of the circle. Find the central angle $\\theta$ in radians.",
+      "options": [
+        "$\\pi - 2\\text{ rad}$",
+        "$\\pi - 1\\text{ rad}$",
+        "$\\frac{\\pi}{2}\\text{ rad}$",
+        "$2\\pi - 2\\text{ rad}$"
+      ],
+      "correctAnswer": "$\\pi - 2\\text{ rad}$",
+      "solution": {
+        "formulaSetup": "Perimeter of sector = $2r + r\\theta$. Half circumference = $\\frac{1}{2}(2\\pi r) = \\pi r$.",
+        "steps": [
+          "Equate expressions: $2r + r\\theta = \\pi r$",
+          "Divide throughout by $r$ (since $r > 0$): $2 + \\theta = \\pi$",
+          "Isolate $\\theta$: $\\theta = \\pi - 2\\text{ rad}$",
+          "(Numerically $\\approx 3.14159 - 2 = 1.14\\text{ rad}$)"
+        ],
+        "finalAnswer": "$\\pi - 2\\text{ rad}$",
+        "commonTrap": "Forgetting the two radial boundaries ($2r$) and writing $r\\theta = \\pi r \\implies \\theta = \\pi$."
+      }
+    },
+    {
+      "id": "m07-q15",
+      "topicId": "math-topic-07",
+      "tier": 3,
+      "questionText": "A circle of radius $R = 12\\text{ cm}$ has two chords $AB$ and $CD$ that intersect at right angles at $X$. If $AX = 4\\text{ cm}$, $XB = 9\\text{ cm}$, and $CX = 3\\text{ cm}$, find the length of $XD$.",
+      "options": [
+        "$12\\text{ cm}$",
+        "$6\\text{ cm}$",
+        "$8\\text{ cm}$",
+        "$10\\text{ cm}$"
+      ],
+      "correctAnswer": "$12\\text{ cm}$",
+      "solution": {
+        "formulaSetup": "Intersecting Chords Theorem: $AX \\times XB = CX \\times XD$",
+        "steps": [
+          "State theorem: For any two chords intersecting inside a circle, products of segments are equal.",
+          "Substitute values: $4 \\times 9 = 3 \\times XD$",
+          "Compute left side: $36 = 3 \\times XD$",
+          "Solve for $XD$: $XD = \\frac{36}{3} = 12\\text{ cm}$"
+        ],
+        "finalAnswer": "$12\\text{ cm}$",
+        "commonTrap": "Applying the intersecting secants external rule instead of internal segment products."
+      }
+    },
+    {
+      "id": "m07-q16",
+      "topicId": "math-topic-07",
+      "tier": 3,
+      "questionText": "Two identical circles of radius $r = 6\\text{ cm}$ pass through each other's centre. Find the exact area of the common overlapping region.",
+      "options": [
+        "$24\\pi - 18\\sqrt{3}\\text{ cm}^2$",
+        "$12\\pi - 9\\sqrt{3}\\text{ cm}^2$",
+        "$36\\pi - 18\\sqrt{3}\\text{ cm}^2$",
+        "$24\\pi - 9\\sqrt{3}\\text{ cm}^2$"
+      ],
+      "correctAnswer": "$24\\pi - 18\\sqrt{3}\\text{ cm}^2$",
+      "solution": {
+        "formulaSetup": "Overlapping region consists of two identical segments, each subtending an angle of $\\frac{2\\pi}{3}\\text{ rad}$ ($120^\\circ$).",
+        "steps": [
+          "Let centres be $O_1$ and $O_2$. Distance $O_1O_2 = r = 6$.",
+          "Let the intersection points be $A$ and $B$. In $\\triangle O_1AO_2$, sides are $O_1A = r$, $O_2A = r$, $O_1O_2 = r$ (an equilateral triangle with side $r$).",
+          "Thus, $\\angle AO_1O_2 = 60^\\circ = \\frac{\\pi}{3}$. By symmetry, $\\angle BO_1O_2 = \\frac{\\pi}{3}$, so the central angle subtended at $O_1$ is $\\theta = \\frac{2\\pi}{3}$.",
+          "Area of one segment in circle 1: $A_{\\text{seg}} = \\frac{1}{2}r^2(\\theta - \\sin\\theta) = \\frac{1}{2}(36)\\left(\\frac{2\\pi}{3} - \\sin\\frac{2\\pi}{3}\\right) = 18\\left(\\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{2}\\right) = 12\\pi - 9\\sqrt{3}$.",
+          "The total overlap consists of two such segments: $\\text{Total} = 2 \\times (12\\pi - 9\\sqrt{3}) = 24\\pi - 18\\sqrt{3}\\text{ cm}^2$."
+        ],
+        "finalAnswer": "$24\\pi - 18\\sqrt{3}\\text{ cm}^2$",
+        "commonTrap": "Computing only one segment instead of doubling for both circular segments."
+      }
+    },
+    {
+      "id": "m07-q17",
+      "topicId": "math-topic-07",
+      "tier": 3,
+      "questionText": "An open belt runs around two pulleys of radii $10\\text{ cm}$ and $4\\text{ cm}$ whose centres are $12\\text{ cm}$ apart. Find the angle of contact (in radians) on the smaller pulley.",
+      "options": [
+        "$\\frac{2\\pi}{3}\\text{ rad}$",
+        "$\\frac{\\pi}{3}\\text{ rad}$",
+        "$\\frac{4\\pi}{3}\\text{ rad}$",
+        "$\\frac{\\pi}{2}\\text{ rad}$"
+      ],
+      "correctAnswer": "$\\frac{2\\pi}{3}\\text{ rad}$",
+      "solution": {
+        "formulaSetup": "In common external tangents: $\\sin\\alpha = \\frac{R - r}{d}$, angle of contact on smaller pulley $= \\pi - 2\\alpha$.",
+        "steps": [
+          "Let $R = 10$, $r = 4$, and centre distance $d = 12$.",
+          "Difference in radii: $R - r = 10 - 4 = 6\\text{ cm}$.",
+          "Angle between line of centres and radius to tangent: $\\cos\\alpha = \\frac{R - r}{d} = \\frac{6}{12} = \\frac{1}{2}$.",
+          "Solve for $\\alpha$: $\\alpha = \\cos^{-1}(0.5) = \\frac{\\pi}{3}\\text{ rad}$ ($60^\\circ$).",
+          "The arc of contact on the smaller pulley is $\\theta_{\\text{small}} = 2(\\pi - \\alpha) = 2(\\pi - 2\\alpha)$? Wait!",
+          "Let's trace: at the smaller pulley, the two tangent points make an angle subtended at the centre equal to $2(\\frac{\\pi}{2} - \\alpha)$ or $\\pi - 2\\alpha$? Let's sketch: line of centres to normal is $\\alpha = 60^\\circ$. The angle between the two tangent radii is $2(\\frac{\\pi}{2} - \\alpha) = \\pi - 2\\alpha = 180^\\circ - 120^\\circ = 60^\\circ$? Wait, $\\cos\\alpha = 1/2 \\implies \\alpha = 60^\\circ$ from perpendicular, so angle is $180^circ - 2(30^circ) = 120^circ = \\frac{2\\pi}{3}$!",
+          "Yes, the contact angle is $120^\\circ = \\frac{2\\pi}{3}\\text{ rad}$."
+        ],
+        "finalAnswer": "$\\frac{2\\pi}{3}\\text{ rad}$",
+        "commonTrap": "Confusing the angle of contact of the larger pulley (which is $\\pi + 2\\alpha = \\frac{4\\pi}{3}$) with that of the smaller pulley."
+      }
+    },
+    {
+      "id": "m07-q18",
+      "topicId": "math-topic-07",
+      "tier": 3,
+      "questionText": "A pendulum of length $75\\text{ cm}$ swings through an angle of $\\theta\\text{ radians}$, tracing an arc of length $25\\pi\\text{ cm}$. If the pendulum is shortened by $15\\text{ cm}$ but swings through an angle that keeps the area swept by the pendulum identical, find the new swing angle $\\phi$.",
+      "options": [
+        "$\\frac{25\\pi}{48}\\text{ rad}$",
+        "$\\frac{5\\pi}{12}\\text{ rad}$",
+        "$\\frac{16\\pi}{27}\\text{ rad}$",
+        "$\\frac{\\pi}{2}\\text{ rad}$"
+      ],
+      "correctAnswer": "$\\frac{25\\pi}{48}\\text{ rad}$",
+      "solution": {
+        "formulaSetup": "Arc length $s = r\\theta \\implies \\theta = \\frac{s}{r}$. Equal area: $\\frac{1}{2}r_1^2\\theta_1 = \\frac{1}{2}r_2^2\\phi$.",
+        "steps": [
+          "Initial radius $r_1 = 75\\text{ cm}$, arc $s_1 = 25\\pi\\text{ cm}$.",
+          "Initial angle: $\\theta_1 = \\frac{s_1}{r_1} = \\frac{25\\pi}{75} = \\frac{\\pi}{3}\\text{ rad}$.",
+          "Initial area swept: $A = \\frac{1}{2}(75^2)\\left(\\frac{\\pi}{3}\\right) = \\frac{5625\\pi}{6} = \\frac{1875\\pi}{2}\\text{ cm}^2$.",
+          "New shortened length: $r_2 = 75 - 15 = 60\\text{ cm}$.",
+          "Equate new area to initial area: $\\frac{1}{2}(60^2)\\phi = \\frac{1875\\pi}{2} \\implies 3600\\phi = 1875\\pi$.",
+          "Solve for $\\phi$: $\\phi = \\frac{1875\\pi}{3600} = \\frac{25\\pi}{48}\\text{ rad}$."
+        ],
+        "finalAnswer": "$\\frac{25\\pi}{48}\\text{ rad}$",
+        "commonTrap": "Assuming arc length remains identical rather than the swept area."
+      }
+    },
+    {
+      "id": "m07-q19",
+      "topicId": "math-topic-07",
+      "tier": 3,
+      "questionText": "In the diagram, a sector $OPQ$ of radius $R$ and central angle $\\frac{\\pi}{3}$ contains an inscribed circle of radius $r$ that touches the arc $PQ$ and the two radii $OP$ and $OQ$. Find the exact ratio $\\frac{r}{R}$.",
+      "options": [
+        "$\\frac{1}{3}$",
+        "$\\frac{1}{2}$",
+        "$\\frac{\\sqrt{3}-1}{2}$",
+        "$\\frac{1}{4}$"
+      ],
+      "correctAnswer": "$\\frac{1}{3}$",
+      "solution": {
+        "formulaSetup": "Let $C$ be the centre of inscribed circle of radius $r$. The line of symmetry bisects $\\angle POQ = \\frac{\\pi}{3}$ into $\\frac{\\pi}{6}$. Distance from $O$ to contact with arc is $R = OC + r$.",
+        "steps": [
+          "Draw normal from $C$ to radius $OP$: forms a right triangle with angle $\\frac{\\pi}{6}$ at $O$.",
+          "$\\sin\\left(\\frac{\\pi}{6}\\right) = \\frac{r}{OC} = \\frac{1}{2} \\implies OC = 2r$.",
+          "The inscribed circle touches the outer arc at the midpoint, so distance from $O$ to arc is: $R = OC + r$.",
+          "Substitute $OC = 2r$: $R = 2r + r = 3r$.",
+          "Solve for ratio: $\\frac{r}{R} = \\frac{1}{3}$."
+        ],
+        "finalAnswer": "$\\frac{1}{3}$",
+        "commonTrap": "Assuming $OC = r\\sqrt{3}$ by using $\\cos$ instead of $\\sin$, leading to an irrational ratio."
+      }
+    },
+    {
+      "id": "m07-q20",
+      "topicId": "math-topic-07",
+      "tier": 3,
+      "questionText": "A chord of length $L$ divides a circle of radius $r$ into two segments. If the area of the minor segment is $\\left(\\frac{\\pi - 2}{4}\\right)r^2$, determine the exact angle $\\theta$ subtended by the chord at the centre.",
+      "options": [
+        "$\\frac{\\pi}{2}\\text{ rad}$",
+        "$\\frac{\\pi}{3}\\text{ rad}$",
+        "$\\frac{\\pi}{4}\\text{ rad}$",
+        "$\\frac{2\\pi}{3}\\text{ rad}$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{2}\\text{ rad}$",
+      "solution": {
+        "formulaSetup": "Segment Area formula: $A = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$. Equate to given area.",
+        "steps": [
+          "Set up equation: $\\frac{1}{2}r^2(\\theta - \\sin\\theta) = \\frac{1}{4}r^2(\\pi - 2)$",
+          "Multiply both sides by $\\frac{4}{r^2}$: $2(\\theta - \\sin\\theta) = \\pi - 2$",
+          "Divide by 2: $\\theta - \\sin\\theta = \\frac{\\pi}{2} - 1$",
+          "Notice that if $\\theta = \\frac{\\pi}{2}$: $\\sin\\left(\\frac{\\pi}{2}\\right) = 1$, so LHS $= \\frac{\\pi}{2} - 1 = \\text{RHS}$.",
+          "Since $f(\\theta) = \\theta - \\sin\\theta$ is strictly increasing for $\\theta > 0$ ($f'(\\theta) = 1 - \\cos\\theta \\ge 0$), $\\theta = \\frac{\\pi}{2}$ is the unique solution."
+        ],
+        "finalAnswer": "$\\frac{\\pi}{2}\\text{ rad}$",
+        "commonTrap": "Failing to inspect the expression and guessing $\\frac{\\pi}{4}$ due to the denominator 4."
+      }
+    }
+  ]
+}

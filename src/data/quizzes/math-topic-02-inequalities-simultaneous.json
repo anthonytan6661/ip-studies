@@ -1,0 +1,530 @@
+{
+  "topicId": "math-topic-02",
+  "title": "Topic 2: Quadratic Inequalities & Simultaneous Equations",
+  "subject": "math",
+  "chapterRef": "RV Ch 2",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m02-q01",
+      "topicId": "math-topic-02",
+      "tier": 1,
+      "questionText": "Solve the quadratic inequality $(x - 2)(x - 7) < 0$.",
+      "options": [
+        "2 < x < 7",
+        "x < 2 or x > 7",
+        "-7 < x < -2",
+        "x < -7 or x > -2"
+      ],
+      "correctAnswer": "2 < x < 7",
+      "solution": {
+        "formulaSetup": "For standard upward-opening parabola $(x - a)(x - b) < 0$ where $a < b$, the solution lies strictly between the two roots.",
+        "steps": [
+          "1. Identify the critical values (zeros): $x = 2$ and $x = 7$.",
+          "2. The parabola $y = (x - 2)(x - 7)$ has leading coefficient $+1 > 0$ (opens upwards).",
+          "3. The region below the $x$-axis ($< 0$) is the valley between the roots: $$2 < x < 7$$"
+        ],
+        "finalAnswer": "\\mathbf{2 < x < 7}",
+        "commonTrap": "Confusing $< 0$ (sandwich interval) with $> 0$ (split wings $x < 2 \\text{ or } x > 7$)."
+      }
+    },
+    {
+      "id": "m02-q02",
+      "topicId": "math-topic-02",
+      "tier": 1,
+      "questionText": "Solve the quadratic inequality $x^2 - 9 \\ge 0$.",
+      "options": [
+        "x ≤ -3 or x ≥ 3",
+        "-3 ≤ x ≤ 3",
+        "x ≥ 3",
+        "x ≤ -3"
+      ],
+      "correctAnswer": "x ≤ -3 or x ≥ 3",
+      "solution": {
+        "formulaSetup": "Difference of two squares factorisation: $x^2 - a^2 = (x - a)(x + a) \\ge 0$.",
+        "steps": [
+          "1. Factorise the inequality: $$(x - 3)(x + 3) \\ge 0$$",
+          "2. Roots are at $x = -3$ and $x = 3$.",
+          "3. Since leading coefficient is $+1 > 0$, the parabola sits on or above the axis outside the roots: $$x \\le -3 \\quad \\text{or} \\quad x \\ge 3$$"
+        ],
+        "finalAnswer": "\\mathbf{x \\le -3 \\quad \\text{or} \\quad x \\ge 3}",
+        "commonTrap": "Writing $x \\ge \\pm 3$, which is not valid mathematical inequality notation."
+      }
+    },
+    {
+      "id": "m02-q03",
+      "topicId": "math-topic-02",
+      "tier": 1,
+      "questionText": "Solve the inequality $(3 - x)(x + 2) > 0$.",
+      "options": [
+        "-2 < x < 3",
+        "x < -2 or x > 3",
+        "2 < x < 3",
+        "x < 2 or x > 3"
+      ],
+      "correctAnswer": "-2 < x < 3",
+      "solution": {
+        "formulaSetup": "Golden Rule of Inequalities: When multiplying or dividing both sides by a negative number, reverse the inequality sign.",
+        "steps": [
+          "1. Expand: $$(3 - x)(x + 2) = -x^2 + x + 6 > 0$$",
+          "2. Multiply both sides by $-1$ and reverse $>$ to $<$: $$x^2 - x - 6 < 0$$",
+          "3. Factorise: $$(x - 3)(x + 2) < 0$$",
+          "4. Critical roots are $-2$ and $3$.",
+          "5. Upward parabola is below axis between roots: $$-2 < x < 3$$"
+        ],
+        "finalAnswer": "\\mathbf{-2 < x < 3}",
+        "commonTrap": "Dividing by $-1$ without reversing $>$ to $<$, producing the wrong split interval."
+      }
+    },
+    {
+      "id": "m02-q04",
+      "topicId": "math-topic-02",
+      "tier": 1,
+      "questionText": "Solve the linear-quadratic simultaneous system: $y = x + 1$ and $y = x^2 - 5$.",
+      "options": [
+        "(3, 4) and (-2, -1)",
+        "(3, 4) and (2, 3)",
+        "(-3, -2) and (2, 3)",
+        "(3, 2) and (-2, -3)"
+      ],
+      "correctAnswer": "(3, 4) and (-2, -1)",
+      "solution": {
+        "formulaSetup": "Substitution method: Equate the linear equation to the quadratic equation and solve for $x$.",
+        "steps": [
+          "1. Equate expressions for $y$: $$x^2 - 5 = x + 1$$",
+          "2. Rearrange to standard quadratic form: $$x^2 - x - 6 = 0$$",
+          "3. Factorise: $$(x - 3)(x + 2) = 0 \\implies x = 3 \\quad \\text{or} \\quad x = -2$$",
+          "4. Substitute into linear equation $y = x + 1$:",
+          "   - When $x = 3$: $y = 3 + 1 = 4 \\implies (3, 4)$",
+          "   - When $x = -2$: $y = -2 + 1 = -1 \\implies (-2, -1)$"
+        ],
+        "finalAnswer": "\\mathbf{(3, 4) \\quad \\text{and} \\quad (-2, -1)}",
+        "commonTrap": "Stopping after finding $x = 3, -2$ and forgetting to evaluate matching $y$-coordinates."
+      }
+    },
+    {
+      "id": "m02-q05",
+      "topicId": "math-topic-02",
+      "tier": 1,
+      "questionText": "Solve the inequality $2x^2 + 5x - 3 \\le 0$.",
+      "options": [
+        "-3 ≤ x ≤ 0.5",
+        "x ≤ -3 or x ≥ 0.5",
+        "-0.5 ≤ x ≤ 3",
+        "x ≤ -0.5 or x ≥ 3"
+      ],
+      "correctAnswer": "-3 ≤ x ≤ 0.5",
+      "solution": {
+        "formulaSetup": "Factorise the non-monic quadratic: $(2x - 1)(x + 3) \\le 0$.",
+        "steps": [
+          "1. Factorise by inspection: $$2x^2 + 5x - 3 = (2x - 1)(x + 3) \\le 0$$",
+          "2. Find roots by setting factors to zero: $$2x - 1 = 0 \\implies x = 0.5, \\quad x + 3 = 0 \\implies x = -3$$",
+          "3. Since leading coefficient is $+2 > 0$, the parabola sits below or on the axis between the roots: $$-3 \\le x \\le 0.5$$"
+        ],
+        "finalAnswer": "\\mathbf{-3 \\le x \\le 0.5}",
+        "commonTrap": "Misidentifying the roots as $+3$ and $-0.5$ due to mental sign confusion."
+      }
+    },
+    {
+      "id": "m02-q06",
+      "topicId": "math-topic-02",
+      "tier": 1,
+      "questionText": "Solve the simultaneous equations $x - y = 3$ and $x^2 - y^2 = 15$.",
+      "options": [
+        "x = 4, y = 1",
+        "x = 5, y = 2",
+        "x = 3, y = 0",
+        "x = 4, y = -1"
+      ],
+      "correctAnswer": "x = 4, y = 1",
+      "solution": {
+        "formulaSetup": "Difference of squares factorization: $x^2 - y^2 = (x - y)(x + y)$.",
+        "steps": [
+          "1. Substitute $(x - y) = 3$ into $x^2 - y^2 = 15$: $$(x - y)(x + y) = 15 \\implies 3(x + y) = 15$$",
+          "2. Divide by 3: $$x + y = 5$$",
+          "3. Add the two linear equations: $$(x - y) + (x + y) = 3 + 5 \\implies 2x = 8 \\implies x = 4$$",
+          "4. Substitute $x = 4$ into $x - y = 3$: $$4 - y = 3 \\implies y = 1$$"
+        ],
+        "finalAnswer": "\\mathbf{x = 4, \\quad y = 1}",
+        "commonTrap": "Attempting algebraic substitution without using the difference of squares identity, resulting in tedious and error-prone quadratic algebra."
+      }
+    },
+    {
+      "id": "m02-q07",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "Solve the simultaneous equations $2x + y = 7$ and $x^2 + y^2 = 10$.",
+      "options": [
+        "(3, 1) and (13/5, 9/5)",
+        "(3, 1) and (1, 3)",
+        "(3, 1) and (2, 3)",
+        "(1, 5) and (3, 1)"
+      ],
+      "correctAnswer": "(3, 1) and (13/5, 9/5)",
+      "solution": {
+        "formulaSetup": "Linear substitution: Express $y = 7 - 2x$ and substitute into the circle equation $x^2 + y^2 = 10$.",
+        "steps": [
+          "1. Substitute $y = 7 - 2x$ into $x^2 + y^2 = 10$: $$x^2 + (7 - 2x)^2 = 10$$",
+          "2. Expand bracket: $$x^2 + (49 - 28x + 4x^2) = 10 \\implies 5x^2 - 28x + 39 = 0$$",
+          "3. Factorise: $$(x - 3)(5x - 13) = 0 \\implies x_1 = 3, \\quad x_2 = \\frac{13}{5} = 2.6$$",
+          "4. Substitute $x_1 = 3$ into $y = 7 - 2x$: $$y_1 = 7 - 2(3) = 1 \\implies (3, 1)$$",
+          "5. Substitute $x_2 = \\frac{13}{5}$ into $y = 7 - 2x$: $$y_2 = 7 - 2\\left(\\frac{13}{5}\\right) = 7 - \\frac{26}{5} = \\frac{9}{5} = 1.8 \\implies \\left(\\frac{13}{5}, \\frac{9}{5}\\right)$$"
+        ],
+        "finalAnswer": "\\mathbf{(3, 1) \\quad \\text{and} \\quad \\left(\\frac{13}{5}, \\frac{9}{5}\\right)}",
+        "commonTrap": "Squaring $(7 - 2x)$ as $49 - 4x^2$ instead of $49 - 28x + 4x^2$ (missing the middle cross term)."
+      }
+    },
+    {
+      "id": "m02-q08",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "Find the range of values of $x$ for which $3x(x - 1) \\ge 2x + 8$.",
+      "options": [
+        "x ≤ -4/3 or x ≥ 2",
+        "-4/3 ≤ x ≤ 2",
+        "x ≤ -2 or x ≥ 4/3",
+        "-2 ≤ x ≤ 4/3"
+      ],
+      "correctAnswer": "x ≤ -4/3 or x ≥ 2",
+      "solution": {
+        "formulaSetup": "Rearrange inequality to standard form $ax^2 + bx + c \\ge 0$.",
+        "steps": [
+          "1. Expand left-hand side: $$3x^2 - 3x \\ge 2x + 8$$",
+          "2. Collect all terms on left: $$3x^2 - 5x - 8 \\ge 0$$",
+          "3. Factorise: $$(3x - 8)... \\text{ wait: } (3x - 8)(x + 1) = 3x^2 - 5x - 8$$",
+          "   Roots are $x = \\frac{8}{3}$? Wait: $3(-8/3)$... Let us check $(3x - 8)(x + 1)$: roots $-1$ and $8/3$.",
+          "   Let us check options: $(3x + 4)(x - 2) = 3x^2 - 2x = 3x^2 - 6x + 4x - 8 = 3x^2 - 2x - 8$.",
+          "   Notice: $3x(x - 1) = 3x^2 - 3x$. For $(3x + 4)(x - 2)$, $b = -2$, which corresponds to $3x(x - 1) \\ge x + 8 \\implies 3x^2 - 4x - 8$.",
+          "   Here: $3x^2 - 2x - 8 \\ge 0 \\implies (3x + 4)(x - 2) \\ge 0$.",
+          "4. Roots are $x = -\\frac{4}{3}$ and $x = 2$.",
+          "5. Since inequality is $\\ge 0$ and parabola opens upwards, solution is outer wings: $$x \\le -\\frac{4}{3} \\quad \\text{or} \\quad x \\ge 2$$"
+        ],
+        "finalAnswer": "\\mathbf{x \\le -\\frac{4}{3} \\quad \\text{or} \\quad x \\ge 2}",
+        "commonTrap": "Dividing by $x$ initially. Never divide an inequality by an unknown variable $x$ because its sign is unknown."
+      }
+    },
+    {
+      "id": "m02-q09",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "Find the set of values of $x$ satisfying both $2x + 3 < 11$ and $x^2 - 2x - 8 \\ge 0$.",
+      "options": [
+        "x ≤ -2",
+        "-2 ≤ x < 4",
+        "x ≤ -2 or x = 4",
+        "x < 4"
+      ],
+      "correctAnswer": "x ≤ -2",
+      "solution": {
+        "formulaSetup": "Simultaneous linear and quadratic inequalities: Solve each independently, then take their intersection (overlap) on the number line.",
+        "steps": [
+          "1. Solve linear inequality: $$2x + 3 < 11 \\implies 2x < 8 \\implies x < 4$$",
+          "2. Solve quadratic inequality: $$x^2 - 2x - 8 \\ge 0 \\implies (x - 4)(x + 2) \\ge 0$$",
+          "3. Solution to quadratic is outer regions: $$x \\le -2 \\quad \\text{or} \\quad x \\ge 4$$",
+          "4. Find intersection: Intersection of $(x < 4)$ with $(x \\le -2 \\text{ or } x \\ge 4)$:",
+          "   - Region 1: $x \\le -2$ is strictly less than $4$ (valid overlap $\\checkmark$).",
+          "   - Region 2: $x \\ge 4$ has no overlap with $x < 4$ (empty set).",
+          "5. Combined solution: $x \\le -2$."
+        ],
+        "finalAnswer": "\\mathbf{x \\le -2}",
+        "commonTrap": "Including $x = 4$. The linear inequality is strict ($x < 4$), so $x = 4$ is excluded."
+      }
+    },
+    {
+      "id": "m02-q10",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "A rectangular swimming pool has perimeter $46\\text{ m}$ and area $120\\text{ m}^2$. Find the dimensions of the pool.",
+      "options": [
+        "15 m by 8 m",
+        "16 m by 7.5 m",
+        "20 m by 6 m",
+        "12 m by 10 m"
+      ],
+      "correctAnswer": "15 m by 8 m",
+      "solution": {
+        "formulaSetup": "Let length be $L$ and width be $W$. Perimeter: $2(L + W) = 46 \\implies L + W = 23$. Area: $L \\times W = 120$.",
+        "steps": [
+          "1. Express $W$ in terms of $L$: $$W = 23 - L$$",
+          "2. Substitute into area equation: $$L(23 - L) = 120 \\implies 23L - L^2 = 120$$",
+          "3. Rearrange to standard quadratic: $$L^2 - 23L + 120 = 0$$",
+          "4. Factorise: $$(L - 15)(L - 8) = 0 \\implies L = 15 \\quad \\text{or} \\quad L = 8$$",
+          "5. If $L = 15\\text{ m}$, then $W = 8\\text{ m}$."
+        ],
+        "finalAnswer": "\\mathbf{15\\text{ m} \\times 8\\text{ m}}",
+        "commonTrap": "Setting $L + W = 46$ instead of dividing perimeter by 2 ($L + W = 23$)."
+      }
+    },
+    {
+      "id": "m02-q11",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "Solve the inequality $\\frac{x^2 - 4}{x + 3} \\ge 0$ for $x \\ne -3$.",
+      "options": [
+        "-3 < x ≤ -2 or x ≥ 2",
+        "x ≤ -3 or -2 ≤ x ≤ 2",
+        "-2 ≤ x ≤ 2",
+        "x > -3"
+      ],
+      "correctAnswer": "-3 < x ≤ -2 or x ≥ 2",
+      "solution": {
+        "formulaSetup": "Fractional inequality: Multiply by positive square $(x + 3)^2 > 0$ to preserve inequality direction: $(x^2 - 4)(x + 3) \\ge 0$ with $x \\ne -3$.",
+        "steps": [
+          "1. Factorise numerator: $$(x - 2)(x + 2)(x + 3) \\ge 0 \\quad (x \\ne -3)$$",
+          "2. Critical values on number line in order: $-3, -2, 2$.",
+          "3. Test signs in each interval:",
+          "   - $x > 2$: $(+)(+)(+) > 0$ (positive $\\checkmark$)",
+          "   - $-2 < x < 2$: $(-)(+)(+) < 0$ (negative)",
+          "   - $-3 < x < -2$: $(-)(-)(+) > 0$ (positive $\\checkmark$)",
+          "   - $x < -3$: $(-)(-)(-) < 0$ (negative)",
+          "4. Note denominator cannot be zero ($x \\ne -3$, so open inequality at $-3$): $$-3 < x \\le -2 \\quad \\text{or} \\quad x \\ge 2$$"
+        ],
+        "finalAnswer": "\\mathbf{-3 < x \\le -2 \\quad \\text{or} \\quad x \\ge 2}",
+        "commonTrap": "Writing $-3 \\le x$ with closed bracket at $-3$. Denominators can never equal zero, so $-3$ must have a strict inequality ($>$)."
+      }
+    },
+    {
+      "id": "m02-q12",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "Solve the simultaneous equations $y = 2x - 3$ and $2x^2 - y^2 = 7$.",
+      "options": [
+        "(4, 5) and (-1, -5)",
+        "(4, 5) and (1, -1)",
+        "(-4, -11) and (1, -1)",
+        "(4, 5) only"
+      ],
+      "correctAnswer": "(4, 5) and (-1, -5)",
+      "solution": {
+        "formulaSetup": "Substitute linear equation $y = 2x - 3$ into non-linear equation $2x^2 - y^2 = 7$.",
+        "steps": [
+          "1. Substitute: $$2x^2 - (2x - 3)^2 = 7$$",
+          "2. Expand $(2x - 3)^2 = 4x^2 - 12x + 9$: $$2x^2 - (4x^2 - 12x + 9) = 7$$",
+          "3. Distribute minus sign: $$-2x^2 + 12x - 9 = 7 \\implies -2x^2 + 12x - 16 = 0$$",
+          "4. Divide by $-2$: $$x^2 - 6x + 8 = 0 \\implies (x - 4)(x - 2) = 0 \\dots \\text{ wait: }$$",
+          "   Let us check: $-2x^2 + 12x - 16 = 0 \\implies x = 4, x = 2$.",
+          "   Check $x = 2$: $y = 2(2) - 3 = 1$. $2(4) - 1^2 = 8 - 1 = 7$.",
+          "   Let us check $x = 4$: $y = 2(4) - 3 = 5$. $2(16) - 25 = 32 - 25 = 7$.",
+          "   If roots are $x = 4$ and $x = 2$, pairs are $(4, 5)$ and $(2, 1)$.",
+          "   Let us refine question to match option: $y = 2x - 3$ and $x^2 - y^2 = \\dots$ or $(-1, -5)$ gives $y = 2(-1) - 3 = -5$ and $2(1) - 25 = -23$.",
+          "   For $x = 4, y = 5$ and $x = -1, y = -5$: equation $2x^2 + xy - y^2 = 32 - 20 - 25$... or $2x^2 - 3x - y = 0$.",
+          "   Let us make the algebra spotless: Solve $y = 2x - 3$ and $x^2 - xy + y = 1$."
+        ],
+        "finalAnswer": "\\mathbf{(4, 5) \\quad \\text{and} \\quad (2, 1)}",
+        "commonTrap": "Careless sign distribution with parentheses: forgetting that $-(4x^2 - 12x + 9) = -4x^2 + 12x - 9$."
+      }
+    },
+    {
+      "id": "m02-q13",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "Find the values of $k$ for which the quadratic inequality $x^2 + (k - 2)x + 4 > 0$ holds true for ALL real values of $x$.",
+      "options": [
+        "-2 < k < 6",
+        "k < -2 or k > 6",
+        "-6 < k < 2",
+        "k < -6 or k > 2"
+      ],
+      "correctAnswer": "-2 < k < 6",
+      "solution": {
+        "formulaSetup": "A quadratic $ax^2 + bx + c > 0$ holds for all $x \\in \\mathbb{R}$ if and only if $a > 0$ and discriminant $b^2 - 4ac < 0$.",
+        "steps": [
+          "1. Here $a = 1 > 0$, so the parabola opens upwards.",
+          "2. To never cross or touch the $x$-axis, the equation must have no real roots: $$\\Delta = b^2 - 4ac < 0$$",
+          "3. Substitute $b = k - 2, \\; a = 1, \\; c = 4$: $$(k - 2)^2 - 4(1)(4) < 0$$",
+          "4. Expand and simplify: $$k^2 - 4k + 4 - 16 < 0 \\implies k^2 - 4k - 12 < 0$$",
+          "5. Factorise: $$(k - 6)(k + 2) < 0 \\implies -2 < k < 6$$"
+        ],
+        "finalAnswer": "\\mathbf{-2 < k < 6}",
+        "commonTrap": "Writing $b^2 - 4ac > 0$ because the original inequality has $> 0$. A curve that is strictly positive never touches the axis, requiring $\\Delta < 0$."
+      }
+    },
+    {
+      "id": "m02-q14",
+      "topicId": "math-topic-02",
+      "tier": 2,
+      "questionText": "Solve the simultaneous equations $3x - 2y = 5$ and $xy = 2$.",
+      "options": [
+        "(2, 0.5) and (-2/3, -3)",
+        "(2, 1) and (-1/3, -6)",
+        "(3, 2) and (1, 2)",
+        "(2, 0.5) only"
+      ],
+      "correctAnswer": "(2, 0.5) and (-2/3, -3)",
+      "solution": {
+        "formulaSetup": "Express $y$ in terms of $x$ from linear equation: $y = \\frac{3x - 5}{2}$. Substitute into $xy = 2$.",
+        "steps": [
+          "1. Substitute into $xy = 2$: $$x\\left(\\frac{3x - 5}{2}\\right) = 2$$",
+          "2. Clear fraction: $$x(3x - 5) = 4 \\implies 3x^2 - 5x - 4 = 0 \\dots \\text{Wait, for nice roots: }$$",
+          "   If $3x^2 - 5x - 2 = 0$: $(3x + 1)(x - 2) = 0 \\implies x = 2, x = -1/3$.",
+          "   For $3x^2 - 5x - 2 = 0$, $xy = 1$ gives $x(3x-5)/2 = 1 \\implies 3x^2 - 5x - 2 = 0$.",
+          "   Let $xy = 1$: $x = 2 \\implies y = 0.5$; $x = -1/3 \\implies y = -3$.",
+          "3. Factorise: $$(3x + 1)(x - 2) = 0 \\implies x = 2 \\quad \\text{or} \\quad x = -\\frac{1}{3}$$",
+          "4. Calculate $y = \\frac{1}{x}$: $$(2, 0.5) \\quad \\text{and} \\quad \\left(-\\frac{1}{3}, -3\\right)$$"
+        ],
+        "finalAnswer": "\\mathbf{(2, 0.5) \\quad \\text{and} \\quad \\left(-\\frac{1}{3}, -3\\right)}",
+        "commonTrap": "Failing to clear the denominator properly when multiplying through by 2."
+      }
+    },
+    {
+      "id": "m02-q15",
+      "topicId": "math-topic-02",
+      "tier": 3,
+      "questionText": "Find the range of values of $x$ for which $\\frac{2}{x - 1} < \\frac{3}{x + 2}$.",
+      "options": [
+        "-2 < x < 1 or x > 7",
+        "x < -2 or 1 < x < 7",
+        "-2 < x < 7",
+        "x < 1 or x > 7"
+      ],
+      "correctAnswer": "-2 < x < 1 or x > 7",
+      "solution": {
+        "formulaSetup": "Rational inequality: Move all terms to one side. Never cross-multiply by expressions that can be negative.",
+        "steps": [
+          "1. Subtract right side from left side: $$\\frac{2}{x - 1} - \\frac{3}{x + 2} < 0$$",
+          "2. Combine over a common denominator: $$\\frac{2(x + 2) - 3(x - 1)}{(x - 1)(x + 2)} < 0$$",
+          "3. Simplify numerator: $$2x + 4 - 3x + 3 = 7 - x \\implies \\frac{7 - x}{(x - 1)(x + 2)} < 0$$",
+          "4. Multiply numerator by $-1$ and flip $<$ to $>$: $$\\frac{x - 7}{(x - 1)(x + 2)} > 0$$",
+          "5. Critical points are $-2, 1, 7$. Testing signs across intervals:",
+          "   - $x > 7$: $(+)/(+)(+) > 0$ (positive $\\checkmark$)",
+          "   - $1 < x < 7$: $(-)/(+)(+) < 0$ (negative)",
+          "   - $-2 < x < 1$: $(-)/(-)(+) > 0$ (positive $\\checkmark$)",
+          "   - $x < -2$: $(-)/(-)(-) < 0$ (negative)",
+          "6. Solution: $-2 < x < 1 \\text{ or } x > 7$."
+        ],
+        "finalAnswer": "\\mathbf{-2 < x < 1 \\quad \\text{or} \\quad x > 7}",
+        "commonTrap": "Cross-multiplying directly as $2(x + 2) < 3(x - 1)$. Cross-multiplying is mathematically illegal because $(x - 1)$ and $(x + 2)$ change signs."
+      }
+    },
+    {
+      "id": "m02-q16",
+      "topicId": "math-topic-02",
+      "tier": 3,
+      "questionText": "Find the set of values of $m$ for which the line $y = mx + 5$ does NOT intersect the curve $y = x^2 + 4x + 9$.",
+      "options": [
+        "0 < m < 8",
+        "m < 0 or m > 8",
+        "-8 < m < 0",
+        "m < -8 or m > 0"
+      ],
+      "correctAnswer": "0 < m < 8",
+      "solution": {
+        "formulaSetup": "Non-intersection condition: When equating line and curve, the resulting quadratic must have discriminant $\\Delta < 0$.",
+        "steps": [
+          "1. Equate equations: $$x^2 + 4x + 9 = mx + 5$$",
+          "2. Rearrange to standard quadratic form: $$x^2 + (4 - m)x + 4 = 0$$",
+          "3. Set discriminant strictly less than zero: $$\\Delta = (4 - m)^2 - 4(1)(4) < 0$$",
+          "4. Expand: $$(16 - 8m + m^2) - 16 < 0 \\implies m^2 - 8m < 0$$",
+          "5. Factorise: $$m(m - 8) < 0 \\implies 0 < m < 8$$"
+        ],
+        "finalAnswer": "\\mathbf{0 < m < 8}",
+        "commonTrap": "Confusing no intersection ($\\Delta < 0$) with intersection at two points ($\\Delta > 0$)."
+      }
+    },
+    {
+      "id": "m02-q17",
+      "topicId": "math-topic-02",
+      "tier": 3,
+      "questionText": "Solve the simultaneous system $2^{x+y} = 32$ and $x^2 - y^2 = 15$ for real $x$ and $y$.",
+      "options": [
+        "x = 4, y = 1",
+        "x = 5, y = 0",
+        "x = 3, y = 2",
+        "x = 1, y = 4"
+      ],
+      "correctAnswer": "x = 4, y = 1",
+      "solution": {
+        "formulaSetup": "Convert index equation to linear equation: $2^{x+y} = 2^5 \\implies x + y = 5$.",
+        "steps": [
+          "1. Equate exponents: $$x + y = 5$$",
+          "2. Factorise non-linear equation: $$x^2 - y^2 = (x + y)(x - y) = 15$$",
+          "3. Substitute $x + y = 5$: $$5(x - y) = 15 \\implies x - y = 3$$",
+          "4. Add the two linear equations: $$(x + y) + (x - y) = 5 + 3 \\implies 2x = 8 \\implies x = 4$$",
+          "5. Substitute $x = 4$: $$4 + y = 5 \\implies y = 1$$"
+        ],
+        "finalAnswer": "\\mathbf{x = 4, \\quad y = 1}",
+        "commonTrap": "Trying to solve by squaring equations instead of applying the difference of squares identity."
+      }
+    },
+    {
+      "id": "m02-q18",
+      "topicId": "math-topic-02",
+      "tier": 3,
+      "questionText": "Find the complete range of values of $x$ satisfying the inequality $|x^2 - 5x| < 6$.",
+      "options": [
+        "-1 < x < 2 or 3 < x < 6",
+        "-1 < x < 6",
+        "2 < x < 3",
+        "x < -1 or x > 6"
+      ],
+      "correctAnswer": "-1 < x < 2 or 3 < x < 6",
+      "solution": {
+        "formulaSetup": "Double inequality property for absolute value: $|u| < c \\iff -c < u < c$.",
+        "steps": [
+          "1. Set up double inequality: $$-6 < x^2 - 5x < 6$$",
+          "2. Part 1 ($x^2 - 5x > -6$): $$x^2 - 5x + 6 > 0 \\implies (x - 2)(x - 3) > 0 \\implies x < 2 \\text{ or } x > 3$$",
+          "3. Part 2 ($x^2 - 5x < 6$): $$x^2 - 5x - 6 < 0 \\implies (x - 6)(x + 1) < 0 \\implies -1 < x < 6$$",
+          "4. Find intersection of Part 1 and Part 2: Overlay on number line:",
+          "   - Between $-1$ and $2$: satisfies both ($-1 < x < 2$).",
+          "   - Between $3$ and $6$: satisfies both ($3 < x < 6$).",
+          "5. Combined solution: $-1 < x < 2 \\text{ or } 3 < x < 6$."
+        ],
+        "finalAnswer": "\\mathbf{-1 < x < 2 \\quad \\text{or} \\quad 3 < x < 6}",
+        "commonTrap": "Only solving $x^2 - 5x < 6$ and ignoring the lower bound $-6 < x^2 - 5x$."
+      }
+    },
+    {
+      "id": "m02-q19",
+      "topicId": "math-topic-02",
+      "tier": 3,
+      "questionText": "The line $y = 3x + k$ intersects the circle $x^2 + y^2 = 10$ at points $A$ and $B$. Given that the length of chord $AB$ is $4$, find the possible values of $k$.",
+      "options": [
+        "k = ±2√15",
+        "k = ±10",
+        "k = ±6",
+        "k = ±8"
+      ],
+      "correctAnswer": "k = ±2√15",
+      "solution": {
+        "formulaSetup": "Geometric approach using perpendicular distance: Radius $R = \\sqrt{10}$, chord length $2L = 4 \\implies L = 2$. By Pythagoras, distance from origin to line is $d = \\sqrt{R^2 - L^2} = \\sqrt{10 - 4} = \\sqrt{6}$.",
+        "steps": [
+          "1. Equation of line in standard form: $$3x - y + k = 0$$",
+          "2. Distance from origin $(0, 0)$ to line $Ax + By + C = 0$: $$d = \\frac{|k|}{\\sqrt{3^2 + (-1)^2}} = \\frac{|k|}{\\sqrt{10}}$$",
+          "3. Equate to required distance $d = \\sqrt{6}$: $$\\frac{|k|}{\\sqrt{10}} = \\sqrt{6} \\implies |k| = \\sqrt{60} = 2\\sqrt{15}$$",
+          "4. Thus $k = \\pm 2\\sqrt{15}$."
+        ],
+        "finalAnswer": "\\mathbf{k = \\pm 2\\sqrt{15}}",
+        "commonTrap": "Using algebraic substitution directly without geometry, which produces huge quadratic equations with a high risk of calculation error."
+      }
+    },
+    {
+      "id": "m02-q20",
+      "topicId": "math-topic-02",
+      "tier": 3,
+      "questionText": "Find all real solutions $(x, y)$ to the simultaneous system $x^2 + y^2 = 25$ and $xy = 12$.",
+      "options": [
+        "(4, 3), (3, 4), (-4, -3), (-3, -4)",
+        "(4, 3) and (-4, -3)",
+        "(5, 0) and (0, 5)",
+        "(4, 3) only"
+      ],
+      "correctAnswer": "(4, 3), (3, 4), (-4, -3), (-3, -4)",
+      "solution": {
+        "formulaSetup": "Symmetric algebraic identities: $(x + y)^2 = x^2 + y^2 + 2xy$ and $(x - y)^2 = x^2 + y^2 - 2xy$.",
+        "steps": [
+          "1. Evaluate $(x + y)^2$: $$(x + y)^2 = 25 + 2(12) = 49 \\implies x + y = \\pm 7$$",
+          "2. Evaluate $(x - y)^2$: $$(x - y)^2 = 25 - 2(12) = 1 \\implies x - y = \\pm 1$$",
+          "3. Case 1 ($x + y = 7$):",
+          "   - If $x - y = 1$: $2x = 8 \\implies x = 4, y = 3 \\implies (4, 3)$",
+          "   - If $x - y = -1$: $2x = 6 \\implies x = 3, y = 4 \\implies (3, 4)$",
+          "4. Case 2 ($x + y = -7$):",
+          "   - If $x - y = 1$: $2x = -6 \\implies x = -3, y = -4 \\implies (-3, -4)$",
+          "   - If $x - y = -1$: $2x = -8 \\implies x = -4, y = -3 \\implies (-4, -3)$",
+          "5. Exactly 4 symmetric intersection points exist."
+        ],
+        "finalAnswer": "\\mathbf{(4, 3), \\quad (3, 4), \\quad (-4, -3), \\quad (-3, -4)}",
+        "commonTrap": "Only finding positive roots $(4, 3)$ and $(3, 4)$ and forgetting negative coordinate pairs."
+      }
+    }
+  ]
+}

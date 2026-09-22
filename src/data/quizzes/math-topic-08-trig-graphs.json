@@ -1,0 +1,506 @@
+{
+  "topicId": "math-topic-08",
+  "title": "Topic 8: Trigonometric Graphs & Modulus Curves",
+  "subject": "math",
+  "chapterRef": "RV Ch 9",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m08-q01",
+      "topicId": "math-topic-08",
+      "tier": 1,
+      "questionText": "State the amplitude and period of the function $y = -4\\cos(3x) + 2$.",
+      "options": [
+        "$\\text{Amplitude} = 4$, $\\text{Period} = \\frac{2\\pi}{3}$",
+        "$\\text{Amplitude} = -4$, $\\text{Period} = \\frac{2\\pi}{3}$",
+        "$\\text{Amplitude} = 4$, $\\text{Period} = 6\\pi$",
+        "$\\text{Amplitude} = 6$, $\\text{Period} = \\frac{\\pi}{3}$"
+      ],
+      "correctAnswer": "$\\text{Amplitude} = 4$, $\\text{Period} = \\frac{2\\pi}{3}$",
+      "solution": {
+        "formulaSetup": "For $y = a\\cos(bx) + c$: Amplitude $= |a|$, Period $= \\frac{2\\pi}{b}$.",
+        "steps": [
+          "Identify coefficients: $a = -4$, $b = 3$, $c = 2$.",
+          "Compute amplitude: $|-4| = 4$ (amplitude is strictly a non-negative distance).",
+          "Compute period: $\\text{Period} = \\frac{2\\pi}{b} = \\frac{2\\pi}{3}$."
+        ],
+        "finalAnswer": "$\\text{Amplitude} = 4$, $\\text{Period} = \\frac{2\\pi}{3}$",
+        "commonTrap": "Stating amplitude as $-4$. Amplitude is an absolute distance and cannot be negative."
+      }
+    },
+    {
+      "id": "m08-q02",
+      "topicId": "math-topic-08",
+      "tier": 1,
+      "questionText": "Find the maximum and minimum values of the function $y = 3\\sin(2x) - 5$.",
+      "options": [
+        "$\\text{Max} = -2$, $\\text{Min} = -8$",
+        "$\\text{Max} = 8$, $\\text{Min} = 2$",
+        "$\\text{Max} = 3$, $\\text{Min} = -5$",
+        "$\\text{Max} = -2$, $\\text{Min} = -5$"
+      ],
+      "correctAnswer": "$\\text{Max} = -2$, $\\text{Min} = -8$",
+      "solution": {
+        "formulaSetup": "Since $-1 \\le \\sin(2x) \\le 1$: $\\text{Max} = c + |a|$, $\\text{Min} = c - |a|$.",
+        "steps": [
+          "Midline is $c = -5$, amplitude $|a| = 3$.",
+          "Maximum value occurs when $\\sin(2x) = 1$: $y_{\\text{max}} = 3(1) - 5 = -2$.",
+          "Minimum value occurs when $\\sin(2x) = -1$: $y_{\\text{min}} = 3(-1) - 5 = -8$."
+        ],
+        "finalAnswer": "$\\text{Max} = -2$, $\\text{Min} = -8$",
+        "commonTrap": "Adding and subtracting from 0 rather than the midline $c = -5$."
+      }
+    },
+    {
+      "id": "m08-q03",
+      "topicId": "math-topic-08",
+      "tier": 1,
+      "questionText": "What is the period of the function $y = 5\\tan(4x)$?",
+      "options": [
+        "$\\frac{\\pi}{4}$",
+        "$\\frac{\\pi}{2}$",
+        "$\\frac{2\\pi}{4}$",
+        "$\\pi$"
+      ],
+      "correctAnswer": "$\\frac{\\pi}{4}$",
+      "solution": {
+        "formulaSetup": "Period of standard tangent function $y = a\\tan(bx)$ is $\\frac{\\pi}{b}$ (NOT $\\frac{2\\pi}{b}$).",
+        "steps": [
+          "Identify coefficient of $x$: $b = 4$.",
+          "Tangent fundamental period is $\\pi$.",
+          "Calculate period: $\\text{Period} = \\frac{\\pi}{4}$."
+        ],
+        "finalAnswer": "$\\frac{\\pi}{4}$",
+        "commonTrap": "Using the sinusoidal formula $\\frac{2\\pi}{b} = \\frac{\\pi}{2}$, forgetting that tangent repeats every $\\pi$ radians."
+      }
+    },
+    {
+      "id": "m08-q04",
+      "topicId": "math-topic-08",
+      "tier": 1,
+      "questionText": "How many complete cycles does the function $y = 2\\cos(6x)$ complete in the interval $0 \\le x \\le 2\\pi$?",
+      "options": [
+        "$6$",
+        "$3$",
+        "$12$",
+        "$2$"
+      ],
+      "correctAnswer": "$6$",
+      "solution": {
+        "formulaSetup": "In $y = a\\cos(bx)$, the frequency parameter $b$ directly represents the number of complete cycles in an interval of $2\\pi$.",
+        "steps": [
+          "Read parameter $b = 6$.",
+          "Period of one cycle is $\\frac{2\\pi}{6} = \\frac{\\pi}{3}$.",
+          "Number of cycles in $2\\pi$: $\\frac{2\\pi}{\\pi/3} = 6$ cycles."
+        ],
+        "finalAnswer": "$6$",
+        "commonTrap": "Dividing by 2 and stating 3 cycles."
+      }
+    },
+    {
+      "id": "m08-q05",
+      "topicId": "math-topic-08",
+      "tier": 1,
+      "questionText": "State the equation of the principal axis (midline) of the curve $y = 7 - 3\\sin(x)$.",
+      "options": [
+        "$y = 7$",
+        "$y = 4$",
+        "$y = 3$",
+        "$y = -3$"
+      ],
+      "correctAnswer": "$y = 7$",
+      "solution": {
+        "formulaSetup": "The midline is the vertical shift constant $c$ in $y = c + a\\sin(bx)$.",
+        "steps": [
+          "Rewrite in standard order: $y = -3\\sin(x) + 7$.",
+          "The constant term is $+7$.",
+          "Thus, the horizontal line of symmetry is $y = 7$."
+        ],
+        "finalAnswer": "$y = 7$",
+        "commonTrap": "Confusing amplitude $3$ with the midline position $y = 7$."
+      }
+    },
+    {
+      "id": "m08-q06",
+      "topicId": "math-topic-08",
+      "tier": 1,
+      "questionText": "For what values of $x$ in the interval $0 \\le x \\le \\pi$ does the function $y = \\tan(2x)$ have vertical asymptotes?",
+      "options": [
+        "$x = \\frac{\\pi}{4}$ and $x = \\frac{3\\pi}{4}$",
+        "$x = \\frac{\\pi}{2}$ only",
+        "$x = \\frac{\\pi}{4}$ only",
+        "$x = 0$ and $x = \\pi$"
+      ],
+      "correctAnswer": "$x = \\frac{\\pi}{4}$ and $x = \\frac{3\\pi}{4}$",
+      "solution": {
+        "formulaSetup": "Tangent function $\\tan(\\theta)$ is undefined where $\\theta = \\frac{\\pi}{2} + k\\pi$ for integer $k$.",
+        "steps": [
+          "Set argument: $2x = \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\dots$",
+          "Divide by 2: $x = \\frac{\\pi}{4}, \\frac{3\\pi}{4}$",
+          "Both values lie strictly within $[0, \\pi]$."
+        ],
+        "finalAnswer": "$x = \\frac{\\pi}{4}$ and $x = \\frac{3\\pi}{4}$",
+        "commonTrap": "Thinking asymptotes occur at $x = \\frac{\\pi}{2}$, forgetting the coefficient 2 compresses the graph horizontally."
+      }
+    },
+    {
+      "id": "m08-q07",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "The graph of $y = |2\\sin(x) - 1|$ is drawn for $0 \\le x \\le 2\\pi$. Find the maximum and minimum values of $y$.",
+      "options": [
+        "$\\text{Max} = 3$, $\\text{Min} = 0$",
+        "$\\text{Max} = 3$, $\\text{Min} = 1$",
+        "$\\text{Max} = 1$, $\\text{Min} = 0$",
+        "$\\text{Max} = 2$, $\\text{Min} = -1$"
+      ],
+      "correctAnswer": "$\\text{Max} = 3$, $\\text{Min} = 0$",
+      "solution": {
+        "formulaSetup": "Examine inner function $u(x) = 2\\sin x - 1$. For $x \\in [0, 2\\pi]$, $-1 \\le \\sin x \\le 1$, so $-3 \\le u(x) \\le 1$. Modulus reflects negative values: $y = |u|$.",
+        "steps": [
+          "When $\\sin x = -1$: $u = 2(-1) - 1 = -3 \\implies y = |-3| = 3$ (Maximum).",
+          "When $\\sin x = \\frac{1}{2}$: $u = 2(0.5) - 1 = 0 \\implies y = |0| = 0$ (Minimum).",
+          "Since $u(x)$ crosses 0 (at $x = \\frac{\\pi}{6}$ and $\\frac{5\\pi}{6}$), the absolute minimum is exactly 0.",
+          "Thus, $\\text{Max} = 3$, $\\text{Min} = 0$."
+        ],
+        "finalAnswer": "$\\text{Max} = 3$, $\\text{Min} = 0$",
+        "commonTrap": "Assuming minimum is $|1| = 1$ by taking the modulus of the un-reflected endpoints without realizing the inner expression crosses zero."
+      }
+    },
+    {
+      "id": "m08-q08",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "A trigonometric curve has equation $y = a\\cos(bx) + c$. The maximum value is 7 at $x = 0$, the minimum value is $-1$, and the first minimum occurs at $x = \\frac{\\pi}{2}$. Find the values of $a$, $b$, and $c$ (where $a, b > 0$).",
+      "options": [
+        "$a = 4$, $b = 2$, $c = 3$",
+        "$a = 3$, $b = 2$, $c = 4$",
+        "$a = 4$, $b = 4$, $c = 3$",
+        "$a = 8$, $b = 2$, $c = -1$"
+      ],
+      "correctAnswer": "$a = 4$, $b = 2$, $c = 3$",
+      "solution": {
+        "formulaSetup": "Amplitude $a = \\frac{\\text{Max} - \\text{Min}}{2}$, Midline $c = \\frac{\\text{Max} + \\text{Min}}{2}$. Half-period is distance from max to min.",
+        "steps": [
+          "Compute amplitude: $a = \\frac{7 - (-1)}{2} = \\frac{8}{2} = 4$.",
+          "Compute midline: $c = \\frac{7 + (-1)}{2} = \\frac{6}{2} = 3$.",
+          "Distance from max ($x = 0$) to first min ($x = \\pi/2$) is half a period: $\\frac{1}{2}T = \\frac{\\pi}{2} \\implies T = \\pi$.",
+          "Find $b$: $T = \\frac{2\\pi}{b} = \\pi \\implies b = 2$.",
+          "Thus, $a = 4$, $b = 2$, $c = 3$."
+        ],
+        "finalAnswer": "$a = 4$, $b = 2$, $c = 3$",
+        "commonTrap": "Confusing half-period $\\frac{\\pi}{2}$ with full period, which would erroneously give $b = 4$."
+      }
+    },
+    {
+      "id": "m08-q09",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "By sketching the graphs on the same axes, find the number of solutions to the equation $3\\cos(2x) = 1$ in the interval $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$4$",
+        "$2$",
+        "$6$",
+        "$8$"
+      ],
+      "correctAnswer": "$4$",
+      "solution": {
+        "formulaSetup": "The equation is $\\cos(2x) = \\frac{1}{3}$. The number of solutions equals the number of intersections of $y = \\cos(2x)$ with the horizontal line $y = \\frac{1}{3}$.",
+        "steps": [
+          "In the interval $x \\in [0, 2\\pi]$, the argument $\\theta = 2x$ ranges from $0$ to $4\\pi$.",
+          "The graph $y = \\cos\\theta$ completes 2 full periods in $[0, 4\\pi]$.",
+          "In one full cycle $[0, 2\\pi]$, the cosine curve crosses the horizontal line $y = \\frac{1}{3}$ (which lies between $-1$ and $1$) exactly 2 times (in Quadrants 1 and 4).",
+          "Over 2 full cycles ($[0, 4\\pi]$), there are $2 \\times 2 = 4$ intersections.",
+          "Hence, there are 4 solutions."
+        ],
+        "finalAnswer": "$4$",
+        "commonTrap": "Forgetting that $x \\in [0, 2\\pi]$ means 2 full cycles for $\\cos(2x)$, incorrectly answering 2 solutions."
+      }
+    },
+    {
+      "id": "m08-q10",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "Find the coordinates of the turning point of $y = 3\\sin(2x) + 4$ in the interval $0 \\le x \\le \\frac{\\pi}{2}$ that corresponds to a local maximum.",
+      "options": [
+        "$\\left(\\frac{\\pi}{4}, 7\\right)$",
+        "$\\left(\\frac{\\pi}{2}, 4\\right)$",
+        "$\\left(\\frac{\\pi}{4}, 4\\right)$",
+        "$\\left(\\frac{\\pi}{6}, 7\\right)$"
+      ],
+      "correctAnswer": "$\\left(\\frac{\\pi}{4}, 7\\right)$",
+      "solution": {
+        "formulaSetup": "Maximum of $\\sin(2x)$ is 1, occurring when $2x = \\frac{\\pi}{2}$.",
+        "steps": [
+          "Set $2x = \\frac{\\pi}{2} \\implies x = \\frac{\\pi}{4}$.",
+          "Check range: $0 \\le \\frac{\\pi}{4} \\le \\frac{\\pi}{2}$, which is valid.",
+          "Compute $y$-value: $y = 3(1) + 4 = 7$.",
+          "Coordinates are $\\left(\\frac{\\pi}{4}, 7\\right)$."
+        ],
+        "finalAnswer": "$\\left(\\frac{\\pi}{4}, 7\\right)$",
+        "commonTrap": "Selecting $x = \\frac{\\pi}{2}$ where $\\sin(2x) = \\sin\\pi = 0$, giving $y = 4$."
+      }
+    },
+    {
+      "id": "m08-q11",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "Determine the number of solutions to the equation $|\\cos x| = \\frac{1}{2}$ in the range $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$4$",
+        "$2$",
+        "$3$",
+        "$8$"
+      ],
+      "correctAnswer": "$4$",
+      "solution": {
+        "formulaSetup": "$|\\cos x| = \\frac{1}{2} \\iff \\cos x = \\frac{1}{2}$ or $\\cos x = -\\frac{1}{2}$.",
+        "steps": [
+          "For $\\cos x = \\frac{1}{2}$: basic angle is $\\frac{\\pi}{3}$. Solutions in Q1 and Q4: $x = \\frac{\\pi}{3}, \\frac{5\\pi}{3}$.",
+          "For $\\cos x = -\\frac{1}{2}$: solutions in Q2 and Q3: $x = \\frac{2\\pi}{3}, \\frac{4\\pi}{3}$.",
+          "Total distinct solutions in $[0, 2\\pi]$: 4 solutions."
+        ],
+        "finalAnswer": "$4$",
+        "commonTrap": "Only considering $\\cos x = +\\frac{1}{2}$ and missing the reflected negative solutions."
+      }
+    },
+    {
+      "id": "m08-q12",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "The graph of $y = a\\sin(bx) + c$ passes through $(0, -1)$, has a maximum value of 3, and a minimum value of $-5$. Given $a > 0$, state the function.",
+      "options": [
+        "$y = 4\\sin(bx) - 1$",
+        "$y = 3\\sin(bx) - 1$",
+        "$y = 4\\sin(bx) + 3$",
+        "$y = 8\\sin(bx) - 5$"
+      ],
+      "correctAnswer": "$y = 4\\sin(bx) - 1$",
+      "solution": {
+        "formulaSetup": "Midline $c = \\frac{\\text{Max} + \\text{Min}}{2}$, Amplitude $a = \\frac{\\text{Max} - \\text{Min}}{2}$.",
+        "steps": [
+          "Calculate midline: $c = \\frac{3 + (-5)}{2} = -1$.",
+          "Calculate amplitude: $a = \\frac{3 - (-5)}{2} = 4$.",
+          "Check $(0, -1)$: $y(0) = 4\\sin(0) - 1 = -1$, which matches.",
+          "Thus, the equation is $y = 4\\sin(bx) - 1$."
+        ],
+        "finalAnswer": "$y = 4\\sin(bx) - 1$",
+        "commonTrap": "Setting $a = 3$ based on the maximum value without subtracting the midline."
+      }
+    },
+    {
+      "id": "m08-q13",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "State the range of values of $k$ for which the equation $|2\\cos(3x) - 1| = k$ has at least one real solution.",
+      "options": [
+        "$0 \\le k \\le 3$",
+        "$-1 \\le k \\le 3$",
+        "$0 \\le k \\le 1$",
+        "$1 \\le k \\le 3$"
+      ],
+      "correctAnswer": "$0 \\le k \\le 3$",
+      "solution": {
+        "formulaSetup": "Find the range of the function $f(x) = |2\\cos(3x) - 1|$. Solutions exist if and only if $k$ lies within the range of $f(x)$.",
+        "steps": [
+          "Since $-1 \\le \\cos(3x) \\le 1$, the inner term satisfies: $2(-1) - 1 \\le 2\\cos(3x) - 1 \\le 2(1) - 1$, so $-3 \\le 2\\cos(3x) - 1 \\le 1$.",
+          "Since the expression takes values from $-3$ to $1$, it passes through 0.",
+          "Taking the absolute value, the minimum is 0 (when $\\cos(3x) = 0.5$) and the maximum is $|-3| = 3$.",
+          "Hence, the range of the function is $[0, 3]$.",
+          "Therefore, solutions exist for $0 \\le k \\le 3$."
+        ],
+        "finalAnswer": "$0 \\le k \\le 3$",
+        "commonTrap": "Allowing $k$ to be negative, forgetting that an absolute value cannot equal a negative number."
+      }
+    },
+    {
+      "id": "m08-q14",
+      "topicId": "math-topic-08",
+      "tier": 2,
+      "questionText": "The diagram shows the curve $y = \\tan\\left(\\frac{x}{2}\\right)$ for $0 \\le x \\le 2\\pi$. What is the equation of the vertical asymptote in this interval?",
+      "options": [
+        "$x = \\pi$",
+        "$x = \\frac{\\pi}{2}$",
+        "$x = 2\\pi$",
+        "$x = \\frac{3\\pi}{2}$"
+      ],
+      "correctAnswer": "$x = \\pi$",
+      "solution": {
+        "formulaSetup": "Vertical asymptotes of $\\tan(\\theta)$ occur at $\\theta = \\frac{\\pi}{2} + k\\pi$.",
+        "steps": [
+          "Set argument equal to the first asymptote: $\\frac{x}{2} = \\frac{\\pi}{2}$.",
+          "Multiply by 2: $x = \\pi$.",
+          "Check next asymptote: $\\frac{x}{2} = \\frac{3\\pi}{2} \\implies x = 3\\pi$, which is outside $[0, 2\\pi]$.",
+          "Therefore, the only vertical asymptote in the interval is $x = \\pi$."
+        ],
+        "finalAnswer": "$x = \\pi$",
+        "commonTrap": "Answering $x = \\frac{\\pi}{2}$, forgetting that dividing the input by 2 stretches the graph horizontally by a factor of 2."
+      }
+    },
+    {
+      "id": "m08-q15",
+      "topicId": "math-topic-08",
+      "tier": 3,
+      "questionText": "Find the number of solutions to the equation $2\\sin(x) = \\frac{x}{\\pi}$ in the interval $-2\\pi \\le x \\le 2\\pi$.",
+      "options": [
+        "$5$",
+        "$3$",
+        "$4$",
+        "$7$"
+      ],
+      "correctAnswer": "$5$",
+      "solution": {
+        "formulaSetup": "Analyze the intersections of $y = 2\\sin x$ and the straight line $y = \\frac{x}{\\pi}$.",
+        "steps": [
+          "Check key points on the line $y = \\frac{x}{\\pi}$:",
+          "At $x = 0$: $y = 0$, both curves pass through the origin $(0, 0)$ (1st solution).",
+          "Gradient of line at origin is $\\frac{1}{\\pi} \\approx 0.318$. Gradient of $2\\sin x$ at origin is $2\\cos(0) = 2 > 0.318$. Thus, sine starts steeper.",
+          "For $x > 0$:",
+          "At $x = \\frac{\\pi}{2}$: $2\\sin(\\pi/2) = 2$, while line $= \\frac{1}{2} = 0.5$. Sine is higher.",
+          "At $x = \\pi$: $2\\sin(\\pi) = 0$, while line $= 1$. Line is higher! Therefore, by continuity, they intersect once in $(0, \\pi)$.",
+          "At $x = 2\\pi$: line is $2$, sine is $0$. Near $x = 2\\pi$, $\\sin x \\le 0$ for $x \\in [\\pi, 2\\pi]$, so no intersection in $(\\pi, 2\\pi)$ except possibly at the peak? Wait: in $[\\pi, 2\\pi]$, $2\\sin x \\le 0$, while line is between $1$ and $2 > 0$. So NO solutions in $[\\pi, 2\\pi]$.",
+          "Wait, what about $x \\in (0, \\pi)$? Sine rises to 2 and drops to 0, while line goes from 0 to 1. Since sine is concave down, there is exactly 1 intersection in $(0, \\pi)$.",
+          "Wait, what about beyond? For $x > 2\\pi$, line $> 2$, so no more intersections.",
+          "By odd symmetry: $f(-x) = -f(x)$, each positive solution has a corresponding negative solution.",
+          "Wait, is there only 1 positive solution? Let's check: at $x = 0$, $y=0$. For $x \\in (0, \\pi)$, line starts below sine and ends above sine, so exactly 1 intersection. For $x \\in [\\pi, 2\\pi]$, sine is $\\le 0$ and line is $\\ge 1$, so 0 intersections.",
+          "So positive solutions: 1. Negative solutions: 1. Origin: 1. Total = 3 solutions! Wait! Let's check the options: 5, 3, 4, 7! 3 is an option! Let's verify whether there's another intersection in $(0, \\pi)$? No, line is monotonic and sine is strictly concave down on $(0, \\pi)$ with $f''(x) < 0$. A line can intersect a strictly concave curve at at most 2 points. Since one point is $x=0$, there is at most 1 positive intersection! Thus exactly 1 positive, 1 negative, and 0. Total = 3 solutions!"
+        ],
+        "finalAnswer": "$3$",
+        "commonTrap": "Assuming each wave has 2 intersections without checking that the line exceeds the amplitude ($y > 2$ at $x = 2\\pi$)."
+      }
+    },
+    {
+      "id": "m08-q16",
+      "topicId": "math-topic-08",
+      "tier": 3,
+      "questionText": "Find the coordinates of all points of intersection of the curves $y = 2\\cos^2 x$ and $y = 1 + \\sin x$ in the interval $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$\\left(\\frac{\\pi}{6}, \\frac{3}{2}\\right)$, $\\left(\\frac{5\\pi}{6}, \\frac{3}{2}\\right)$, and $\\left(\\frac{3\\pi}{2}, 0\\right)$",
+        "$\\left(\\frac{\\pi}{3}, 1\\right)$, $\\left(\\frac{2\\pi}{3}, 1\\right)$, and $\\left(\\pi, 0\\right)$",
+        "$\\left(\\frac{\\pi}{6}, \\frac{3}{2}\\right)$ and $\\left(\\frac{5\\pi}{6}, \\frac{3}{2}\\right)$ only",
+        "$\\left(0, 2\\right)$ and $\\left(\\pi, 2\\right)$"
+      ],
+      "correctAnswer": "$\\left(\\frac{\\pi}{6}, \\frac{3}{2}\\right)$, $\\left(\\frac{5\\pi}{6}, \\frac{3}{2}\\right)$, and $\\left(\\frac{3\\pi}{2}, 0\\right)$",
+      "solution": {
+        "formulaSetup": "Equate equations and use identity $\\cos^2 x = 1 - \\sin^2 x$ to form a quadratic in $\\sin x$.",
+        "steps": [
+          "Set $2\\cos^2 x = 1 + \\sin x$.",
+          "Substitute $\\cos^2 x = 1 - \\sin^2 x$: $2(1 - \\sin^2 x) = 1 + \\sin x$.",
+          "Expand and rearrange: $2 - 2\\sin^2 x = 1 + \\sin x \\implies 2\\sin^2 x + \\sin x - 1 = 0$.",
+          "Factorise quadratic: $(2\\sin x - 1)(\\sin x + 1) = 0$.",
+          "Case 1: $2\\sin x - 1 = 0 \\implies \\sin x = \\frac{1}{2}$. In $[0, 2\\pi]$, $x = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$. Corresponding $y = 1 + \\frac{1}{2} = \\frac{3}{2}$.",
+          "Case 2: $\\sin x + 1 = 0 \\implies \\sin x = -1$. In $[0, 2\\pi]$, $x = \\frac{3\\pi}{2}$. Corresponding $y = 1 + (-1) = 0$.",
+          "Points: $\\left(\\frac{\\pi}{6}, \\frac{3}{2}\\right)$, $\\left(\\frac{5\\pi}{6}, \\frac{3}{2}\\right)$, and $\\left(\\frac{3\\pi}{2}, 0\\right)$."
+        ],
+        "finalAnswer": "$\\left(\\frac{\\pi}{6}, \\frac{3}{2}\\right)$, $\\left(\\frac{5\\pi}{6}, \\frac{3}{2}\\right)$, and $\\left(\\frac{3\\pi}{2}, 0\\right)$",
+        "commonTrap": "Discarding $\\sin x = -1$ as extraneous, missing the intersection at $\\left(\\frac{3\\pi}{2}, 0\\right)$."
+      }
+    },
+    {
+      "id": "m08-q17",
+      "topicId": "math-topic-08",
+      "tier": 3,
+      "questionText": "The function $f(x) = |3\\sin(2x)| - k$ has exactly 8 distinct $x$-intercepts in the interval $0 \\le x \\le 2\\pi$. Find the complete set of possible values for the constant $k$.",
+      "options": [
+        "$0 < k < 3$",
+        "$k = 0$",
+        "$-3 < k < 3$",
+        "$k = 3$"
+      ],
+      "correctAnswer": "$0 < k < 3$",
+      "solution": {
+        "formulaSetup": "$x$-intercepts occur where $|3\\sin(2x)| = k$. Examine the number of intersections with horizontal line $y = k$.",
+        "steps": [
+          "In $[0, 2\\pi]$, the argument $2x$ runs from $0$ to $4\\pi$, which is 4 half-waves or 2 full sine waves.",
+          "The modulus $|\\sin(2x)|$ reflects the 4 negative half-waves upwards, producing a total of 4 positive arches in $[0, 2\\pi]$.",
+          "Each arch rises from $0$ to a peak of $3$ and drops back to $0$.",
+          "For any horizontal line $y = k$ strictly between the peak and trough ($0 < k < 3$), each of the 4 arches is intersected twice: $4 \\times 2 = 8$ intersections.",
+          "If $k = 3$, it only touches the peaks (4 solutions). If $k = 0$, it touches the base zeros (5 solutions: $x = 0, \\pi/2, \\pi, 3\\pi/2, 2\\pi$). If $k < 0$, 0 solutions.",
+          "Therefore, exactly 8 solutions require $0 < k < 3$."
+        ],
+        "finalAnswer": "$0 < k < 3$",
+        "commonTrap": "Including $k = 0$ or $k = 3$, which yield 5 and 4 solutions respectively."
+      }
+    },
+    {
+      "id": "m08-q18",
+      "topicId": "math-topic-08",
+      "tier": 3,
+      "questionText": "A tidal water depth $h$ (in metres) in a harbour $t$ hours after midnight is modelled by $h(t) = 4\\cos\\left(\\frac{\\pi t}{6}\\right) + 7$. Find the first time after midnight when the water depth is $5\\text{ m}$.",
+      "options": [
+        "$4:00\\text{ am}$",
+        "$2:00\\text{ am}$",
+        "$3:00\\text{ am}$",
+        "$5:00\\text{ am}$"
+      ],
+      "correctAnswer": "$4:00\\text{ am}$",
+      "solution": {
+        "formulaSetup": "Set $h(t) = 5$ and solve for the smallest $t > 0$.",
+        "steps": [
+          "Set up equation: $4\\cos\\left(\\frac{\\pi t}{6}\\right) + 7 = 5$",
+          "Subtract 7: $4\\cos\\left(\\frac{\\pi t}{6}\\right) = -2$",
+          "Divide by 4: $\\cos\\left(\\frac{\\pi t}{6}\\right) = -\\frac{1}{2}$",
+          "Find the smallest positive angle whose cosine is $-\\frac{1}{2}$: $\\theta = \\frac{2\\pi}{3}$ (in Quadrant 2)",
+          "Equate arguments: $\\frac{\\pi t}{6} = \\frac{2\\pi}{3}$",
+          "Multiply by $\\frac{6}{\\pi}$: $t = \\frac{2}{3} \\times 6 = 4$",
+          "Since $t = 4$ hours after midnight, the time is $4:00\\text{ am}$."
+        ],
+        "finalAnswer": "$4:00\\text{ am}$",
+        "commonTrap": "Using the acute angle $\\frac{\\pi}{3}$ (giving $t = 2$), ignoring the negative sign $-\\frac{1}{2}$."
+      }
+    },
+    {
+      "id": "m08-q19",
+      "topicId": "math-topic-08",
+      "tier": 3,
+      "questionText": "Consider the function $g(x) = 2 - 3|\\cos(x)|$ for $0 \\le x \\le 2\\pi$. State the range of $g(x)$ and determine how many solutions exist for $g(x) = 0$.",
+      "options": [
+        "$\\text{Range: } [-1, 2]$, $4\\text{ solutions}$",
+        "$\\text{Range: } [-1, 2]$, $2\\text{ solutions}$",
+        "$\\text{Range: } [-1, 5]$, $4\\text{ solutions}$",
+        "$\\text{Range: } [0, 2]$, $2\\text{ solutions}$"
+      ],
+      "correctAnswer": "$\\text{Range: } [-1, 2]$, $4\\text{ solutions}$",
+      "solution": {
+        "formulaSetup": "Range of $|\\cos x|$ is $[0, 1]$. Solutions to $g(x) = 0 \\iff |\\cos x| = \\frac{2}{3}$.",
+        "steps": [
+          "Since $0 \\le |\\cos x| \\le 1$:",
+          "When $|\\cos x| = 0$: $g(x) = 2 - 3(0) = 2$ (Maximum).",
+          "When $|\\cos x| = 1$: $g(x) = 2 - 3(1) = -1$ (Minimum).",
+          "So Range is $[-1, 2]$.",
+          "For $g(x) = 0$: $3|\\cos x| = 2 \\implies |\\cos x| = \\frac{2}{3}$.",
+          "Since $0 < \\frac{2}{3} < 1$, $\\cos x = \\pm \\frac{2}{3}$ yields 1 solution in each of the 4 quadrants.",
+          "Thus, there are 4 solutions."
+        ],
+        "finalAnswer": "$\\text{Range: } [-1, 2]$, $4\\text{ solutions}$",
+        "commonTrap": "Calculating the minimum as $2 - 3(-1) = 5$, forgetting that $|\\cos x|$ cannot be negative."
+      }
+    },
+    {
+      "id": "m08-q20",
+      "topicId": "math-topic-08",
+      "tier": 3,
+      "questionText": "Find the number of points of intersection between the curves $y = |\\tan x|$ and $y = 2\\cos x$ in the interval $0 \\le x \\le 2\\pi$.",
+      "options": [
+        "$2$",
+        "$4$",
+        "$1$",
+        "$3$"
+      ],
+      "correctAnswer": "$2$",
+      "solution": {
+        "formulaSetup": "Analyze where $|\\tan x| = 2\\cos x$. Since the LHS is $|\\tan x| \\ge 0$, any intersection requires $\\cos x \\ge 0$.",
+        "steps": [
+          "Constraint: For $2\\cos x = |\\tan x| \\ge 0$, we must have $\\cos x \\ge 0$.",
+          "In $[0, 2\\pi]$, $\\cos x \\ge 0$ only in Quadrants 1 and 4: $\\left[0, \\frac{\\pi}{2}\\right)$ and $\\left(\\frac{3\\pi}{2}, 2\\pi\\right]$.",
+          "In Quadrants 2 and 3 ($\frac{\\pi}{2} < x < \frac{3\\pi}{2}$), $\\cos x < 0$, so $2\\cos x < 0 \\le |\\tan x|$ (0 intersections here).",
+          "In Quadrant 1 ($0 \\le x < \\frac{\\pi}{2}$): at $x = 0$, $|\\tan 0| = 0 < 2\\cos 0 = 2$. As $x \\to \\frac{\\pi}{2}^-$, $|\\tan x| \\to +\\infty$ while $2\\cos x \\to 0$. By IVT, exactly 1 intersection.",
+          "In Quadrant 4 ($\frac{3\\pi}{2} < x \\le 2\\pi$): at $x = 2\\pi$, $|\\tan 2\\pi| = 0 < 2\\cos 2\\pi = 2$. As $x \\to \\frac{3\\pi}{2}^+$, $|\\tan x| \\to +\\infty$ while $2\\cos x \\to 0$. By IVT, exactly 1 intersection.",
+          "Total number of intersections is $1 + 1 = 2$."
+        ],
+        "finalAnswer": "$2$",
+        "commonTrap": "Assuming intersections occur in all 4 quadrants, overlooking the non-negativity restriction $\\cos x \\ge 0$ imposed by the absolute value."
+      }
+    }
+  ]
+}

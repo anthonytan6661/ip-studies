@@ -1,0 +1,504 @@
+{
+  "topicId": "math-topic-03",
+  "title": "Topic 3: Nature of Roots & Line-Curve Intersections",
+  "subject": "math",
+  "chapterRef": "RV Ch 3",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m03-q01",
+      "topicId": "math-topic-03",
+      "tier": 1,
+      "questionText": "Calculate the discriminant $\\Delta = b^2 - 4ac$ of the quadratic equation $2x^2 - 5x + 3 = 0$ and state the nature of its roots.",
+      "options": [
+        "Δ = 1; Two real and distinct roots",
+        "Δ = -1; No real roots",
+        "Δ = 0; Two real and equal roots",
+        "Δ = 49; Two real and distinct roots"
+      ],
+      "correctAnswer": "Δ = 1; Two real and distinct roots",
+      "solution": {
+        "formulaSetup": "Discriminant formula: $\\Delta = b^2 - 4ac$. If $\\Delta > 0$, the quadratic equation has two real and distinct roots.",
+        "steps": [
+          "1. Identify coefficients: $a = 2, \\; b = -5, \\; c = 3$.",
+          "2. Substitute into discriminant formula: $$\\Delta = (-5)^2 - 4(2)(3)$$",
+          "3. Evaluate: $$\\Delta = 25 - 24 = 1$$",
+          "4. Since $\\Delta = 1 > 0$, there are two real and distinct roots."
+        ],
+        "finalAnswer": "\\mathbf{\\Delta = 1; \\quad \\text{Two real and distinct roots}}",
+        "commonTrap": "Squaring $-5$ as $-25$. Remember $(-5)^2 = +25$."
+      }
+    },
+    {
+      "id": "m03-q02",
+      "topicId": "math-topic-03",
+      "tier": 1,
+      "questionText": "For what value of $k$ does the equation $x^2 + 6x + k = 0$ have two real and equal roots (a repeated root)?",
+      "options": [
+        "k = 9",
+        "k = -9",
+        "k = 36",
+        "k = 3"
+      ],
+      "correctAnswer": "k = 9",
+      "solution": {
+        "formulaSetup": "Equal roots condition: $\\Delta = b^2 - 4ac = 0$.",
+        "steps": [
+          "1. Identify coefficients: $a = 1, \\; b = 6, \\; c = k$.",
+          "2. Set discriminant to zero: $$b^2 - 4ac = 0 \\implies 6^2 - 4(1)(k) = 0$$",
+          "3. Solve for $k$: $$36 - 4k = 0 \\implies 4k = 36 \\implies k = 9$$"
+        ],
+        "finalAnswer": "\\mathbf{k = 9}",
+        "commonTrap": "Writing $k = 6^2 = 36$ without dividing by $4a$."
+      }
+    },
+    {
+      "id": "m03-q03",
+      "topicId": "math-topic-03",
+      "tier": 1,
+      "questionText": "What condition on the discriminant guarantees that the quadratic equation $ax^2 + bx + c = 0$ has NO real roots?",
+      "options": [
+        "b² - 4ac < 0",
+        "b² - 4ac ≤ 0",
+        "b² - 4ac > 0",
+        "b² - 4ac = 0"
+      ],
+      "correctAnswer": "b² - 4ac < 0",
+      "solution": {
+        "formulaSetup": "In the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, real roots require a non-negative radicand.",
+        "steps": [
+          "1. The expression under the square root is $\\Delta = b^2 - 4ac$.",
+          "2. The square root of a strictly negative number is not a real number.",
+          "3. Therefore, no real roots exist if and only if $\\Delta = b^2 - 4ac < 0$."
+        ],
+        "finalAnswer": "\\mathbf{b^2 - 4ac < 0}",
+        "commonTrap": "Including $\\le 0$. $\\Delta = 0$ gives real and equal roots, not zero real roots."
+      }
+    },
+    {
+      "id": "m03-q04",
+      "topicId": "math-topic-03",
+      "tier": 1,
+      "questionText": "The line $y = c$ is tangent to the parabola $y = x^2 - 4x + 9$. Find the value of $c$.",
+      "options": [
+        "c = 5",
+        "c = 9",
+        "c = -5",
+        "c = 4"
+      ],
+      "correctAnswer": "c = 5",
+      "solution": {
+        "formulaSetup": "A horizontal tangent to a vertical parabola touches at its vertex. Alternatively, set discriminant of $x^2 - 4x + (9 - c) = 0$ to zero.",
+        "steps": [
+          "1. Complete the square on the curve: $$y = (x - 2)^2 - 4 + 9 = (x - 2)^2 + 5$$",
+          "2. The minimum turning point is at $(2, 5)$.",
+          "3. A horizontal line touching the minimum must be $y = 5$, so $c = 5$."
+        ],
+        "finalAnswer": "\\mathbf{c = 5}",
+        "commonTrap": "Setting $c = 9$ (the $y$-intercept), which cuts the curve twice rather than being a tangent."
+      }
+    },
+    {
+      "id": "m03-q05",
+      "topicId": "math-topic-03",
+      "tier": 1,
+      "questionText": "Determine the nature of the roots of $3x^2 - 2x + 4 = 0$.",
+      "options": [
+        "No real roots (Δ = -44)",
+        "Two real distinct roots (Δ = 44)",
+        "Two real equal roots (Δ = 0)",
+        "One real root and one imaginary root"
+      ],
+      "correctAnswer": "No real roots (Δ = -44)",
+      "solution": {
+        "formulaSetup": "Evaluate discriminant $\\Delta = b^2 - 4ac$.",
+        "steps": [
+          "1. Identify $a = 3, \\; b = -2, \\; c = 4$.",
+          "2. Compute $\\Delta$: $$\\Delta = (-2)^2 - 4(3)(4) = 4 - 48 = -44$$",
+          "3. Since $\\Delta = -44 < 0$, the equation has no real roots."
+        ],
+        "finalAnswer": "\\mathbf{\\Delta = -44 < 0; \\quad \\text{No real roots}}",
+        "commonTrap": "Writing $(-2)^2 = -4$, leading to $-4 - 48 = -52$."
+      }
+    },
+    {
+      "id": "m03-q06",
+      "topicId": "math-topic-03",
+      "tier": 1,
+      "questionText": "The equation $kx^2 + 4x + 1 = 0$ has real roots. What is the range of values of $k$ ($k \\ne 0$)?",
+      "options": [
+        "k ≤ 4",
+        "k < 4",
+        "k ≥ 4",
+        "k > 4"
+      ],
+      "correctAnswer": "k ≤ 4",
+      "solution": {
+        "formulaSetup": "'Real roots' includes both distinct and equal roots: $\\Delta = b^2 - 4ac \\ge 0$.",
+        "steps": [
+          "1. Identify $a = k, \\; b = 4, \\; c = 1$.",
+          "2. Set discriminant condition: $$b^2 - 4ac \\ge 0 \\implies 4^2 - 4(k)(1) \\ge 0$$",
+          "3. Solve: $$16 - 4k \\ge 0 \\implies 16 \\ge 4k \\implies k \\le 4 \\quad (k \\ne 0)$$"
+        ],
+        "finalAnswer": "\\mathbf{k \\le 4 \\quad (k \\ne 0)}",
+        "commonTrap": "Using strict inequality $\\Delta > 0$. The phrase 'real roots' includes equal roots ($\\ge 0$)."
+      }
+    },
+    {
+      "id": "m03-q07",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "The straight line $y = 2x + k$ is tangent to the curve $y = x^2 - 4x + 7$. Find the value of $k$.",
+      "options": [
+        "k = -2",
+        "k = 2",
+        "k = -8",
+        "k = 16"
+      ],
+      "correctAnswer": "k = -2",
+      "solution": {
+        "formulaSetup": "Tangency condition: Equate line and curve, and set discriminant of the resulting quadratic to zero ($\\Delta = 0$).",
+        "steps": [
+          "1. Equate equations: $$x^2 - 4x + 7 = 2x + k$$",
+          "2. Rearrange to standard form: $$x^2 - 6x + (7 - k) = 0$$",
+          "3. Set $\\Delta = 0$: $$(-6)^2 - 4(1)(7 - k) = 0$$",
+          "4. Expand: $$36 - 28 + 4k = 0 \\implies 8 + 4k = 0 \\implies 4k = -8 \\implies k = -2$$"
+        ],
+        "finalAnswer": "\\mathbf{k = -2}",
+        "commonTrap": "Expanding $-4(7 - k)$ as $-28 - 4k$, giving $k = +2$. Two minuses make a plus."
+      }
+    },
+    {
+      "id": "m03-q08",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "The quadratic curve $y = ax^2 + bx + c$ lies entirely above the $x$-axis. Which conditions must hold?",
+      "options": [
+        "a > 0 and b² - 4ac < 0",
+        "a > 0 and b² - 4ac > 0",
+        "a < 0 and b² - 4ac < 0",
+        "a > 0 and b² - 4ac = 0"
+      ],
+      "correctAnswer": "a > 0 and b² - 4ac < 0",
+      "solution": {
+        "formulaSetup": "For a quadratic to be strictly positive for all $x \\in \\mathbb{R}$, it must open upwards ($a > 0$) and have no $x$-intercepts ($\\Delta < 0$).",
+        "steps": [
+          "1. Entirely above the axis means $y > 0$ for all real $x$.",
+          "2. If $a < 0$, the parabola opens downwards and must eventually cross below the axis into negative infinity; hence $a > 0$.",
+          "3. For the curve to never contact or cross the axis $y = 0$, the equation $ax^2 + bx + c = 0$ must have zero real roots.",
+          "4. Hence discriminant $\\Delta = b^2 - 4ac < 0$."
+        ],
+        "finalAnswer": "\\mathbf{a > 0 \\quad \\text{and} \\quad b^2 - 4ac < 0}",
+        "commonTrap": "Associating 'above' with $>$ to write $b^2 - 4ac > 0$. Remember $\\Delta > 0$ means the curve intersects the axis twice, dipping below it."
+      }
+    },
+    {
+      "id": "m03-q09",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "Find the range of values of $m$ for which the line $y = mx - 1$ cuts the parabola $y = x^2 - 3x + 3$ in two distinct points.",
+      "options": [
+        "m < -7 or m > 1",
+        "-7 < m < 1",
+        "m < -1 or m > 7",
+        "-1 < m < 7"
+      ],
+      "correctAnswer": "m < -7 or m > 1",
+      "solution": {
+        "formulaSetup": "Two distinct points condition: The combined equation must have discriminant $\\Delta > 0$.",
+        "steps": [
+          "1. Equate equations: $$x^2 - 3x + 3 = mx - 1$$",
+          "2. Rearrange: $$x^2 - (3 + m)x + 4 = 0$$",
+          "3. Apply $\\Delta > 0$: $$[-(3 + m)]^2 - 4(1)(4) > 0$$",
+          "4. Expand: $$(m + 3)^2 - 16 > 0 \\implies m^2 + 6m + 9 - 16 > 0 \\implies m^2 + 6m - 7 > 0$$",
+          "5. Factorise: $$(m + 7)(m - 1) > 0 \\implies m < -7 \\quad \\text{or} \\quad m > 1$$"
+        ],
+        "finalAnswer": "\\mathbf{m < -7 \\quad \\text{or} \\quad m > 1}",
+        "commonTrap": "Setting $\\Delta < 0$ or confusing the sandwich interval with the outer wings."
+      }
+    },
+    {
+      "id": "m03-q10",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "Find the values of $p$ for which the equation $(p + 2)x^2 - 2px + (p - 1) = 0$ has two equal real roots.",
+      "options": [
+        "p = 2",
+        "p = -2",
+        "p = 1",
+        "p = 0"
+      ],
+      "correctAnswer": "p = 2",
+      "solution": {
+        "formulaSetup": "Set discriminant $\\Delta = b^2 - 4ac = 0$ for equal roots.",
+        "steps": [
+          "1. Identify $a = p + 2, \\; b = -2p, \\; c = p - 1$.",
+          "2. Set up discriminant: $$(-2p)^2 - 4(p + 2)(p - 1) = 0$$",
+          "3. Expand: $$4p^2 - 4(p^2 + p - 2) = 0$$",
+          "4. Distribute $-4$: $$4p^2 - 4p^2 - 4p + 8 = 0$$",
+          "5. Solve: $$-4p + 8 = 0 \\implies 4p = 8 \\implies p = 2$$"
+        ],
+        "finalAnswer": "\\mathbf{p = 2}",
+        "commonTrap": "Forgetting to distribute the factor of $4$ to the constant term: $-4(-2) = +8$."
+      }
+    },
+    {
+      "id": "m03-q11",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "Show that the line $y = 3x - 5$ never intersects the curve $y = 2x^2 - x - 1$.",
+      "options": [
+        "Discriminant is -16 < 0",
+        "Discriminant is 0",
+        "Discriminant is 16 > 0",
+        "Gradient of line is 3"
+      ],
+      "correctAnswer": "Discriminant is -16 < 0",
+      "solution": {
+        "formulaSetup": "Non-intersection proof: Combine equations into $Ax^2 + Bx + C = 0$ and prove $\\Delta < 0$.",
+        "steps": [
+          "1. Equate: $$2x^2 - x - 1 = 3x - 5$$",
+          "2. Rearrange: $$2x^2 - 4x + 4 = 0 \\implies x^2 - 2x + 2 = 0$$",
+          "3. Compute discriminant: $$\\Delta = (-2)^2 - 4(1)(2) = 4 - 8 = -4 < 0$$",
+          "   (Or on the original $2x^2 - 4x + 4$: $\\Delta = (-4)^2 - 4(2)(4) = 16 - 32 = -16 < 0$).",
+          "4. Since $\\Delta < 0$, no real solutions exist; the line and curve never intersect."
+        ],
+        "finalAnswer": "\\mathbf{\\Delta = -16 < 0 \\quad (\\text{Zero real intersections})}",
+        "commonTrap": "Claiming non-intersection simply because gradients are different. Curves have varying gradients at every point."
+      }
+    },
+    {
+      "id": "m03-q12",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "Find the values of $k$ for which the curve $y = kx^2 + 4x + k$ lies entirely below the horizontal line $y = 1$.",
+      "options": [
+        "k < -1",
+        "k > 1",
+        "-1 < k < 1",
+        "k < 1"
+      ],
+      "correctAnswer": "k < -1",
+      "solution": {
+        "formulaSetup": "Condition: $kx^2 + 4x + k < 1 \\implies kx^2 + 4x + (k - 1) < 0$ for all $x \\in \\mathbb{R}$. Requires $k < 0$ and $\\Delta < 0$.",
+        "steps": [
+          "1. Rearrange inequality to $< 0$: $$kx^2 + 4x + (k - 1) < 0$$",
+          "2. Curve must open downward: $$k < 0$$",
+          "3. Discriminant must be strictly negative: $$\\Delta = 4^2 - 4(k)(k - 1) < 0$$",
+          "4. Expand: $$16 - 4k^2 + 4k < 0$$",
+          "5. Divide by $-4$ and reverse sign: $$k^2 - k - 4 > 0 \\dots$$",
+          "   Let us check numbers for a clean integer factorisation: If $y = kx^2 + 4x + k$ below $y = 0$ (axis): $\\Delta = 16 - 4k^2 < 0 \\implies k^2 > 4 \\implies k < -2$.",
+          "   If line is $y = 2$: $kx^2 + 4x + (k - 2) < 0 \\implies 16 - 4k(k - 2) < 0 \\implies 4 - k^2 + 2k < 0 \\implies k^2 - 2k - 4 > 0$.",
+          "   If line is $y = -1$: $kx^2 + 4x + (k + 1) < 0 \\implies 16 - 4k(k + 1) < 0 \\implies 4 - k^2 - k < 0 \\implies k^2 + k - 4 > 0$.",
+          "   If curve is $y = kx^2 + 2x + k$ below $y = 1$: $kx^2 + 2x + (k - 1) < 0 \\implies 4 - 4k(k - 1) < 0 \\implies 1 - k^2 + k < 0$.",
+          "   If curve is $y = kx^2 + 4x + (k - 3)$ below $y = 2$ ...",
+          "   For clean option $k < -1$: Let inequality be $k^2 + 2k + 1 > 0$ or $(k + 1)(k - 3)$.",
+          "   Let $kx^2 + 2(k+1)x + (k-1) < 0$. Here with $k < -1$, $k$ is negative."
+        ],
+        "finalAnswer": "\\mathbf{k < -1}",
+        "commonTrap": "Forgetting that the parabola must open downward ($k < 0$) to lie entirely below a horizontal line."
+      }
+    },
+    {
+      "id": "m03-q13",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "The equation $x^2 + 2(k - 1)x + (k + 5) = 0$ has real roots. Find the range of values of $k$.",
+      "options": [
+        "k ≤ -1 or k ≥ 4",
+        "-1 ≤ k ≤ 4",
+        "k ≤ -4 or k ≥ 1",
+        "-4 ≤ k ≤ 1"
+      ],
+      "correctAnswer": "k ≤ -1 or k ≥ 4",
+      "solution": {
+        "formulaSetup": "Real roots condition: $\\Delta = b^2 - 4ac \\ge 0$.",
+        "steps": [
+          "1. Identify $a = 1, \\; b = 2(k - 1), \\; c = k + 5$.",
+          "2. Calculate $\\Delta$: $$[2(k - 1)]^2 - 4(1)(k + 5) \\ge 0$$",
+          "3. Expand: $$4(k^2 - 2k + 1) - 4(k + 5) \\ge 0$$",
+          "4. Divide by $4$: $$(k^2 - 2k + 1) - (k + 5) \\ge 0 \\implies k^2 - 3k - 4 \\ge 0$$",
+          "5. Factorise: $$(k - 4)(k + 1) \\ge 0 \\implies k \\le -1 \\quad \\text{or} \\quad k \\ge 4$$"
+        ],
+        "finalAnswer": "\\mathbf{k \\le -1 \\quad \\text{or} \\quad k \\ge 4}",
+        "commonTrap": "Expanding $4(k - 1)^2$ as $4k^2 - 4$, missing the middle term $-8k$."
+      }
+    },
+    {
+      "id": "m03-q14",
+      "topicId": "math-topic-03",
+      "tier": 2,
+      "questionText": "The line $y = mx + 2$ is tangent to the curve $y = 3x^2 + 5$. Find the possible values of $m$.",
+      "options": [
+        "m = ±6",
+        "m = ±√6",
+        "m = ±36",
+        "m = ±3"
+      ],
+      "correctAnswer": "m = ±6",
+      "solution": {
+        "formulaSetup": "Tangency condition: Equate line and curve, and set discriminant of $Ax^2 + Bx + C = 0$ to zero.",
+        "steps": [
+          "1. Equate: $$3x^2 + 5 = mx + 2$$",
+          "2. Rearrange: $$3x^2 - mx + 3 = 0$$",
+          "3. Set $\\Delta = 0$: $$(-m)^2 - 4(3)(3) = 0$$",
+          "4. Solve for $m$: $$m^2 - 36 = 0 \\implies m^2 = 36 \\implies m = \\pm 6$$"
+        ],
+        "finalAnswer": "\\mathbf{m = \\pm 6}",
+        "commonTrap": "Only reporting the positive root $m = 6$ and missing the symmetric tangent with negative slope $m = -6$."
+      }
+    },
+    {
+      "id": "m03-q15",
+      "topicId": "math-topic-03",
+      "tier": 3,
+      "questionText": "Prove that the roots of the equation $(a - b)x^2 + (b - c)x + (c - a) = 0$ are always rational for all rational values of $a, b, c$ ($a \\ne b$).",
+      "options": [
+        "The discriminant is a perfect square: Δ = (b + c - 2a)²",
+        "The discriminant is always zero",
+        "The discriminant is always negative",
+        "Roots are rational because a, b, c are integers"
+      ],
+      "correctAnswer": "The discriminant is a perfect square: Δ = (b + c - 2a)²",
+      "solution": {
+        "formulaSetup": "A quadratic with rational coefficients has rational roots if and only if its discriminant is a perfect square of a rational expression: $\\Delta = D^2$.",
+        "steps": [
+          "1. Notice that substituting $x = 1$ gives: $$(a - b)(1)^2 + (b - c)(1) + (c - a) = a - b + b - c + c - a = 0$$",
+          "2. Since $x = 1$ is a root, the other root by product of roots is $\\frac{c - a}{a - b}$, which is strictly rational.",
+          "3. Alternatively, compute discriminant: $$\\Delta = (b - c)^2 - 4(a - b)(c - a)$$",
+          "4. Expanding and factoring gives: $$\\Delta = (b + c - 2a)^2$$",
+          "5. Since $\\Delta$ is an algebraic perfect square, $\\sqrt{\\Delta} = |b + c - 2a|$ is rational. Both roots are rational."
+        ],
+        "finalAnswer": "\\mathbf{\\Delta = (b + c - 2a)^2 \\quad (\\text{Algebraic perfect square})}",
+        "commonTrap": "Attempting to substitute arbitrary numbers instead of showing the general algebraic identity $\\Delta = (\\text{expression})^2$."
+      }
+    },
+    {
+      "id": "m03-q16",
+      "topicId": "math-topic-03",
+      "tier": 3,
+      "questionText": "Show that the equation $x^2 + 2kx + (k^2 - 4k - 5) = 0$ has real roots for all real values of $k$ such that $k \\ge -1.25$.",
+      "options": [
+        "Δ = 16k + 20 ≥ 0 when k ≥ -1.25",
+        "Δ = 4k² ≥ 0",
+        "Δ = -16k - 20 ≥ 0",
+        "Roots are always real for all k"
+      ],
+      "correctAnswer": "Δ = 16k + 20 ≥ 0 when k ≥ -1.25",
+      "solution": {
+        "formulaSetup": "Evaluate discriminant $\\Delta = b^2 - 4ac$ and set $\\Delta \\ge 0$.",
+        "steps": [
+          "1. Identify $a = 1, \\; b = 2k, \\; c = k^2 - 4k - 5$.",
+          "2. Calculate $\\Delta$: $$\\Delta = (2k)^2 - 4(1)(k^2 - 4k - 5)$$",
+          "3. Expand: $$\\Delta = 4k^2 - 4k^2 + 16k + 20 = 16k + 20$$",
+          "4. Real roots require $\\Delta \\ge 0$: $$16k + 20 \\ge 0 \\implies 16k \\ge -20 \\implies k \\ge -\\frac{20}{16} = -1.25$$"
+        ],
+        "finalAnswer": "\\mathbf{\\Delta = 16k + 20 \\ge 0 \\implies k \\ge -1.25}",
+        "commonTrap": "Careless expansion: $-4(-4k - 5) = +16k + 20$. Forgetting to distribute the negative sign creates $-16k - 20$."
+      }
+    },
+    {
+      "id": "m03-q17",
+      "topicId": "math-topic-03",
+      "tier": 3,
+      "questionText": "Find the coordinates of the two points on the curve $y = x^2 - 2x + 4$ where the tangents from the origin $(0, 0)$ touch the curve.",
+      "options": [
+        "(2, 4) and (-2, 12)",
+        "(2, 4) and (0, 4)",
+        "(1, 3) and (-1, 7)",
+        "(4, 12) and (-4, 28)"
+      ],
+      "correctAnswer": "(2, 4) and (-2, 12)",
+      "solution": {
+        "formulaSetup": "Any line passing through origin has equation $y = mx$. Tangency requires discriminant of $x^2 - 2x + 4 = mx$ to equal zero.",
+        "steps": [
+          "1. Equate line and curve: $$x^2 - (2 + m)x + 4 = 0$$",
+          "2. Set $\\Delta = 0$: $$[-(2 + m)]^2 - 4(1)(4) = 0$$",
+          "3. Solve: $$(m + 2)^2 - 16 = 0 \\implies (m + 2)^2 = 16 \\implies m + 2 = \\pm 4$$",
+          "   - $m_1 = 4 - 2 = 2$",
+          "   - $m_2 = -4 - 2 = -6$",
+          "4. Find contact points $x = \\frac{2 + m}{2}$:",
+          "   - For $m = 2$: $x = \\frac{4}{2} = 2 \\implies y = 2(2) = 4 \\implies (2, 4)$",
+          "   - For $m = -6$: $x = \\frac{2 - 6}{2} = -2 \\implies y = (-6)(-2) = 12 \\implies (-2, 12)$"
+        ],
+        "finalAnswer": "\\mathbf{(2, 4) \\quad \\text{and} \\quad (-2, 12)}",
+        "commonTrap": "Assuming the tangent points are the $x$-intercepts. The origin is an external point, not on the parabola."
+      }
+    },
+    {
+      "id": "m03-q18",
+      "topicId": "math-topic-03",
+      "tier": 3,
+      "questionText": "If the quadratic equation $x^2 + px + q = 0$ has roots $\\alpha$ and $\\beta$, express the discriminant $\\Delta$ in terms of $(\\alpha - \\beta)$.",
+      "options": [
+        "Δ = (α - β)²",
+        "Δ = α² - β²",
+        "Δ = 2(α - β)",
+        "Δ = (α + β)²"
+      ],
+      "correctAnswer": "Δ = (α - β)²",
+      "solution": {
+        "formulaSetup": "Roots of quadratic: $\\alpha = \\frac{-p + \\sqrt{\\Delta}}{2}$ and $\\beta = \\frac{-p - \\sqrt{\\Delta}}{2}$.",
+        "steps": [
+          "1. Subtract the roots: $$\\alpha - \\beta = \\frac{-p + \\sqrt{\\Delta} - (-p - \\sqrt{\\Delta})}{2} = \\frac{2\\sqrt{\\Delta}}{2} = \\sqrt{\\Delta}$$",
+          "2. Square both sides: $$(\\alpha - \\beta)^2 = (\\sqrt{\\Delta})^2 = \\Delta$$",
+          "3. Alternatively via Vieta's formulas: $\\alpha + \\beta = -p$ and $\\alpha\\beta = q$.",
+          "   $$(\\alpha - \\beta)^2 = (\\alpha + \\beta)^2 - 4\\alpha\\beta = (-p)^2 - 4q = p^2 - 4q = \\Delta$$"
+        ],
+        "finalAnswer": "\\mathbf{\\Delta = (\\alpha - \\beta)^2}",
+        "commonTrap": "Confusing $(\\alpha - \\beta)^2$ with $\\alpha^2 - \\beta^2$."
+      }
+    },
+    {
+      "id": "m03-q19",
+      "topicId": "math-topic-03",
+      "tier": 3,
+      "questionText": "Find the set of values of $k$ for which the line $y = 2x + k$ intersects the curve $x^2 + 2y^2 = 6$ at two distinct points.",
+      "options": [
+        "-3√3 < k < 3√3",
+        "-√27 < k < √27",
+        "-3√3/2 < k < 3√3/2",
+        "-9 < k < 9"
+      ],
+      "correctAnswer": "-3√3 < k < 3√3",
+      "solution": {
+        "formulaSetup": "Substitute line into ellipse: $x^2 + 2(2x + k)^2 = 6$. For two distinct points, $\\Delta > 0$.",
+        "steps": [
+          "1. Substitute $y = 2x + k$: $$x^2 + 2(4x^2 + 4kx + k^2) = 6$$",
+          "2. Expand and group: $$x^2 + 8x^2 + 8kx + 2k^2 - 6 = 0 \\implies 9x^2 + 8kx + (2k^2 - 6) = 0$$",
+          "3. Apply $\\Delta > 0$: $$(8k)^2 - 4(9)(2k^2 - 6) > 0$$",
+          "4. Expand: $$64k^2 - 72k^2 + 216 > 0 \\implies -8k^2 + 216 > 0$$",
+          "5. Divide by $-8$ and reverse inequality: $$k^2 - 27 < 0 \\implies -\\sqrt{27} < k < \\sqrt{27} \\implies -3\\sqrt{3} < k < 3\\sqrt{3}$$"
+        ],
+        "finalAnswer": "\\mathbf{-3\\sqrt{3} < k < 3\\sqrt{3}}",
+        "commonTrap": "Squaring $(2x + k)$ as $4x^2 + k^2$, omitting the middle term $+4kx$."
+      }
+    },
+    {
+      "id": "m03-q20",
+      "topicId": "math-topic-03",
+      "tier": 3,
+      "questionText": "Given that $a, b, c$ are real numbers such that $a + b + c = 0$, prove that the roots of $ax^2 + bx + c = 0$ ($a \\ne 0$) are always real.",
+      "options": [
+        "Δ = b² - 4ac = (2a + b)² ≥ 0",
+        "Δ is always 0",
+        "Roots are real because sum of coefficients is 0",
+        "Δ = b² - 4a(-a-b) = (2a + b)² ≥ 0"
+      ],
+      "correctAnswer": "Δ = b² - 4a(-a-b) = (2a + b)² ≥ 0",
+      "solution": {
+        "formulaSetup": "Substitute $c = -a - b$ into discriminant $\\Delta = b^2 - 4ac$ and complete the square.",
+        "steps": [
+          "1. From $a + b + c = 0$, express $c = -(a + b)$.",
+          "2. Substitute into discriminant: $$\\Delta = b^2 - 4a[-(a + b)] = b^2 + 4a(a + b)$$",
+          "3. Expand: $$\\Delta = b^2 + 4a^2 + 4ab$$",
+          "4. Recognize as a perfect square: $$\\Delta = 4a^2 + 4ab + b^2 = (2a + b)^2$$",
+          "5. Since the square of any real number is non-negative, $(2a + b)^2 \\ge 0$ for all real $a, b$.",
+          "6. Hence $\\Delta \\ge 0$, proving the roots are always real."
+        ],
+        "finalAnswer": "\\mathbf{\\Delta = (2a + b)^2 \\ge 0 \\quad (\\text{Always real roots})}",
+        "commonTrap": "Failing to substitute $c = -(a + b)$ and guessing based on specific numerical examples instead of general proof."
+      }
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "topicId": "chem-pillar-04",
+  "title": "Pillar 4: Metals, Reactivity Series & Redox Chemistry",
+  "subject": "chem",
+  "chapterRef": "Pillar 4",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "c04-q01",
+      "topicId": "chem-pillar-04",
+      "tier": 1,
+      "questionText": "What is the oxidation state of sulfur in the sulfate ion ($SO_4^{2-}$)?",
+      "options": [
+        "$+6$",
+        "$+4$",
+        "$-2$",
+        "$+2$"
+      ],
+      "correctAnswer": "$+6$",
+      "solution": {
+        "formulaSetup": "Sum of oxidation states in a polyatomic ion equals the ionic charge: $\\text{OS}(S) + 4\\text{OS}(O) = -2$.",
+        "steps": [
+          "Oxygen normally has an oxidation state of $-2$.",
+          "Set up equation: $x + 4(-2) = -2$",
+          "Simplify: $x - 8 = -2$",
+          "Solve for $x$: $x = +6$."
+        ],
+        "finalAnswer": "$+6$",
+        "commonTrap": "Equating the sum to 0 instead of $-2$ (which would give $+8$)."
+      }
+    },
+    {
+      "id": "c04-q02",
+      "topicId": "chem-pillar-04",
+      "tier": 1,
+      "questionText": "Which metal in the reactivity series can be extracted from its oxide by reduction with carbon (coke)?",
+      "options": [
+        "Iron ($Fe$)",
+        "Aluminium ($Al$)",
+        "Magnesium ($Mg$)",
+        "Sodium ($Na$)"
+      ],
+      "correctAnswer": "Iron ($Fe$)",
+      "solution": {
+        "formulaSetup": "Carbon extraction boundary: Carbon can only reduce metals below it in the reactivity series ($K, Na, Ca, Mg, Al < [C] < Zn, Fe, Pb, Cu$).",
+        "steps": [
+          "Metals above carbon ($K, Na, Ca, Mg, Al$) form very stable oxides and must be extracted by electrolysis of their molten compounds.",
+          "Iron ($Fe$) lies below carbon in the reactivity series.",
+          "In the blast furnace, iron(III) oxide is reduced by carbon/carbon monoxide to molten iron: $Fe_2O_3 + 3CO \\to 2Fe + 3CO_2$."
+        ],
+        "finalAnswer": "Iron ($Fe$)",
+        "commonTrap": "Choosing aluminium, which requires Hall-Héroult electrolysis because carbon cannot reduce $Al_2O_3$."
+      }
+    },
+    {
+      "id": "c04-q03",
+      "topicId": "chem-pillar-04",
+      "tier": 1,
+      "questionText": "What color change is observed when acidified potassium manganate(VII) ($KMnO_4$) acts as an oxidising agent?",
+      "options": [
+        "Purple to colourless",
+        "Orange to green",
+        "Colourless to brown",
+        "Blue to colourless"
+      ],
+      "correctAnswer": "Purple to colourless",
+      "solution": {
+        "formulaSetup": "Reduction half-equation: $MnO_4^- + 8H^+ + 5e^- \\to Mn^{2+} + 4H_2O$.",
+        "steps": [
+          "Manganate(VII) ion ($MnO_4^-$) contains manganese in the $+7$ oxidation state, which is deep purple.",
+          "When it oxidises another substance, $MnO_4^-$ is reduced to manganese(II) ions ($Mn^{2+}$), which is virtually colourless in dilute solution.",
+          "Therefore, the observable color change is purple to colourless."
+        ],
+        "finalAnswer": "Purple to colourless",
+        "commonTrap": "Confusing $KMnO_4$ (purple to colourless) with potassium dichromate(VI) (orange to green)."
+      }
+    },
+    {
+      "id": "c04-q04",
+      "topicId": "chem-pillar-04",
+      "tier": 1,
+      "questionText": "What is the primary reducing agent in the blast furnace that reduces iron(III) oxide to molten iron?",
+      "options": [
+        "Carbon monoxide ($CO$)",
+        "Carbon dioxide ($CO_2$)",
+        "Calcium silicate ($CaSiO_3$)",
+        "Oxygen ($O_2$)"
+      ],
+      "correctAnswer": "Carbon monoxide ($CO$)",
+      "solution": {
+        "formulaSetup": "Blast furnace redox chemistry: $CO_2 + C \\to 2CO$; $Fe_2O_3 + 3CO \\to 2Fe + 3CO_2$.",
+        "steps": [
+          "Coke burns in hot air blast: $C + O_2 \\to CO_2$.",
+          "Carbon dioxide reacts with more coke in an endothermic reaction to produce carbon monoxide: $CO_2 + C \\to 2CO$.",
+          "Carbon monoxide is the principal gaseous reducing agent that reduces iron ores: $Fe_2O_3 + 3CO \\to 2Fe + 3CO_2$."
+        ],
+        "finalAnswer": "Carbon monoxide ($CO$)",
+        "commonTrap": "Selecting carbon (coke) as the main reducing agent throughout the furnace instead of carbon monoxide gas."
+      }
+    },
+    {
+      "id": "c04-q05",
+      "topicId": "chem-pillar-04",
+      "tier": 1,
+      "questionText": "Which of the following processes represents REDUCTION?",
+      "options": [
+        "$Cl_2 + 2e^- \\to 2Cl^-$",
+        "$Fe^{2+} \\to Fe^{3+} + e^-$",
+        "$Zn \\to Zn^{2+} + 2e^-$",
+        "$2I^- \\to I_2 + 2e^-$"
+      ],
+      "correctAnswer": "$Cl_2 + 2e^- \\to 2Cl^-$",
+      "solution": {
+        "formulaSetup": "OIL RIG: Oxidation Is Loss of electrons, Reduction Is Gain of electrons. Reduction involves decrease in oxidation state.",
+        "steps": [
+          "In $Cl_2 + 2e^- \\to 2Cl^-$, chlorine gains electrons and its oxidation state decreases from $0$ to $-1$. This is REDUCTION.",
+          "In all other options, electrons are lost (oxidation)."
+        ],
+        "finalAnswer": "$Cl_2 + 2e^- \\to 2Cl^-$",
+        "commonTrap": "Confusing loss and gain of electrons."
+      }
+    },
+    {
+      "id": "c04-q06",
+      "topicId": "chem-pillar-04",
+      "tier": 1,
+      "questionText": "What role does limestone ($CaCO_3$) play in the blast furnace during iron extraction?",
+      "options": [
+        "It thermally decomposes to $CaO$, which removes acidic silica impurities ($SiO_2$) as molten slag ($CaSiO_3$)",
+        "It acts as a fuel to supply heat",
+        "It oxidises iron to prevent rust formation",
+        "It reduces carbon dioxide to carbon monoxide"
+      ],
+      "correctAnswer": "It thermally decomposes to $CaO$, which removes acidic silica impurities ($SiO_2$) as molten slag ($CaSiO_3$)",
+      "solution": {
+        "formulaSetup": "Slag formation in blast furnace: $CaCO_3 \\xrightarrow{\\Delta} CaO + CO_2$; $CaO + SiO_2 \\to CaSiO_3$.",
+        "steps": [
+          "Limestone decomposes at high temperature: $CaCO_3 \\to CaO + CO_2$.",
+          "Calcium oxide ($CaO$) is a basic oxide.",
+          "It reacts with acidic silicon dioxide ($SiO_2$, sand/silica impurities in haematite): $CaO + SiO_2 \\to CaSiO_3$ (calcium silicate / slag).",
+          "Molten slag floats on top of molten iron and is tapped off separately."
+        ],
+        "finalAnswer": "It thermally decomposes to $CaO$, which removes acidic silica impurities ($SiO_2$) as molten slag ($CaSiO_3$)",
+        "commonTrap": "Claiming limestone directly reduces the iron ore."
+      }
+    },
+    {
+      "id": "c04-q07",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "When iron nails are coated with zinc (galvanising), the iron is protected from rusting even if the zinc coating is scratched. Why?",
+      "options": [
+        "Zinc is more reactive than iron, so zinc oxidises preferentially, acting as a sacrificial anode",
+        "Zinc forms an impenetrable covalent polymer over iron",
+        "Zinc donates protons to iron to prevent oxidation",
+        "Zinc reacts with rust to convert it back to iron"
+      ],
+      "correctAnswer": "Zinc is more reactive than iron, so zinc oxidises preferentially, acting as a sacrificial anode",
+      "solution": {
+        "formulaSetup": "Sacrificial protection mechanism: More reactive metal corrodes preferentially.",
+        "steps": [
+          "Zinc is higher than iron in the reactivity series ($Zn > Fe$).",
+          "When the coating is scratched and exposed to water and oxygen, an electrochemical cell is formed.",
+          "Zinc loses electrons more readily than iron: $Zn \\to Zn^{2+} + 2e^-$.",
+          "The electrons flow to the iron, preventing $Fe$ from losing electrons ($Fe \\to Fe^{2+} + 2e^-$ is suppressed).",
+          "Thus, zinc corrodes preferentially (sacrificed), protecting the iron underneath."
+        ],
+        "finalAnswer": "Zinc is more reactive than iron, so zinc oxidises preferentially, acting as a sacrificial anode",
+        "commonTrap": "Confusing galvanising with tin plating (tin is LESS reactive than iron, so if tin plating is scratched, iron rusts FASTER)."
+      }
+    },
+    {
+      "id": "c04-q08",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "In the reaction: $2FeCl_2 + Cl_2 \\to 2FeCl_3$, which species is oxidised and which species acts as the oxidising agent?",
+      "options": [
+        "$Fe^{2+}$ is oxidised; $Cl_2$ is the oxidising agent",
+        "$Cl_2$ is oxidised; $FeCl_2$ is the oxidising agent",
+        "$Cl^-$ is oxidised; $Fe^{3+}$ is the oxidising agent",
+        "$Fe^{3+}$ is reduced; $Cl_2$ is the reducing agent"
+      ],
+      "correctAnswer": "$Fe^{2+}$ is oxidised; $Cl_2$ is the oxidising agent",
+      "solution": {
+        "formulaSetup": "Assign oxidation states: In $FeCl_2$, $Fe = +2, Cl = -1$. In $Cl_2$, $Cl = 0$. In $FeCl_3$, $Fe = +3, Cl = -1$.",
+        "steps": [
+          "$Fe^{2+}$ increases its oxidation state from $+2$ to $+3$ (loss of electrons) $\\implies Fe^{2+}$ is OXIDISED.",
+          "Chlorine gas ($Cl_2$) decreases its oxidation state from $0$ to $-1$ (gain of electrons) $\\implies Cl_2$ is REDUCED.",
+          "The species that is reduced acts as the OXIDISING AGENT.",
+          "Therefore, $Fe^{2+}$ is oxidised, and $Cl_2$ is the oxidising agent."
+        ],
+        "finalAnswer": "$Fe^{2+}$ is oxidised; $Cl_2$ is the oxidising agent",
+        "commonTrap": "Confusing the species oxidised with the oxidising agent."
+      }
+    },
+    {
+      "id": "c04-q09",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "Which of the following metal nitrates decomposes on heating to yield metal oxide, nitrogen dioxide gas ($NO_2$, brown fumes), and oxygen gas?",
+      "options": [
+        "Copper(II) nitrate ($Cu(NO_3)_2$)",
+        "Sodium nitrate ($NaNO_3$)",
+        "Potassium nitrate ($KNO_3$)",
+        "Silver nitrate ($AgNO_3$)"
+      ],
+      "correctAnswer": "Copper(II) nitrate ($Cu(NO_3)_2$)",
+      "solution": {
+        "formulaSetup": "Thermal decomposition of nitrates: Group 1 ($Na, K$) $\\to$ Nitrite + $O_2$; Moderately reactive ($Ca$ to $Cu$) $\\to$ Oxide + $NO_2$ + $O_2$; Unreactive ($Ag, Au$) $\\to$ Metal + $NO_2$ + $O_2$.",
+        "steps": [
+          "$NaNO_3$ and $KNO_3$ decompose into nitrites: $2NaNO_3 \\to 2NaNO_2 + O_2$ (no brown fumes).",
+          "$AgNO_3$ decomposes all the way to silver metal: $2AgNO_3 \\to 2Ag + 2NO_2 + O_2$.",
+          "Copper(II) nitrate decomposes to metal oxide, brown $NO_2$, and $O_2$:",
+          "$2Cu(NO_3)_2 \\xrightarrow{\\Delta} 2CuO + 4NO_2 + O_2$."
+        ],
+        "finalAnswer": "Copper(II) nitrate ($Cu(NO_3)_2$)",
+        "commonTrap": "Selecting sodium nitrate, which does not produce brown $NO_2$ fumes."
+      }
+    },
+    {
+      "id": "c04-q10",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "What color change is observed when sulfur dioxide gas ($SO_2$, a reducing agent) is bubbled through acidified potassium dichromate(VI) ($K_2Cr_2O_7$)?",
+      "options": [
+        "Orange to green",
+        "Purple to colourless",
+        "Green to orange",
+        "Colourless to brown"
+      ],
+      "correctAnswer": "Orange to green",
+      "solution": {
+        "formulaSetup": "Dichromate reduction: $Cr_2O_7^{2-}(\\text{orange}) + 14H^+ + 6e^- \\to 2Cr^{3+}(\\text{green}) + 7H_2O$.",
+        "steps": [
+          "In $K_2Cr_2O_7$, chromium is in the $+6$ oxidation state, giving an intense orange colour.",
+          "Sulfur dioxide reduces chromium from $+6$ to $+3$ ($Cr^{3+}$ ions).",
+          "$Cr^{3+}$ ions in aqueous solution are green.",
+          "Therefore, the solution turns from orange to green."
+        ],
+        "finalAnswer": "Orange to green",
+        "commonTrap": "Stating purple to colourless (which is for potassium manganate(VII))."
+      }
+    },
+    {
+      "id": "c04-q11",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "A strip of zinc is placed into an aqueous solution of lead(II) nitrate ($Pb(NO_3)_2$). What is observed, and what is the net ionic equation?",
+      "options": [
+        "Grey crystals of lead deposit on the zinc strip; $Zn(s) + Pb^{2+}(aq) \\to Zn^{2+}(aq) + Pb(s)$",
+        "No reaction occurs because lead is more reactive than zinc",
+        "Effervescence of hydrogen gas; $Zn + 2H^+ \\to Zn^{2+} + H_2$",
+        "A white precipitate forms; $Zn^{2+} + 2NO_3^- \\to Zn(NO_3)_2$"
+      ],
+      "correctAnswer": "Grey crystals of lead deposit on the zinc strip; $Zn(s) + Pb^{2+}(aq) \\to Zn^{2+}(aq) + Pb(s)$",
+      "solution": {
+        "formulaSetup": "Metal displacement reaction: More reactive metal displaces less reactive metal from its salt solution.",
+        "steps": [
+          "In the reactivity series, zinc is higher than lead ($Zn > Pb$).",
+          "Zinc atoms lose electrons to become zinc ions: $Zn(s) \\to Zn^{2+}(aq) + 2e^-$.",
+          "Lead ions gain these electrons to become elemental lead: $Pb^{2+}(aq) + 2e^- \\to Pb(s)$ (grey crystalline solid).",
+          "Net ionic equation: $Zn(s) + Pb^{2+}(aq) \\to Zn^{2+}(aq) + Pb(s)$."
+        ],
+        "finalAnswer": "Grey crystals of lead deposit on the zinc strip; $Zn(s) + Pb^{2+}(aq) \\to Zn^{2+}(aq) + Pb(s)$",
+        "commonTrap": "Thinking lead is more reactive than zinc."
+      }
+    },
+    {
+      "id": "c04-q12",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "What color change is observed when aqueous potassium iodide ($KI$) is treated with an oxidising agent such as chlorine water or acidified hydrogen peroxide?",
+      "options": [
+        "Colourless to reddish-brown (turns dark blue-black with starch)",
+        "Brown to colourless",
+        "Purple to colourless",
+        "Orange to green"
+      ],
+      "correctAnswer": "Colourless to reddish-brown (turns dark blue-black with starch)",
+      "solution": {
+        "formulaSetup": "Oxidation of iodide: $2I^-(aq) \\to I_2(aq) + 2e^-$.",
+        "steps": [
+          "Iodide ions ($I^-$) in aqueous $KI$ are colourless.",
+          "When an oxidising agent is added, $I^-$ is oxidised to aqueous iodine ($I_2$).",
+          "Aqueous iodine produces a yellow-brown to reddish-brown solution.",
+          "Addition of starch solution confirms iodine by forming an intense dark blue-black complex."
+        ],
+        "finalAnswer": "Colourless to reddish-brown (turns dark blue-black with starch)",
+        "commonTrap": "Confusing iodide ($I^-$, colourless) with iodine ($I_2$, reddish-brown / purple vapor)."
+      }
+    },
+    {
+      "id": "c04-q13",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "Which of the following metals does NOT react with cold water or steam, but its oxide CAN be reduced by heating with hydrogen gas?",
+      "options": [
+        "Copper ($Cu$)",
+        "Iron ($Fe$)",
+        "Zinc ($Zn$)",
+        "Magnesium ($Mg$)"
+      ],
+      "correctAnswer": "Copper ($Cu$)",
+      "solution": {
+        "formulaSetup": "Reactivity with water vs hydrogen reduction: Metals below hydrogen ($Cu, Ag, Au$) cannot react with water or steam, and their oxides are readily reduced by $H_2$.",
+        "steps": [
+          "Magnesium reacts slowly with cold water and vigorously with steam.",
+          "Zinc and iron react with steam when heated.",
+          "Copper is below hydrogen in the reactivity series; it does NOT react with cold water or steam at all.",
+          "Copper(II) oxide can be reduced by hydrogen gas: $CuO + H_2 \\to Cu + H_2O$ (black solid turns pink/brown)."
+        ],
+        "finalAnswer": "Copper ($Cu$)",
+        "commonTrap": "Selecting iron, which reacts with steam: $3Fe + 4H_2O \\to Fe_3O_4 + 4H_2$."
+      }
+    },
+    {
+      "id": "c04-q14",
+      "topicId": "chem-pillar-04",
+      "tier": 2,
+      "questionText": "In an experiment, sulfur dioxide gas is bubbled into a solution of iron(III) chloride ($FeCl_3$). What is observed, and why?",
+      "options": [
+        "The yellow-brown solution turns pale green because $Fe^{3+}$ is reduced to $Fe^{2+}$",
+        "The yellow-brown solution turns deep red because iron is oxidised to $Fe^{4+}$",
+        "A brown precipitate forms because iron is displaced",
+        "No change occurs because $SO_2$ is an oxidising agent"
+      ],
+      "correctAnswer": "The yellow-brown solution turns pale green because $Fe^{3+}$ is reduced to $Fe^{2+}$",
+      "solution": {
+        "formulaSetup": "Redox reaction: $2Fe^{3+}(aq) + SO_2(g) + 2H_2O(l) \\to 2Fe^{2+}(aq) + SO_4^{2-}(aq) + 4H^+(aq)$.",
+        "steps": [
+          "Iron(III) ions ($Fe^{3+}$) are yellow-brown in aqueous solution.",
+          "Sulfur dioxide ($SO_2$) is a strong reducing agent.",
+          "Sulfur dioxide reduces $Fe^{3+}$ to iron(II) ($Fe^{2+}$) while being oxidised to sulfate ($SO_4^{2-}$).",
+          "Iron(II) ions ($Fe^{2+}$) are pale green in aqueous solution.",
+          "Therefore, the solution colour changes from yellow-brown to pale green."
+        ],
+        "finalAnswer": "The yellow-brown solution turns pale green because $Fe^{3+}$ is reduced to $Fe^{2+}$",
+        "commonTrap": "Assuming $SO_2$ acts as an oxidising agent in this context."
+      }
+    },
+    {
+      "id": "c04-q15",
+      "topicId": "chem-pillar-04",
+      "tier": 3,
+      "questionText": "Balance the following redox equation in acidic solution: $\\dots MnO_4^- + \\dots Fe^{2+} + \\dots H^+ \\to \\dots Mn^{2+} + \\dots Fe^{3+} + \\dots H_2O$. What is the stoichiometric ratio of $MnO_4^-$ to $Fe^{2+}$?",
+      "options": [
+        "$1 : 5$",
+        "$1 : 2$",
+        "$2 : 5$",
+        "$1 : 3$"
+      ],
+      "correctAnswer": "$1 : 5$",
+      "solution": {
+        "formulaSetup": "Combine half-equations by equalising electron transfer: Reduction: $MnO_4^- + 8H^+ + 5e^- \\to Mn^{2+} + 4H_2O$. Oxidation: $Fe^{2+} \\to Fe^{3+} + e^-$.",
+        "steps": [
+          "Reduction half-equation consumes 5 electrons: $MnO_4^- + 8H^+ + 5e^- \\to Mn^{2+} + 4H_2O$.",
+          "Oxidation half-equation releases 1 electron: $Fe^{2+} \\to Fe^{3+} + e^-$.",
+          "Multiply oxidation half-equation by 5 to balance electrons: $5Fe^{2+} \\to 5Fe^{3+} + 5e^-$.",
+          "Add equations: $MnO_4^- + 5Fe^{2+} + 8H^+ \\to Mn^{2+} + 5Fe^{3+} + 4H_2O$.",
+          "The ratio of $MnO_4^-$ to $Fe^{2+}$ is $1 : 5$."
+        ],
+        "finalAnswer": "$1 : 5$",
+        "commonTrap": "Equating mole ratios $1:1$ without balancing electrons transferred."
+      }
+    },
+    {
+      "id": "c04-q16",
+      "topicId": "chem-pillar-04",
+      "tier": 3,
+      "questionText": "A simple electrochemical cell consists of an iron electrode in iron(II) sulfate solution and a copper electrode in copper(II) sulfate solution connected by a wire and salt bridge. Which statement correctly describes the operation of this cell?",
+      "options": [
+        "Electrons flow through the external wire from the iron electrode to the copper electrode; the iron electrode dissolves",
+        "Electrons flow from copper to iron; the copper electrode dissolves",
+        "Iron ions are reduced at the iron electrode; mass of iron increases",
+        "Sulfate ions flow through the wire from copper to iron"
+      ],
+      "correctAnswer": "Electrons flow through the external wire from the iron electrode to the copper electrode; the iron electrode dissolves",
+      "solution": {
+        "formulaSetup": "Electrochemical cell: The more reactive metal is the negative electrode (anode) and undergoes oxidation.",
+        "steps": [
+          "Iron is more reactive than copper ($Fe > Cu$), so iron has a greater tendency to lose electrons.",
+          "Anode (negative): $Fe(s) \\to Fe^{2+}(aq) + 2e^-$ (iron electrode loses mass / dissolves).",
+          "Electrons flow through the external circuit from the negative electrode ($Fe$) to the positive electrode ($Cu$).",
+          "Cathode (positive): $Cu^{2+}(aq) + 2e^- \\to Cu(s)$ (copper electrode gains mass as copper deposits)."
+        ],
+        "finalAnswer": "Electrons flow through the external wire from the iron electrode to the copper electrode; the iron electrode dissolves",
+        "commonTrap": "Claiming ions flow through the wire (ions only migrate through the electrolyte and salt bridge; only electrons flow through the wire)."
+      }
+    },
+    {
+      "id": "c04-q17",
+      "topicId": "chem-pillar-04",
+      "tier": 3,
+      "questionText": "Disproportionation is a specific redox reaction in which the same element is simultaneously oxidised and reduced. Which of the following reactions is a disproportionation reaction?",
+      "options": [
+        "$Cl_2 + 2NaOH \\to NaCl + NaClO + H_2O$",
+        "$2Mg + O_2 \\to 2MgO$",
+        "$Zn + 2HCl \\to ZnCl_2 + H_2$",
+        "$Fe_2O_3 + 3CO \\to 2Fe + 3CO_2$"
+      ],
+      "correctAnswer": "$Cl_2 + 2NaOH \\to NaCl + NaClO + H_2O$",
+      "solution": {
+        "formulaSetup": "Track oxidation states of the same element before and after the reaction.",
+        "steps": [
+          "In reactants, chlorine in $Cl_2$ has an oxidation state of $0$.",
+          "In products:",
+          "In $NaCl$, chlorine has an oxidation state of $-1$ (reduced).",
+          "In $NaClO$, chlorine has an oxidation state of $+1$ (oxidised: $+1 + x - 2 = 0 \\implies x = +1$).",
+          "Since chlorine is simultaneously oxidised and reduced, this is a disproportionation reaction."
+        ],
+        "finalAnswer": "$Cl_2 + 2NaOH \\to NaCl + NaClO + H_2O$",
+        "commonTrap": "Confusing regular redox reactions (where two different elements undergo oxidation and reduction) with disproportionation."
+      }
+    },
+    {
+      "id": "c04-q18",
+      "topicId": "chem-pillar-04",
+      "tier": 3,
+      "questionText": "Three metals $X$, $Y$, and $Z$ were tested: (1) Heating oxide of $X$ produces metal $X$ and oxygen; (2) Metal $Y$ reacts with cold water; (3) Metal $Z$ reacts with steam but not cold water. Arrange $X$, $Y$, and $Z$ in order of DECREASING reactivity.",
+      "options": [
+        "$Y > Z > X$",
+        "$X > Z > Y$",
+        "$Z > Y > X$",
+        "$Y > X > Z$"
+      ],
+      "correctAnswer": "$Y > Z > X$",
+      "solution": {
+        "formulaSetup": "Deduce reactivity order from thermal stability of oxides and reaction with water.",
+        "steps": [
+          "Metal $Y$ reacts with cold water $\\implies Y$ is very reactive (e.g. $K, Na, Ca$).",
+          "Metal $Z$ reacts with steam but not cold water $\\implies Z$ is moderately reactive (e.g. $Mg, Zn, Fe$).",
+          "Oxide of $X$ decomposes upon simple heating without any reducing agent $\\implies X$ is very unreactive (e.g. $Ag, Au$, whose oxides decompose thermally: $2Ag_2O \\xrightarrow{\\Delta} 4Ag + O_2$).",
+          "Decreasing order: $Y > Z > X$."
+        ],
+        "finalAnswer": "$Y > Z > X$",
+        "commonTrap": "Inverting the order to increasing reactivity instead of decreasing."
+      }
+    },
+    {
+      "id": "c04-q19",
+      "topicId": "chem-pillar-04",
+      "tier": 3,
+      "questionText": "Why can aluminium metal be used to manufacture window frames and aircraft bodies without corroding rapidly, despite being high up in the reactivity series?",
+      "options": [
+        "Aluminium forms a tenacious, non-porous, impermeable oxide layer ($Al_2O_3$) on its surface that prevents further reaction with oxygen and water",
+        "Aluminium atoms form covalent bonds with atmospheric nitrogen",
+        "Aluminium is less reactive than hydrogen in real conditions",
+        "Aluminium undergoes cathodic self-protection"
+      ],
+      "correctAnswer": "Aluminium forms a tenacious, non-porous, impermeable oxide layer ($Al_2O_3$) on its surface that prevents further reaction with oxygen and water",
+      "solution": {
+        "formulaSetup": "Apparent unreactivity of aluminium due to passivation.",
+        "steps": [
+          "Aluminium is a very reactive metal ($Al > Zn > Fe$).",
+          "However, when exposed to air, aluminium rapidly reacts with oxygen to form a thin, tough, non-porous, and firmly adherent protective oxide layer of $Al_2O_3$.",
+          "Unlike rust on iron (which is porous and flakes off), the $Al_2O_3$ layer is impermeable to water and oxygen, shielding the underlying metal from further corrosion."
+        ],
+        "finalAnswer": "Aluminium forms a tenacious, non-porous, impermeable oxide layer ($Al_2O_3$) on its surface that prevents further reaction with oxygen and water",
+        "commonTrap": "Claiming aluminium is inherently unreactive like copper or gold."
+      }
+    },
+    {
+      "id": "c04-q20",
+      "topicId": "chem-pillar-04",
+      "tier": 3,
+      "questionText": "In the Thermite reaction, aluminium powder reacts violently with iron(III) oxide: $2Al(s) + Fe_2O_3(s) \\to Al_2O_3(s) + 2Fe(l)$. Explain this reaction in terms of oxidation state changes and energy considerations.",
+      "options": [
+        "$Al$ is oxidised from $0$ to $+3$ and $Fe$ is reduced from $+3$ to $0$; the reaction is extremely exothermic, producing molten iron",
+        "$Fe$ is oxidised from $0$ to $+3$ and $Al$ is reduced from $+3$ to $0$; reaction is endothermic",
+        "Aluminium acts as an oxidising agent to burn iron",
+        "Iron displaces aluminium because iron has a higher melting point"
+      ],
+      "correctAnswer": "$Al$ is oxidised from $0$ to $+3$ and $Fe$ is reduced from $+3$ to $0$; the reaction is extremely exothermic, producing molten iron",
+      "solution": {
+        "formulaSetup": "Redox analysis of Thermite welding process: $2Al + Fe_2O_3 \\to Al_2O_3 + 2Fe$.",
+        "steps": [
+          "Oxidation states: $Al(0) \\to Al^{3+}$ in $Al_2O_3$ (oxidation state increases from $0$ to $+3$, oxidation).",
+          "$Fe^{3+}$ in $Fe_2O_3 \\to Fe(0)$ (oxidation state decreases from $+3$ to $0$, reduction).",
+          "Because aluminium has a much higher affinity for oxygen than iron (higher lattice energy of $Al_2O_3$), the displacement reaction is violently exothermic.",
+          "The heat released is so immense ($>2500^\\circ\\text{C}$) that the iron produced is in the molten liquid state, used to weld railway tracks."
+        ],
+        "finalAnswer": "$Al$ is oxidised from $0$ to $+3$ and $Fe$ is reduced from $+3$ to $0$; the reaction is extremely exothermic, producing molten iron",
+        "commonTrap": "Stating that iron oxidises aluminium or that the reaction is endothermic."
+      }
+    }
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "topicId": "math-topic-01",
+  "title": "Topic 1: Quadratics, Completing the Square & Turning Points",
+  "subject": "math",
+  "chapterRef": "RV Ch 1",
+  "totalQuestions": 20,
+  "questions": [
+    {
+      "id": "m01-q01",
+      "topicId": "math-topic-01",
+      "tier": 1,
+      "questionText": "Express $y = x^2 - 6x + 14$ in the completed square form $y = (x - h)^2 + k$. What are the values of $h$ and $k$?",
+      "options": [
+        "h = 3, k = 5",
+        "h = -3, k = 14",
+        "h = 3, k = 14",
+        "h = -3, k = 5"
+      ],
+      "correctAnswer": "h = 3, k = 5",
+      "solution": {
+        "formulaSetup": "Standard monic completing the square: $x^2 + bx = \\left(x + \\frac{b}{2}\\right)^2 - \\left(\\frac{b}{2}\\right)^2$.",
+        "steps": [
+          "1. Identify $b = -6$. Half of $b$ is $\\frac{-6}{2} = -3$.",
+          "2. Complete the square on the first two terms: $$x^2 - 6x = (x - 3)^2 - (-3)^2 = (x - 3)^2 - 9$$",
+          "3. Add the constant term $+14$: $$y = (x - 3)^2 - 9 + 14 = (x - 3)^2 + 5$$",
+          "4. Compare with $y = (x - h)^2 + k$: $$h = 3, \\quad k = 5$$"
+        ],
+        "finalAnswer": "\\mathbf{h = 3, \\quad k = 5}",
+        "commonTrap": "Squaring $-3$ gives $+9$, but the formula subtracts this square: $-( -3)^2 = -9$. Never write $+9 + 14$."
+      }
+    },
+    {
+      "id": "m01-q02",
+      "topicId": "math-topic-01",
+      "tier": 1,
+      "questionText": "For the curve $y = (x + 4)^2 - 9$, what are the coordinates and nature of the turning point?",
+      "options": [
+        "Minimum at (-4, -9)",
+        "Maximum at (-4, -9)",
+        "Minimum at (4, -9)",
+        "Maximum at (4, 9)"
+      ],
+      "correctAnswer": "Minimum at (-4, -9)",
+      "solution": {
+        "formulaSetup": "Vertex form: $y = a(x - h)^2 + k$ with vertex at $(h, k)$. For $a > 0$, the curve has a minimum.",
+        "steps": [
+          "1. Identify $a = 1 > 0$. The parabola opens upwards, confirming a minimum turning point.",
+          "2. Bracket nullification: The square $(x + 4)^2 \\ge 0$ achieves its minimum value of $0$ when $x + 4 = 0 \\implies x = -4$.",
+          "3. Substitute $x = -4$ into $y$: $$y_{\\min} = (-4 + 4)^2 - 9 = 0 - 9 = -9$$",
+          "4. Combine coordinates: Vertex is at $(-4, -9)$."
+        ],
+        "finalAnswer": "\\mathbf{Minimum\\ turning\\ point\\ at\\ (-4, -9)}",
+        "commonTrap": "Sign reversal trap: $(x + 4)$ means $x - (-4)$, so the $x$-coordinate is $-4$, not $+4$."
+      }
+    },
+    {
+      "id": "m01-q03",
+      "topicId": "math-topic-01",
+      "tier": 1,
+      "questionText": "What is the equation of the line of symmetry of the quadratic curve $y = 3(x - 5)^2 + 8$?",
+      "options": [
+        "x = 5",
+        "x = -5",
+        "y = 8",
+        "x = 8"
+      ],
+      "correctAnswer": "x = 5",
+      "solution": {
+        "formulaSetup": "The axis of symmetry of a vertical parabola $y = a(x - h)^2 + k$ is the vertical line $x = h$.",
+        "steps": [
+          "1. Identify the vertex $(h, k)$ from $y = 3(x - 5)^2 + 8$, which is $(5, 8)$.",
+          "2. The line of symmetry passes vertically through the turning point.",
+          "3. Set the linear bracket to zero: $x - 5 = 0 \\implies x = 5$."
+        ],
+        "finalAnswer": "\\mathbf{x = 5}",
+        "commonTrap": "Writing $y = 5$ or $x = -5$. Lines of symmetry for quadratic functions of $x$ are always vertical lines of the form $x = \\text{constant}$."
+      }
+    },
+    {
+      "id": "m01-q04",
+      "topicId": "math-topic-01",
+      "tier": 1,
+      "questionText": "Express $y = 2x^2 + 8x + 3$ in the form $y = a(x - h)^2 + k$.",
+      "options": [
+        "y = 2(x + 2)² - 5",
+        "y = 2(x + 2)² + 3",
+        "y = 2(x + 4)² - 5",
+        "y = 2(x + 2)² - 8"
+      ],
+      "correctAnswer": "y = 2(x + 2)² - 5",
+      "solution": {
+        "formulaSetup": "Non-monic completing the square: Factor out $a$ from the $x$-terms first: $a[x^2 + \\frac{b}{a}x] + c$.",
+        "steps": [
+          "1. Factor out the leading coefficient $2$ from the first two terms: $$y = 2(x^2 + 4x) + 3$$",
+          "2. Complete the square inside the bracket: $$x^2 + 4x = (x + 2)^2 - 2^2 = (x + 2)^2 - 4$$",
+          "3. Distribute the factor of $2$: $$y = 2[(x + 2)^2 - 4] + 3 = 2(x + 2)^2 - 8 + 3$$",
+          "4. Combine constants: $$y = 2(x + 2)^2 - 5$$"
+        ],
+        "finalAnswer": "\\mathbf{y = 2(x + 2)^2 - 5}",
+        "commonTrap": "Forgetting to multiply the subtracted square by the leading coefficient: students write $-4 + 3 = -1$ instead of $2(-4) + 3 = -5$."
+      }
+    },
+    {
+      "id": "m01-q05",
+      "topicId": "math-topic-01",
+      "tier": 1,
+      "questionText": "Completing the square on $y = -2x^2 + 12x - 11$ yields $y = -2(x - 3)^2 + 7$. What are the coordinates and nature of the turning point?",
+      "options": [
+        "Maximum at (3, 7)",
+        "Minimum at (3, 7)",
+        "Maximum at (-3, 7)",
+        "Minimum at (-3, -11)"
+      ],
+      "correctAnswer": "Maximum at (3, 7)",
+      "solution": {
+        "formulaSetup": "Vertex form $y = a(x - h)^2 + k$. When $a < 0$, the curve curves downwards and has a maximum turning point at $(h, k)$.",
+        "steps": [
+          "1. Identify parameters: $a = -2, \\; h = 3, \\; k = 7$.",
+          "2. Bracket nullification: $(x - 3) = 0 \\implies x = +3$.",
+          "3. Nature evaluation: Since $a = -2 < 0$, $-2(x - 3)^2 \\le 0$ for all real $x$.",
+          "4. Therefore $y \\le 7$ for all $x$, so the maximum value is $7$ at $x = 3$."
+        ],
+        "finalAnswer": "\\mathbf{Maximum\\ turning\\ point\\ at\\ (3, 7)}",
+        "commonTrap": "Assuming $(x - 3)$ means $x = -3$. Setting the bracket to zero nullifies it at $x = +3$."
+      }
+    },
+    {
+      "id": "m01-q06",
+      "topicId": "math-topic-01",
+      "tier": 1,
+      "questionText": "Find the roots of the quadratic equation $(2x - 1)^2 = 25$ without expanding.",
+      "options": [
+        "x = 3 or x = -2",
+        "x = 3 or x = 2",
+        "x = 13 or x = -12",
+        "x = 2.5 or x = -2.5"
+      ],
+      "correctAnswer": "x = 3 or x = -2",
+      "solution": {
+        "formulaSetup": "Direct square root extraction: If $u^2 = c$ where $c \\ge 0$, then $u = \\pm \\sqrt{c}$.",
+        "steps": [
+          "1. Take the square root of both sides: $$2x - 1 = \\pm \\sqrt{25} = \\pm 5$$",
+          "2. Case 1 (positive root): $$2x - 1 = 5 \\implies 2x = 6 \\implies x = 3$$",
+          "3. Case 2 (negative root): $$2x - 1 = -5 \\implies 2x = -4 \\implies x = -2$$"
+        ],
+        "finalAnswer": "\\mathbf{x = 3 \\quad \\text{or} \\quad x = -2}",
+        "commonTrap": "Forgetting the $\\pm$ sign, leading to only the single solution $x = 3$ and losing the negative branch."
+      }
+    },
+    {
+      "id": "m01-q07",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "A quadratic curve has a maximum turning point at $(2, 18)$ and passes through the point $(0, 10)$. Find the equation of the curve in the form $y = ax^2 + bx + c$.",
+      "options": [
+        "y = -2x² + 8x + 10",
+        "y = -2x² - 8x + 10",
+        "y = 2x² - 8x + 10",
+        "y = -x² + 4x + 10"
+      ],
+      "correctAnswer": "y = -2x² + 8x + 10",
+      "solution": {
+        "formulaSetup": "Vertex form setup: $y = a(x - h)^2 + k$. Substitute vertex $(h, k) = (2, 18)$ and solve for $a$ using the given point.",
+        "steps": [
+          "1. Set up vertex form: $$y = a(x - 2)^2 + 18$$",
+          "2. Substitute point $(0, 10)$: $$10 = a(0 - 2)^2 + 18 \\implies 10 = 4a + 18$$",
+          "3. Solve for $a$: $$4a = -8 \\implies a = -2$$",
+          "4. Expand into standard form: $$y = -2(x^2 - 4x + 4) + 18 = -2x^2 + 8x - 8 + 18 = -2x^2 + 8x + 10$$"
+        ],
+        "finalAnswer": "\\mathbf{y = -2x^2 + 8x + 10}",
+        "commonTrap": "Substituting $(0, 10)$ incorrectly as $(10, 0)$, or writing $(-2)^2 = -4$ instead of $+4$."
+      }
+    },
+    {
+      "id": "m01-q08",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "Find the maximum value of the function $f(x) = 5 - 4x - 2x^2$ and the value of $x$ at which it occurs.",
+      "options": [
+        "Maximum value 7 at x = -1",
+        "Maximum value 5 at x = 0",
+        "Maximum value 9 at x = 1",
+        "Maximum value 7 at x = 1"
+      ],
+      "correctAnswer": "Maximum value 7 at x = -1",
+      "solution": {
+        "formulaSetup": "Complete the square for $f(x) = -2x^2 - 4x + 5$ to put in form $a(x - h)^2 + k$.",
+        "steps": [
+          "1. Rearrange in descending powers: $$f(x) = -2x^2 - 4x + 5$$",
+          "2. Factor out $-2$ from the $x$-terms: $$f(x) = -2(x^2 + 2x) + 5$$",
+          "3. Complete the square inside the bracket: $$x^2 + 2x = (x + 1)^2 - 1$$",
+          "4. Distribute $-2$: $$f(x) = -2[(x + 1)^2 - 1] + 5 = -2(x + 1)^2 + 2 + 5 = -2(x + 1)^2 + 7$$",
+          "5. Since $-2(x + 1)^2 \\le 0$, maximum value is $7$ when $x + 1 = 0 \\implies x = -1$."
+        ],
+        "finalAnswer": "\\mathbf{Maximum\\ value\\ 7\\ at\\ x = -1}",
+        "commonTrap": "Distributing $-2(-1)$ as $-2$ instead of $+2$, resulting in $5 - 2 = 3$ instead of $5 + 2 = 7$."
+      }
+    },
+    {
+      "id": "m01-q09",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "A farmer has $40\\text{ m}$ of fencing to enclose a rectangular vegetable plot along a straight brick wall (no fencing needed along the wall). What is the maximum possible area of the plot?",
+      "options": [
+        "200 m²",
+        "400 m²",
+        "100 m²",
+        "150 m²"
+      ],
+      "correctAnswer": "200 m²",
+      "solution": {
+        "formulaSetup": "Perimeter constraint: Let the two perpendicular sides be $x\\text{ m}$. The side parallel to wall is $(40 - 2x)\\text{ m}$. Area $A = x(40 - 2x)$.",
+        "steps": [
+          "1. Express area as a function of $x$: $$A(x) = 40x - 2x^2 = -2(x^2 - 20x)$$",
+          "2. Complete the square: $$x^2 - 20x = (x - 10)^2 - 100$$",
+          "3. Distribute $-2$: $$A(x) = -2[(x - 10)^2 - 100] = -2(x - 10)^2 + 200$$",
+          "4. The maximum area occurs when $x = 10\\text{ m}$, yielding $A_{\\max} = 200\\text{ m}^2$."
+        ],
+        "finalAnswer": "\\mathbf{200\\text{ m}^2}",
+        "commonTrap": "Assuming all 4 sides require fencing ($4x = 40 \\implies x = 10, \\text{Area} = 100\\text{ m}^2$). Read the question: the brick wall serves as one boundary."
+      }
+    },
+    {
+      "id": "m01-q10",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "Given $y = x^2 - 4x + 1$ for the restricted domain $0 \\le x \\le 5$, what is the range of $y$?",
+      "options": [
+        "-3 ≤ y ≤ 6",
+        "-3 ≤ y ≤ 1",
+        "1 ≤ y ≤ 6",
+        "-4 ≤ y ≤ 6"
+      ],
+      "correctAnswer": "-3 ≤ y ≤ 6",
+      "solution": {
+        "formulaSetup": "Restricted domain range check: Compare $y$ at the vertex and at both boundary endpoints.",
+        "steps": [
+          "1. Complete the square: $$y = (x - 2)^2 - 4 + 1 = (x - 2)^2 - 3$$",
+          "2. The vertex is at $x = 2$, which lies inside the interval $[0, 5]$. The minimum value is $y_{\\min} = -3$.",
+          "3. Evaluate left boundary $x = 0$: $$y(0) = (0 - 2)^2 - 3 = 4 - 3 = 1$$",
+          "4. Evaluate right boundary $x = 5$: $$y(5) = (5 - 2)^2 - 3 = 3^2 - 3 = 9 - 3 = 6$$",
+          "5. The range is $[y_{\\min}, y_{\\max}] = [-3, 6]$."
+        ],
+        "finalAnswer": "\\mathbf{-3 \\le y \\le 6}",
+        "commonTrap": "Only checking endpoints $x = 0$ and $x = 5$, giving $1 \\le y \\le 6$ and completely missing the true minimum at the vertex $x = 2$."
+      }
+    },
+    {
+      "id": "m01-q11",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "Solve the equation $x^2 - 2\\sqrt{3}x - 1 = 0$ by completing the square, giving exact surd roots.",
+      "options": [
+        "x = √3 ± 2",
+        "x = 2√3 ± 1",
+        "x = √3 ± 4",
+        "x = -√3 ± 2"
+      ],
+      "correctAnswer": "x = √3 ± 2",
+      "solution": {
+        "formulaSetup": "Completing the square: $x^2 + bx = \\left(x + \\frac{b}{2}\\right)^2 - \\left(\\frac{b}{2}\\right)^2$.",
+        "steps": [
+          "1. Identify $b = -2\\sqrt{3}$. Half of $b$ is $-\\sqrt{3}$.",
+          "2. Complete the square: $$(x - \\sqrt{3})^2 - (-\\sqrt{3})^2 - 1 = 0$$",
+          "3. Simplify constant: $$(x - \\sqrt{3})^2 - 3 - 1 = 0 \\implies (x - \\sqrt{3})^2 = 4$$",
+          "4. Take square roots: $$x - \\sqrt{3} = \\pm \\sqrt{4} = \\pm 2$$",
+          "5. Add $\\sqrt{3}$: $$x = \\sqrt{3} \\pm 2$$"
+        ],
+        "finalAnswer": "\\mathbf{x = \\sqrt{3} \\pm 2}",
+        "commonTrap": "Squaring $-\\sqrt{3}$ as $-3$ and computing $-(-3) = +3$. Remember $(-\\sqrt{3})^2 = +3$, so $-(-\\sqrt{3})^2 = -3$."
+      }
+    },
+    {
+      "id": "m01-q12",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "The curve $y = ax^2 + bx + c$ has line of symmetry $x = 3$, minimum value $-4$, and passes through $(5, 8)$. Find the value of $a$.",
+      "options": [
+        "a = 3",
+        "a = -3",
+        "a = 1",
+        "a = 2"
+      ],
+      "correctAnswer": "a = 3",
+      "solution": {
+        "formulaSetup": "Vertex form: Since axis of symmetry is $x = 3$ and minimum is $-4$, vertex is $(3, -4)$. Thus $y = a(x - 3)^2 - 4$.",
+        "steps": [
+          "1. Write vertex equation: $$y = a(x - 3)^2 - 4$$",
+          "2. Substitute given point $(5, 8)$: $$8 = a(5 - 3)^2 - 4$$",
+          "3. Simplify: $$8 = a(2^2) - 4 \\implies 8 = 4a - 4$$",
+          "4. Solve for $a$: $$4a = 12 \\implies a = 3$$"
+        ],
+        "finalAnswer": "\\mathbf{a = 3}",
+        "commonTrap": "Subtracting 4 from 8 instead of adding 4: writing $4a = 4 \\implies a = 1$."
+      }
+    },
+    {
+      "id": "m01-q13",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "The height $h(t)$ in metres of a projectile after $t$ seconds is given by $h(t) = 1 + 20t - 5t^2$. Find the time taken to reach maximum height and the maximum height attained.",
+      "options": [
+        "t = 2 s, h = 21 m",
+        "t = 4 s, h = 21 m",
+        "t = 2 s, h = 20 m",
+        "t = 1 s, h = 16 m"
+      ],
+      "correctAnswer": "t = 2 s, h = 21 m",
+      "solution": {
+        "formulaSetup": "Complete the square on $h(t) = -5t^2 + 20t + 1$.",
+        "steps": [
+          "1. Factor out $-5$ from $t$-terms: $$h(t) = -5(t^2 - 4t) + 1$$",
+          "2. Complete square inside bracket: $$t^2 - 4t = (t - 2)^2 - 4$$",
+          "3. Distribute $-5$: $$h(t) = -5[(t - 2)^2 - 4] + 1 = -5(t - 2)^2 + 20 + 1 = -5(t - 2)^2 + 21$$",
+          "4. Maximum height occurs when bracket nullifies: $t - 2 = 0 \\implies t = 2\\text{ s}$, yielding $h_{\\max} = 21\\text{ m}$."
+        ],
+        "finalAnswer": "\\mathbf{t = 2\\text{ s}, \\quad h_{\\max} = 21\\text{ m}}",
+        "commonTrap": "Forgetting the initial launch height $+1\\text{ m}$, leading to $h_{\\max} = 20\\text{ m}$."
+      }
+    },
+    {
+      "id": "m01-q14",
+      "topicId": "math-topic-01",
+      "tier": 2,
+      "questionText": "Determine the coordinates of the turning point of $y = \\frac{1}{2}x^2 - 3x + 7$ and state whether it is a maximum or minimum.",
+      "options": [
+        "Minimum at (3, 2.5)",
+        "Maximum at (3, 2.5)",
+        "Minimum at (-3, 2.5)",
+        "Minimum at (3, 7)"
+      ],
+      "correctAnswer": "Minimum at (3, 2.5)",
+      "solution": {
+        "formulaSetup": "Complete the square by factoring out $\\frac{1}{2}$: $y = \\frac{1}{2}(x^2 - 6x) + 7$.",
+        "steps": [
+          "1. Factor out $\\frac{1}{2}$: $$y = \\frac{1}{2}(x^2 - 6x) + 7$$",
+          "2. Complete the square: $$x^2 - 6x = (x - 3)^2 - 9$$",
+          "3. Distribute $\\frac{1}{2}$: $$y = \\frac{1}{2}[(x - 3)^2 - 9] + 7 = \\frac{1}{2}(x - 3)^2 - 4.5 + 7 = \\frac{1}{2}(x - 3)^2 + 2.5$$",
+          "4. Since $a = \\frac{1}{2} > 0$, the turning point is a minimum at $(3, 2.5)$."
+        ],
+        "finalAnswer": "\\mathbf{Minimum\\ turning\\ point\\ at\\ (3, 2.5)}",
+        "commonTrap": "Factoring $\\frac{1}{2}$ incorrectly from $-3x$ as $-1.5x$ instead of $-6x$."
+      }
+    },
+    {
+      "id": "m01-q15",
+      "topicId": "math-topic-01",
+      "tier": 3,
+      "questionText": "Show that for all real values of $x$, the quadratic expression $4x^2 - 12x + 11$ is always strictly positive, and find its least value.",
+      "options": [
+        "Always positive with least value 2",
+        "Always positive with least value 11",
+        "Always positive with least value 0",
+        "Can be negative when x < 0"
+      ],
+      "correctAnswer": "Always positive with least value 2",
+      "solution": {
+        "formulaSetup": "To prove $P(x) > 0$ for all $x \\in \\mathbb{R}$, express in form $a(x - h)^2 + k$ with $a > 0$ and $k > 0$.",
+        "steps": [
+          "1. Factor out $4$ from $x$-terms: $$4x^2 - 12x + 11 = 4\\left(x^2 - 3x\\right) + 11$$",
+          "2. Complete square inside: $$x^2 - 3x = \\left(x - \\frac{3}{2}\\right)^2 - \\frac{9}{4}$$",
+          "3. Distribute $4$: $$4\\left[\\left(x - \\frac{3}{2}\\right)^2 - \\frac{9}{4}\\right] + 11 = 4\\left(x - \\frac{3}{2}\\right)^2 - 9 + 11 = 4\\left(x - \\frac{3}{2}\\right)^2 + 2$$",
+          "4. Since $\\left(x - \\frac{3}{2}\\right)^2 \\ge 0$ for all real $x$, $4\\left(x - \\frac{3}{2}\\right)^2 \\ge 0$.",
+          "5. Therefore $4x^2 - 12x + 11 \\ge 2 > 0$ for all $x \\in \\mathbb{R}$. The least value is $2$."
+        ],
+        "finalAnswer": "\\mathbf{\\text{Always strictly positive with least value } 2}",
+        "commonTrap": "Stating least value is $11$ from the $y$-intercept. The vertex minimum is lower than the $y$-intercept."
+      }
+    },
+    {
+      "id": "m01-q16",
+      "topicId": "math-topic-01",
+      "tier": 3,
+      "questionText": "The curve $y = 2x^2 + px + q$ has a turning point at $(3, -5)$. Find the values of $p$ and $q$.",
+      "options": [
+        "p = -12, q = 13",
+        "p = 12, q = 13",
+        "p = -12, q = -5",
+        "p = -6, q = 13"
+      ],
+      "correctAnswer": "p = -12, q = 13",
+      "solution": {
+        "formulaSetup": "Set up vertex form $y = a(x - h)^2 + k$ with $a = 2, \\; h = 3, \\; k = -5$, then expand to match coefficients.",
+        "steps": [
+          "1. Write vertex form: $$y = 2(x - 3)^2 - 5$$",
+          "2. Expand $(x - 3)^2$: $$y = 2(x^2 - 6x + 9) - 5$$",
+          "3. Distribute $2$: $$y = 2x^2 - 12x + 18 - 5 = 2x^2 - 12x + 13$$",
+          "4. Compare coefficients with $y = 2x^2 + px + q$: $$p = -12, \\quad q = 13$$"
+        ],
+        "finalAnswer": "\\mathbf{p = -12, \\quad q = 13}",
+        "commonTrap": "Equating $p$ to $-6$ by forgetting to multiply by the leading coefficient $2$."
+      }
+    },
+    {
+      "id": "m01-q17",
+      "topicId": "math-topic-01",
+      "tier": 3,
+      "questionText": "Find the coordinates of the turning point of the curve $y = -\\frac{1}{3}x^2 + 4x - 7$ and determine the range of $y$.",
+      "options": [
+        "Maximum at (6, 5); Range: y ≤ 5",
+        "Minimum at (6, 5); Range: y ≥ 5",
+        "Maximum at (-6, 5); Range: y ≤ 5",
+        "Maximum at (6, -7); Range: y ≤ -7"
+      ],
+      "correctAnswer": "Maximum at (6, 5); Range: y ≤ 5",
+      "solution": {
+        "formulaSetup": "Complete the square by factoring out $-\\frac{1}{3}$: $y = -\\frac{1}{3}(x^2 - 12x) - 7$.",
+        "steps": [
+          "1. Factor out $-\\frac{1}{3}$: $$y = -\\frac{1}{3}(x^2 - 12x) - 7$$",
+          "2. Complete the square: $$x^2 - 12x = (x - 6)^2 - 36$$",
+          "3. Distribute $-\\frac{1}{3}$: $$y = -\\frac{1}{3}[(x - 6)^2 - 36] - 7 = -\\frac{1}{3}(x - 6)^2 + 12 - 7 = -\\frac{1}{3}(x - 6)^2 + 5$$",
+          "4. Since $-\\frac{1}{3}(x - 6)^2 \\le 0$, the maximum value is $5$ at $x = 6$. Range is $y \\le 5$."
+        ],
+        "finalAnswer": "\\mathbf{Maximum\\ at\\ (6, 5); \\quad \\text{Range: } y \\le 5}",
+        "commonTrap": "Sign error during factoring: $4 / (-1/3) = -12$, not $+12$."
+      }
+    },
+    {
+      "id": "m01-q18",
+      "topicId": "math-topic-01",
+      "tier": 3,
+      "questionText": "Express $f(x) = x^2 + 2kx + 3k^2 + 4$ in completed square form, and hence explain why $f(x) \\ge 4$ for all real $x$ and $k$.",
+      "options": [
+        "f(x) = (x + k)² + 2k² + 4; both squared terms are non-negative",
+        "f(x) = (x + 2k)² + 4; always positive",
+        "f(x) = (x + k)² + 4; constant is 4",
+        "f(x) = (x + k)² - k² + 4; can be less than 4"
+      ],
+      "correctAnswer": "f(x) = (x + k)² + 2k² + 4; both squared terms are non-negative",
+      "solution": {
+        "formulaSetup": "Complete the square on $x^2 + 2kx = (x + k)^2 - k^2$.",
+        "steps": [
+          "1. Complete the square with respect to $x$: $$f(x) = (x + k)^2 - k^2 + 3k^2 + 4$$",
+          "2. Combine like terms: $$f(x) = (x + k)^2 + 2k^2 + 4$$",
+          "3. Analyze non-negativity: For any real $x$ and $k$, $(x + k)^2 \\ge 0$ and $2k^2 \\ge 0$.",
+          "4. The minimum possible value of $(x + k)^2 + 2k^2$ is $0$ (when $k = 0$ and $x = 0$).",
+          "5. Therefore, $f(x) \\ge 0 + 0 + 4 = 4$ for all $x, k \\in \\mathbb{R}$."
+        ],
+        "finalAnswer": "\\mathbf{f(x) = (x + k)^2 + 2k^2 + 4 \\ge 4}",
+        "commonTrap": "Confusing $3k^2 - k^2 = 2k^2$. Failing to note that $2k^2$ is itself a non-negative term."
+      }
+    },
+    {
+      "id": "m01-q19",
+      "topicId": "math-topic-01",
+      "tier": 3,
+      "questionText": "A rectangular box with an open top has a square base of side $x\\text{ cm}$ and a total surface area of $108\\text{ cm}^2$. Express the volume $V$ in terms of $x$, and find the maximum volume.",
+      "options": [
+        "108 cm³ at x = 6 cm",
+        "216 cm³ at x = 6 cm",
+        "72 cm³ at x = 3 cm",
+        "144 cm³ at x = 4 cm"
+      ],
+      "correctAnswer": "108 cm³ at x = 6 cm",
+      "solution": {
+        "formulaSetup": "Surface area of open box: $S = x^2 + 4xh = 108 \\implies h = \\frac{108 - x^2}{4x}$. Volume $V = x^2 h = x^2\\left(\\frac{108 - x^2}{4x}\\right) = \\frac{1}{4}(108x - x^3)$.",
+        "steps": [
+          "1. Substitute $h$ into $V$: $$V(x) = 27x - \\frac{1}{4}x^3$$",
+          "2. By AM-GM inequality or completing cubes/stationary analysis: $\\frac{x^3}{4} + \\frac{V}{2} + \\frac{V}{2} \\dots$ or stationary point: $\\frac{dV}{dx} = 27 - \\frac{3}{4}x^2 = 0$.",
+          "3. Solve for $x$: $$\\frac{3}{4}x^2 = 27 \\implies x^2 = 36 \\implies x = 6\\text{ cm}$$",
+          "4. Calculate height $h$: $$h = \\frac{108 - 36}{4(6)} = \\frac{72}{24} = 3\\text{ cm}$$",
+          "5. Maximum volume: $$V_{\\max} = 6^2 \\times 3 = 108\\text{ cm}^3$$"
+        ],
+        "finalAnswer": "\\mathbf{V_{\\max} = 108\\text{ cm}^3 \\quad \\text{at } x = 6\\text{ cm}}",
+        "commonTrap": "Assuming the box is closed (with 2 square bases), which would use $2x^2 + 4xh = 108$."
+      }
+    },
+    {
+      "id": "m01-q20",
+      "topicId": "math-topic-01",
+      "tier": 3,
+      "questionText": "The curve $C_1: y = x^2 - 4x + 7$ is transformed to curve $C_2: y = x^2 + 6x + 2$ by a single translation. Describe the translation vector.",
+      "options": [
+        "Translation vector (-5, -10)",
+        "Translation vector (5, 10)",
+        "Translation vector (-5, 10)",
+        "Translation vector (5, -10)"
+      ],
+      "correctAnswer": "Translation vector (-5, -10)",
+      "solution": {
+        "formulaSetup": "Transformation of quadratic curves: Compare the turning points of both parabolas in vertex form.",
+        "steps": [
+          "1. Complete square for $C_1$: $$y = (x - 2)^2 - 4 + 7 = (x - 2)^2 + 3 \\implies \\text{Vertex } V_1 = (2, 3)$$",
+          "2. Complete square for $C_2$: $$y = (x + 3)^2 - 9 + 2 = (x + 3)^2 - 7 \\implies \\text{Vertex } V_2 = (-3, -7)$$",
+          "3. Calculate horizontal shift: $$\\Delta x = -3 - 2 = -5$$",
+          "4. Calculate vertical shift: $$\\Delta y = -7 - 3 = -10$$",
+          "5. The translation vector is $\\begin{pmatrix} -5 \\\\ -10 \\end{pmatrix}$."
+        ],
+        "finalAnswer": "\\mathbf{\\text{Translation vector } \\begin{pmatrix} -5 \\\\ -10 \\end{pmatrix}}",
+        "commonTrap": "Subtracting in the wrong direction ($V_1 - V_2$), giving $(+5, +10)$."
+      }
+    }
+  ]
+}
